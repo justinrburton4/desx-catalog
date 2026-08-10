@@ -331,34 +331,39 @@
 .pub-meta {
   margin-top: auto;
   padding-top: 10px;
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid #e2e8f0;
   font-size: 0.78rem;
-  color: #64748b;
+  color: #475569;
   line-height: 1.4;
+}
+
+.pub-meta-empty {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.pub-year {
+  display: inline-block;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.pub-authors {
+  font-weight: 500;
+  color: #64748b;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.pub-meta-empty {
-  margin-top: auto;
-  padding-top: 10px;
-  border-top: 1px solid transparent;
-  min-height: 1.2em;
-  color: transparent;
-}
-
 .pub-meta-sep {
-  color: #cbd5e1;
-}
-
-.pub-authors {
-  font-weight: 500;
-}
-
-.pub-year {
-  white-space: nowrap;
+  display: none;
 }
 
 /* Compact layout */

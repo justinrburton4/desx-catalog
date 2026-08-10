@@ -138,12 +138,17 @@
     var authors = formatAuthors(item.authors);
     var year = item.year ? String(item.year) : "";
     if (!authors && !year) {
-      return '<div class="pub-meta pub-meta-empty"><\/div>';
+      return '<div class="pub-meta pub-meta-empty">Author / year TBD<\/div>';
     }
-    var parts = [];
-    if (authors) parts.push('<span class="pub-authors">' + escapeHtml(authors) + "<\/span>");
-    if (year) parts.push('<span class="pub-year">' + escapeHtml(year) + "<\/span>");
-    return '<div class="pub-meta">' + parts.join('<span class="pub-meta-sep"> · <\/span>') + "<\/div>";
+    var html = '<div class="pub-meta">';
+    if (year) {
+      html += '<div class="pub-year">' + escapeHtml(year) + "<\/div>";
+    }
+    if (authors) {
+      html += '<div class="pub-authors">' + escapeHtml(authors) + "<\/div>";
+    }
+    html += "<\/div>";
+    return html;
   }
 
   function researchCardHtml(item, compact) {
