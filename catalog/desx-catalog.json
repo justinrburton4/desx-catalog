@@ -13,39 +13,240 @@
   "items": [
     {
       "kind": "research",
-      "id": "social-impact-evaluation-analysis",
-      "title": "Social impact evaluation analysis: a systematic qualitative method for assessing engineered products",
-      "abstract": "This paper introduces Social Impact Effects Analysis, extending standard failure analysis to systematically evaluate products' broader societal impacts during early design stages.",
-      "url": "/social-impact-evaluation-analysis",
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/8f983333-5cbf-4c83-b695-9ca54e6d8da1/design-science.jpg?content-type=image%2Fjpeg",
+      "id": "axiom-based-aggregation-functions-for-ideation-metrics",
+      "title": "Axiom-based aggregation functions for calculating variety, novelty, quality and quantity of ideation results",
+      "abstract": "Proposes axioms and matching functions for principled aggregation of quality, quantity, novelty, and variety scores.",
+      "url": "/axiom-based-aggregation-functions-for-ideation-metrics",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng",
       "badge": "journal",
       "categories": [
-        "Featured",
-        "Social impact modeling"
+        "Other"
       ],
-      "year": 2024,
+      "year": 2026,
       "authors": [
-        "Armstrong, A. G.",
+        "Sorensen, C. D.",
+        "Ashworth, T. J.",
+        "Stapleton, T.",
         "Mattson, C. A.",
-        "Salmon, J. L.",
-        "Dahlin, E. C.",
-        "Geilman, T. B."
+        "Anderson, M. L."
       ]
     },
     {
       "kind": "research",
-      "id": "optimization-of-3d-printing-en-route",
-      "title": "Optimization of 3D Printing While Traveling En Route to Extend Range of Unmanned Aircraft Systems for Multilocation Mission Scenarios",
-      "abstract": "Optimizing en route 3D printing significantly reduces host vehicle travel distance and mission time for multi-location drone operations.",
-      "url": "/optimization-of-3d-printing-en-route",
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/b1191010-080d-4080-8ffc-f59371fa70c8/optimizing+3d+printing.png?content-type=image%2Fpng",
+      "id": "path-optimization-from-en-route-3d-printed-aircraft-using-physics-based-estimati",
+      "title": "Path Optimization From En Route 3D-Printed Aircraft Using Physics-Based Estimation Methods and Surrogate Models",
+      "abstract": "Optimizes flight paths for en-route 3D-printed aircraft using physics-based estimates and surrogate models.",
+      "url": "https://doi.org/10.1115/1.4069685",
       "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2026,
+      "authors": [
+        "Dickerson, T. J.",
+        "Salmon, J. L.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "random-prompts-method",
+      "title": "The Random Prompts Method: A Novel Ideation Method for Improving Tactics Ideation",
+      "abstract": "Introduces and validates the Random Prompts ideation method, showing tactics-focused instruction improves idea novelty and completeness.",
+      "url": "/random-prompts-method",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2026,
+      "authors": [
+        "Ashworth, T. J.",
+        "Sorensen, C. D.",
+        "Anderson, M. L.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "an-approach-for-developing-a-decision-support-tool-for-emerging-concepts-designi",
+      "title": "An Approach for Developing a Decision Support Tool for Emerging Concepts: Designing Blended Wing Body Aircraft for Logistics Missions",
+      "abstract": "Develops a decision-support approach for emerging concepts, demonstrated on blended-wing logistics aircraft.",
+      "url": "https://doi.org/10.1115/detc2025-169042",
+      "badge": "conference",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2025,
+      "authors": [
+        "Humphrey, T. M.",
+        "Wooley, H. C. W.",
+        "Mattson, C. A.",
+        "Anderson, M. L.",
+        "Carr, R. W."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "pase-case-study-validation",
+      "title": "Case Study Validation of Product Architecture Strategy and Effect Methodology",
+      "abstract": "Connects real world product architecture design decisions to the potential impacts of those decisions",
+      "url": "/pase-case-study-validation",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/2e4eeda3-7ed3-42c7-849c-215c830d125d/paseHeader.png?content-type=image%2Fpng",
+      "badge": "conference",
       "categories": [
         "Featured",
         "Systems & Product Architecture"
       ],
+      "year": 2025,
+      "authors": [
+        "Sannar, B.",
+        "Rice, S.",
+        "Mattson, C. A.",
+        "Anderson, M. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "designing-for-machine-longevity-a-literature-survey",
+      "title": "Designing for Machine Longevity - A Literature Survey",
+      "abstract": "Surveys design strategies that extend complex machine service life through maintainability, modularity, and longevity-focused architecture.",
+      "url": "https://doi.org/10.1017/pds.2025.10147",
+      "badge": "conference",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "authors": [
+        "Rice, S. E.",
+        "Sannar, B. C.",
+        "Mattson, C. A.",
+        "Anderson, M. L."
+      ],
+      "year": 2025
+    },
+    {
+      "kind": "research",
+      "id": "extending-solid-principles-to-systems-engineering-leveraging-sysml-for-modular-d",
+      "title": "Extending Solid Principles to Systems Engineering: Leveraging SysML for Modular Design and Complexity Analysis",
+      "abstract": "Extends SOLID software principles to systems engineering using SysML for modularity and complexity analysis.",
+      "url": "https://doi.org/10.1115/detc2025-169752",
+      "badge": "conference",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2025,
+      "authors": [
+        "Dickerson, T.",
+        "Salmon, J. L.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "graph-based-social-impact-diffusion-optimization-across-a-theoretical-socio-tech",
+      "title": "Graph-Based Social Impact Diffusion Optimization across a Theoretical Socio-Technical System",
+      "abstract": "Optimizes graph-based social impact diffusion across a theoretical socio-technical system model.",
+      "url": "https://doi.org/10.1017/pds.2025.10210",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2025,
+      "authors": [
+        "McKinnon, S. A.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "quantifiable-theory-of-change",
+      "title": "Quantifiable Theory of Change",
+      "abstract": "Presents a quantifiable Theory of Change approach for measuring and designing toward intended social outcomes.",
+      "url": "https://doi.org/10.1109/ghtc66843.2025.11266770",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2025,
+      "authors": [
+        "Busse, F.",
+        "Mattson, C.",
+        "Spring, T."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "graph-based-social-impact-diffusion-modeling",
+      "title": "The Challenges and Opportunities of Graph Based Social Impact Diffusion Modeling for Socio-Technical Systems",
+      "abstract": "Critically evaluates a graph-based social-impact diffusion theory for socio-technical systems, identifying key challenges and opportunities.",
+      "url": "/graph-based-social-impact-diffusion-modeling",
+      "image": "https://yonghoonlee.com/wp-content/uploads/2024/08/idetc-cover.jpg",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2025,
+      "authors": [
+        "Mattson, C. A.",
+        "McKinnon, S.",
+        "Broadbent, J.",
+        "Cook-Wright, J.",
+        "Detiege, I.",
+        "Hardy, J.",
+        "Little, A.",
+        "Geilman, T."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-decision-support-system-for-multi-stakeholder-exploration-of-the-airship-desig",
+      "title": "A decision support system for multi-stakeholder exploration of the airship design space",
+      "abstract": "Supports multi-stakeholder exploration of airship design trades with a decision support system.",
+      "url": "https://doi.org/10.1177/15485129231164416",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
       "year": 2024,
       "authors": [
+        "Richards, D.",
+        "Salmon, J. L.",
+        "Dickerson, T. J.",
+        "Mattson, C. A.",
+        "Neff, W. J."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-formal-consideration-of-user-tactics-during-product-evaluation-in-early-stage-",
+      "title": "A formal consideration of user tactics during product evaluation in early-stage product development",
+      "abstract": "Formalizes user tactics during early product evaluation to better connect intended use with design decisions.",
+      "url": "https://doi.org/10.1504/ijpd.2024.137784",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2024,
+      "authors": [
+        "Owens, T.",
+        "Mattson, C. A.",
+        "Sorensen, C. D.",
+        "Anderson, M. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "an-approach-for-predicting-social-environmental-and-economic-product-impacts-and",
+      "title": "An Approach for Predicting Social, Environmental, and Economic Product Impacts and Characterizing the Associated Sustainability Tradespace in Engineering Design",
+      "abstract": "Predicts social, environmental, and economic product impacts and maps the resulting sustainability tradespace.",
+      "url": "https://doi.org/10.1115/1.4064041",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2024,
+      "authors": [
+        "Mabey, C. S.",
         "Dickerson, T. J.",
         "Salmon, J. L.",
         "Mattson, C. A."
@@ -75,45 +276,1615 @@
     },
     {
       "kind": "research",
-      "id": "pase-case-study-validation",
-      "title": "Case Study Validation of Product Architecture Strategy and Effect Methodology",
-      "abstract": "Connects real world product architecture design decisions to the potential impacts of those decisions",
-      "url": "/pase-case-study-validation",
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/2e4eeda3-7ed3-42c7-849c-215c830d125d/paseHeader.png?content-type=image%2Fpng",
-      "badge": "conference",
+      "id": "optimization-of-3d-printing-en-route",
+      "title": "Optimization of 3D Printing While Traveling En Route to Extend Range of Unmanned Aircraft Systems for Multilocation Mission Scenarios",
+      "abstract": "Optimizing en route 3D printing significantly reduces host vehicle travel distance and mission time for multi-location drone operations.",
+      "url": "/optimization-of-3d-printing-en-route",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/b1191010-080d-4080-8ffc-f59371fa70c8/optimizing+3d+printing.png?content-type=image%2Fpng",
+      "badge": "journal",
       "categories": [
         "Featured",
         "Systems & Product Architecture"
       ],
-      "year": 2025,
+      "year": 2024,
       "authors": [
-        "Sannar, B.",
-        "Rice, S.",
+        "Dickerson, T. J.",
+        "Salmon, J. L.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "optimizing-engineered-products-for-their-social-impacts-on-multiple-stakeholders",
+      "title": "Optimizing Engineered Products for Their Social Impacts on Multiple Stakeholders",
+      "abstract": "Optimizes engineered products for social impacts across multiple stakeholders, not only traditional performance metrics.",
+      "url": "https://doi.org/10.1115/1.4064694",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2024,
+      "authors": [
+        "Stevenson, P. D.",
         "Mattson, C. A.",
+        "Salmon, J. L.",
+        "Hatch, N. W."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "product-architecture-strategies-and-effects-matrices-for-early-evaluation-and-se",
+      "title": "Product architecture strategies and effects matrices for early evaluation and selection of product architectures",
+      "abstract": "Introduces Product Architecture Strategies and Effects matrices for early architecture evaluation and selection.",
+      "url": "https://doi.org/10.1017/dsj.2024.18",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2024,
+      "authors": [
+        "Rice, S. E.",
+        "Sannar, B. C.",
+        "McKinnon, S. A.",
+        "Humphrey, T. M.",
+        "Mattson, C. A.",
+        "Sorensen, C. D.",
         "Anderson, M. L."
       ]
     },
     {
       "kind": "research",
-      "id": "graph-based-social-impact-diffusion-modeling",
-      "title": "The Challenges and Opportunities of Graph Based Social Impact Diffusion Modeling for Socio-Technical Systems",
-      "abstract": "Critically evaluates a graph-based social-impact diffusion theory for socio-technical systems, identifying key challenges and opportunities.",
-      "url": "/graph-based-social-impact-diffusion-modeling",
-      "image": "https://yonghoonlee.com/wp-content/uploads/2024/08/idetc-cover.jpg",
+      "id": "social-impact-evaluation-analysis",
+      "title": "Social impact evaluation analysis: a systematic qualitative method for assessing engineered products",
+      "abstract": "This paper introduces Social Impact Effects Analysis, extending standard failure analysis to systematically evaluate products' broader societal impacts during early design stages.",
+      "url": "/social-impact-evaluation-analysis",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/8f983333-5cbf-4c83-b695-9ca54e6d8da1/design-science.jpg?content-type=image%2Fjpeg",
+      "badge": "journal",
+      "categories": [
+        "Featured",
+        "Social impact modeling"
+      ],
+      "year": 2024,
+      "authors": [
+        "Armstrong, A. G.",
+        "Mattson, C. A.",
+        "Salmon, J. L.",
+        "Dahlin, E. C.",
+        "Geilman, T. B."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "advancing-sustainable-development-emerging-factors-and-futures-for-the-engineeri",
+      "title": "Advancing Sustainable Development: Emerging Factors and Futures for the Engineering Field",
+      "abstract": "This study set out to identify emerging trends in advancing engineering for sustainable development, supporting the engineering workforce to address.",
+      "url": "https://doi.org/10.3390/su15107869",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2023,
+      "authors": [
+        "Burleson, G.",
+        "Lajoie, J.",
+        "Mabey, C.",
+        "Sours, P.",
+        "Ventrella, J.",
+        "Peiffer, E.",
+        "Stine, E.",
+        "Stettler Kleine, M.",
+        "MacDonald, L.",
+        "Austin-Breneman, J.",
+        "Javernick-Will, A.",
+        "Winter, A.",
+        "Lucena, J.",
+        "Knight, D.",
+        "Daniel, S.",
+        "Thomas, E.",
+        "Mattson, C.",
+        "Aranda, I."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "agent-based-product-social-impact-modeling-a-systematic-literature-review-and-mo",
+      "title": "Agent-Based Product-Social-Impact-Modeling: A Systematic Literature Review and Modeling Process",
+      "abstract": "Reviews agent-based product social-impact modeling and outlines a process for building such models.",
+      "url": "https://doi.org/10.1115/1.4063004",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2023,
+      "authors": [
+        "Mabey, C. S.",
+        "Salmon, J. L.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "an-approach-for-including-social-impact-measures-in-systems-design-exploration",
+      "title": "An approach for including social impact measures in systems design exploration",
+      "abstract": "Engineered products have economic, environmental, and social impacts, which comprise the major dimensions of sustainability.",
+      "url": "https://doi.org/10.1017/dsj.2023.13",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2023,
+      "authors": [
+        "Richards, D. C.",
+        "Stevenson, P. D.",
+        "Mattson, C. A.",
+        "Salmon, J. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "creating-predictive-social-impact-models-of-engineered-products-using-synthetic-",
+      "title": "Creating predictive social impact models of engineered products using synthetic populations",
+      "abstract": "Creates predictive social impact models of engineered products using synthetic population data.",
+      "url": "https://doi.org/10.1007/s00163-023-00424-4",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2023,
+      "authors": [
+        "Stevenson, P. D.",
+        "Mattson, C. A.",
+        "Dahlin, E. C.",
+        "Salmon, J. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "enabling-insights-by-long-term-evaluation-of-social-impact-indicators-of-enginee",
+      "title": "Enabling Insights by Long-Term Evaluation of Social Impact Indicators of Engineered Products for Global Development Using In Situ Sensors and Deep Learning",
+      "abstract": "Remotely measuring social impact indicators of products in developing countries can enable researchers and practitioners to make informed.",
+      "url": "https://doi.org/10.1115/1.4062944",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2023,
+      "authors": [
+        "Stringham, B. J.",
+        "Mattson, C. A.",
+        "Jenkins, P.",
+        "Dahlin, E.",
+        "Okware, I. I."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "simulating-the-adoption-and-social-impact-of-improved-cookstoves-in-uganda-using",
+      "title": "Simulating the Adoption and Social Impact of Improved Cookstoves in Uganda Using Agent-Based Modeling and Neural Networks",
+      "abstract": "Simulates improved cookstove adoption and social impact in Uganda with agent-based models and neural networks.",
+      "url": "https://doi.org/10.1115/1.4063237",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2023,
+      "authors": [
+        "Mabey, C. S.",
+        "Peiffer, E. E.",
+        "MacCarty, N.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "trade-off-characterization-between-social-and-environmental-impacts-using-agent-",
+      "title": "Trade-Off Characterization Between Social and Environmental Impacts Using Agent-Based Product Adoption Models and Life Cycle Assessment",
+      "abstract": "Meeting the United Nations (UN) sustainable development goals efficiently requires designers and engineers to solve multi-objective optimization problems.",
+      "url": "https://doi.org/10.1115/1.4056006",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2023,
+      "authors": [
+        "Liechty, J. C.",
+        "Mabey, C. S.",
+        "Mattson, C. A.",
+        "Salmon, J. L.",
+        "Weaver, J. M."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "assessing-global-needs-when-identifying-potential-engineering-for-global-develop",
+      "title": "Assessing Global Needs When Identifying Potential Engineering for Global Development Projects",
+      "abstract": "With limited time and resources available to carry out Engineering for Global Development (EGD) projects, it can be.",
+      "url": "https://doi.org/10.1115/1.4052223",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2022,
+      "authors": [
+        "Mabey, C. S.",
+        "Mattson, C. A.",
+        "Dahlin, E. C."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "systematic-review-and-classification-of-the-engineering-for-global-development-l",
+      "title": "Systematic Review and Classification of the Engineering for Global Development Literature Based on Design Tools and Methods for Social Impact Consideration",
+      "abstract": "Classifies Engineering for Global Development literature by design tools and methods that incorporate social impact consideration.",
+      "url": "https://doi.org/10.1115/1.4055325",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "authors": [
+        "Armstrong, A. G.",
+        "Suk, H.",
+        "Mabey, C. S.",
+        "Mattson, C. A.",
+        "Hall, J.",
+        "Salmon, J. L."
+      ],
+      "year": 2022
+    },
+    {
+      "kind": "research",
+      "id": "use-of-simulation-and-wear-prediction-to-explore-design-improvements-to-the-cup-",
+      "title": "Use of simulation and wear prediction to explore design improvements to the cup seal in the India Mark II/III hand pump system",
+      "abstract": "Uses simulation and wear prediction to improve cup seals in India Mark II/III hand pumps.",
+      "url": "https://doi.org/10.1016/j.deveng.2022.100092",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2022,
+      "authors": [
+        "Ottosson, H. J.",
+        "Mattson, C. A.",
+        "Johnson, O. K.",
+        "Irot, I."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-framework-for-predicting-potential-product-impact-during-product-design",
+      "title": "A FRAMEWORK FOR PREDICTING POTENTIAL PRODUCT IMPACT DURING PRODUCT DESIGN",
+      "abstract": "Presents a framework for predicting potential product impacts during early product design.",
+      "url": "https://doi.org/10.1017/pds.2021.11",
+      "badge": "conference",
+      "categories": [
+        "Other"
+      ],
+      "year": 2021,
+      "authors": [
+        "Mabey, C. S.",
+        "Armstrong, A. G.",
+        "Mattson, C. A.",
+        "Salmon, J. L.",
+        "Hatch, N. W."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-computational-simulation-based-framework-for-estimating-potential-product-impa",
+      "title": "A computational simulation-based framework for estimating potential product impact during product design",
+      "abstract": "The impact of engineered products is a topic of concern in society.",
+      "url": "https://doi.org/10.1017/dsj.2021.16",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2021,
+      "authors": [
+        "Mabey, C. S.",
+        "Armstrong, A. G.",
+        "Mattson, C. A.",
+        "Salmon, J. L.",
+        "Hatch, N. W.",
+        "Dahlin, E. C."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "fmea-inspired-analysis-for-social-impact-of-engineered-products",
+      "title": "FMEA-Inspired Analysis for Social Impact of Engineered Products",
+      "abstract": "Adapts FMEA-style analysis to systematically assess social impacts of engineered products.",
+      "url": "https://doi.org/10.1115/detc2021-70595",
       "badge": "conference",
       "categories": [
         "Social impact modeling"
       ],
-      "year": 2025,
+      "year": 2021,
+      "authors": [
+        "Armstrong, A. G.",
+        "Mattson, C. A.",
+        "Salmon, J. L.",
+        "Dahlin, E. C."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "factors-leading-to-sustainable-social-impact-on-the-affected-communities-of-engi",
+      "title": "Factors leading to sustainable social impact on the affected communities of engineering service learning projects",
+      "abstract": "Identifies factors that lead to sustainable social impact from engineering service-learning projects.",
+      "url": "https://doi.org/10.1016/j.deveng.2021.100066",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2021,
+      "authors": [
+        "Armstrong, A. G.",
+        "Mattson, C. A.",
+        "Lewis, R. S."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "integrating-social-impact-measures-into-the-airship-design-process",
+      "title": "INTEGRATING SOCIAL IMPACT MEASURES INTO THE AIRSHIP DESIGN PROCESS",
+      "abstract": "Integrates social impact measures into the airship design process for broader decision making.",
+      "url": "https://doi.org/10.1017/pds.2021.449",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2021,
+      "authors": [
+        "Richards, D.",
+        "Stevenson, P. D.",
+        "Mattson, C. A.",
+        "Salmon, J. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "identifying-high-potential-work-areas-in-engineering-for-global-development-link",
+      "title": "Identifying High-Potential Work Areas in Engineering for Global Development: Linking Industry Sectors to the Human Development Index",
+      "abstract": "Identifying High-Potential Work Areas in Engineering for Global Development: Linking Industry Sectors to the Human Development.",
+      "url": "https://doi.org/10.1115/1.0001909v",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2021,
+      "authors": [
+        "SMITH, D.",
+        "Mattson, C.",
+        "Dahlin, E."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "nitrile-cup-seal-robustness-in-the-india-mark-ii-iii-hand-pump-system",
+      "title": "Nitrile cup seal robustness in the India Mark II/III hand pump system",
+      "abstract": "Assesses nitrile cup seal robustness in India Mark II/III hand pump systems under field conditions.",
+      "url": "https://doi.org/10.1016/j.deveng.2021.100060",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2021,
+      "authors": [
+        "Ottosson, H. J.",
+        "Mattson, C. A.",
+        "Johnson, O. K.",
+        "Naylor, T. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "open-research-questions-for-incorporating-multi-stakeholder-interests-in-enginee",
+      "title": "Open Research Questions for Incorporating Multi-Stakeholder Interests in Engineering for Global Development",
+      "abstract": "Identifies open research questions for incorporating multi-stakeholder interests in Engineering for Global Development.",
+      "url": "https://doi.org/10.1115/detc2021-71835",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2021,
+      "authors": [
+        "Stevenson, P. D.",
+        "Wood, A. E.",
+        "Mattson, C. A.",
+        "Salmon, J. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "product-development-using-perceived-correlations-between-the-united-nations-sust",
+      "title": "Product Development Using Perceived Correlations Between the United Nations Sustainable Development Goals and Social Impact Categories",
+      "abstract": "Links perceived UN SDG correlations with social impact categories to guide product development choices.",
+      "url": "https://doi.org/10.1115/detc2021-72065",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2021,
+      "authors": [
+        "Johnson, G. E.",
+        "Fisher, M. J.",
+        "Salmon, J. L.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "remote-data-collection-devices-for-social-impact-indicators-of-products-in-devel",
+      "title": "Remote Data Collection Devices for Social Impact Indicators of Products in Developing Countries",
+      "abstract": "Designs remote data collection devices for tracking social impact indicators of products in developing countries.",
+      "url": "https://doi.org/10.1115/1.0001910v",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2021,
+      "authors": [
+        "Stringham, B.",
+        "Mattson, C."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "analysis-of-perceived-social-impacts-of-existing-products-designed-for-the-devel",
+      "title": "Analysis of Perceived Social Impacts of Existing Products Designed for the Developing World, With Implications for New Product Development",
+      "abstract": "Engineered products often have more social impacts than are realized.",
+      "url": "https://doi.org/10.1115/1.4044323",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2020,
+      "authors": [
+        "Ottosson, H. J.",
+        "Mattson, C. A.",
+        "Dahlin, E. C."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "evaluation-of-user-preferences-for-3d-modeling-and-design-reviews-in-virtual-rea",
+      "title": "Evaluation of User Preferences for 3D Modeling and Design Reviews in Virtual Reality",
+      "abstract": "Evaluates user preferences for 3D modeling and design reviews performed in virtual reality environments.",
+      "url": "https://doi.org/10.14733/cadconfp.2020.308-312",
+      "badge": "conference",
+      "categories": [
+        "Other"
+      ],
+      "year": 2020,
+      "authors": [
+        "Nysetvold, J.",
+        "Salmon, J."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "single-pursuer-and-two-cooperative-evaders-in-the-border-defense-differential-ga",
+      "title": "Single Pursuer and Two Cooperative Evaders in the Border Defense Differential Game",
+      "abstract": "Analyzes a border-defense differential game with one pursuer and two cooperating evaders.",
+      "url": "https://doi.org/10.2514/1.i010766",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2020,
+      "authors": [
+        "Salmon, J. L.",
+        "Willey, L. C.",
+        "Casbeer, D.",
+        "Garcia, E.",
+        "Moll, A. V."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "structural-design-space-exploration-using-principal-component-analysis",
+      "title": "Structural Design Space Exploration Using Principal Component Analysis",
+      "abstract": "Applies principal component analysis to explore and interpret structural design spaces more efficiently.",
+      "url": "https://doi.org/10.1115/1.4047428",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2020,
+      "authors": [
+        "Bunnell, S.",
+        "Gorrell, S.",
+        "Salmon, J.",
+        "Thelin, C.",
+        "Ruoti, C."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "analysis-and-evaluation-of-partitioning-methods-for-multi-user-cad",
+      "title": "Analysis and Evaluation of Partitioning Methods for Multi-User CAD",
+      "abstract": "Evaluates partitioning methods that improve multi-user CAD collaboration and shared model workflows.",
+      "url": "https://doi.org/10.14733/cadconfp.2019.377-381",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2019,
+      "authors": [
+        "Ong, J.",
+        "Richards, D.",
+        "Salmon, J."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "deconfliction-in-high-density-unmanned-aerial-vehicle-systems",
+      "title": "Deconfliction in High-Density Unmanned Aerial Vehicle Systems",
+      "abstract": "Examines deconfliction strategies for safely coordinating high-density unmanned aerial vehicle operations.",
+      "url": "https://doi.org/10.2514/1.d0119",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2019,
+      "authors": [
+        "Nysetvold, T. B.",
+        "Salmon, J. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "difference-modeling-for-design-space-exploration-and-comparison-of-three-dimensi",
+      "title": "Difference modeling for design space exploration and comparison of three-dimensional structural simulation results",
+      "abstract": "Uses difference modeling to compare structural designs and explore three-dimensional design spaces.",
+      "url": "https://doi.org/10.1177/1473871619862791",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2019,
+      "authors": [
+        "Thelin, C.",
+        "Bunnell, S.",
+        "Salmon, J.",
+        "Gorrell, S."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "establishing-baseline-performance-for-off-the-shelf-nitrile-seals-for-the-india-",
+      "title": "Establishing Baseline Performance for Off-the-Shelf Nitrile Seals for the India Mark II Hand Pump System",
+      "abstract": "Establishes baseline performance of off-the-shelf nitrile seals for India Mark II hand pumps.",
+      "url": "https://doi.org/10.1115/detc2019-98439",
+      "badge": "conference",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2019,
+      "authors": [
+        "Ottosson, H. J.",
+        "Naylor, T. A.",
+        "Johnson, O. K.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "quantifying-the-effects-of-various-factors-on-the-utility-of-design-ethnography-",
+      "title": "Quantifying the effects of various factors on the utility of design ethnography in the developing world",
+      "abstract": "Quantifies how design ethnography utility changes across factors in developing-world product work.",
+      "url": "https://doi.org/10.1007/s00163-018-00304-2",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2019,
+      "authors": [
+        "Wood, A. E.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "the-technology-tactics-tec-tac-plot-explicit-representation-of-user-actions-in-t",
+      "title": "The Technology/Tactics (TEC/TAC) Plot: Explicit Representation of User Actions in the Product Design Space",
+      "abstract": "Introduces the TEC/TAC plot to explicitly represent user tactics alongside technology in the design space.",
+      "url": "https://doi.org/10.1115/detc2019-98400",
+      "badge": "conference",
+      "categories": [
+        "Other"
+      ],
+      "year": 2019,
+      "authors": [
+        "Stapleton, T.",
+        "Owens, T.",
+        "Mattson, C.",
+        "Sorensen, C.",
+        "Anderson, M."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "using-a-product-s-sustainability-space-as-a-design-exploration-tool",
+      "title": "Using a Product’s Sustainability Space as a Design Exploration Tool",
+      "abstract": "Uses a product’s sustainability space as a practical design exploration and tradeoff tool.",
+      "url": "https://doi.org/10.1017/dsj.2018.6",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2019,
       "authors": [
         "Mattson, C. A.",
-        "McKinnon, S.",
-        "Broadbent, J.",
-        "Cook-Wright, J.",
-        "Detiege, I.",
-        "Hardy, J.",
-        "Little, A.",
-        "Geilman, T."
+        "Pack, A. T.",
+        "Lofthouse, V.",
+        "Bhamra, T."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-cad-assembly-simplification-approach-with-ray-casting",
+      "title": "A CAD Assembly Simplification Approach with Ray Casting",
+      "abstract": "Simplifies CAD assemblies using ray casting to support faster design review and analysis.",
+      "url": "https://doi.org/10.14733/cadconfp.2018.407-411",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2018,
+      "authors": [
+        "Wright, L.",
+        "Forsgren, B.",
+        "Haskel, M.",
+        "Owens, T.",
+        "Bowman, E.",
+        "Salmon, J."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-neutral-xml-design-framework-for-generating-parametric-parts-in-multiple-cad-s",
+      "title": "A Neutral XML Design Framework For Generating Parametric Parts In Multiple CAD Systems",
+      "abstract": "Proposes a neutral XML framework for generating parametric parts across multiple CAD systems.",
+      "url": "https://doi.org/10.14733/cadconfp.2018.412-416",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2018,
+      "authors": [
+        "Sadler, J.",
+        "Day, R.",
+        "Bronson, P.",
+        "Tovar, J.",
+        "Salmon, J."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-bi-directional-interface-for-improved-interaction-with-engineering-models-in-v",
+      "title": "A bi-directional interface for improved interaction with engineering models in virtual reality design reviews",
+      "abstract": "Introduces a bi-directional interface for interacting with engineering models during VR design reviews.",
+      "url": "https://doi.org/10.1007/s12008-017-0413-0",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2018,
+      "authors": [
+        "Freeman, I.",
+        "Salmon, J.",
+        "Coburn, J."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-comparative-analysis-of-computer-aided-design-team-performance-with-collaborat",
+      "title": "A comparative analysis of computer-aided design team performance with collaboration software",
+      "abstract": "Compares CAD team performance when using collaboration software versus traditional workflows.",
+      "url": "https://doi.org/10.1080/16864360.2017.1419649",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2018,
+      "authors": [
+        "Eves, K.",
+        "Salmon, J.",
+        "Olsen, J.",
+        "Fagergren, F."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "effectiveness-of-an-immersive-virtual-environment-for-collaboration-with-gesture",
+      "title": "Effectiveness of an Immersive Virtual Environment for Collaboration With Gesture Support Using Low-Cost Hardware",
+      "abstract": "Tests immersive VR collaboration with gesture support using low-cost hardware for design work.",
+      "url": "https://doi.org/10.1115/1.4039006",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2018,
+      "authors": [
+        "Coburn, J. Q.",
+        "Salmon, J. L.",
+        "Freeman, I."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "hybrid-state-transactional-database-for-product-lifecycle-management-features-in",
+      "title": "Hybrid state transactional database for product lifecycle management features in a multi-engineer synchronous heterogeneous CAD environment",
+      "abstract": "Presents a hybrid-state transactional database enabling PLM features in multi-engineer synchronous CAD.",
+      "url": "https://doi.org/10.1080/16864360.2017.1353736",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2018,
+      "authors": [
+        "Shumway, D.",
+        "Sadler, J.",
+        "Salmon, J. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "incorporating-global-and-local-customer-needs-into-early-stages-of-improved-cook",
+      "title": "Incorporating global and local customer needs into early stages of improved cookstove design",
+      "abstract": "Incorporates global and local customer needs into early stages of improved cookstove design.",
+      "url": "https://doi.org/10.1504/ijpd.2018.093428",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2018,
+      "authors": [
+        "Thacker, K. S.",
+        "Barger, K. M.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "over-design-versus-redesign-as-a-response-to-future-requirements",
+      "title": "Over-Design Versus Redesign As a Response to Future Requirements",
+      "abstract": "Compares over-design versus redesign as strategies for responding to uncertain future requirements.",
+      "url": "https://doi.org/10.1115/detc2018-86156",
+      "badge": "conference",
+      "categories": [
+        "Other"
+      ],
+      "year": 2018,
+      "authors": [
+        "Allen, J. D.",
+        "Stevenson, P. D.",
+        "Mattson, C. A.",
+        "Hatch, N. W."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "the-social-impacts-of-products-a-review",
+      "title": "The social impacts of products: a review",
+      "abstract": "Reviews literature on how engineered products create social impacts across communities and stakeholders.",
+      "url": "https://doi.org/10.1080/14615517.2018.1445176",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2018,
+      "authors": [
+        "Rainock, M.",
+        "Everett, D.",
+        "Pack, A.",
+        "Dahlin, E. C.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "toward-a-universal-social-impact-metric-for-engineered-products-that-alleviate-p",
+      "title": "Toward a Universal Social Impact Metric for Engineered Products That Alleviate Poverty",
+      "abstract": "Proposes progress toward a universal social impact metric for poverty-alleviating engineered products.",
+      "url": "https://doi.org/10.1115/1.4038925",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2018,
+      "authors": [
+        "Stevenson, P. D.",
+        "Mattson, C. A.",
+        "Bryden, K. M.",
+        "MacCarty, N. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-data-analytics-approach-to-evaluation-of-competition-in-the-2012-summer-olymp",
+      "title": "A Data Analytics Approach to Evaluation of Competition in the 2012 Summer Olympics",
+      "abstract": "Introduces a data metric that measures competitive gaps across selected 2012 Summer Olympic events.",
+      "url": "https://www.airitilibrary.com/Article/Detail/16838602-201707-201711160005-201711160005-373-390",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2017,
+      "authors": [
+        "Salmon, J. L.",
+        "Harrison, W. K."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-multi-user-computer-aided-design-competition-experimental-findings-and-analysi",
+      "title": "A Multi-User Computer-Aided Design Competition: Experimental Findings and Analysis of Team-Member Dynamics",
+      "abstract": "A competition for teams of three students using a prototype multi-user computer-aided design (MUCAD) tool was held to investigate various.",
+      "url": "https://doi.org/10.1115/1.4035674",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2017,
+      "authors": [
+        "Stone, B.",
+        "Salmon, J.",
+        "Eves, K.",
+        "Killian, M.",
+        "Wright, L.",
+        "Oldroyd, J.",
+        "Gorrell, S.",
+        "Richey, M. C."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-review-of-the-capabilities-of-current-low-cost-virtual-reality-technology-and-",
+      "title": "A Review of the Capabilities of Current Low-Cost Virtual Reality Technology and Its Potential to Enhance the Design Process",
+      "abstract": "In the past few years, there have been some significant advances in consumer virtual reality (VR) devices.",
+      "url": "https://doi.org/10.1115/1.4036921",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2017,
+      "authors": [
+        "Coburn, J. Q.",
+        "Freeman, I.",
+        "Salmon, J. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-simple-starting-point-for-designing-for-and-or-assessing-the-social-impact-of-",
+      "title": "A Simple Starting Point for Designing for and/or Assessing the Social Impact of Products",
+      "abstract": "Offers a simple starting point for designing for and assessing product social impact.",
+      "url": "https://doi.org/10.1115/detc2017-67586",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2017,
+      "authors": [
+        "Ottosson, H.",
+        "Hirschi, E.",
+        "Mattson, C. A.",
+        "Dahlin, E."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-systems-engineering-approach-to-harnessing-human-energy-in-public-places-a-fea",
+      "title": "A Systems Engineering Approach to Harnessing Human Energy in Public Places: A Feasibility Study",
+      "abstract": "This study analyzes the feasibility of placing modified exercise equipment in public places to enable human energy harnessing.",
+      "url": "https://doi.org/10.1115/1.4035904",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2017,
+      "authors": [
+        "Jafek, A.",
+        "Salmon, J. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "analysis-of-integrating-a-production-design-generator-with-a-business-decision-s",
+      "title": "Analysis of Integrating a Production Design Generator with a Business Decision Support System for System-Level Decision Making",
+      "abstract": "Decision support systems (DSSs) are used to enhance decision making speed and effectiveness.",
+      "url": "https://doi.org/10.3390/systems5010014",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2017,
+      "authors": [
+        "Seletos, T.",
+        "Salmon, J."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "associative-cad-references-in-the-neutral-parametric-canonical-form",
+      "title": "Associative CAD references in the neutral parametric canonical form",
+      "abstract": "Maintains associative CAD references within a neutral parametric canonical form across systems.",
+      "url": "https://doi.org/10.1080/16864360.2016.1257184",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2017,
+      "authors": [
+        "Staves, D. R.",
+        "Salmon, J. L.",
+        "Red, W. E."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "balancing-technical-and-user-objectives-in-the-redesign-of-a-peruvian-cookstove",
+      "title": "Balancing technical and user objectives in the redesign of a peruvian cookstove",
+      "abstract": "Balances technical performance and user objectives in redesigning a Peruvian cookstove.",
+      "url": "https://doi.org/10.1016/j.deveng.2016.05.001",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2017,
+      "authors": [
+        "Thacker, K. S.",
+        "Barger, K. M.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "design-for-excess-capability-to-handle-uncertain-product-requirements-in-a-devel",
+      "title": "Design for excess capability to handle uncertain product requirements in a developing world setting",
+      "abstract": "Designs excess capability into products so uncertain requirements in developing-world settings can be absorbed.",
+      "url": "https://doi.org/10.1007/s00163-017-0253-8",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2017,
+      "authors": [
+        "Allen, J. D.",
+        "Mattson, C. A.",
+        "Thacker, K. S.",
+        "Ferguson, S. M."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "experimenting-with-concepts-from-modular-product-design-and-multi-objective-opti",
+      "title": "Experimenting with concepts from modular product design and multi-objective optimization to benefit people living in poverty",
+      "abstract": "Applies modular product design and multi-objective optimization to products for people living in poverty.",
+      "url": "https://doi.org/10.1016/j.deveng.2016.12.002",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2017,
+      "authors": [
+        "Wasley, N. S.",
+        "Lewis, P. K.",
+        "Mattson, C. A.",
+        "Ottosson, H. J."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "exploration-and-evaluation-of-cad-modeling-in-virtual-reality",
+      "title": "Exploration and Evaluation of CAD Modeling in Virtual Reality",
+      "abstract": "Explores and evaluates CAD modeling workflows performed inside virtual reality environments.",
+      "url": "https://doi.org/10.14733/cadconfp.2017.357-361",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2017,
+      "authors": [
+        "Freeman, S.",
+        "Wright, L.",
+        "Salmon, J."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "improving-virtual-design-team-performance-through-use-of-a-collaborative-sketchi",
+      "title": "Improving Virtual Design Team Performance Through Use of a Collaborative Sketching Application",
+      "abstract": "Shows collaborative sketching tools can improve virtual design team performance and communication.",
+      "url": "https://doi.org/10.4018/ijec.2017100101",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2017,
+      "authors": [
+        "Stone, B.",
+        "Salmon, J.",
+        "Hepworth, A.",
+        "Gorrell, S.",
+        "Richey, M."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "towards-a-universal-social-impact-metric-for-engineered-products-that-alleviate-",
+      "title": "Towards a Universal Social Impact Metric for Engineered Products That Alleviate Poverty",
+      "abstract": "Proposes progress toward a universal social impact metric for poverty-alleviating engineered products.",
+      "url": "https://doi.org/10.1115/detc2017-67584",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2017,
+      "authors": [
+        "Stevenson, P. D.",
+        "Mattson, C. A.",
+        "Bryden, K. M.",
+        "MacCarty, N. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "village-drill-a-case-study-in-engineering-for-global-development-with-five-years",
+      "title": "Village Drill: A Case Study in Engineering for Global Development With Five Years of Data Post Market-Introduction",
+      "abstract": "Case study of the Village Drill with five years of post-market data on performance and development impact.",
+      "url": "https://doi.org/10.1115/1.4036304",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "authors": [
+        "Mattson, C. A.",
+        "Wood, A. E.",
+        "Renouard, J."
+      ],
+      "year": 2017
+    },
+    {
+      "kind": "research",
+      "id": "design-for-the-developing-world-common-pitfalls-and-how-to-avoid-them",
+      "title": "Design for the Developing World: Common Pitfalls and How to Avoid Them",
+      "abstract": "Engineers face many challenges when designing for the developing world, which are not typically encountered in other design.",
+      "url": "https://doi.org/10.1115/1.4032195",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2016,
+      "authors": [
+        "Wood, A. E.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "evaluation-of-system-evolvability-based-on-usable-excess",
+      "title": "Evaluation of System Evolvability Based on Usable Excess",
+      "abstract": "Evaluates system evolvability by measuring usable excess capability available for future change.",
+      "url": "https://doi.org/10.1115/1.4033989",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2016,
+      "authors": [
+        "Allen, J. D.",
+        "Mattson, C. A.",
+        "Ferguson, S. M."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "excess-identification-and-mapping-in-engineered-systems",
+      "title": "Excess Identification and Mapping in Engineered Systems",
+      "abstract": "Identifies and maps excess relationships in engineered systems to support evolvability and capability decisions.",
+      "url": "https://doi.org/10.1115/1.4033884",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "authors": [
+        "Cansler, E. Z.",
+        "White, S. B.",
+        "Ferguson, S. M.",
+        "Mattson, C. A."
+      ],
+      "year": 2016
+    },
+    {
+      "kind": "research",
+      "id": "methods-for-determining-the-optimal-number-of-simultaneous-contributors-for-mult",
+      "title": "Methods for Determining the Optimal Number of Simultaneous Contributors for Multi-user CAD Parts",
+      "abstract": "Determines the optimal number of simultaneous contributors for multi-user CAD parts.",
+      "url": "https://doi.org/10.14733/cadconfp.2016.189-193",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2016,
+      "authors": [
+        "Stone, B.",
+        "Salmon, J.",
+        "Hepworth, A.",
+        "Red, E.",
+        "Killian, M."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "optimization-of-excess-system-capability-for-increased-evolvability",
+      "title": "Optimization of excess system capability for increased evolvability",
+      "abstract": "Optimizes excess system capability to increase evolvability under changing future requirements.",
+      "url": "https://doi.org/10.1007/s00158-015-1378-x",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2016,
+      "authors": [
+        "Watson, J. D.",
+        "Allen, J. D.",
+        "Mattson, C. A.",
+        "Ferguson, S. M."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "hybrid-bishop-hill-model-combined-finite-element-analysis-for-elastic-yield-limi",
+      "title": "Hybrid Bishop-Hill model combined finite element analysis for elastic-yield limited design",
+      "abstract": "Combines a Hybrid Bishop-Hill model with finite element analysis for elastic-yield limited design.",
+      "url": "https://doi.org/10.1108/ec-06-2014-0130",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2015,
+      "authors": [
+        "Takahashi, R.",
+        "Fullwood, D. T.",
+        "Rampton, T. M.",
+        "Skousen, D. J.",
+        "Adams, B. L.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "modular-product-optimisation-to-alleviate-poverty-an-irrigation-pump-case-study",
+      "title": "Modular product optimisation to alleviate poverty: an irrigation pump case study",
+      "abstract": "Optimizes a modular irrigation pump design to improve affordability and usefulness for poverty alleviation.",
+      "url": "https://doi.org/10.1504/ijpd.2015.067277",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2015,
+      "authors": [
+        "Lewis, P. K.",
+        "Mattson, C. A.",
+        "Wood, C. D."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-model-for-quantifying-system-evolvability-based-on-excess-and-capacity",
+      "title": "A Model for Quantifying System Evolvability Based on Excess and Capacity",
+      "abstract": "An important factor in system longevity is service-phase evolvability, which is defined as the ability of a system.",
+      "url": "https://doi.org/10.1115/1.4026648",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2014,
+      "authors": [
+        "Tackett, M. W. P.",
+        "Mattson, C. A.",
+        "Ferguson, S. M."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "considering-dynamic-pareto-frontiers-in-decision-making",
+      "title": "Considering dynamic Pareto frontiers in decision making",
+      "abstract": "Shows how dynamic Pareto frontiers can guide decisions when system preferences and concepts change over time.",
+      "url": "https://doi.org/10.1007/s11081-013-9238-2",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2014,
+      "authors": [
+        "Lewis, P. K.",
+        "Tackett, M. W. P.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "l-dominance-an-approximate-domination-mechanism-for-adaptive-resolution-of-paret",
+      "title": "L-Dominance: An Approximate-Domination Mechanism for Adaptive Resolution of Pareto Frontiers",
+      "abstract": "Introduces L-dominance for adaptive resolution of Pareto frontiers in multiobjective design.",
+      "url": "https://doi.org/10.2514/6.2014-2179",
+      "badge": "conference",
+      "categories": [
+        "Other"
+      ],
+      "year": 2014,
+      "authors": [
+        "Hancock, B. J.",
+        "Nysetvold, T.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "nine-principles-for-design-for-the-developing-world-as-derived-from-the-engineer",
+      "title": "Nine Principles for Design for the Developing World as Derived From the Engineering Literature",
+      "abstract": "This paper reviews the findings of several engineering researchers and practitioners on the topic of design for the developing world.",
+      "url": "https://doi.org/10.1115/1.4027984",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2014,
+      "authors": [
+        "Mattson, C. A.",
+        "Wood, A. E."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "using-topology-optimization-to-numerically-improve-barriers-to-reverse-engineeri",
+      "title": "Using Topology Optimization to Numerically Improve Barriers to Reverse Engineering",
+      "abstract": "Here explored is a method by which designers can use the tool of topology optimization to numerically improve.",
+      "url": "https://doi.org/10.1115/1.4025962",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2014,
+      "authors": [
+        "LeBaron, D. D.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "an-optimization-based-method-for-designing-modular-systems-that-traverse-dynamic",
+      "title": "An optimization-based method for designing modular systems that traverse dynamic s-Pareto frontiers",
+      "abstract": "Designs modular systems that traverse dynamic s-Pareto frontiers using multiobjective optimization.",
+      "url": "https://doi.org/10.1007/s00158-013-0924-7",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2013,
+      "authors": [
+        "Lewis, P. K.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "characterizing-the-effects-of-learning-when-reverse-engineering-multiple-samples",
+      "title": "Characterizing the Effects of Learning When Reverse Engineering Multiple Samples of the Same Product",
+      "abstract": "Characterizes learning effects when reverse engineering multiple samples of the same product.",
+      "url": "https://doi.org/10.1115/1.4007918",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2013,
+      "authors": [
+        "Curtis, S. K.",
+        "Harston, S. P.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "divergent-exploration-in-design-with-a-dynamic-multiobjective-optimization-formu",
+      "title": "Divergent exploration in design with a dynamic multiobjective optimization formulation",
+      "abstract": "Enables divergent design exploration using a dynamic multiobjective optimization formulation.",
+      "url": "https://doi.org/10.1007/s00158-012-0855-8",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2013,
+      "authors": [
+        "Curtis, S. K.",
+        "Mattson, C. A.",
+        "Hancock, B. J.",
+        "Lewis, P. K."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "the-smart-normal-constraint-method-for-directly-generating-a-smart-pareto-set",
+      "title": "The Smart Normal Constraint Method for Directly Generating a Smart Pareto Set",
+      "abstract": "Presents the smart normal constraint method to directly generate compact smart Pareto sets.",
+      "url": "https://doi.org/10.2514/6.2013-1748",
+      "badge": "conference",
+      "categories": [
+        "Other"
+      ],
+      "year": 2013,
+      "authors": [
+        "Hancock, B. J.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "usage-scenarios-for-design-space-exploration-with-a-dynamic-multiobjective-optim",
+      "title": "Usage scenarios for design space exploration with a dynamic multiobjective optimization formulation",
+      "abstract": "Defines usage scenarios for design space exploration with dynamic multiobjective optimization formulations.",
+      "url": "https://doi.org/10.1007/s00163-013-0158-0",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2013,
+      "authors": [
+        "Curtis, S. K.",
+        "Hancock, B. J.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-differentially-driven-flapping-wing-mechanism-for-force-analysis-and-trajector",
+      "title": "A Differentially Driven Flapping Wing Mechanism for Force Analysis and Trajectory Optimization",
+      "abstract": "Flapping flight has the potential to revolutionize micro air vehicles (MAVs) due to increased aerodynamic performance, improved maneuverability.",
+      "url": "https://doi.org/10.1260/1756-8293.4.1.31",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2012,
+      "authors": [
+        "George, R. B.",
+        "Colton, M. B.",
+        "Mattson, C. A.",
+        "Thomson, S. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-method-for-developing-systems-that-traverse-the-pareto-frontiers-of-multiple-s",
+      "title": "A method for developing systems that traverse the Pareto frontiers of multiple system concepts through modularity",
+      "abstract": "Develops systems that traverse Pareto frontiers across multiple concepts as needs change over time.",
+      "url": "https://doi.org/10.1007/s00158-011-0735-7",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "authors": [
+        "Lewis, P. K.",
+        "Mattson, C. A."
+      ],
+      "year": 2012
+    },
+    {
+      "kind": "research",
+      "id": "design-space-exploration-for-quantifying-a-system-model-s-feasible-domain",
+      "title": "Design Space Exploration for Quantifying a System Model’s Feasible Domain",
+      "abstract": "Quantifies a system model's feasible domain through design space exploration to improve modeling reliability.",
+      "url": "https://doi.org/10.1115/1.4005861",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "authors": [
+        "Larson, B. J.",
+        "Mattson, C. A."
+      ],
+      "year": 2012
+    },
+    {
+      "kind": "research",
+      "id": "efficient-propagation-of-error-through-system-models-for-functions-common-in-eng",
+      "title": "Efficient Propagation of Error Through System Models for Functions Common in Engineering",
+      "abstract": "Efficiently propagates error through system models for mathematical functions common in engineering.",
+      "url": "https://doi.org/10.1115/1.4005444",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2012,
+      "authors": [
+        "Anderson, T. V.",
+        "Mattson, C. A.",
+        "Larson, B. J.",
+        "Fullwood, D. T."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "hybrid-bishop-hill-model-for-elastic-yield-limited-design-with-non-orthorhombic-",
+      "title": "Hybrid Bishop-Hill Model for Elastic-Yield Limited Design With Non-orthorhombic Polycrystalline Metals",
+      "abstract": "Applies a Hybrid Bishop-Hill model to elastic-yield limited design of non-orthorhombic polycrystalline metals.",
+      "url": "https://doi.org/10.1115/1.4004829",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2012,
+      "authors": [
+        "Takahashi, R.",
+        "Prasai, D.",
+        "Adams, B. L.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "propagating-skewness-and-kurtosis-through-engineering-models-for-low-cost-meanin",
+      "title": "Propagating Skewness and Kurtosis Through Engineering Models for Low-Cost, Meaningful, Nondeterministic Design",
+      "abstract": "Propagates skewness and kurtosis through engineering models for low-cost nondeterministic design.",
+      "url": "https://doi.org/10.1115/1.4007389",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2012,
+      "authors": [
+        "Anderson, T. V.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-design-optimization-strategy-for-creating-devices-that-traverse-the-pareto-fro",
+      "title": "A design optimization strategy for creating devices that traverse the Pareto frontier over time",
+      "abstract": "Creates devices that traverse the Pareto frontier over time as requirements and preferences evolve.",
+      "url": "https://doi.org/10.1007/s00158-010-0555-1",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2011,
+      "authors": [
+        "Lewis, P. K.",
+        "Murray, V. R.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "the-fundamentals-of-barriers-to-reverse-engineering-and-their-implementation-int",
+      "title": "The fundamentals of barriers to reverse engineering and their implementation into mechanical components",
+      "abstract": "Defines fundamentals of reverse-engineering barriers and how to implement them in mechanical components.",
+      "url": "https://doi.org/10.1007/s00163-011-0109-6",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2011,
+      "authors": [
+        "Curtis, S. K.",
+        "Harston, S. P.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "a-computationally-assisted-methodology-for-preference-guided-conceptual-design",
+      "title": "A Computationally-assisted Methodology for Preference-guided Conceptual Design",
+      "abstract": "Assists designers in preference-guided conceptual design using computational exploration of concept spaces.",
+      "url": "https://doi.org/10.2514/6.2010-9175",
+      "badge": "conference",
+      "categories": [
+        "Other"
+      ],
+      "year": 2010,
+      "authors": [
+        "Barnum, G.",
+        "Mattson, C."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "capitalizing-on-heterogeneity-and-anisotropy-to-design-desirable-hardware-that-i",
+      "title": "Capitalizing on Heterogeneity and Anisotropy to Design Desirable Hardware That is Difficult to Reverse Engineer",
+      "abstract": "Uses material heterogeneity and anisotropy to design hardware that is difficult to reverse engineer.",
+      "url": "https://doi.org/10.1115/1.4001874",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2010,
+      "authors": [
+        "Harston, S. P.",
+        "Mattson, C. A.",
+        "Adams, B. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "metrics-for-evaluating-the-barrier-and-time-to-reverse-engineer-a-product",
+      "title": "Metrics for Evaluating the Barrier and Time to Reverse Engineer a Product",
+      "abstract": "Defines metrics for evaluating both the barrier and time required to reverse engineer a product.",
+      "url": "https://doi.org/10.1115/1.4001347",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2010,
+      "authors": [
+        "Harston, S. P.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "optimization-of-near-constant-force-springs-subject-to-mating-uncertainty",
+      "title": "Optimization of near-constant force springs subject to mating uncertainty",
+      "abstract": "Optimizes near-constant-force springs while accounting for uncertainty in mating conditions.",
+      "url": "https://doi.org/10.1007/s00158-009-0410-4",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2010,
+      "authors": [
+        "Meaders, J. C.",
+        "Mattson, C. A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "case-studies-in-concept-exploration-and-selection-with-s-pareto-frontiers",
+      "title": "Case studies in concept exploration and selection with s-Pareto frontiers",
+      "abstract": "Presents case studies using s-Pareto frontiers for concept exploration and selection.",
+      "url": "https://doi.org/10.1504/ijpd.2009.026173",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2009,
+      "authors": [
+        "Mattson, C.",
+        "Mullur, A.",
+        "Messac, A."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "configuration-selection-modeling-and-preliminary-testing-in-support-of-constant-",
+      "title": "Configuration Selection, Modeling, and Preliminary Testing in Support of Constant Force Electrical Connectors",
+      "abstract": "Selects, models, and preliminarily tests configurations for constant-force electrical connectors.",
+      "url": "https://doi.org/10.1115/1.2721080",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ],
+      "year": 2007,
+      "authors": [
+        "Weight, B. L.",
+        "Mattson, C. A.",
+        "Magleby, S. P.",
+        "Howell, L. L."
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "challenges-and-opportunities-in-global-health",
+      "title": "Challenges and Opportunities in Global Health",
+      "abstract": "Outlines key challenges and opportunities for engineering contributions in global health contexts.",
+      "url": "/resources/pasematrix",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
       ]
     },
     {
@@ -125,58 +1896,7 @@
       "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/0880d561-0db6-4f87-833a-d1e87e38530c/Screenshot+2026-08-04+113344.png?content-type=image%2Fpng",
       "badge": "conference",
       "categories": [
-        "Social impact modeling"
-      ]
-    },
-    {
-      "kind": "research",
-      "id": "challenges-and-opportunities-in-global-health",
-      "title": "Challenges and Opportunities in Global Health",
-      "abstract": "Check out this really cool paper",
-      "url": "/resources/pasematrix",
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng",
-      "badge": "journal",
-      "categories": [
-        "Engineering For Global Health"
-      ]
-    },
-    {
-      "kind": "research",
-      "id": "random-prompts-method",
-      "title": "The Random Prompts Method: A Novel Ideation Method for Improving Tactics Ideation",
-      "abstract": "Introduces and validates the Random Prompts ideation method, showing tactics-focused instruction improves idea novelty and completeness.",
-      "url": "/random-prompts-method",
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng",
-      "badge": "journal",
-      "categories": [
         "Other"
-      ],
-      "year": 2026,
-      "authors": [
-        "Ashworth, T. J.",
-        "Sorensen, C. D.",
-        "Anderson, M. L.",
-        "Mattson, C. A."
-      ]
-    },
-    {
-      "kind": "research",
-      "id": "axiom-based-aggregation-functions-for-ideation-metrics",
-      "title": "Axiom-based aggregation functions for calculating variety, novelty, quality and quantity of ideation results",
-      "abstract": "Proposes axioms and matching functions for principled aggregation of quality, quantity, novelty, and variety scores.",
-      "url": "/axiom-based-aggregation-functions-for-ideation-metrics",
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng",
-      "badge": "journal",
-      "categories": [
-        "Other"
-      ],
-      "year": 2026,
-      "authors": [
-        "Sorensen, C. D.",
-        "Ashworth, T. J.",
-        "Stapleton, T.",
-        "Mattson, C. A.",
-        "Anderson, M. L."
       ]
     },
     {
