@@ -1,0 +1,51 @@
+name: Validate DesX Catalog
+
+on:
+  push:
+    paths:
+      - "catalog/**"
+      - ".github/workflows/validate-catalog.yml"
+  pull_request:
+    paths:
+      - "catalog/**"
+      - ".github/workflows/validate-catalog.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install ajv
+        run: npm install --no-save ajv@8 ajv-formats@3
+
+      - name: Validate desx-catalog.json against schema
+        run: |
+          node <<'EOF'
+          const fs = require('fs');
+          const Ajv = require('ajv');
+          const addFormats = require('ajv-formats');
+          const ajv = new Ajv({ allErrors: true, strict: false });
+          addFormats(ajv);
+          const schema = JSON.parse(fs.readFileSync('catalog/schema.json', 'utf8'));
+          const data = JSON.parse(fs.readFileSync('catalog/desx-catalog.json', 'utf8'));
+          const validate = ajv.compile(schema);
+          const ok = validate(data);
+          if (!ok) {
+            console.error(validate.errors);
+            process.exit(1);
+          }
+          const ids = new Set();
+          for (const item of data.items) {
+            if (ids.has(item.id)) {
+              console.error('Duplicate id:', item.id);
+              process.exit(1);
+            }
+            ids.add(item.id);
+          }
+          console.log('Catalog OK:', data.items.length, 'items');
+          EOF

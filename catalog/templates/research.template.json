@@ -1,0 +1,18 @@
+{
+  "kind": "research",
+  "id": "your-paper-slug",
+  "title": "Full paper title here",
+  "abstract": "One or two sentences summarizing the core contribution.",
+  "url": "/your-landing-page-slug",
+  "image": "https://images.squarespace-cdn.com/content/...",
+  "badge": "journal",
+  "categories": [
+    "Featured",
+    "Social impact modeling"
+  ],
+  "year": 2026,
+  "authors": [
+    "First Last",
+    "First Last"
+  ]
+}

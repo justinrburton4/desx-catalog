@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DesX Catalog Preview — Tools</title>
+  <link rel="stylesheet" href="../css/desx-catalog.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 32px 4vw 64px;
+      background: #fafafa;
+      color: #111;
+    }
+    h1 { font-family: system-ui, sans-serif; margin: 0 0 8px; }
+    .hint { font-family: system-ui, sans-serif; color: #64748b; margin: 0 0 28px; }
+  </style>
+</head>
+<body>
+  <h1>Tools catalog preview</h1>
+  <p class="hint">Serve the repo root (e.g. <code>npx serve .</code>) so fetch can load the JSON.</p>
+  <div
+    id="desx-catalog"
+    data-kind="tool"
+    data-catalog-url="../catalog/desx-catalog.json"
+  ></div>
+  <script src="../js/desx-catalog.js" defer></script>
+</body>
+</html>

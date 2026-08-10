@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "categoryOrder": [
+    "Featured",
+    "Social impact modeling",
+    "Systems & Product Architecture",
+    "Engineering For Global Health",
+    "Other",
+    "Decision support",
+    "Ideation",
+    "Simulation"
+  ],
+  "items": [
+    {
+      "kind": "research",
+      "id": "social-impact-evaluation-analysis",
+      "title": "Social impact evaluation analysis: a systematic qualitative method for assessing engineered products",
+      "abstract": "This paper introduces Social Impact Effects Analysis, extending standard failure analysis to systematically evaluate products' broader societal impacts during early design stages.",
+      "url": "/social-impact-evaluation-analysis",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/8f983333-5cbf-4c83-b695-9ca54e6d8da1/design-science.jpg?content-type=image%2Fjpeg",
+      "badge": "journal",
+      "categories": [
+        "Featured",
+        "Social impact modeling"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "optimization-of-3d-printing-en-route",
+      "title": "Optimization of 3D Printing While Traveling En Route to Extend Range of Unmanned Aircraft Systems for Multilocation Mission Scenarios",
+      "abstract": "Optimizing en route 3D printing significantly reduces host vehicle travel distance and mission time for multi-location drone operations.",
+      "url": "/optimization-of-3d-printing-en-route",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/b1191010-080d-4080-8ffc-f59371fa70c8/optimizing+3d+printing.png?content-type=image%2Fpng",
+      "badge": "journal",
+      "categories": [
+        "Featured",
+        "Systems & Product Architecture"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "fifty-five-social-impact-questions",
+      "title": "Fifty-Five Prompt Questions for Identifying Social Impacts of Engineered Products",
+      "abstract": "55 guided prompts to aid design teams evaluate social impacts evenly across eleven impact categories",
+      "url": "/fifty-five-social-impact-questions",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1690310338524-9X2Q8ZA8VBK8V44VON0H/CAM03511.jpg",
+      "badge": "journal",
+      "categories": [
+        "Featured",
+        "Social impact modeling"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "pase-case-study-validation",
+      "title": "Case Study Validation of Product Architecture Strategy and Effect Methodology",
+      "abstract": "Connects real world product architecture design decisions to the potential impacts of those decisions",
+      "url": "/pase-case-study-validation",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/2e4eeda3-7ed3-42c7-849c-215c830d125d/paseHeader.png?content-type=image%2Fpng",
+      "badge": "conference",
+      "categories": [
+        "Featured",
+        "Systems & Product Architecture"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "graph-based-social-impact-diffusion-modeling",
+      "title": "The Challenges and Opportunities of Graph Based Social Impact Diffusion Modeling for Socio-Technical Systems",
+      "abstract": "Critically evaluates a graph-based social-impact diffusion theory for socio-technical systems, identifying key challenges and opportunities.",
+      "url": "/graph-based-social-impact-diffusion-modeling",
+      "image": "https://yonghoonlee.com/wp-content/uploads/2024/08/idetc-cover.jpg",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "predicting-human-behavior",
+      "title": "Is it possible to predict human behavior and use those predictions in engineering design?",
+      "abstract": "This paper describes various methods of predicting human behavior and shows connections between those methods and the engineering design process.",
+      "url": "/predicting-human-behavior",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/0880d561-0db6-4f87-833a-d1e87e38530c/Screenshot+2026-08-04+113344.png?content-type=image%2Fpng",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "challenges-and-opportunities-in-global-health",
+      "title": "Challenges and Opportunities in Global Health",
+      "abstract": "Check out this really cool paper",
+      "url": "/resources/pasematrix",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng",
+      "badge": "journal",
+      "categories": [
+        "Engineering For Global Health"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "random-prompts-method",
+      "title": "The Random Prompts Method: A Novel Ideation Method for Improving Tactics Ideation",
+      "abstract": "Introduces and validates the Random Prompts ideation method, showing tactics-focused instruction improves idea novelty and completeness.",
+      "url": "/random-prompts-method",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "axiom-based-aggregation-functions-for-ideation-metrics",
+      "title": "Axiom-based aggregation functions for calculating variety, novelty, quality and quantity of ideation results",
+      "abstract": "Proposes axioms and matching functions for principled aggregation of quality, quantity, novelty, and variety scores.",
+      "url": "/axiom-based-aggregation-functions-for-ideation-metrics",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng",
+      "badge": "journal",
+      "categories": [
+        "Other"
+      ]
+    },
+    {
+      "kind": "tool",
+      "id": "blended-wing-body-decision-support",
+      "title": "Blended Wing Body Decision Support Tool",
+      "blurb": "Short description of Tyson's work",
+      "url": "https://arc.aiaa.org/doi/10.2514/6.2026-1524",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/99bdf320-c2f3-485a-9abc-b889fabb9e55/nuttalltaylorkenneth_83897_9748788_tnutt02_sprint14deliverables_Page_3.jpg",
+      "categories": [
+        "Decision support"
+      ]
+    },
+    {
+      "kind": "tool",
+      "id": "developing-world-canvas",
+      "title": "Developing World Canvas",
+      "blurb": "Helps designers think more holistically about Designing for the developing world",
+      "url": "/developing-world-canvas",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/1597111866468-TZJ4XQZZVHXF2LZAMZEG/CanvasR2.png",
+      "categories": [
+        "Decision support"
+      ]
+    },
+    {
+      "kind": "tool",
+      "id": "pase-matrix",
+      "title": "PASE Matrix",
+      "blurb": "Find connections between Design Strategies and Effects of Design Decisions",
+      "url": "https://product-arc.groups.et.byu.net/pase_matrix",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/de9d6c89-d646-479b-9a08-9b9090d29a42/PASE_schematic_1.PNG",
+      "categories": [
+        "Decision support"
+      ]
+    },
+    {
+      "kind": "tool",
+      "id": "tech-tac",
+      "title": "Tech Tac",
+      "blurb": "Another ideation tool",
+      "url": "#",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/436c0be0-81b8-4ebf-a425-d516a4f47a88/js_desx.jpg",
+      "categories": [
+        "Ideation"
+      ]
+    },
+    {
+      "kind": "tool",
+      "id": "medical-device-decision-support",
+      "title": "Addison's Medical Device Decision Support tool",
+      "blurb": "Helps with medical device decision support",
+      "url": "#",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/a8824e17-bb50-40d3-88aa-1e42d6c6b669/image-asset.jpg",
+      "categories": [
+        "Decision support"
+      ]
+    },
+    {
+      "kind": "tool",
+      "id": "fifty-five-social-impact-questions-tool",
+      "title": "55 Social Impact Questions",
+      "blurb": "Helps designers think through all 11 social impact categories",
+      "url": "/fifty-five-social-impact-questions",
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1690310338524-9X2Q8ZA8VBK8V44VON0H/CAM03511.jpg",
+      "categories": [
+        "Decision support"
+      ]
+    },
+    {
+      "kind": "tool",
+      "id": "random-prompts-ideation-tool",
+      "title": "Random Prompts Ideation tool",
+      "blurb": "A tool focused on aiding designers ideate more broadly throughout the design space",
+      "url": "/random-prompts-method",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/0880d561-0db6-4f87-833a-d1e87e38530c/Screenshot+2026-08-04+113344.png",
+      "categories": [
+        "Ideation"
+      ]
+    },
+    {
+      "kind": "tool",
+      "id": "social-impact-transfer-simulation",
+      "title": "Social Impact Transfer Simulation",
+      "blurb": "Explore social impact transfer theory with this Amazon Farmer Simulation",
+      "url": "#",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/1786045848103-7QL7VE35484AP256MW5V/unsplash-image-1lfI7wkGWZ4.jpg",
+      "categories": [
+        "Simulation"
+      ]
+    }
+  ]
+}

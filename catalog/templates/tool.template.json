@@ -1,0 +1,11 @@
+{
+  "kind": "tool",
+  "id": "your-tool-slug",
+  "title": "Tool display name",
+  "blurb": "Short description of what the tool does.",
+  "url": "/your-tool-page-or-external-url",
+  "image": "https://images.squarespace-cdn.com/content/...",
+  "categories": [
+    "Decision support"
+  ]
+}

@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (CI installs ajv ephemerally)
+node_modules/
+package-lock.json
+
+# Local
+_build_catalog.py
