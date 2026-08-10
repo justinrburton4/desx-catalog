@@ -46,7 +46,6 @@
         "title",
         "abstract",
         "url",
-        "image",
         "badge",
         "categories"
       ],
@@ -114,7 +113,6 @@
         "title",
         "blurb",
         "url",
-        "image",
         "categories"
       ],
       "properties": {

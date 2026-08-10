@@ -1,3 +1,419 @@
+<!-- DesX Research Catalog: paste into a Squarespace Code Block. -->
+<style>
+/* DesX Catalog — Research rows + Tools grid (Squarespace-safe) */
+
+.desx-catalog-ui {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.desx-catalog-ui *,
+.desx-catalog-ui *::before,
+.desx-catalog-ui *::after {
+  box-sizing: border-box;
+}
+
+.desx-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 24px;
+  margin: 0 0 28px;
+}
+
+.desx-search-wrap {
+  flex: 1 1 240px;
+  min-width: 200px;
+  max-width: 420px;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.desx-search-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #0f172a;
+  background: #fff;
+}
+
+.desx-search-input:focus {
+  outline: 2px solid rgba(242, 102, 58, 0.45);
+  outline-offset: 1px;
+  border-color: #F2663A;
+}
+
+.desx-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-left: 4px;
+}
+
+.desx-filter-badge {
+  appearance: none;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #334155;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.desx-filter-badge:hover {
+  border-color: #F2663A;
+  color: #C44B23;
+}
+
+.desx-filter-badge.is-active {
+  background: #222;
+  border-color: #222;
+  color: #fff;
+}
+
+/* Sliding Detailed / Compact switch */
+.desx-layout-toggle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  margin-left: auto;
+  flex: 0 0 auto;
+  padding: 3px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: #f1f5f9;
+  min-width: 200px;
+}
+
+.desx-layout-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: calc(50% - 3px);
+  height: calc(100% - 6px);
+  border-radius: 999px;
+  background: #222;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  transition: transform 0.22s cubic-bezier(0.25, 1, 0.5, 1);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.desx-layout-toggle[data-layout="compact"] .desx-layout-thumb {
+  transform: translateX(100%);
+}
+
+.desx-layout-btn {
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  background: transparent;
+  color: #64748b;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.18s ease;
+}
+
+.desx-layout-btn.is-active {
+  color: #fff;
+}
+
+.desx-layout-btn:not(.is-active):hover {
+  color: #0f172a;
+}
+
+.desx-loading,
+.desx-empty {
+  padding: 24px 4px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* —— Research rows —— */
+.pub-row-wrapper {
+  margin: 36px 0;
+}
+
+.pub-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.pub-row-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111111;
+}
+
+.desx-arrows {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.desx-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #0f172a;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.desx-arrow:hover:not(:disabled) {
+  border-color: #F2663A;
+  color: #F2663A;
+}
+
+.desx-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.pub-scroll-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 12px 5px 28px 5px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.pub-scroll-container::-webkit-scrollbar {
+  height: 6px;
+  display: block;
+}
+
+.pub-scroll-container::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.pub-scroll-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.pub-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.pub-card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .pub-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+}
+
+.pub-card-header {
+  height: 140px;
+  background: #f1f5f9;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pub-card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pub-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1e293b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  z-index: 1;
+}
+
+.pub-badge-inline {
+  position: static;
+  display: inline-block;
+  margin-bottom: 8px;
+  box-shadow: none;
+}
+
+.badge-journal {
+  background-color: #fd7d31;
+}
+
+.badge-conference {
+  background-color: #60a5fa;
+}
+
+.badge-whitepaper {
+  background-color: #e2e8f0;
+}
+
+.pub-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.pub-abstract {
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.pub-meta {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.pub-meta-empty {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid transparent;
+  min-height: 1.2em;
+  color: transparent;
+}
+
+.pub-meta-sep {
+  color: #cbd5e1;
+}
+
+.pub-authors {
+  font-weight: 500;
+}
+
+.pub-year {
+  white-space: nowrap;
+}
+
+/* Compact layout */
+.pub-card-compact {
+  flex: 0 0 200px;
+  min-height: 0;
+}
+
+.pub-card-compact .pub-card-body {
+  padding: 12px;
+}
+
+.pub-card-compact .pub-title {
+  font-size: 0.88rem;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.pub-card-compact .pub-meta {
+  font-size: 0.72rem;
+  padding-top: 6px;
+}
+
+.pub-scroll-container.is-compact {
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .pub-card {
+    flex: 0 0 85vw;
+  }
+
+  .pub-card-compact {
+    flex: 0 0 70vw;
+  }
+
+  .desx-layout-toggle {
+    margin-left: 0;
+  }
+}
+</style>
+
+<div
+  id="desx-catalog"
+  data-kind="research"
+  data-catalog-url="https://raw.githubusercontent.com/justinrburton4/desx-catalog/main/catalog/desx-catalog.json?v=4"
+></div>
+
+<script>
 /**
  * DesX Catalog renderer for Squarespace 7.0 (Bedford)
  * Loads shared GitHub JSON and renders Research rows or Tools grid.
@@ -468,3 +884,5 @@
     boot();
   }
 })();
+
+</script>
