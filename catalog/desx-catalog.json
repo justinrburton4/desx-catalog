@@ -12,6 +12,16 @@
   ],
   "items": [
     {
+"kind": "tool",
+"id": "this-is-a-test-tool",
+"title": "This is a test tool",
+"blurb": "Just a test to see if the archive adding approach works.",
+"url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+"categories": [
+"Ideation"
+]
+},
+    {
 "kind": "research",
 "id": "this-is-a-test-paper",
 "title": "This is a test Paper",
