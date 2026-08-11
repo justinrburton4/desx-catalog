@@ -12,6 +12,22 @@
   ],
   "items": [
     {
+"kind": "research",
+"id": "this-is-a-test-paper",
+"title": "This is a test Paper",
+"abstract": "Just a test to see if the archive adding approach works.",
+"url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+"badge": "whitepaper",
+"categories": [
+"Other",
+"Featured"
+],
+"year": 2027,
+"authors": [
+"Burton, J."
+]
+},
+    {
       "kind": "research",
       "id": "axiom-based-aggregation-functions-for-ideation-metrics",
       "title": "Axiom-based aggregation functions for calculating variety, novelty, quality and quantity of ideation results",
