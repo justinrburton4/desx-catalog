@@ -12,6 +12,105 @@
   ],
   "items": [
     {
+  "kind": "research",
+  "id": "for-the-benefit-of-the-world-conference-desx-abstracts-2025",
+  "title": "For the Benefit of the World Conference — DesX Abstracts (2025)",
+  "abstract": "Collected DesX abstracts from the 2025 For the Benefit of the World Conference, sharing lab research summaries with the broader community.",
+  "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
+  "badge": "whitepaper",
+  "categories": [
+    "Other"
+  ],
+  "year": 2025
+},
+{
+  "kind": "tool",
+  "id": "for-the-benefit-of-the-world-conference-desx-abstracts-tool",
+  "title": "For the Benefit of the World Conference — DesX Abstracts (2025)",
+  "blurb": "Browse DesX research abstracts from the 2025 For the Benefit of the World Conference.",
+  "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
+  "categories": [
+    "White papers"
+  ]
+},
+{
+  "kind": "research",
+  "id": "definitions-of-fundamental-socio-technical-network-types",
+  "title": "Definitions of Fundamental Socio-Technical Network Types",
+  "abstract": "Defines fundamental socio-technical network types used in Engineering for Sustainable Development and social-impact modeling research.",
+  "url": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2",
+  "badge": "whitepaper",
+  "categories": [
+    "Social impact modeling"
+  ],
+  "year": 2025
+},
+{
+  "kind": "tool",
+  "id": "definitions-of-fundamental-socio-technical-network-types-tool",
+  "title": "Definitions of Fundamental Socio-Technical Network Types",
+  "blurb": "Reference definitions of socio-technical network types for sustainable development and social-impact research.",
+  "url": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2",
+  "categories": [
+    "White papers"
+  ]
+},
+{
+  "kind": "research",
+  "id": "definition-of-engineering-for-global-health",
+  "title": "Definition of Engineering for Global Health",
+  "abstract": "Defines Engineering for Global Health as using engineering design methods to address complex global health challenges in inequality- and resource-constrained settings.",
+  "url": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b",
+  "badge": "whitepaper",
+  "categories": [
+    "Engineering For Global Health"
+  ],
+  "year": 2025
+},
+{
+  "kind": "tool",
+  "id": "definition-of-engineering-for-global-health-tool",
+  "title": "Definition of Engineering for Global Health",
+  "blurb": "A shared definition of Engineering for Global Health for teams working on global health design challenges.",
+  "url": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b",
+  "categories": [
+    "White papers"
+  ]
+},
+{
+  "kind": "research",
+  "id": "global-health-glossary",
+  "title": "Global Health Glossary",
+  "abstract": "A glossary of global health terms used in Engineering for Global Health research and practice.",
+  "url": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66",
+  "badge": "whitepaper",
+  "categories": [
+    "Engineering For Global Health"
+  ],
+  "year": 2025
+},
+{
+  "kind": "tool",
+  "id": "global-health-glossary-tool",
+  "title": "Global Health Glossary",
+  "blurb": "Look up shared global health terminology for Engineering for Global Health projects.",
+  "url": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66",
+  "categories": [
+    "White papers"
+  ]
+},
+{
+  "kind": "tool",
+  "id": "world-cart-plans",
+  "title": "World Cart Plans",
+  "blurb": "Build plans for a low-cost plywood utility cart cut from one 4x8 sheet, with mortise-and-tenon joints and no glue.",
+  "url": "https://static1.squarespace.com/static/5c7ee75b92441b465f176f7f/t/5f3353cd2fc10f0db63c8766/1597199309867/Cart+Plans.pdf",
+  "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/1554394732851-HHNFGYJVSRFZXBF9IKMS/WorldCart2.jpg",
+  "categories": [
+    "Other"
+  ]
+},
+    {
 "kind": "tool",
 "id": "this-is-a-test-tool",
 "title": "This is a test tool",
