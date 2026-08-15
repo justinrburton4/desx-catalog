@@ -268,6 +268,8 @@ Talk to someone before adding a new tool category.
 
 `blurb` is one sentence. `url` is the Learn landing page path. `format` and `duration` are optional chips on the card.
 
+`hidden` is `false` for normal cards. Set `"hidden": true` to keep the item in the JSON but hide it on the site.
+
 ### Course rows
 
 - `"Featured"` — only if asked (e.g. guidebook start-here)
@@ -302,6 +304,7 @@ You need access to the [desx-catalog](https://github.com/justinrburton4/desx-cat
 - `kind` is `"research"`, `"tool"`, or `"course"`
 - `id` is unique and lowercase-with-hyphens
 - Research has `abstract`, `badge`, and `url`. Tool has `blurb` and `url`, and no `badge`. Course has `blurb`, `type`, and `url`
+- `hidden` is `false` unless you mean to hide the card (`true`)
 - `url` starts with `/` and the Squarespace page exists
 - Category names match the lists above, character for character
 - Straight quotes; comma after your block; no extra comma inside it

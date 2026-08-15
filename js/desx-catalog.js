@@ -109,6 +109,9 @@
         console.warn("[DesX Catalog] Duplicate id skipped:", item.id);
         return;
       }
+      if (item.hidden === true) {
+        return;
+      }
       seen[item.id] = true;
       out.push(item);
     });
@@ -449,51 +452,42 @@
     qsa(mount, ".pub-row-wrapper").forEach(bindRowArrows);
   }
 
-  function renderCourses(mount, catalog, allItems, query) {
-    var filtered = allItems.filter(function (item) {
-      return matchesQuery(item, query);
+  function courseTypeLabel(item) {
+    return COURSE_TYPE_LABELS[item.type] || item.type || "";
+  }
+
+  function sortCoursesForGrid(items) {
+    return items.slice().sort(function (a, b) {
+      var typeA = normalize(courseTypeLabel(a));
+      var typeB = normalize(courseTypeLabel(b));
+      if (typeA < typeB) return -1;
+      if (typeA > typeB) return 1;
+      var titleA = normalize(a.title);
+      var titleB = normalize(b.title);
+      if (titleA < titleB) return -1;
+      if (titleA > titleB) return 1;
+      return 0;
     });
+  }
+
+  function renderCourses(mount, catalog, allItems, query) {
+    var filtered = sortCoursesForGrid(
+      allItems.filter(function (item) {
+        return matchesQuery(item, query);
+      })
+    );
 
     if (!filtered.length) {
       mount.innerHTML = '<div class="desx-empty">No courses match your search.<\/div>';
       return;
     }
 
-    var cats = orderedCategories(catalog, filtered);
-    var html = cats
-      .map(function (cat) {
-        var cards = filtered.filter(function (item) {
-          return (item.categories || []).indexOf(cat) !== -1;
-        });
-        if (!cards.length) return "";
-        return (
-          '<div class="pub-row-wrapper course-section" data-category="' +
-          escapeHtml(cat) +
-          '">' +
-          '<div class="pub-row-header">' +
-          '<h2 class="pub-row-title course-section-title">' +
-          escapeHtml(cat) +
-          "<\/h2>" +
-          "<\/div>" +
-          '<div class="pub-scroll-shell">' +
-          '<div class="pub-scroll-container tools-grid course-grid">' +
-          cards.map(courseCardHtml).join("") +
-          "<\/div>" +
-          '<div class="desx-arrows">' +
-          '<button type="button" class="desx-arrow desx-arrow-prev is-hidden" aria-label="Scroll left">&#8249;<\/button>' +
-          '<button type="button" class="desx-arrow desx-arrow-next" aria-label="Scroll right">&#8250;<\/button>' +
-          "<\/div>" +
-          "<\/div>" +
-          "<\/div>"
-        );
-      })
-      .join("");
-
     mount.className =
       "desx-catalog-results desx-layout-detailed desx-kind-course";
     mount.innerHTML =
-      html || '<div class="desx-empty">No courses match your search.<\/div>';
-    qsa(mount, ".pub-row-wrapper").forEach(bindRowArrows);
+      '<div class="course-grid" role="list">' +
+      filtered.map(courseCardHtml).join("") +
+      "<\/div>";
   }
 
   function selectedBadges(root) {

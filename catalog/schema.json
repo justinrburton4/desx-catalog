@@ -104,6 +104,10 @@
             "type": "string",
             "minLength": 1
           }
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "If true, the card is omitted from catalog pages."
         }
       }
     },
@@ -150,6 +154,10 @@
             "type": "string",
             "minLength": 1
           }
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "If true, the card is omitted from catalog pages."
         }
       }
     },
@@ -217,6 +225,10 @@
           "type": "string",
           "minLength": 1,
           "description": "Optional duration label, e.g. 8 weeks"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "If true, the card is omitted from catalog pages."
         }
       }
     }

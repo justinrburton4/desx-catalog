@@ -570,18 +570,34 @@
   }
 }
 
-/* ——— Courses / Learn (shared card chrome, distinct accent) ——— */
+/* ——— Courses / Learn (flat grid by type) ——— */
 .desx-catalog-ui--course .desx-search-input:focus {
   border-color: #c44b23;
   box-shadow: 0 0 0 3px rgba(196, 75, 35, 0.15);
 }
 
-.course-section-title {
-  letter-spacing: 0.04em;
+.desx-kind-course .course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 8px 0 24px;
+  overflow: visible;
+  scroll-snap-type: none;
 }
 
-.course-card {
-  border-top: 3px solid #222;
+.desx-kind-course .course-card {
+  flex: none;
+  width: 100%;
+  max-width: none;
+  scroll-snap-align: none;
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .desx-kind-course .course-card {
+    flex: none;
+    width: 100%;
+  }
 }
 
 .course-card-media {

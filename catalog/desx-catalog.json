@@ -27,7 +27,8 @@
       "categories": [
         "Guidebooks"
       ],
-      "format": "Book"
+      "format": "Book",
+      "hidden": false
     },
     {
       "kind": "course",
@@ -40,7 +41,8 @@
         "Courses"
       ],
       "format": "Online course",
-      "duration": "Semester"
+      "duration": "Semester",
+      "hidden": true
     },
     {
       "kind": "course",
@@ -53,7 +55,8 @@
         "Tutorials"
       ],
       "format": "Self-paced",
-      "duration": "8 weeks"
+      "duration": "8 weeks",
+      "hidden": false
     },
     {
       "kind": "course",
@@ -66,7 +69,8 @@
         "Courses"
       ],
       "format": "Self-paced",
-      "duration": "5 weeks"
+      "duration": "5 weeks",
+      "hidden": false
     },
     {
       "kind": "course",
@@ -78,7 +82,8 @@
       "categories": [
         "Courses"
       ],
-      "format": "Self-guided"
+      "format": "Self-guided",
+      "hidden": false
     },
     {
       "kind": "course",
@@ -91,7 +96,8 @@
         "Workshops"
       ],
       "format": "Workshop kit",
-      "duration": "1 hour"
+      "duration": "1 hour",
+      "hidden": false
     },
     {
       "kind": "course",
@@ -103,7 +109,8 @@
       "categories": [
         "Workshops"
       ],
-      "format": "By request"
+      "format": "By request",
+      "hidden": false
     },
     {
       "kind": "research",
@@ -115,7 +122,8 @@
       "categories": [
         "Other"
       ],
-      "year": 2025
+      "year": 2025,
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -125,7 +133,8 @@
       "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
       "categories": [
         "White papers"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -137,7 +146,8 @@
       "categories": [
         "Social impact modeling"
       ],
-      "year": 2025
+      "year": 2025,
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -147,7 +157,8 @@
       "url": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2",
       "categories": [
         "White papers"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -159,7 +170,8 @@
       "categories": [
         "Engineering For Global Health"
       ],
-      "year": 2025
+      "year": 2025,
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -169,7 +181,8 @@
       "url": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b",
       "categories": [
         "White papers"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -181,7 +194,8 @@
       "categories": [
         "Engineering For Global Health"
       ],
-      "year": 2025
+      "year": 2025,
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -191,7 +205,8 @@
       "url": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66",
       "categories": [
         "White papers"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -202,7 +217,8 @@
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/1554394732851-HHNFGYJVSRFZXBF9IKMS/WorldCart2.jpg",
       "categories": [
         "Sustainable Products"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -222,7 +238,8 @@
         "Stapleton, T.",
         "Mattson, C. A.",
         "Anderson, M. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -239,7 +256,8 @@
         "Dickerson, T. J.",
         "Salmon, J. L.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -258,7 +276,8 @@
         "Sorensen, C. D.",
         "Anderson, M. L.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -277,7 +296,8 @@
         "Mattson, C. A.",
         "Anderson, M. L.",
         "Carr, R. W."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -297,7 +317,8 @@
         "Rice, S.",
         "Mattson, C. A.",
         "Anderson, M. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -315,7 +336,8 @@
         "Mattson, C. A.",
         "Anderson, M. L."
       ],
-      "year": 2025
+      "year": 2025,
+      "hidden": false
     },
     {
       "kind": "research",
@@ -332,7 +354,8 @@
         "Dickerson, T.",
         "Salmon, J. L.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -348,7 +371,8 @@
       "authors": [
         "McKinnon, S. A.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -365,7 +389,8 @@
         "Busse, F.",
         "Mattson, C.",
         "Spring, T."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -388,7 +413,8 @@
         "Hardy, J.",
         "Little, A.",
         "Geilman, T."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -407,7 +433,8 @@
         "Dickerson, T. J.",
         "Mattson, C. A.",
         "Neff, W. J."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -425,7 +452,8 @@
         "Mattson, C. A.",
         "Sorensen, C. D.",
         "Anderson, M. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -443,7 +471,8 @@
         "Dickerson, T. J.",
         "Salmon, J. L.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -465,7 +494,8 @@
         "Mabey, C. S.",
         "Dahlin, E.",
         "Salmon, J. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -484,7 +514,8 @@
         "Dickerson, T. J.",
         "Salmon, J. L.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -502,7 +533,8 @@
         "Mattson, C. A.",
         "Salmon, J. L.",
         "Hatch, N. W."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -523,7 +555,8 @@
         "Mattson, C. A.",
         "Sorensen, C. D.",
         "Anderson, M. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -544,7 +577,8 @@
         "Salmon, J. L.",
         "Dahlin, E. C.",
         "Geilman, T. B."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -576,7 +610,8 @@
         "Thomas, E.",
         "Mattson, C.",
         "Aranda, I."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -593,7 +628,8 @@
         "Mabey, C. S.",
         "Salmon, J. L.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -611,7 +647,8 @@
         "Stevenson, P. D.",
         "Mattson, C. A.",
         "Salmon, J. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -629,7 +666,8 @@
         "Mattson, C. A.",
         "Dahlin, E. C.",
         "Salmon, J. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -648,7 +686,8 @@
         "Jenkins, P.",
         "Dahlin, E.",
         "Okware, I. I."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -666,7 +705,8 @@
         "Peiffer, E. E.",
         "MacCarty, N.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -685,7 +725,8 @@
         "Mattson, C. A.",
         "Salmon, J. L.",
         "Weaver, J. M."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -702,7 +743,8 @@
         "Mabey, C. S.",
         "Mattson, C. A.",
         "Dahlin, E. C."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -722,7 +764,8 @@
         "Hall, J.",
         "Salmon, J. L."
       ],
-      "year": 2022
+      "year": 2022,
+      "hidden": false
     },
     {
       "kind": "research",
@@ -740,7 +783,8 @@
         "Mattson, C. A.",
         "Johnson, O. K.",
         "Irot, I."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -759,7 +803,8 @@
         "Mattson, C. A.",
         "Salmon, J. L.",
         "Hatch, N. W."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -779,7 +824,8 @@
         "Salmon, J. L.",
         "Hatch, N. W.",
         "Dahlin, E. C."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -797,7 +843,8 @@
         "Mattson, C. A.",
         "Salmon, J. L.",
         "Dahlin, E. C."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -814,7 +861,8 @@
         "Armstrong, A. G.",
         "Mattson, C. A.",
         "Lewis, R. S."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -832,7 +880,8 @@
         "Stevenson, P. D.",
         "Mattson, C. A.",
         "Salmon, J. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -849,7 +898,8 @@
         "SMITH, D.",
         "Mattson, C.",
         "Dahlin, E."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -867,7 +917,8 @@
         "Mattson, C. A.",
         "Johnson, O. K.",
         "Naylor, T. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -885,7 +936,8 @@
         "Wood, A. E.",
         "Mattson, C. A.",
         "Salmon, J. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -903,7 +955,8 @@
         "Fisher, M. J.",
         "Salmon, J. L.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -919,7 +972,8 @@
       "authors": [
         "Stringham, B.",
         "Mattson, C."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -936,7 +990,8 @@
         "Ottosson, H. J.",
         "Mattson, C. A.",
         "Dahlin, E. C."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -952,7 +1007,8 @@
       "authors": [
         "Nysetvold, J.",
         "Salmon, J."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -971,7 +1027,8 @@
         "Casbeer, D.",
         "Garcia, E.",
         "Moll, A. V."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -990,7 +1047,8 @@
         "Salmon, J.",
         "Thelin, C.",
         "Ruoti, C."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1007,7 +1065,8 @@
         "Ong, J.",
         "Richards, D.",
         "Salmon, J."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1023,7 +1082,8 @@
       "authors": [
         "Nysetvold, T. B.",
         "Salmon, J. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1041,7 +1101,8 @@
         "Bunnell, S.",
         "Salmon, J.",
         "Gorrell, S."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1059,7 +1120,8 @@
         "Naylor, T. A.",
         "Johnson, O. K.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1075,7 +1137,8 @@
       "authors": [
         "Wood, A. E.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1094,7 +1157,8 @@
         "Mattson, C.",
         "Sorensen, C.",
         "Anderson, M."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1112,7 +1176,8 @@
         "Pack, A. T.",
         "Lofthouse, V.",
         "Bhamra, T."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1132,7 +1197,8 @@
         "Owens, T.",
         "Bowman, E.",
         "Salmon, J."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1151,7 +1217,8 @@
         "Bronson, P.",
         "Tovar, J.",
         "Salmon, J."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1168,7 +1235,8 @@
         "Freeman, I.",
         "Salmon, J.",
         "Coburn, J."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1186,7 +1254,8 @@
         "Salmon, J.",
         "Olsen, J.",
         "Fagergren, F."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1203,7 +1272,8 @@
         "Coburn, J. Q.",
         "Salmon, J. L.",
         "Freeman, I."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1220,7 +1290,8 @@
         "Shumway, D.",
         "Sadler, J.",
         "Salmon, J. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1237,7 +1308,8 @@
         "Thacker, K. S.",
         "Barger, K. M.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1255,7 +1327,8 @@
         "Stevenson, P. D.",
         "Mattson, C. A.",
         "Hatch, N. W."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1274,7 +1347,8 @@
         "Pack, A.",
         "Dahlin, E. C.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1292,7 +1366,8 @@
         "Mattson, C. A.",
         "Bryden, K. M.",
         "MacCarty, N. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1308,7 +1383,8 @@
       "authors": [
         "Salmon, J. L.",
         "Harrison, W. K."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1330,7 +1406,8 @@
         "Oldroyd, J.",
         "Gorrell, S.",
         "Richey, M. C."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1347,7 +1424,8 @@
         "Coburn, J. Q.",
         "Freeman, I.",
         "Salmon, J. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1365,7 +1443,8 @@
         "Hirschi, E.",
         "Mattson, C. A.",
         "Dahlin, E."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1381,7 +1460,8 @@
       "authors": [
         "Jafek, A.",
         "Salmon, J. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1397,7 +1477,8 @@
       "authors": [
         "Seletos, T.",
         "Salmon, J."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1414,7 +1495,8 @@
         "Staves, D. R.",
         "Salmon, J. L.",
         "Red, W. E."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1431,7 +1513,8 @@
         "Thacker, K. S.",
         "Barger, K. M.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1449,7 +1532,8 @@
         "Mattson, C. A.",
         "Thacker, K. S.",
         "Ferguson, S. M."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1467,7 +1551,8 @@
         "Lewis, P. K.",
         "Mattson, C. A.",
         "Ottosson, H. J."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1484,7 +1569,8 @@
         "Freeman, S.",
         "Wright, L.",
         "Salmon, J."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1503,7 +1589,8 @@
         "Hepworth, A.",
         "Gorrell, S.",
         "Richey, M."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1521,7 +1608,8 @@
         "Mattson, C. A.",
         "Bryden, K. M.",
         "MacCarty, N. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1538,7 +1626,8 @@
         "Wood, A. E.",
         "Renouard, J."
       ],
-      "year": 2017
+      "year": 2017,
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1554,7 +1643,8 @@
       "authors": [
         "Wood, A. E.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1571,7 +1661,8 @@
         "Allen, J. D.",
         "Mattson, C. A.",
         "Ferguson, S. M."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1589,7 +1680,8 @@
         "Ferguson, S. M.",
         "Mattson, C. A."
       ],
-      "year": 2016
+      "year": 2016,
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1608,7 +1700,8 @@
         "Hepworth, A.",
         "Red, E.",
         "Killian, M."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1626,7 +1719,8 @@
         "Allen, J. D.",
         "Mattson, C. A.",
         "Ferguson, S. M."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1646,7 +1740,8 @@
         "Skousen, D. J.",
         "Adams, B. L.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1663,7 +1758,8 @@
         "Lewis, P. K.",
         "Mattson, C. A.",
         "Wood, C. D."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1680,7 +1776,8 @@
         "Tackett, M. W. P.",
         "Mattson, C. A.",
         "Ferguson, S. M."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1697,7 +1794,8 @@
         "Lewis, P. K.",
         "Tackett, M. W. P.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1714,7 +1812,8 @@
         "Hancock, B. J.",
         "Nysetvold, T.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1730,7 +1829,8 @@
       "authors": [
         "Mattson, C. A.",
         "Wood, A. E."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1746,7 +1846,8 @@
       "authors": [
         "LeBaron, D. D.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1762,7 +1863,8 @@
       "authors": [
         "Lewis, P. K.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1779,7 +1881,8 @@
         "Curtis, S. K.",
         "Harston, S. P.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1797,7 +1900,8 @@
         "Mattson, C. A.",
         "Hancock, B. J.",
         "Lewis, P. K."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1813,7 +1917,8 @@
       "authors": [
         "Hancock, B. J.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1830,7 +1935,8 @@
         "Curtis, S. K.",
         "Hancock, B. J.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1848,7 +1954,8 @@
         "Colton, M. B.",
         "Mattson, C. A.",
         "Thomson, S. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1864,7 +1971,8 @@
         "Lewis, P. K.",
         "Mattson, C. A."
       ],
-      "year": 2012
+      "year": 2012,
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1880,7 +1988,8 @@
         "Larson, B. J.",
         "Mattson, C. A."
       ],
-      "year": 2012
+      "year": 2012,
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1898,7 +2007,8 @@
         "Mattson, C. A.",
         "Larson, B. J.",
         "Fullwood, D. T."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1916,7 +2026,8 @@
         "Prasai, D.",
         "Adams, B. L.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1932,7 +2043,8 @@
       "authors": [
         "Anderson, T. V.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1949,7 +2061,8 @@
         "Lewis, P. K.",
         "Murray, V. R.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1966,7 +2079,8 @@
         "Curtis, S. K.",
         "Harston, S. P.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1982,7 +2096,8 @@
       "authors": [
         "Barnum, G.",
         "Mattson, C."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -1999,7 +2114,8 @@
         "Harston, S. P.",
         "Mattson, C. A.",
         "Adams, B. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -2015,7 +2131,8 @@
       "authors": [
         "Harston, S. P.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -2031,7 +2148,8 @@
       "authors": [
         "Meaders, J. C.",
         "Mattson, C. A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -2048,7 +2166,8 @@
         "Mattson, C.",
         "Mullur, A.",
         "Messac, A."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -2066,7 +2185,8 @@
         "Mattson, C. A.",
         "Magleby, S. P.",
         "Howell, L. L."
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -2078,7 +2198,8 @@
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "research",
@@ -2091,7 +2212,8 @@
       "categories": [
         "Social impact modeling",
         "Featured"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -2102,7 +2224,8 @@
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/99bdf320-c2f3-485a-9abc-b889fabb9e55/nuttalltaylorkenneth_83897_9748788_tnutt02_sprint14deliverables_Page_3.jpg",
       "categories": [
         "Decision support"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -2113,7 +2236,8 @@
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/1597111866468-TZJ4XQZZVHXF2LZAMZEG/CanvasR2.png",
       "categories": [
         "Decision support"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -2124,7 +2248,8 @@
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/de9d6c89-d646-479b-9a08-9b9090d29a42/PASE_schematic_1.PNG",
       "categories": [
         "Decision support"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -2135,7 +2260,8 @@
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/436c0be0-81b8-4ebf-a425-d516a4f47a88/js_desx.jpg",
       "categories": [
         "Ideation"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -2146,7 +2272,8 @@
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/a8824e17-bb50-40d3-88aa-1e42d6c6b669/image-asset.jpg",
       "categories": [
         "Decision support"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -2157,7 +2284,8 @@
       "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1690310338524-9X2Q8ZA8VBK8V44VON0H/CAM03511.jpg",
       "categories": [
         "Decision support"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -2168,7 +2296,8 @@
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/0880d561-0db6-4f87-833a-d1e87e38530c/Screenshot+2026-08-04+113344.png",
       "categories": [
         "Ideation"
-      ]
+      ],
+      "hidden": false
     },
     {
       "kind": "tool",
@@ -2179,7 +2308,8 @@
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/1786045848103-7QL7VE35484AP256MW5V/unsplash-image-1lfI7wkGWZ4.jpg",
       "categories": [
         "Simulation"
-      ]
+      ],
+      "hidden": false
     }
   ]
 }

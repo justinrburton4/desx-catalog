@@ -10,5 +10,6 @@
     "Courses"
   ],
   "format": "Self-paced",
-  "duration": "8 weeks"
+  "duration": "8 weeks",
+  "hidden": false
 }
