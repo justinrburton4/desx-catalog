@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "categoryOrder": [
     "Featured",
     "Social impact modeling",
@@ -8,108 +8,179 @@
     "Other",
     "Decision support",
     "Ideation",
-    "Simulation"
+    "Simulation",
+    "White papers",
+    "Sustainable Products",
+    "Courses",
+    "Workshops",
+    "Guidebooks",
+    "Tutorials"
   ],
   "items": [
     {
-  "kind": "research",
-  "id": "for-the-benefit-of-the-world-conference-desx-abstracts-2025",
-  "title": "For the Benefit of the World Conference — DesX Abstracts (2025)",
-  "abstract": "Collected DesX abstracts from the 2025 For the Benefit of the World Conference, sharing lab research summaries with the broader community.",
-  "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
-  "badge": "whitepaper",
-  "categories": [
-    "Other"
-  ],
-  "year": 2025
-},
-{
-  "kind": "tool",
-  "id": "for-the-benefit-of-the-world-conference-desx-abstracts-tool",
-  "title": "For the Benefit of the World Conference — DesX Abstracts (2025)",
-  "blurb": "Browse DesX research abstracts from the 2025 For the Benefit of the World Conference.",
-  "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
-  "categories": [
-    "White papers"
-  ]
-},
-{
-  "kind": "research",
-  "id": "definitions-of-fundamental-socio-technical-network-types",
-  "title": "Definitions of Fundamental Socio-Technical Network Types",
-  "abstract": "Defines fundamental socio-technical network types used in Engineering for Sustainable Development and social-impact modeling research.",
-  "url": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2",
-  "badge": "whitepaper",
-  "categories": [
-    "Social impact modeling"
-  ],
-  "year": 2025
-},
-{
-  "kind": "tool",
-  "id": "definitions-of-fundamental-socio-technical-network-types-tool",
-  "title": "Definitions of Fundamental Socio-Technical Network Types",
-  "blurb": "Reference definitions of socio-technical network types for sustainable development and social-impact research.",
-  "url": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2",
-  "categories": [
-    "White papers"
-  ]
-},
-{
-  "kind": "research",
-  "id": "definition-of-engineering-for-global-health",
-  "title": "Definition of Engineering for Global Health",
-  "abstract": "Defines Engineering for Global Health as using engineering design methods to address complex global health challenges in inequality- and resource-constrained settings.",
-  "url": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b",
-  "badge": "whitepaper",
-  "categories": [
-    "Engineering For Global Health"
-  ],
-  "year": 2025
-},
-{
-  "kind": "tool",
-  "id": "definition-of-engineering-for-global-health-tool",
-  "title": "Definition of Engineering for Global Health",
-  "blurb": "A shared definition of Engineering for Global Health for teams working on global health design challenges.",
-  "url": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b",
-  "categories": [
-    "White papers"
-  ]
-},
-{
-  "kind": "research",
-  "id": "global-health-glossary",
-  "title": "Global Health Glossary",
-  "abstract": "A glossary of global health terms used in Engineering for Global Health research and practice.",
-  "url": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66",
-  "badge": "whitepaper",
-  "categories": [
-    "Engineering For Global Health"
-  ],
-  "year": 2025
-},
-{
-  "kind": "tool",
-  "id": "global-health-glossary-tool",
-  "title": "Global Health Glossary",
-  "blurb": "Look up shared global health terminology for Engineering for Global Health projects.",
-  "url": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66",
-  "categories": [
-    "White papers"
-  ]
-},
-{
-  "kind": "tool",
-  "id": "world-cart-plans",
-  "title": "World Cart Plans",
-  "blurb": "Build plans for a low-cost plywood utility cart cut from one 4x8 sheet, with mortise-and-tenon joints and no glue.",
-  "url": "https://static1.squarespace.com/static/5c7ee75b92441b465f176f7f/t/5f3353cd2fc10f0db63c8766/1597199309867/Cart+Plans.pdf",
-  "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/1554394732851-HHNFGYJVSRFZXBF9IKMS/WorldCart2.jpg",
-  "categories": [
-    "Sustainable Products"
-  ]
-},
+      "kind": "course",
+      "id": "product-design-guidebook",
+      "title": "Product Design Guidebook",
+      "blurb": "Principles and tools for building a product development process that fits your team.",
+      "url": "/product-design-guidebook",
+      "type": "guidebook",
+      "categories": [
+        "Featured",
+        "Guidebooks"
+      ],
+      "format": "Book",
+      "duration": "Self-paced"
+    },
+    {
+      "kind": "course",
+      "id": "onshape-cad-course",
+      "title": "Onshape CAD Course",
+      "blurb": "Online ME EN 272 engineering graphics — learn cloud CAD with Onshape.",
+      "url": "/onshape-cad-course",
+      "type": "course",
+      "categories": [
+        "Courses"
+      ],
+      "format": "Online course",
+      "duration": "Semester"
+    },
+    {
+      "kind": "course",
+      "id": "learn-to-sketch",
+      "title": "Learn to Sketch",
+      "blurb": "Free self-guided short course — practice 10 minutes a day for 8 weeks.",
+      "url": "/learn-to-sketch",
+      "type": "tutorial",
+      "categories": [
+        "Tutorials"
+      ],
+      "format": "Self-paced",
+      "duration": "8 weeks"
+    },
+    {
+      "kind": "course",
+      "id": "social-impact-considerations-workshop",
+      "title": "Social Impact Considerations Workshop",
+      "blurb": "One-hour kit (slides + PDFs) for teaching social impact consideration.",
+      "url": "/socialimpact-workshop",
+      "type": "workshop",
+      "categories": [
+        "Workshops"
+      ],
+      "format": "Workshop kit",
+      "duration": "1 hour"
+    },
+    {
+      "kind": "course",
+      "id": "additional-workshops",
+      "title": "Additional Workshops",
+      "blurb": "Custom design workshops on ideation, selection, systems, optimization, and more.",
+      "url": "/workshops",
+      "type": "workshop",
+      "categories": [
+        "Workshops"
+      ],
+      "format": "By request"
+    },
+    {
+      "kind": "research",
+      "id": "for-the-benefit-of-the-world-conference-desx-abstracts-2025",
+      "title": "For the Benefit of the World Conference â€” DesX Abstracts (2025)",
+      "abstract": "Collected DesX abstracts from the 2025 For the Benefit of the World Conference, sharing lab research summaries with the broader community.",
+      "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
+      "badge": "whitepaper",
+      "categories": [
+        "Other"
+      ],
+      "year": 2025
+    },
+    {
+      "kind": "tool",
+      "id": "for-the-benefit-of-the-world-conference-desx-abstracts-tool",
+      "title": "For the Benefit of the World Conference â€” DesX Abstracts (2025)",
+      "blurb": "Browse DesX research abstracts from the 2025 For the Benefit of the World Conference.",
+      "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
+      "categories": [
+        "White papers"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "definitions-of-fundamental-socio-technical-network-types",
+      "title": "Definitions of Fundamental Socio-Technical Network Types",
+      "abstract": "Defines fundamental socio-technical network types used in Engineering for Sustainable Development and social-impact modeling research.",
+      "url": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2",
+      "badge": "whitepaper",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2025
+    },
+    {
+      "kind": "tool",
+      "id": "definitions-of-fundamental-socio-technical-network-types-tool",
+      "title": "Definitions of Fundamental Socio-Technical Network Types",
+      "blurb": "Reference definitions of socio-technical network types for sustainable development and social-impact research.",
+      "url": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2",
+      "categories": [
+        "White papers"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "definition-of-engineering-for-global-health",
+      "title": "Definition of Engineering for Global Health",
+      "abstract": "Defines Engineering for Global Health as using engineering design methods to address complex global health challenges in inequality- and resource-constrained settings.",
+      "url": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b",
+      "badge": "whitepaper",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2025
+    },
+    {
+      "kind": "tool",
+      "id": "definition-of-engineering-for-global-health-tool",
+      "title": "Definition of Engineering for Global Health",
+      "blurb": "A shared definition of Engineering for Global Health for teams working on global health design challenges.",
+      "url": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b",
+      "categories": [
+        "White papers"
+      ]
+    },
+    {
+      "kind": "research",
+      "id": "global-health-glossary",
+      "title": "Global Health Glossary",
+      "abstract": "A glossary of global health terms used in Engineering for Global Health research and practice.",
+      "url": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66",
+      "badge": "whitepaper",
+      "categories": [
+        "Engineering For Global Health"
+      ],
+      "year": 2025
+    },
+    {
+      "kind": "tool",
+      "id": "global-health-glossary-tool",
+      "title": "Global Health Glossary",
+      "blurb": "Look up shared global health terminology for Engineering for Global Health projects.",
+      "url": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66",
+      "categories": [
+        "White papers"
+      ]
+    },
+    {
+      "kind": "tool",
+      "id": "world-cart-plans",
+      "title": "World Cart Plans",
+      "blurb": "Build plans for a low-cost plywood utility cart cut from one 4x8 sheet, with mortise-and-tenon joints and no glue.",
+      "url": "https://static1.squarespace.com/static/5c7ee75b92441b465f176f7f/t/5f3353cd2fc10f0db63c8766/1597199309867/Cart+Plans.pdf",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/1554394732851-HHNFGYJVSRFZXBF9IKMS/WorldCart2.jpg",
+      "categories": [
+        "Sustainable Products"
+      ]
+    },
     {
       "kind": "research",
       "id": "axiom-based-aggregation-functions-for-ideation-metrics",
@@ -317,7 +388,7 @@
     },
     {
       "kind": "research",
-      "id": "a-formal-consideration-of-user-tactics-during-product-evaluation-in-early-stage-",
+      "id": "a-formal-consideration-of-user-tactics-during-product-evaluation-in-early-stage",
       "title": "A formal consideration of user tactics during product evaluation in early-stage product development",
       "abstract": "Formalizes user tactics during early product evaluation to better connect intended use with design decisions.",
       "url": "https://doi.org/10.1504/ijpd.2024.137784",
@@ -521,7 +592,7 @@
     },
     {
       "kind": "research",
-      "id": "creating-predictive-social-impact-models-of-engineered-products-using-synthetic-",
+      "id": "creating-predictive-social-impact-models-of-engineered-products-using-synthetic",
       "title": "Creating predictive social impact models of engineered products using synthetic populations",
       "abstract": "Creates predictive social impact models of engineered products using synthetic population data.",
       "url": "https://doi.org/10.1007/s00163-023-00424-4",
@@ -576,7 +647,7 @@
     },
     {
       "kind": "research",
-      "id": "trade-off-characterization-between-social-and-environmental-impacts-using-agent-",
+      "id": "trade-off-characterization-between-social-and-environmental-impacts-using-agent",
       "title": "Trade-Off Characterization Between Social and Environmental Impacts Using Agent-Based Product Adoption Models and Life Cycle Assessment",
       "abstract": "Meeting the United Nations (UN) sustainable development goals efficiently requires designers and engineers to solve multi-objective optimization problems.",
       "url": "https://doi.org/10.1115/1.4056006",
@@ -632,7 +703,7 @@
     },
     {
       "kind": "research",
-      "id": "use-of-simulation-and-wear-prediction-to-explore-design-improvements-to-the-cup-",
+      "id": "use-of-simulation-and-wear-prediction-to-explore-design-improvements-to-the-cup",
       "title": "Use of simulation and wear prediction to explore design improvements to the cup seal in the India Mark II/III hand pump system",
       "abstract": "Uses simulation and wear prediction to improve cup seals in India Mark II/III hand pumps.",
       "url": "https://doi.org/10.1016/j.deveng.2022.100092",
@@ -951,7 +1022,7 @@
     },
     {
       "kind": "research",
-      "id": "establishing-baseline-performance-for-off-the-shelf-nitrile-seals-for-the-india-",
+      "id": "establishing-baseline-performance-for-off-the-shelf-nitrile-seals-for-the-india",
       "title": "Establishing Baseline Performance for Off-the-Shelf Nitrile Seals for the India Mark II Hand Pump System",
       "abstract": "Establishes baseline performance of off-the-shelf nitrile seals for India Mark II hand pumps.",
       "url": "https://doi.org/10.1115/detc2019-98439",
@@ -969,7 +1040,7 @@
     },
     {
       "kind": "research",
-      "id": "quantifying-the-effects-of-various-factors-on-the-utility-of-design-ethnography-",
+      "id": "quantifying-the-effects-of-various-factors-on-the-utility-of-design-ethnography",
       "title": "Quantifying the effects of various factors on the utility of design ethnography in the developing world",
       "abstract": "Quantifies how design ethnography utility changes across factors in developing-world product work.",
       "url": "https://doi.org/10.1007/s00163-018-00304-2",
@@ -1005,8 +1076,8 @@
     {
       "kind": "research",
       "id": "using-a-product-s-sustainability-space-as-a-design-exploration-tool",
-      "title": "Using a Product’s Sustainability Space as a Design Exploration Tool",
-      "abstract": "Uses a product’s sustainability space as a practical design exploration and tradeoff tool.",
+      "title": "Using a Productâ€™s Sustainability Space as a Design Exploration Tool",
+      "abstract": "Uses a productâ€™s sustainability space as a practical design exploration and tradeoff tool.",
       "url": "https://doi.org/10.1017/dsj.2018.6",
       "badge": "journal",
       "categories": [
@@ -1240,7 +1311,7 @@
     },
     {
       "kind": "research",
-      "id": "a-review-of-the-capabilities-of-current-low-cost-virtual-reality-technology-and-",
+      "id": "a-review-of-the-capabilities-of-current-low-cost-virtual-reality-technology-and",
       "title": "A Review of the Capabilities of Current Low-Cost Virtual Reality Technology and Its Potential to Enhance the Design Process",
       "abstract": "In the past few years, there have been some significant advances in consumer virtual reality (VR) devices.",
       "url": "https://doi.org/10.1115/1.4036921",
@@ -1257,7 +1328,7 @@
     },
     {
       "kind": "research",
-      "id": "a-simple-starting-point-for-designing-for-and-or-assessing-the-social-impact-of-",
+      "id": "a-simple-starting-point-for-designing-for-and-or-assessing-the-social-impact-of",
       "title": "A Simple Starting Point for Designing for and/or Assessing the Social Impact of Products",
       "abstract": "Offers a simple starting point for designing for and assessing product social impact.",
       "url": "https://doi.org/10.1115/detc2017-67586",
@@ -1413,7 +1484,7 @@
     },
     {
       "kind": "research",
-      "id": "towards-a-universal-social-impact-metric-for-engineered-products-that-alleviate-",
+      "id": "towards-a-universal-social-impact-metric-for-engineered-products-that-alleviate",
       "title": "Towards a Universal Social Impact Metric for Engineered Products That Alleviate Poverty",
       "abstract": "Proposes progress toward a universal social impact metric for poverty-alleviating engineered products.",
       "url": "https://doi.org/10.1115/detc2017-67584",
@@ -1775,7 +1846,7 @@
     {
       "kind": "research",
       "id": "design-space-exploration-for-quantifying-a-system-model-s-feasible-domain",
-      "title": "Design Space Exploration for Quantifying a System Model’s Feasible Domain",
+      "title": "Design Space Exploration for Quantifying a System Modelâ€™s Feasible Domain",
       "abstract": "Quantifies a system model's feasible domain through design space exploration to improve modeling reliability.",
       "url": "https://doi.org/10.1115/1.4005861",
       "badge": "journal",
@@ -1808,7 +1879,7 @@
     },
     {
       "kind": "research",
-      "id": "hybrid-bishop-hill-model-for-elastic-yield-limited-design-with-non-orthorhombic-",
+      "id": "hybrid-bishop-hill-model-for-elastic-yield-limited-design-with-non-orthorhombic",
       "title": "Hybrid Bishop-Hill Model for Elastic-Yield Limited Design With Non-orthorhombic Polycrystalline Metals",
       "abstract": "Applies a Hybrid Bishop-Hill model to elastic-yield limited design of non-orthorhombic polycrystalline metals.",
       "url": "https://doi.org/10.1115/1.4004829",
@@ -1958,7 +2029,7 @@
     },
     {
       "kind": "research",
-      "id": "configuration-selection-modeling-and-preliminary-testing-in-support-of-constant-",
+      "id": "configuration-selection-modeling-and-preliminary-testing-in-support-of-constant",
       "title": "Configuration Selection, Modeling, and Preliminary Testing in Support of Constant Force Electrical Connectors",
       "abstract": "Selects, models, and preliminarily tests configurations for constant-force electrical connectors.",
       "url": "https://doi.org/10.1115/1.2721080",
@@ -1995,7 +2066,8 @@
       "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/0880d561-0db6-4f87-833a-d1e87e38530c/Screenshot+2026-08-04+113344.png?content-type=image%2Fpng",
       "badge": "conference",
       "categories": [
-        "Social impact modeling", "Featured"
+        "Social impact modeling",
+        "Featured"
       ]
     },
     {
@@ -2036,7 +2108,7 @@
       "id": "tech-tac",
       "title": "Tech Tac",
       "blurb": "Another ideation tool",
-      "url": "#",
+      "url": "/tech-tac",
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/436c0be0-81b8-4ebf-a425-d516a4f47a88/js_desx.jpg",
       "categories": [
         "Ideation"
@@ -2047,7 +2119,7 @@
       "id": "medical-device-decision-support",
       "title": "Addison's Medical Device Decision Support tool",
       "blurb": "Helps with medical device decision support",
-      "url": "#",
+      "url": "/medical-device-decision-support",
       "image": "https://images.squarespace-cdn.com/content/v1/5c7ee75b92441b465f176f7f/a8824e17-bb50-40d3-88aa-1e42d6c6b669/image-asset.jpg",
       "categories": [
         "Decision support"

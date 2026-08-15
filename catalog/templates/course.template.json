@@ -1,0 +1,14 @@
+{
+  "kind": "course",
+  "id": "your-course-slug",
+  "title": "Course or workshop display name",
+  "blurb": "One sentence on what learners will gain.",
+  "url": "/your-course-page",
+  "type": "course",
+  "image": "https://images.squarespace-cdn.com/content/...",
+  "categories": [
+    "Courses"
+  ],
+  "format": "Self-paced",
+  "duration": "8 weeks"
+}

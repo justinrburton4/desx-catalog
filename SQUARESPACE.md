@@ -60,10 +60,11 @@ Rebuild the homepage top to bottom. Local mock: `index.html`.
 - **Text**: White Papers intro + “text here” where tool blurbs are missing.
 - **Five poster image-blocks** → each tool page.
 
-### Learn hub (`pages/learn-hub.html`)
-- **Text**: Workshops paragraph + contact emails.
-- **Three posters** → Workshops, Social Impact Workshop, Courses.
-- **Text link** → Engineering Design Club.
+### Learn hub (`pages/learn-hub.html` → live `/desx-courses`)
+- **Not JSON-driven.** Curated Squarespace page: intro → featured Guidebook → 2×2 resource grid → “More ways to learn.”
+- Full block recipe + confirmed URLs: [`squarespace/LEARN-BUILD.md`](squarespace/LEARN-BUILD.md)
+- Collection CSS: [`squarespace/custom-css-learn-page.css`](squarespace/custom-css-learn-page.css) (`#collection-6a74efa0f17a197c10e964ce`)
+- Home Learn card should link to `/desx-courses` (already wired on `home-copy-for-test`).
 
 Existing deep pages keep their content; only parent folder / nav labels change.
 

@@ -16,7 +16,7 @@ Raw GitHub also works for public repos:
 https://raw.githubusercontent.com/OWNER/REPO/main/catalog/desx-catalog.json
 ```
 
-Bump cache after edits with `?v=2` (or a commit SHA in the jsDelivr URL: `@abc1234/...`).
+The full Code Blocks (`research-code-block-full.html`, `tools-code-block-full.html`) ask GitHub for the latest commit and load that JSON, so you do not bump `?v=` when the catalog changes. Re-paste those blocks only when you change the renderer itself.
 
 ---
 
@@ -74,5 +74,5 @@ Duplicate `/desx-pub-index` and `/desx-tools` (like `home-copy-for-test`), wire 
 ## 5. After adding catalog items on GitHub
 
 1. Merge the commit to `main`.
-2. Hard-refresh the Squarespace page (or bump `?v=`).
+2. Hard-refresh the Squarespace page. Catalog JSON updates do not need a Code Block edit.
 3. jsDelivr may lag a minute; raw GitHub is usually immediate.

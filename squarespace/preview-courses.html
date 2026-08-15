@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DesX Catalog Preview — Courses (Learn)</title>
+  <link rel="stylesheet" href="../css/desx-catalog.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 32px 4vw 64px;
+      background: #fafafa;
+      color: #111;
+    }
+    h1 { font-family: system-ui, sans-serif; margin: 0 0 8px; }
+    .hint { font-family: system-ui, sans-serif; color: #64748b; margin: 0 0 28px; max-width: 40rem; }
+  </style>
+</head>
+<body>
+  <h1>Learn / courses catalog preview</h1>
+  <p class="hint">
+    Same card system as Tools, with type badges and meta chips.
+    Serve the repo root (<code>npx serve .</code>) then open this page.
+    Club stays off-catalog — link it under “More ways” on the Learn page.
+  </p>
+  <div
+    id="desx-catalog"
+    data-kind="course"
+    data-catalog-url="../catalog/desx-catalog.json"
+  ></div>
+  <script src="../js/desx-catalog.js" defer></script>
+</body>
+</html>

@@ -2,10 +2,13 @@
 
 One JSON database powers **Research** (`/desx-pub-index`) and **Tools** (`/desx-tools`) on [design.byu.edu](https://www.design.byu.edu/).
 
+To add a paper or tool, follow **[How to add a Research paper or Tool](HOW-TO-ADD.md)**.
+
 ## Files
 
 | File | Purpose |
 |------|---------|
+| [`HOW-TO-ADD.md`](HOW-TO-ADD.md) | How to create and add a research or tool block |
 | [`desx-catalog.json`](desx-catalog.json) | Live catalog — paste new items at the **top** of `items` |
 | [`schema.json`](schema.json) | JSON Schema used by CI validation |
 | [`templates/research.template.json`](templates/research.template.json) | Copy-paste template for a paper |
@@ -18,7 +21,7 @@ One JSON database powers **Research** (`/desx-pub-index`) and **Tools** (`/desx-
 3. Open [`desx-catalog.json`](desx-catalog.json).
 4. Paste your object as the **first** element inside the `"items"` array (newest / highest priority at the top).
 5. Put a comma after your object if another item follows.
-6. Commit to GitHub (or open a PR). After merge, hard-refresh the Squarespace page (or bump the `?v=` cache param on the script URL).
+6. Commit to GitHub (or open a PR). After merge, refresh the Research or Tools page — they load the latest JSON automatically.
 
 ### Research required fields
 
