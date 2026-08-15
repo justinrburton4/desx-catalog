@@ -23,11 +23,11 @@
       "title": "Product Design Guidebook",
       "blurb": "Principles and tools for building a product development process that fits your team.",
       "url": "https://link.springer.com/book/10.1007/978-3-030-14899-7",
-      "type": "textbook",
+      "type": "guidebook",
       "categories": [
         "Guidebooks"
       ],
-      "format": "Book",
+      "format": "Book"
     },
     {
       "kind": "course",
@@ -55,9 +55,9 @@
       "format": "Self-paced",
       "duration": "8 weeks"
     },
-     {
+    {
       "kind": "course",
-      "id": "Design Thinking",
+      "id": "design-thinking",
       "title": "Design Thinking",
       "blurb": "Learn about the practice and history of Design Thinking",
       "url": "https://www.designreview.byu.edu/design-thinking-short-course",
@@ -68,17 +68,17 @@
       "format": "Self-paced",
       "duration": "5 weeks"
     },
-         {
+    {
       "kind": "course",
-      "id": "Design For Manufacturing",
+      "id": "design-for-manufacturing",
       "title": "Design For Manufacturing",
-      "blurb": "Learn about the practice and history of Design Thinking",
+      "blurb": "Learn design for manufacturing practices through a self-guided short course.",
       "url": "https://www.designreview.byu.edu/design-for-manufacturing-short-course",
       "type": "course",
       "categories": [
         "Courses"
       ],
-      "format": "Self-guided",
+      "format": "Self-guided"
     },
     {
       "kind": "course",
