@@ -22,14 +22,12 @@
       "id": "product-design-guidebook",
       "title": "Product Design Guidebook",
       "blurb": "Principles and tools for building a product development process that fits your team.",
-      "url": "/product-design-guidebook",
-      "type": "guidebook",
+      "url": "https://link.springer.com/book/10.1007/978-3-030-14899-7",
+      "type": "textbook",
       "categories": [
-        "Featured",
         "Guidebooks"
       ],
       "format": "Book",
-      "duration": "Self-paced"
     },
     {
       "kind": "course",
@@ -49,13 +47,38 @@
       "id": "learn-to-sketch",
       "title": "Learn to Sketch",
       "blurb": "Free self-guided short course — practice 10 minutes a day for 8 weeks.",
-      "url": "/learn-to-sketch",
+      "url": "https://www.designreview.byu.edu/sketching-short-course",
       "type": "tutorial",
       "categories": [
         "Tutorials"
       ],
       "format": "Self-paced",
       "duration": "8 weeks"
+    },
+     {
+      "kind": "course",
+      "id": "Design Thinking",
+      "title": "Design Thinking",
+      "blurb": "Learn about the practice and history of Design Thinking",
+      "url": "https://www.designreview.byu.edu/design-thinking-short-course",
+      "type": "course",
+      "categories": [
+        "Courses"
+      ],
+      "format": "Self-paced",
+      "duration": "5 weeks"
+    },
+         {
+      "kind": "course",
+      "id": "Design For Manufacturing",
+      "title": "Design For Manufacturing",
+      "blurb": "Learn about the practice and history of Design Thinking",
+      "url": "https://www.designreview.byu.edu/design-for-manufacturing-short-course",
+      "type": "course",
+      "categories": [
+        "Courses"
+      ],
+      "format": "Self-guided",
     },
     {
       "kind": "course",
