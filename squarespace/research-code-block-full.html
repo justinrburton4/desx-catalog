@@ -1292,16 +1292,27 @@
       .then(function (commits) {
         var sha = commits && commits[0] && commits[0].sha;
         if (!sha) throw new Error("No commit SHA");
-        return fetchJson(
+        var jsdelivr =
+          "https://cdn.jsdelivr.net/gh/" +
+          gh.owner +
+          "/" +
+          gh.repo +
+          "@" +
+          sha +
+          "/" +
+          gh.path;
+        var rawSha =
           "https://raw.githubusercontent.com/" +
-            gh.owner +
-            "/" +
-            gh.repo +
-            "/" +
-            sha +
-            "/" +
-            gh.path
-        );
+          gh.owner +
+          "/" +
+          gh.repo +
+          "/" +
+          sha +
+          "/" +
+          gh.path;
+        return fetchJson(jsdelivr).catch(function () {
+          return fetchJson(rawSha);
+        });
       })
       .catch(function () {
         return fetchJson(withCacheBust(url));

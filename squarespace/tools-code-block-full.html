@@ -574,7 +574,7 @@
 <div
   id="desx-catalog"
   data-kind="tool"
-  data-catalog-url="https://raw.githubusercontent.com/justinrburton4/desx-catalog/main/catalog/desx-catalog.json?v=10"
+  data-catalog-url="https://raw.githubusercontent.com/justinrburton4/desx-catalog/main/catalog/desx-catalog.json"
 ></div>
 
 <script>
@@ -1208,6 +1208,82 @@
     );
   }
 
+  function withCacheBust(url) {
+    var sep = String(url).indexOf("?") >= 0 ? "&" : "?";
+    return url + sep + "_=" + Date.now();
+  }
+
+  function parseGithubRaw(url) {
+    var m = String(url).match(
+      /^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/([^/?#]+)\/([^?#]+)/
+    );
+    if (!m) return null;
+    return { owner: m[1], repo: m[2], ref: m[3], path: m[4] };
+  }
+
+  function fetchJson(url) {
+    return fetch(url, { credentials: "omit", cache: "no-store" }).then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status + " for " + url);
+      return res.json();
+    });
+  }
+
+  // Always load the latest GitHub file. Looks up the current commit SHA so
+  // raw.githubusercontent.com cannot serve a stale cached copy of /main/.
+  function fetchCatalogJson(url) {
+    var gh = parseGithubRaw(url);
+    if (!gh) return fetchJson(withCacheBust(url));
+
+    var api =
+      "https://api.github.com/repos/" +
+      gh.owner +
+      "/" +
+      gh.repo +
+      "/commits?path=" +
+      encodeURIComponent(gh.path) +
+      "&sha=" +
+      encodeURIComponent(gh.ref) +
+      "&per_page=1";
+
+    return fetch(api, {
+      credentials: "omit",
+      cache: "no-store",
+      headers: { Accept: "application/vnd.github+json" },
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error("GitHub API " + res.status);
+        return res.json();
+      })
+      .then(function (commits) {
+        var sha = commits && commits[0] && commits[0].sha;
+        if (!sha) throw new Error("No commit SHA");
+        var jsdelivr =
+          "https://cdn.jsdelivr.net/gh/" +
+          gh.owner +
+          "/" +
+          gh.repo +
+          "@" +
+          sha +
+          "/" +
+          gh.path;
+        var rawSha =
+          "https://raw.githubusercontent.com/" +
+          gh.owner +
+          "/" +
+          gh.repo +
+          "/" +
+          sha +
+          "/" +
+          gh.path;
+        return fetchJson(jsdelivr).catch(function () {
+          return fetchJson(rawSha);
+        });
+      })
+      .catch(function () {
+        return fetchJson(withCacheBust(url));
+      });
+  }
+
   function initMount(mount) {
     var kind = (mount.getAttribute("data-kind") || "research").toLowerCase();
     if (kind !== "research" && kind !== "tool") {
@@ -1226,14 +1302,7 @@
       layout: "detailed",
     };
 
-    var url = resolveCatalogUrl(mount);
-
-    fetch(url, { credentials: "omit", cache: "no-cache" })
-      .then(function (res) {
-        if (!res.ok) throw new Error("HTTP " + res.status + " for " + url);
-        return res.json();
-      })
-      .then(function (catalog) {
+    fetchCatalogJson(resolveCatalogUrl(mount)).then(function (catalog) {
         var items = validateItems(catalog.items || [], kind);
 
         function paint() {
