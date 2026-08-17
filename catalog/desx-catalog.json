@@ -28,7 +28,8 @@
         "Guidebooks"
       ],
       "format": "Book",
-      "hidden": false
+      "hidden": false,
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/95165918-6c08-44b4-903d-1a3536b915da/mattsonBookHigh-Res.webp?content-type=image%2Fwebp"
     },
     {
       "kind": "course",
@@ -56,7 +57,8 @@
       ],
       "format": "Self-paced",
       "duration": "8 weeks",
-      "hidden": false
+      "hidden": false,
+      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741035833082-HH9AFYTB6GCMBIFLCBH6/unsplash-image-8DTIQ_Klxho.jpg?format=1000w"
     },
     {
       "kind": "course",
@@ -70,7 +72,8 @@
       ],
       "format": "Self-paced",
       "duration": "5 weeks",
-      "hidden": false
+      "hidden": false,
+      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741036239309-L2LDALAX9SG0TWYRDSEZ/unsplash-image-wusOJ-2uY6w.jpg?format=1000w"
     },
     {
       "kind": "course",
@@ -83,7 +86,8 @@
         "Courses"
       ],
       "format": "Self-guided",
-      "hidden": false
+      "hidden": false,
+      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741036685697-CTADZR6MZMZ0NQ3EK3LD/unsplash-image-ZPeXrWxOjRQ.jpg?format=1000w"
     },
     {
       "kind": "course",
@@ -97,7 +101,8 @@
       ],
       "format": "Workshop kit",
       "duration": "1 hour",
-      "hidden": false
+      "hidden": false,
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1690310338524-9X2Q8ZA8VBK8V44VON0H/CAM03511.jpg?content-type=image%2Fjpeg"
     },
     {
       "kind": "course",
