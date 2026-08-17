@@ -692,6 +692,9 @@
         console.warn("[DesX Catalog] Duplicate id skipped:", item.id);
         return;
       }
+      if (item.hidden === true) {
+        return;
+      }
       seen[item.id] = true;
       out.push(item);
     });
