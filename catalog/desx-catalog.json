@@ -121,7 +121,7 @@
     {
       "kind": "research",
       "id": "for-the-benefit-of-the-world-conference-desx-abstracts-2025",
-      "title": "For the Benefit of the World Conference â€” DesX Abstracts (2025)",
+      "title": "For the Benefit of the World Conference - DesX Abstracts (2025)",
       "abstract": "Collected DesX abstracts from the 2025 For the Benefit of the World Conference, sharing lab research summaries with the broader community.",
       "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
       "badge": "whitepaper",
@@ -129,6 +129,19 @@
         "Other"
       ],
       "year": 2025,
+      "authors": [
+        "McKinnon, S. A. ",
+        "Dietege, I. ",
+        "Carroll, B. ",
+        "Hardy, J. ",
+        "Zubeldia, S. ",
+        "Geilman, T. ",
+        "Dickerson, T. ",
+        "Mattson, C. A. ",
+        "Salmon, J. ",
+        "Busse, F. ",
+        "Spring, T. ",
+      ],
       "hidden": false
     },
     {
@@ -142,6 +155,10 @@
         "Social impact modeling"
       ],
       "year": 2025,
+      "authors": [
+        "Detiege, I. ",
+        "Mattson, C. A. ",
+      ],
       "hidden": false
     },
     {
@@ -155,6 +172,10 @@
         "Engineering For Global Health"
       ],
       "year": 2025,
+      "authors": [
+        "Hardy, J. P. ",
+        "Mattson, C. A. ",
+      ],
       "hidden": false
     },
     {
@@ -168,6 +189,11 @@
         "Engineering For Global Health"
       ],
       "year": 2025,
+      "authors": [
+        "Hardy, J. P. ",
+        "Zubeldia, S. T. ",
+        "Mattson, C. A. ",
+      ],
       "hidden": false
     },
     {
@@ -2166,7 +2192,7 @@
     {
       "kind": "research",
       "id": "predicting-human-behavior",
-      "title": "Is it possible to predict human behavior and use those predictions in engineering design?",
+      "title": "Predictive Models of Human Behavior in Engineering Design",
       "abstract": "This paper describes various methods of predicting human behavior and shows connections between those methods and the engineering design process.",
       "url": "/predicting-human-behavior",
       "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/0880d561-0db6-4f87-833a-d1e87e38530c/Screenshot+2026-08-04+113344.png?content-type=image%2Fpng",
@@ -2174,6 +2200,14 @@
       "categories": [
         "Social impact modeling",
         "Featured"
+      ],
+      "year": 2026,
+      "authors": [
+        "Burton, J.",
+        "McKinnon, S. A.",
+        "Hunter, J.",
+        "Salmon, J.",
+        "Mattson, C. A.",
       ],
       "hidden": false
     },
