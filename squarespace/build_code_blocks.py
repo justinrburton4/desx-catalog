@@ -13,15 +13,10 @@ CATALOG_URL = (
     "https://raw.githubusercontent.com/justinrburton4/desx-catalog/main/catalog/desx-catalog.json"
 )
 
+# Research and tools full pastes have extra UX (year range, result count,
+# color badges) that is NOT in js/desx-catalog.js. Never overwrite those
+# files from this script.
 KINDS = {
-    "research": {
-        "file": "research-code-block-full.html",
-        "comment": "DesX Research Catalog: paste into a Squarespace Code Block on /desx-pub-index.",
-    },
-    "tool": {
-        "file": "tools-code-block-full.html",
-        "comment": "DesX Tools Catalog: paste into a Squarespace Code Block on /desx-tools.",
-    },
     "course": {
         "file": "courses-code-block-full.html",
         "comment": "DesX Learn / Courses Catalog: paste into a Squarespace Code Block on /desx-courses.",

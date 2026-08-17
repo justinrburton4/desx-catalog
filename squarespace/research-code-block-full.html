@@ -1,5 +1,5 @@
-<!-- DesX Research Catalog: paste into a Squarespace Code Block on /desx-pub-index.
-     Self-contained: CSS + mount + JS. data-kind=research. -->
+<!-- DesX Research Catalog: paste into a Squarespace Code Block.
+     Image settings: edit `images` and `featured_images` at the top of the <script>. -->
 <style>
 /* DesX Catalog — Research rows + Tools grid (Squarespace-safe) */
 
@@ -23,11 +23,31 @@
   margin: 0 0 28px;
 }
 
+.desx-search-row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex: 1 1 280px;
+  min-width: 220px;
+  max-width: 980px;
+}
+
 .desx-search-wrap {
-  flex: 1 1 240px;
-  min-width: 200px;
-  max-width: 420px;
+  flex: 1 1 auto;
+  min-width: 180px;
+  max-width: 848px;
   margin: 0;
+}
+
+.desx-result-count {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #64748b;
+  white-space: nowrap;
+  line-height: 1.2;
 }
 
 .desx-search-input {
@@ -44,7 +64,7 @@
 .desx-search-input:focus {
   outline: 2px solid rgba(242, 102, 58, 0.45);
   outline-offset: 1px;
-  border-color: #F2663A;
+  border-color: #E26314;
 }
 
 .desx-toolbar-controls {
@@ -80,6 +100,106 @@
   margin-left: 0;
 }
 
+.desx-year-range {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.desx-year-range-sep {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.desx-year-dd {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.desx-year-dd-btn {
+  appearance: none;
+  min-width: 96px;
+  padding: 10px 32px 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: #0f172a;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2364748b' d='M1.4 1.4L6 6l4.6-4.6L12 2.8 6 8.8 0 2.8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.desx-year-dd-btn:focus {
+  outline: 2px solid rgba(242, 102, 58, 0.45);
+  outline-offset: 1px;
+  border-color: #E26314;
+}
+
+.desx-year-dd.is-open .desx-year-dd-btn {
+  border-color: #E26314;
+}
+
+.desx-year-dd-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 40;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  min-width: 100%;
+  max-height: calc(10 * 36px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  scrollbar-width: thin;
+}
+
+.desx-year-dd-list[hidden] {
+  display: none;
+}
+
+.desx-year-dd-option {
+  appearance: none;
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 20px;
+  height: 36px;
+  box-sizing: border-box;
+}
+
+.desx-year-dd-option:hover,
+.desx-year-dd-option:focus {
+  background: #f1f5f9;
+  outline: none;
+}
+
+.desx-year-dd-option.is-selected {
+  background: hsl(0, 0%, 10%);
+  color: #fff;
+}
+
 .desx-filter-badge {
   appearance: none;
   border: 1px solid #cbd5e1;
@@ -96,13 +216,13 @@
 }
 
 .desx-filter-badge:hover {
-  border-color: #F2663A;
+  border-color: #E26314;
   color: #C44B23;
 }
 
 .desx-filter-badge.is-active {
-  background: #222;
-  border-color: #222;
+  background: hsl(0, 0%, 10%);
+  border-color: hsl(0, 0%, 10%);
   color: #fff;
 }
 
@@ -128,7 +248,7 @@
   width: calc(50% - 3px);
   height: calc(100% - 6px);
   border-radius: 999px;
-  background: #222;
+  background: hsl(0, 0%, 10%);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
   transition: transform 0.22s cubic-bezier(0.25, 1, 0.5, 1);
   pointer-events: none;
@@ -193,84 +313,100 @@
 
 .pub-scroll-shell {
   position: relative;
-}
-
-.desx-arrows {
-  position: absolute;
-  top: 50%;
-  right: 140px;
-  transform: translate(50%, -55%);
-  display: flex;
-  gap: 10px;
-  z-index: 20;
-  pointer-events: none;
+  overflow: visible;
 }
 
 .desx-arrow {
-  pointer-events: auto;
+  position: absolute;
+  top: 50%;
+  z-index: 20;
   width: 52px;
   height: 52px;
-  border-radius: 999px;
-  border: 1px solid rgba(203, 213, 225, 0.95);
-  background: rgba(255, 255, 255, 0.96);
-  color: #0f172a;
-  font-size: 1.75rem;
-  line-height: 1;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0f0f0f;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
-  transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease, visibility 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  transition: background 0.18s ease, box-shadow 0.18s ease, opacity 0.15s ease, transform 0.18s ease, color 0.18s ease;
 }
 
-.desx-arrow:hover:not(:disabled) {
-  border-color: #F2663A;
-  color: #F2663A;
-}
-
-.desx-arrow:disabled,
-.desx-arrow.is-hidden {
-  opacity: 0;
-  visibility: hidden;
+.desx-arrow svg {
+  width: 28px;
+  height: 28px;
+  display: block;
   pointer-events: none;
 }
 
+.desx-arrow-prev {
+  left: 4px;
+  transform: translateY(-50%);
+}
+
+.desx-arrow-next {
+  right: 4px;
+  transform: translateY(-50%);
+}
+
+.desx-arrow:hover:not(:disabled):not(.is-hidden) {
+  background: #ffffff;
+  color: #E26314;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28), 0 0 0 2px rgba(242, 102, 58, 0.35);
+}
+
+.desx-arrow-prev:hover:not(:disabled):not(.is-hidden) {
+  transform: translateY(-50%) scale(1.12);
+}
+
+.desx-arrow-next:hover:not(:disabled):not(.is-hidden) {
+  transform: translateY(-50%) scale(1.12);
+}
+
+.desx-arrow:active:not(:disabled):not(.is-hidden) {
+  background: #fff7f3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18), 0 0 0 2px rgba(242, 102, 58, 0.45);
+}
+
+.desx-arrow-prev:active:not(:disabled):not(.is-hidden) {
+  transform: translateY(-50%) scale(1.04);
+}
+
+.desx-arrow-next:active:not(:disabled):not(.is-hidden) {
+  transform: translateY(-50%) scale(1.04);
+}
+
+.desx-arrow.is-hidden,
+.desx-arrow:disabled {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 
 .pub-scroll-container {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding: 12px 5px 28px 5px;
+  padding: 12px 5px 16px 5px;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   width: 100%;
-  scrollbar-width: thin;
-  scrollbar-color: #cbd5e1 #f1f5f9;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .pub-scroll-container::-webkit-scrollbar {
-  height: 6px;
-  display: block;
-}
-
-.pub-scroll-container::-webkit-scrollbar-track {
-  background: #f1f5f9;
-  border-radius: 10px;
-}
-
-.pub-scroll-container::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 10px;
-}
-
-.pub-scroll-container::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .pub-card {
-  flex: 0 0 280px;
+  flex: 0 0 248px;
   scroll-snap-align: start;
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -295,7 +431,7 @@
 }
 
 .pub-card-header {
-  height: 140px;
+  height: 92px;
   background: #f1f5f9;
   position: relative;
   border-bottom: 1px solid #f0f0f0;
@@ -310,11 +446,11 @@
 
 .pub-badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 5px 10px;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
   border-radius: 4px;
-  font-size: 0.72rem;
+  font-size: 0.64rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #1e293b;
@@ -330,11 +466,11 @@
 }
 
 .badge-journal {
-  background-color: #fd7d31;
+  background-color: #EB7523;
 }
 
 .badge-conference {
-  background-color: #60a5fa;
+  background-color: #8EB4E3;
 }
 
 .badge-whitepaper {
@@ -342,27 +478,27 @@
 }
 
 .pub-card-body {
-  padding: 16px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .pub-title {
-  font-size: 1rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: #0f172a;
-  margin: 0 0 12px 0;
+  margin: 0 0 9px 0;
   line-height: 1.3;
 }
 
 .pub-abstract {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #475569;
   line-height: 1.4;
-  margin: 0 0 12px 0;
+  margin: 0 0 9px 0;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   flex-grow: 1;
@@ -370,18 +506,18 @@
 
 .pub-meta {
   margin-top: auto;
-  padding-top: 10px;
+  padding-top: 8px;
   border-top: 1px solid #e2e8f0;
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   color: #475569;
   line-height: 1.4;
 }
 
 .pub-meta-empty {
   margin-top: auto;
-  padding-top: 10px;
+  padding-top: 8px;
   border-top: 1px solid #e2e8f0;
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   color: #94a3b8;
   font-style: italic;
 }
@@ -408,17 +544,17 @@
 
 /* Compact layout */
 .pub-card-compact {
-  flex: 0 0 200px;
+  flex: 0 0 176px;
   min-height: 0;
 }
 
 .pub-card-compact .pub-card-body {
-  padding: 12px;
+  padding: 9px;
 }
 
 .pub-card-compact .pub-title {
-  font-size: 0.88rem;
-  margin-bottom: 8px;
+  font-size: 0.78rem;
+  margin-bottom: 6px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -426,22 +562,26 @@
 }
 
 .pub-card-compact .pub-meta {
-  font-size: 0.72rem;
-  padding-top: 6px;
+  font-size: 0.64rem;
+  padding-top: 5px;
+}
+
+.pub-card-no-image .pub-card-body {
+  padding-top: 11px;
 }
 
 .pub-scroll-container.is-compact {
-  gap: 12px;
-  padding-bottom: 20px;
+  gap: 9px;
+  padding-bottom: 12px;
 }
 
 @media screen and (max-width: 480px) {
   .pub-card {
-    flex: 0 0 85vw;
+    flex: 0 0 72vw;
   }
 
   .pub-card-compact {
-    flex: 0 0 70vw;
+    flex: 0 0 60vw;
   }
 
   .desx-toolbar-controls {
@@ -453,199 +593,6 @@
     margin-left: 0;
   }
 }
-
-/* —— Tools (match research pub cards / rows) —— */
-.tool-section {
-  margin: 0 0 8px;
-}
-
-.tool-section-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0;
-  color: #111111;
-}
-
-.tools-grid {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 12px 5px 28px 5px;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  width: 100%;
-  scrollbar-width: thin;
-  scrollbar-color: #cbd5e1 #f1f5f9;
-}
-
-.tools-grid::-webkit-scrollbar {
-  height: 6px;
-  display: block;
-}
-
-.tools-grid::-webkit-scrollbar-track {
-  background: #f1f5f9;
-  border-radius: 10px;
-}
-
-.tools-grid::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 10px;
-}
-
-.tools-grid::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-
-.tool-card {
-  flex: 0 0 280px;
-  scroll-snap-align: start;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-@media (hover: hover) {
-  .tool-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-  }
-}
-
-.tool-card-media {
-  height: 140px;
-  overflow: hidden;
-  background: #f1f5f9;
-  position: relative;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.tool-card-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.tool-card-body {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.tool-card-title {
-  margin: 0 0 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: normal;
-  text-transform: none;
-  color: #0f172a;
-  line-height: 1.3;
-}
-
-.tool-card-blurb {
-  margin: 0;
-  font-size: 0.85rem;
-  color: #475569;
-  line-height: 1.4;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  flex-grow: 1;
-}
-
-@media screen and (max-width: 480px) {
-  .tool-card {
-    flex: 0 0 85vw;
-  }
-}
-
-/* ——— Courses / Learn (flat grid by type) ——— */
-.desx-catalog-ui--course .desx-search-input:focus {
-  border-color: #c44b23;
-  box-shadow: 0 0 0 3px rgba(196, 75, 35, 0.15);
-}
-
-.desx-kind-course .course-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
-  padding: 8px 0 24px;
-  overflow: visible;
-  scroll-snap-type: none;
-}
-
-.desx-kind-course .course-card {
-  flex: none;
-  width: 100%;
-  max-width: none;
-  scroll-snap-align: none;
-  height: 100%;
-}
-
-@media screen and (max-width: 480px) {
-  .desx-kind-course .course-card {
-    flex: none;
-    width: 100%;
-  }
-}
-
-.course-card-media {
-  height: 160px;
-}
-
-.course-type-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 2;
-  padding: 4px 8px;
-  background: #222;
-  color: #fff;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.course-card-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  list-style: none;
-  margin: 12px 0 0;
-  padding: 0;
-}
-
-.course-card-meta li {
-  padding: 3px 8px;
-  border: 1px solid #e2e8f0;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #475569;
-}
-
-.desx-loading {
-  padding: 24px 8px;
-  color: #64748b;
-  font-size: 0.95rem;
-}
-
 </style>
 
 <div
@@ -657,10 +604,16 @@
 <script>
 /**
  * DesX Catalog renderer for Squarespace 7.0 (Bedford)
- * Loads shared GitHub JSON and renders Research, Tools, or Courses (Learn).
+ * Loads shared GitHub JSON and renders Research rows or Tools grid.
  */
 (function () {
   "use strict";
+
+  // Card images:
+  //   images = true  → all detailed cards show images
+  //   images = false → hide images; if featured_images is true, only Featured cards keep them
+  var images = false;
+  var featured_images = true;
 
   var DEFAULT_IMAGE =
     "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596559556145-XTZEC1VK1GFU1GGLWS0X/DesignExLogoFavicon.png?content-type=image%2Fpng";
@@ -669,13 +622,6 @@
     journal: "Journal paper",
     conference: "Conference paper",
     whitepaper: "White paper",
-  };
-
-  var COURSE_TYPE_LABELS = {
-    course: "Course",
-    workshop: "Workshop",
-    guidebook: "Guidebook",
-    tutorial: "Tutorial",
   };
 
   function qs(root, sel) {
@@ -732,41 +678,18 @@
     );
   }
 
-  function isValidCourse(item) {
-    return (
-      item &&
-      item.kind === "course" &&
-      item.id &&
-      item.title &&
-      item.blurb &&
-      item.url &&
-      item.type &&
-      COURSE_TYPE_LABELS[item.type] &&
-      Array.isArray(item.categories) &&
-      item.categories.length
-    );
-  }
-
   function validateItems(items, kind) {
     var out = [];
     var seen = {};
     (items || []).forEach(function (item, index) {
       if (!item || item.kind !== kind) return;
-      var ok =
-        kind === "research"
-          ? isValidResearch(item)
-          : kind === "tool"
-            ? isValidTool(item)
-            : isValidCourse(item);
+      var ok = kind === "research" ? isValidResearch(item) : isValidTool(item);
       if (!ok) {
         console.warn("[DesX Catalog] Skipping invalid item at index " + index, item);
         return;
       }
       if (seen[item.id]) {
         console.warn("[DesX Catalog] Duplicate id skipped:", item.id);
-        return;
-      }
-      if (item.hidden === true) {
         return;
       }
       seen[item.id] = true;
@@ -784,11 +707,7 @@
       item.blurb,
       item.url,
       item.badge,
-      item.type,
-      COURSE_TYPE_LABELS[item.type] || "",
       BADGE_LABELS[item.badge] || "",
-      item.format || "",
-      item.duration || "",
       (item.categories || []).join(" "),
       (item.authors || []).join(" "),
       String(item.year || ""),
@@ -801,6 +720,166 @@
   function matchesBadgeFilters(item, badges) {
     if (!badges || !badges.length) return true;
     return badges.indexOf(item.badge) !== -1;
+  }
+
+  var YEAR_RANGE_START = 2007;
+
+  function yearBounds(items) {
+    var current = new Date().getFullYear();
+    var minY = YEAR_RANGE_START;
+    var maxY = current;
+    (items || []).forEach(function (item) {
+      var y = Number(item.year);
+      if (!y || isNaN(y)) return;
+      if (y < minY) minY = y;
+      if (y > maxY) maxY = y;
+    });
+    if (maxY < minY) maxY = minY;
+    return { min: minY, max: maxY };
+  }
+
+  function yearList(minY, maxY) {
+    var years = [];
+    for (var y = minY; y <= maxY; y++) years.push(y);
+    return years;
+  }
+
+  function matchesYearRange(item, yearFrom, yearTo) {
+    if (!item.year) return true;
+    var y = Number(item.year);
+    if (isNaN(y)) return true;
+    return y >= yearFrom && y <= yearTo;
+  }
+
+  function yearOptionButtons(years, selected) {
+    return years
+      .map(function (y) {
+        var sel = Number(y) === Number(selected) ? " is-selected" : "";
+        return (
+          '<li role="none">' +
+          '<button type="button" class="desx-year-dd-option' +
+          sel +
+          '" role="option" data-value="' +
+          escapeHtml(String(y)) +
+          '" aria-selected="' +
+          (sel ? "true" : "false") +
+          '">' +
+          escapeHtml(String(y)) +
+          "<\/button>" +
+          "<\/li>"
+        );
+      })
+      .join("");
+  }
+
+  function yearDropdownHtml(role, years, selected, label) {
+    return (
+      '<div class="desx-year-dd" data-year-' +
+      role +
+      ' data-value="' +
+      escapeHtml(String(selected)) +
+      '">' +
+      '<button type="button" class="desx-year-dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="' +
+      escapeHtml(label) +
+      '">' +
+      escapeHtml(String(selected)) +
+      "<\/button>" +
+      '<ul class="desx-year-dd-list" role="listbox" hidden>' +
+      yearOptionButtons(years, selected) +
+      "<\/ul>" +
+      "<\/div>"
+    );
+  }
+
+  function populateYearRange(root, items) {
+    var wrap = qs(root, "[data-year-range]");
+    if (!wrap) return;
+    var bounds = yearBounds(items);
+    var years = yearList(bounds.min, bounds.max);
+    wrap.innerHTML =
+      '<div class="desx-year-range">' +
+      yearDropdownHtml("from", years, bounds.min, "From year") +
+      '<span class="desx-year-range-sep" aria-hidden="true">to<\/span>' +
+      yearDropdownHtml("to", years, bounds.max, "To year") +
+      "<\/div>";
+  }
+
+  function closeAllYearDropdowns(root) {
+    qsa(root, ".desx-year-dd").forEach(function (dd) {
+      dd.classList.remove("is-open");
+      var btn = qs(dd, ".desx-year-dd-btn");
+      var list = qs(dd, ".desx-year-dd-list");
+      if (btn) btn.setAttribute("aria-expanded", "false");
+      if (list) list.hidden = true;
+    });
+  }
+
+  function setYearDropdownValue(dd, value) {
+    var v = String(value);
+    dd.setAttribute("data-value", v);
+    var btn = qs(dd, ".desx-year-dd-btn");
+    if (btn) btn.textContent = v;
+    qsa(dd, ".desx-year-dd-option").forEach(function (opt) {
+      var on = opt.getAttribute("data-value") === v;
+      opt.classList.toggle("is-selected", on);
+      opt.setAttribute("aria-selected", on ? "true" : "false");
+    });
+  }
+
+  function bindYearDropdowns(root, onChange) {
+    qsa(root, ".desx-year-dd").forEach(function (dd) {
+      var btn = qs(dd, ".desx-year-dd-btn");
+      var list = qs(dd, ".desx-year-dd-list");
+      if (!btn || !list) return;
+
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var willOpen = list.hidden;
+        closeAllYearDropdowns(root);
+        if (willOpen) {
+          dd.classList.add("is-open");
+          btn.setAttribute("aria-expanded", "true");
+          list.hidden = false;
+          var selected = qs(list, ".desx-year-dd-option.is-selected");
+          if (selected && selected.scrollIntoView) {
+            selected.scrollIntoView({ block: "nearest" });
+          }
+        }
+      });
+
+      qsa(list, ".desx-year-dd-option").forEach(function (opt) {
+        opt.addEventListener("click", function (e) {
+          e.stopPropagation();
+          setYearDropdownValue(dd, opt.getAttribute("data-value"));
+          closeAllYearDropdowns(root);
+          if (onChange) onChange();
+        });
+      });
+    });
+
+    if (root.getAttribute("data-year-dd-doc") === "1") return;
+    root.setAttribute("data-year-dd-doc", "1");
+    document.addEventListener("click", function () {
+      closeAllYearDropdowns(root);
+    });
+  }
+
+  function readYearRange(root) {
+    var fromEl = qs(root, "[data-year-from]");
+    var toEl = qs(root, "[data-year-to]");
+    var current = new Date().getFullYear();
+    var fromY = fromEl ? Number(fromEl.getAttribute("data-value")) : YEAR_RANGE_START;
+    var toY = toEl ? Number(toEl.getAttribute("data-value")) : current;
+    if (isNaN(fromY)) fromY = YEAR_RANGE_START;
+    if (isNaN(toY)) toY = current;
+    if (fromY > toY) {
+      var swap = fromY;
+      fromY = toY;
+      toY = swap;
+      if (fromEl) setYearDropdownValue(fromEl, fromY);
+      if (toEl) setYearDropdownValue(toEl, toY);
+    }
+    return { from: fromY, to: toY };
   }
 
   function orderedCategories(catalog, items) {
@@ -842,14 +921,25 @@
     return html;
   }
 
-  function researchCardHtml(item, compact) {
+  function shouldShowCardImage(category) {
+    if (images) return true;
+    if (featured_images && String(category || "").toLowerCase() === "featured") {
+      return true;
+    }
+    return false;
+  }
+
+  function researchCardHtml(item, compact, showImage) {
     var badgeClass = "badge-" + escapeHtml(item.badge);
     var label = BADGE_LABELS[item.badge] || item.badge;
-    var classes = "pub-card" + (compact ? " pub-card-compact" : "");
+    var withImage = !compact && !!showImage;
+    var classes =
+      "pub-card" +
+      (compact ? " pub-card-compact" : "") +
+      (withImage ? "" : " pub-card-no-image");
 
-    var header = compact
-      ? ""
-      : '<div class="pub-card-header">' +
+    var header = withImage
+      ? '<div class="pub-card-header">' +
         '<img src="' +
         escapeHtml(itemImage(item)) +
         '" alt="" loading="lazy" />' +
@@ -858,15 +948,16 @@
         '">' +
         escapeHtml(label) +
         "<\/span>" +
-        "<\/div>";
+        "<\/div>"
+      : "";
 
-    var compactBadge = compact
-      ? '<span class="pub-badge pub-badge-inline ' +
+    var compactBadge = withImage
+      ? ""
+      : '<span class="pub-badge pub-badge-inline ' +
         badgeClass +
         '">' +
         escapeHtml(label) +
-        "<\/span>"
-      : "";
+        "<\/span>";
 
     var abstract = compact
       ? ""
@@ -917,112 +1008,81 @@
     );
   }
 
-  function courseMetaHtml(item) {
-    var bits = [];
-    if (item.format) bits.push(item.format);
-    if (item.duration) bits.push(item.duration);
-    if (!bits.length) return "";
-    return (
-      '<ul class="course-card-meta">' +
-      bits
-        .map(function (b) {
-          return "<li>" + escapeHtml(b) + "<\/li>";
-        })
-        .join("") +
-      "<\/ul>"
-    );
-  }
-
-  function courseCardHtml(item) {
-    var typeLabel = COURSE_TYPE_LABELS[item.type] || item.type;
-    return (
-      '<a href="' +
-      escapeHtml(item.url) +
-      '" class="tool-card course-card" data-id="' +
-      escapeHtml(item.id) +
-      '" data-course-type="' +
-      escapeHtml(item.type) +
-      '">' +
-      '<div class="tool-card-media course-card-media">' +
-      '<img src="' +
-      escapeHtml(itemImage(item)) +
-      '" alt="" loading="lazy" />' +
-      '<span class="course-type-badge">' +
-      escapeHtml(typeLabel) +
-      "<\/span>" +
-      "<\/div>" +
-      '<div class="tool-card-body">' +
-      '<h3 class="tool-card-title">' +
-      escapeHtml(item.title) +
-      "<\/h3>" +
-      '<p class="tool-card-blurb">' +
-      escapeHtml(item.blurb) +
-      "<\/p>" +
-      courseMetaHtml(item) +
-      "<\/div>" +
-      "<\/a>"
-    );
-  }
-
   function bindRowArrows(rowEl) {
+    var shell = qs(rowEl, ".pub-scroll-shell");
     var scroller = qs(rowEl, ".pub-scroll-container");
-    var arrows = qs(rowEl, ".desx-arrows");
     var prev = qs(rowEl, ".desx-arrow-prev");
     var next = qs(rowEl, ".desx-arrow-next");
-    if (!scroller || !prev || !next || !arrows) return;
+    if (!shell || !scroller || !prev || !next) return;
 
-    function cardStep() {
-      var card = qs(scroller, ".pub-card, .tool-card, .course-card");
-      if (!card) return 296;
+    function pageStep() {
+      var card = qs(scroller, ".pub-card");
+      var cardW = card ? card.getBoundingClientRect().width : 248;
       var style = window.getComputedStyle(scroller);
       var gap = parseFloat(style.columnGap || style.gap) || 16;
-      return card.getBoundingClientRect().width + gap;
+      var visible = scroller.clientWidth;
+      var step = Math.max(cardW + gap, visible - cardW - gap);
+      return Math.max(step, visible * 0.85);
     }
 
     function positionArrows() {
-      var card = qs(scroller, ".pub-card, .tool-card, .course-card");
+      var card = qs(scroller, ".pub-card");
       if (!card) return;
-      var half = Math.round(card.getBoundingClientRect().width / 2);
-      arrows.style.right = half + "px";
+      var shellRect = shell.getBoundingClientRect();
+      var cardRect = card.getBoundingClientRect();
+      var midY = Math.round(cardRect.top - shellRect.top + cardRect.height / 2);
+      prev.style.top = midY + "px";
+      next.style.top = midY + "px";
     }
 
     function update() {
-      var max = scroller.scrollWidth - scroller.clientWidth - 2;
-      var canScroll = max > 2;
-      var atStart = scroller.scrollLeft <= 2;
-      var atEnd = scroller.scrollLeft >= max;
+      var max = scroller.scrollWidth - scroller.clientWidth;
+      var canScroll = max > 8;
+      var atStart = scroller.scrollLeft <= 12;
+      var atEnd = !canScroll || scroller.scrollLeft >= max - 12;
 
-      prev.classList.toggle("is-hidden", atStart);
-      prev.disabled = atStart;
+      prev.classList.toggle("is-hidden", !canScroll || atStart);
+      prev.disabled = !canScroll || atStart;
+      next.classList.toggle("is-hidden", !canScroll || atEnd);
       next.disabled = !canScroll || atEnd;
-      next.style.visibility = canScroll ? "visible" : "hidden";
       positionArrows();
     }
 
-    prev.addEventListener("click", function () {
-      scroller.scrollBy({ left: -cardStep(), behavior: "smooth" });
+    prev.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      scroller.scrollBy({ left: -pageStep(), behavior: "smooth" });
     });
-    next.addEventListener("click", function () {
-      scroller.scrollBy({ left: cardStep(), behavior: "smooth" });
+    next.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      scroller.scrollBy({ left: pageStep(), behavior: "smooth" });
     });
     scroller.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update);
+    scroller.scrollLeft = 0;
     update();
   }
 
   function renderResearch(mount, catalog, allItems, state) {
     var filtered = allItems.filter(function (item) {
-      return matchesQuery(item, state.query) && matchesBadgeFilters(item, state.badges);
+      return (
+        matchesQuery(item, state.query) &&
+        matchesBadgeFilters(item, state.badges) &&
+        matchesYearRange(item, state.yearFrom, state.yearTo)
+      );
     });
     var cats = orderedCategories(catalog, filtered);
     var compact = state.layout === "compact";
 
     if (!filtered.length) {
+      updateResultCount(mount, 0);
       mount.innerHTML =
         '<div class="desx-empty">No publications match your search.<\/div>';
       return;
     }
 
+    updateResultCount(mount, filtered.length);
     var html = cats
       .map(function (cat) {
         var cards = filtered.filter(function (item) {
@@ -1044,14 +1104,16 @@
           '">' +
           cards
             .map(function (item) {
-              return researchCardHtml(item, compact);
+              return researchCardHtml(item, compact, shouldShowCardImage(cat));
             })
             .join("") +
           "<\/div>" +
-          '<div class="desx-arrows">' +
-          '<button type="button" class="desx-arrow desx-arrow-prev is-hidden" aria-label="Scroll left">&#8249;<\/button>' +
-          '<button type="button" class="desx-arrow desx-arrow-next" aria-label="Scroll right">&#8250;<\/button>' +
-          "<\/div>" +
+          '<button type="button" class="desx-arrow desx-arrow-prev is-hidden" aria-label="Previous">' +
+          '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.6 7.4L10 12l4.6 4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><\/svg>' +
+          "<\/button>" +
+          '<button type="button" class="desx-arrow desx-arrow-next" aria-label="Next">' +
+          '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.4 7.4L14 12l-4.6 4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><\/svg>' +
+          "<\/button>" +
           "<\/div>" +
           "<\/div>"
         );
@@ -1075,100 +1137,58 @@
     }
 
     var cats = orderedCategories(catalog, filtered);
-    var html = cats
+    var useSections = cats.length > 1;
+
+    if (!useSections) {
+      mount.innerHTML =
+        '<div class="tools-grid">' + filtered.map(toolCardHtml).join("") + "<\/div>";
+      return;
+    }
+
+    mount.innerHTML = cats
       .map(function (cat) {
         var cards = filtered.filter(function (item) {
           return (item.categories || []).indexOf(cat) !== -1;
         });
         if (!cards.length) return "";
         return (
-          '<div class="pub-row-wrapper tool-section" data-category="' +
+          '<div class="tool-section" data-category="' +
           escapeHtml(cat) +
           '">' +
-          '<div class="pub-row-header">' +
-          '<h2 class="pub-row-title tool-section-title">' +
+          '<h2 class="tool-section-title">' +
           escapeHtml(cat) +
           "<\/h2>" +
-          "<\/div>" +
-          '<div class="pub-scroll-shell">' +
-          '<div class="pub-scroll-container tools-grid">' +
+          '<div class="tools-grid">' +
           cards.map(toolCardHtml).join("") +
-          "<\/div>" +
-          '<div class="desx-arrows">' +
-          '<button type="button" class="desx-arrow desx-arrow-prev is-hidden" aria-label="Scroll left">&#8249;<\/button>' +
-          '<button type="button" class="desx-arrow desx-arrow-next" aria-label="Scroll right">&#8250;<\/button>' +
-          "<\/div>" +
           "<\/div>" +
           "<\/div>"
         );
       })
       .join("");
-
-    mount.className = "desx-catalog-results desx-layout-detailed";
-    mount.innerHTML = html || '<div class="desx-empty">No tools match your search.<\/div>';
-    qsa(mount, ".pub-row-wrapper").forEach(bindRowArrows);
   }
 
-  function courseTypeLabel(item) {
-    return COURSE_TYPE_LABELS[item.type] || item.type || "";
-  }
-
-  function sortCoursesForGrid(items) {
-    return items.slice().sort(function (a, b) {
-      var typeA = normalize(courseTypeLabel(a));
-      var typeB = normalize(courseTypeLabel(b));
-      if (typeA < typeB) return -1;
-      if (typeA > typeB) return 1;
-      var titleA = normalize(a.title);
-      var titleB = normalize(b.title);
-      if (titleA < titleB) return -1;
-      if (titleA > titleB) return 1;
-      return 0;
-    });
-  }
-
-  function renderCourses(mount, catalog, allItems, query) {
-    var filtered = sortCoursesForGrid(
-      allItems.filter(function (item) {
-        return matchesQuery(item, query);
-      })
-    );
-
-    if (!filtered.length) {
-      mount.innerHTML = '<div class="desx-empty">No courses match your search.<\/div>';
-      return;
-    }
-
-    mount.className =
-      "desx-catalog-results desx-layout-detailed desx-kind-course";
-    mount.innerHTML =
-      '<div class="course-grid" role="list">' +
-      filtered.map(courseCardHtml).join("") +
-      "<\/div>";
+  function updateResultCount(resultsMount, count) {
+    var ui = resultsMount && resultsMount.parentNode;
+    var el = ui ? qs(ui, ".desx-result-count") : null;
+    if (!el) return;
+    el.textContent = count === 1 ? "1 Result" : count + " Results";
   }
 
   function selectedBadges(root) {
-    return qsa(root, ".desx-filter-badge.is-active").map(function (btn) {
+    return qsa(root, ".desx-filter-badge[data-badge].is-active").map(function (btn) {
       return btn.getAttribute("data-badge");
     });
   }
 
   function buildShell(mount, kind) {
-    var placeholder =
-      kind === "research"
-        ? "Search publications…"
-        : kind === "course"
-          ? "Search courses…"
-          : "Search tools…";
-    var ariaSearch =
-      kind === "research"
-        ? "Search publications"
-        : kind === "course"
-          ? "Search courses"
-          : "Search tools";
+    var placeholder = kind === "research" ? "Search publications…" : "Search tools…";
     var filters =
       kind === "research"
         ? '<div class="desx-toolbar-controls">' +
+          '<div class="desx-control-group">' +
+          '<div class="desx-control-label">Filter by year<\/div>' +
+          '<div data-year-range><\/div>' +
+          "<\/div>" +
           '<div class="desx-control-group">' +
           '<div class="desx-control-label">Filter by paper type<\/div>' +
           '<div class="desx-filters" role="group" aria-label="Filter by paper type">' +
@@ -1189,16 +1209,17 @@
         : "";
 
     mount.innerHTML =
-      '<div class="desx-catalog-ui' +
-      (kind === "course" ? " desx-catalog-ui--course" : "") +
-      '">' +
+      '<div class="desx-catalog-ui">' +
       '<div class="desx-toolbar">' +
+      '<div class="desx-search-row">' +
       '<div class="desx-search-wrap">' +
       '<input id="desx-catalog-search" class="desx-search-input" type="search" placeholder="' +
       placeholder +
-      '" autocomplete="off" aria-label="' +
-      ariaSearch +
-      '" />' +
+      '" autocomplete="off" aria-label="Search publications" />' +
+      "<\/div>" +
+      (kind === "research"
+        ? '<div class="desx-result-count" aria-live="polite">0 Results<\/div>'
+        : "") +
       "<\/div>" +
       filters +
       "<\/div>" +
@@ -1286,8 +1307,8 @@
 
   function initMount(mount) {
     var kind = (mount.getAttribute("data-kind") || "research").toLowerCase();
-    if (kind !== "research" && kind !== "tool" && kind !== "course") {
-      console.error("[DesX Catalog] data-kind must be research, tool, or course");
+    if (kind !== "research" && kind !== "tool") {
+      console.error("[DesX Catalog] data-kind must be research or tool");
       return;
     }
 
@@ -1297,6 +1318,8 @@
     var state = {
       query: "",
       badges: [],
+      yearFrom: YEAR_RANGE_START,
+      yearTo: new Date().getFullYear(),
       layout: "detailed",
     };
 
@@ -1306,9 +1329,22 @@
         function paint() {
           state.query = normalize(shell.input.value);
           state.badges = selectedBadges(shell.root);
-          if (kind === "research") renderResearch(shell.results, catalog, items, state);
-          else if (kind === "course") renderCourses(shell.results, catalog, items, state.query);
-          else renderTools(shell.results, catalog, items, state.query);
+          if (kind === "research") {
+            var range = readYearRange(shell.root);
+            state.yearFrom = range.from;
+            state.yearTo = range.to;
+            renderResearch(shell.results, catalog, items, state);
+          } else {
+            renderTools(shell.results, catalog, items, state.query);
+          }
+        }
+
+        if (kind === "research") {
+          populateYearRange(shell.root, items);
+          bindYearDropdowns(shell.root, paint);
+          var initialRange = readYearRange(shell.root);
+          state.yearFrom = initialRange.from;
+          state.yearTo = initialRange.to;
         }
 
         shell.input.addEventListener("input", paint);
