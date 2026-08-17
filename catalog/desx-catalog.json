@@ -126,17 +126,6 @@
       "hidden": false
     },
     {
-      "kind": "tool",
-      "id": "for-the-benefit-of-the-world-conference-desx-abstracts-tool",
-      "title": "For the Benefit of the World Conference â€” DesX Abstracts (2025)",
-      "blurb": "Browse DesX research abstracts from the 2025 For the Benefit of the World Conference.",
-      "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
-      "categories": [
-        "White papers"
-      ],
-      "hidden": false
-    },
-    {
       "kind": "research",
       "id": "definitions-of-fundamental-socio-technical-network-types",
       "title": "Definitions of Fundamental Socio-Technical Network Types",
@@ -147,17 +136,6 @@
         "Social impact modeling"
       ],
       "year": 2025,
-      "hidden": false
-    },
-    {
-      "kind": "tool",
-      "id": "definitions-of-fundamental-socio-technical-network-types-tool",
-      "title": "Definitions of Fundamental Socio-Technical Network Types",
-      "blurb": "Reference definitions of socio-technical network types for sustainable development and social-impact research.",
-      "url": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2",
-      "categories": [
-        "White papers"
-      ],
       "hidden": false
     },
     {
@@ -174,17 +152,6 @@
       "hidden": false
     },
     {
-      "kind": "tool",
-      "id": "definition-of-engineering-for-global-health-tool",
-      "title": "Definition of Engineering for Global Health",
-      "blurb": "A shared definition of Engineering for Global Health for teams working on global health design challenges.",
-      "url": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b",
-      "categories": [
-        "White papers"
-      ],
-      "hidden": false
-    },
-    {
       "kind": "research",
       "id": "global-health-glossary",
       "title": "Global Health Glossary",
@@ -195,17 +162,6 @@
         "Engineering For Global Health"
       ],
       "year": 2025,
-      "hidden": false
-    },
-    {
-      "kind": "tool",
-      "id": "global-health-glossary-tool",
-      "title": "Global Health Glossary",
-      "blurb": "Look up shared global health terminology for Engineering for Global Health projects.",
-      "url": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66",
-      "categories": [
-        "White papers"
-      ],
       "hidden": false
     },
     {
@@ -2225,7 +2181,7 @@
       "categories": [
         "Decision support"
       ],
-      "hidden": false
+      "hidden": true
     },
     {
       "kind": "tool",
@@ -2261,7 +2217,7 @@
       "categories": [
         "Ideation"
       ],
-      "hidden": false
+      "hidden": true
     },
     {
       "kind": "tool",
@@ -2273,7 +2229,7 @@
       "categories": [
         "Decision support"
       ],
-      "hidden": false
+      "hidden": true
     },
     {
       "kind": "tool",
@@ -2285,7 +2241,7 @@
       "categories": [
         "Decision support"
       ],
-      "hidden": false
+      "hidden": true
     },
     {
       "kind": "tool",
@@ -2297,7 +2253,7 @@
       "categories": [
         "Ideation"
       ],
-      "hidden": false
+      "hidden": true
     },
     {
       "kind": "tool",
