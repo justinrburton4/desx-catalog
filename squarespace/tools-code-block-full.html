@@ -1,4 +1,5 @@
-<!-- DesX Tools Catalog: paste into a Squarespace Code Block on /desx-tools. -->
+<!-- DesX Tools Catalog: paste into a Squarespace Code Block on /desx-tools.
+     Self-contained: CSS + mount + JS. data-kind=tool. -->
 <style>
 /* DesX Catalog — Research rows + Tools grid (Squarespace-safe) */
 
@@ -17,8 +18,8 @@
 .desx-toolbar {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 14px 24px;
+  align-items: flex-end;
+  gap: 16px 24px;
   margin: 0 0 28px;
 }
 
@@ -27,7 +28,6 @@
   min-width: 200px;
   max-width: 420px;
   margin: 0;
-  margin-right: 8px;
 }
 
 .desx-search-input {
@@ -47,13 +47,37 @@
   border-color: #F2663A;
 }
 
+.desx-toolbar-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px 20px;
+  margin-left: auto;
+}
+
+.desx-control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 0 0 auto;
+}
+
+.desx-control-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #64748b;
+  line-height: 1.2;
+}
+
 .desx-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   align-items: center;
   flex: 0 0 auto;
-  margin-left: 4px;
+  margin-left: 0;
 }
 
 .desx-filter-badge {
@@ -88,7 +112,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
-  margin-left: auto;
+  margin-left: 0;
   flex: 0 0 auto;
   padding: 3px;
   border-radius: 999px;
@@ -167,26 +191,37 @@
   color: #111111;
 }
 
+.pub-scroll-shell {
+  position: relative;
+}
+
 .desx-arrows {
+  position: absolute;
+  top: 50%;
+  right: 140px;
+  transform: translate(50%, -55%);
   display: flex;
-  gap: 8px;
-  flex-shrink: 0;
+  gap: 10px;
+  z-index: 20;
+  pointer-events: none;
 }
 
 .desx-arrow {
-  width: 36px;
-  height: 36px;
+  pointer-events: auto;
+  width: 52px;
+  height: 52px;
   border-radius: 999px;
-  border: 1px solid #cbd5e1;
-  background: #fff;
+  border: 1px solid rgba(203, 213, 225, 0.95);
+  background: rgba(255, 255, 255, 0.96);
   color: #0f172a;
-  font-size: 1.35rem;
+  font-size: 1.75rem;
   line-height: 1;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+  transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease, visibility 0.2s ease;
 }
 
 .desx-arrow:hover:not(:disabled) {
@@ -194,10 +229,13 @@
   color: #F2663A;
 }
 
-.desx-arrow:disabled {
-  opacity: 0.35;
-  cursor: default;
+.desx-arrow:disabled,
+.desx-arrow.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
+
 
 .pub-scroll-container {
   display: flex;
@@ -406,22 +444,220 @@
     flex: 0 0 70vw;
   }
 
+  .desx-toolbar-controls {
+    margin-left: 0;
+    width: 100%;
+  }
+
   .desx-layout-toggle {
     margin-left: 0;
   }
 }
+
+/* —— Tools (match research pub cards / rows) —— */
+.tool-section {
+  margin: 0 0 8px;
+}
+
+.tool-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111111;
+}
+
+.tools-grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 12px 5px 28px 5px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.tools-grid::-webkit-scrollbar {
+  height: 6px;
+  display: block;
+}
+
+.tools-grid::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.tools-grid::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.tools-grid::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.tool-card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .tool-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+}
+
+.tool-card-media {
+  height: 140px;
+  overflow: hidden;
+  background: #f1f5f9;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tool-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tool-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tool-card-title {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.tool-card-blurb {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .tool-card {
+    flex: 0 0 85vw;
+  }
+}
+
+/* ——— Courses / Learn (flat grid by type) ——— */
+.desx-catalog-ui--course .desx-search-input:focus {
+  border-color: #c44b23;
+  box-shadow: 0 0 0 3px rgba(196, 75, 35, 0.15);
+}
+
+.desx-kind-course .course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 8px 0 24px;
+  overflow: visible;
+  scroll-snap-type: none;
+}
+
+.desx-kind-course .course-card {
+  flex: none;
+  width: 100%;
+  max-width: none;
+  scroll-snap-align: none;
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .desx-kind-course .course-card {
+    flex: none;
+    width: 100%;
+  }
+}
+
+.course-card-media {
+  height: 160px;
+}
+
+.course-type-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 4px 8px;
+  background: #222;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.course-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.course-card-meta li {
+  padding: 3px 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.desx-loading {
+  padding: 24px 8px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
 </style>
 
 <div
   id="desx-catalog"
   data-kind="tool"
-  data-catalog-url="https://raw.githubusercontent.com/justinrburton4/desx-catalog/main/catalog/desx-catalog.json?v=5"
+  data-catalog-url="https://raw.githubusercontent.com/justinrburton4/desx-catalog/main/catalog/desx-catalog.json"
 ></div>
 
 <script>
 /**
  * DesX Catalog renderer for Squarespace 7.0 (Bedford)
- * Loads shared GitHub JSON and renders Research rows or Tools grid.
+ * Loads shared GitHub JSON and renders Research, Tools, or Courses (Learn).
  */
 (function () {
   "use strict";
@@ -433,6 +669,13 @@
     journal: "Journal paper",
     conference: "Conference paper",
     whitepaper: "White paper",
+  };
+
+  var COURSE_TYPE_LABELS = {
+    course: "Course",
+    workshop: "Workshop",
+    guidebook: "Guidebook",
+    tutorial: "Tutorial",
   };
 
   function qs(root, sel) {
@@ -489,18 +732,41 @@
     );
   }
 
+  function isValidCourse(item) {
+    return (
+      item &&
+      item.kind === "course" &&
+      item.id &&
+      item.title &&
+      item.blurb &&
+      item.url &&
+      item.type &&
+      COURSE_TYPE_LABELS[item.type] &&
+      Array.isArray(item.categories) &&
+      item.categories.length
+    );
+  }
+
   function validateItems(items, kind) {
     var out = [];
     var seen = {};
     (items || []).forEach(function (item, index) {
       if (!item || item.kind !== kind) return;
-      var ok = kind === "research" ? isValidResearch(item) : isValidTool(item);
+      var ok =
+        kind === "research"
+          ? isValidResearch(item)
+          : kind === "tool"
+            ? isValidTool(item)
+            : isValidCourse(item);
       if (!ok) {
         console.warn("[DesX Catalog] Skipping invalid item at index " + index, item);
         return;
       }
       if (seen[item.id]) {
         console.warn("[DesX Catalog] Duplicate id skipped:", item.id);
+        return;
+      }
+      if (item.hidden === true) {
         return;
       }
       seen[item.id] = true;
@@ -518,7 +784,11 @@
       item.blurb,
       item.url,
       item.badge,
+      item.type,
+      COURSE_TYPE_LABELS[item.type] || "",
       BADGE_LABELS[item.badge] || "",
+      item.format || "",
+      item.duration || "",
       (item.categories || []).join(" "),
       (item.authors || []).join(" "),
       String(item.year || ""),
@@ -647,24 +917,86 @@
     );
   }
 
+  function courseMetaHtml(item) {
+    var bits = [];
+    if (item.format) bits.push(item.format);
+    if (item.duration) bits.push(item.duration);
+    if (!bits.length) return "";
+    return (
+      '<ul class="course-card-meta">' +
+      bits
+        .map(function (b) {
+          return "<li>" + escapeHtml(b) + "<\/li>";
+        })
+        .join("") +
+      "<\/ul>"
+    );
+  }
+
+  function courseCardHtml(item) {
+    var typeLabel = COURSE_TYPE_LABELS[item.type] || item.type;
+    return (
+      '<a href="' +
+      escapeHtml(item.url) +
+      '" class="tool-card course-card" data-id="' +
+      escapeHtml(item.id) +
+      '" data-course-type="' +
+      escapeHtml(item.type) +
+      '">' +
+      '<div class="tool-card-media course-card-media">' +
+      '<img src="' +
+      escapeHtml(itemImage(item)) +
+      '" alt="" loading="lazy" />' +
+      '<span class="course-type-badge">' +
+      escapeHtml(typeLabel) +
+      "<\/span>" +
+      "<\/div>" +
+      '<div class="tool-card-body">' +
+      '<h3 class="tool-card-title">' +
+      escapeHtml(item.title) +
+      "<\/h3>" +
+      '<p class="tool-card-blurb">' +
+      escapeHtml(item.blurb) +
+      "<\/p>" +
+      courseMetaHtml(item) +
+      "<\/div>" +
+      "<\/a>"
+    );
+  }
+
   function bindRowArrows(rowEl) {
     var scroller = qs(rowEl, ".pub-scroll-container");
+    var arrows = qs(rowEl, ".desx-arrows");
     var prev = qs(rowEl, ".desx-arrow-prev");
     var next = qs(rowEl, ".desx-arrow-next");
-    if (!scroller || !prev || !next) return;
+    if (!scroller || !prev || !next || !arrows) return;
 
     function cardStep() {
-      var card = qs(scroller, ".pub-card");
+      var card = qs(scroller, ".pub-card, .tool-card, .course-card");
       if (!card) return 296;
       var style = window.getComputedStyle(scroller);
       var gap = parseFloat(style.columnGap || style.gap) || 16;
       return card.getBoundingClientRect().width + gap;
     }
 
+    function positionArrows() {
+      var card = qs(scroller, ".pub-card, .tool-card, .course-card");
+      if (!card) return;
+      var half = Math.round(card.getBoundingClientRect().width / 2);
+      arrows.style.right = half + "px";
+    }
+
     function update() {
       var max = scroller.scrollWidth - scroller.clientWidth - 2;
-      prev.disabled = scroller.scrollLeft <= 2;
-      next.disabled = scroller.scrollLeft >= max;
+      var canScroll = max > 2;
+      var atStart = scroller.scrollLeft <= 2;
+      var atEnd = scroller.scrollLeft >= max;
+
+      prev.classList.toggle("is-hidden", atStart);
+      prev.disabled = atStart;
+      next.disabled = !canScroll || atEnd;
+      next.style.visibility = canScroll ? "visible" : "hidden";
+      positionArrows();
     }
 
     prev.addEventListener("click", function () {
@@ -705,11 +1037,8 @@
           '<h2 class="pub-row-title">' +
           escapeHtml(cat) +
           "<\/h2>" +
-          '<div class="desx-arrows">' +
-          '<button type="button" class="desx-arrow desx-arrow-prev" aria-label="Scroll left">&#8249;<\/button>' +
-          '<button type="button" class="desx-arrow desx-arrow-next" aria-label="Scroll right">&#8250;<\/button>' +
           "<\/div>" +
-          "<\/div>" +
+          '<div class="pub-scroll-shell">' +
           '<div class="pub-scroll-container' +
           (compact ? " is-compact" : "") +
           '">' +
@@ -718,6 +1047,11 @@
               return researchCardHtml(item, compact);
             })
             .join("") +
+          "<\/div>" +
+          '<div class="desx-arrows">' +
+          '<button type="button" class="desx-arrow desx-arrow-prev is-hidden" aria-label="Scroll left">&#8249;<\/button>' +
+          '<button type="button" class="desx-arrow desx-arrow-next" aria-label="Scroll right">&#8250;<\/button>' +
+          "<\/div>" +
           "<\/div>" +
           "<\/div>"
         );
@@ -741,34 +1075,76 @@
     }
 
     var cats = orderedCategories(catalog, filtered);
-    var useSections = cats.length > 1;
-
-    if (!useSections) {
-      mount.innerHTML =
-        '<div class="tools-grid">' + filtered.map(toolCardHtml).join("") + "<\/div>";
-      return;
-    }
-
-    mount.innerHTML = cats
+    var html = cats
       .map(function (cat) {
         var cards = filtered.filter(function (item) {
           return (item.categories || []).indexOf(cat) !== -1;
         });
         if (!cards.length) return "";
         return (
-          '<div class="tool-section" data-category="' +
+          '<div class="pub-row-wrapper tool-section" data-category="' +
           escapeHtml(cat) +
           '">' +
-          '<h2 class="tool-section-title">' +
+          '<div class="pub-row-header">' +
+          '<h2 class="pub-row-title tool-section-title">' +
           escapeHtml(cat) +
           "<\/h2>" +
-          '<div class="tools-grid">' +
+          "<\/div>" +
+          '<div class="pub-scroll-shell">' +
+          '<div class="pub-scroll-container tools-grid">' +
           cards.map(toolCardHtml).join("") +
+          "<\/div>" +
+          '<div class="desx-arrows">' +
+          '<button type="button" class="desx-arrow desx-arrow-prev is-hidden" aria-label="Scroll left">&#8249;<\/button>' +
+          '<button type="button" class="desx-arrow desx-arrow-next" aria-label="Scroll right">&#8250;<\/button>' +
+          "<\/div>" +
           "<\/div>" +
           "<\/div>"
         );
       })
       .join("");
+
+    mount.className = "desx-catalog-results desx-layout-detailed";
+    mount.innerHTML = html || '<div class="desx-empty">No tools match your search.<\/div>';
+    qsa(mount, ".pub-row-wrapper").forEach(bindRowArrows);
+  }
+
+  function courseTypeLabel(item) {
+    return COURSE_TYPE_LABELS[item.type] || item.type || "";
+  }
+
+  function sortCoursesForGrid(items) {
+    return items.slice().sort(function (a, b) {
+      var typeA = normalize(courseTypeLabel(a));
+      var typeB = normalize(courseTypeLabel(b));
+      if (typeA < typeB) return -1;
+      if (typeA > typeB) return 1;
+      var titleA = normalize(a.title);
+      var titleB = normalize(b.title);
+      if (titleA < titleB) return -1;
+      if (titleA > titleB) return 1;
+      return 0;
+    });
+  }
+
+  function renderCourses(mount, catalog, allItems, query) {
+    var filtered = sortCoursesForGrid(
+      allItems.filter(function (item) {
+        return matchesQuery(item, query);
+      })
+    );
+
+    if (!filtered.length) {
+      mount.innerHTML = '<div class="desx-empty">No courses match your search.<\/div>';
+      return;
+    }
+
+    mount.className =
+      "desx-catalog-results desx-layout-detailed desx-kind-course";
+    mount.innerHTML =
+      '<div class="course-grid" role="list">' +
+      filtered.map(courseCardHtml).join("") +
+      "<\/div>";
   }
 
   function selectedBadges(root) {
@@ -778,28 +1154,51 @@
   }
 
   function buildShell(mount, kind) {
-    var placeholder = kind === "research" ? "Search publications…" : "Search tools…";
+    var placeholder =
+      kind === "research"
+        ? "Search publications…"
+        : kind === "course"
+          ? "Search courses…"
+          : "Search tools…";
+    var ariaSearch =
+      kind === "research"
+        ? "Search publications"
+        : kind === "course"
+          ? "Search courses"
+          : "Search tools";
     var filters =
       kind === "research"
-        ? '<div class="desx-filters" role="group" aria-label="Filter by paper type">' +
+        ? '<div class="desx-toolbar-controls">' +
+          '<div class="desx-control-group">' +
+          '<div class="desx-control-label">Filter by paper type<\/div>' +
+          '<div class="desx-filters" role="group" aria-label="Filter by paper type">' +
           '<button type="button" class="desx-filter-badge is-active" data-badge="journal">Journal<\/button>' +
           '<button type="button" class="desx-filter-badge is-active" data-badge="conference">Conference<\/button>' +
           '<button type="button" class="desx-filter-badge is-active" data-badge="whitepaper">White paper<\/button>' +
           "<\/div>" +
+          "<\/div>" +
+          '<div class="desx-control-group">' +
+          '<div class="desx-control-label">Layout<\/div>' +
           '<div class="desx-layout-toggle" data-layout="detailed" role="group" aria-label="Layout">' +
           '<span class="desx-layout-thumb" aria-hidden="true"><\/span>' +
           '<button type="button" class="desx-layout-btn is-active" data-layout="detailed">Detailed<\/button>' +
           '<button type="button" class="desx-layout-btn" data-layout="compact">Compact<\/button>' +
+          "<\/div>" +
+          "<\/div>" +
           "<\/div>"
         : "";
 
     mount.innerHTML =
-      '<div class="desx-catalog-ui">' +
+      '<div class="desx-catalog-ui' +
+      (kind === "course" ? " desx-catalog-ui--course" : "") +
+      '">' +
       '<div class="desx-toolbar">' +
       '<div class="desx-search-wrap">' +
       '<input id="desx-catalog-search" class="desx-search-input" type="search" placeholder="' +
       placeholder +
-      '" autocomplete="off" aria-label="Search publications" />' +
+      '" autocomplete="off" aria-label="' +
+      ariaSearch +
+      '" />' +
       "<\/div>" +
       filters +
       "<\/div>" +
@@ -820,10 +1219,75 @@
     );
   }
 
+  function withCacheBust(url) {
+    var sep = String(url).indexOf("?") >= 0 ? "&" : "?";
+    return url + sep + "_=" + Date.now();
+  }
+
+  function parseGithubRaw(url) {
+    var m = String(url).match(
+      /^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/([^/?#]+)\/([^?#]+)/
+    );
+    if (!m) return null;
+    return { owner: m[1], repo: m[2], ref: m[3], path: m[4] };
+  }
+
+  function fetchJson(url) {
+    return fetch(url, { credentials: "omit", cache: "no-store" }).then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status + " for " + url);
+      return res.json();
+    });
+  }
+
+  // Always load the latest GitHub file. Looks up the current commit SHA so
+  // raw.githubusercontent.com cannot serve a stale cached copy of /main/.
+  function fetchCatalogJson(url) {
+    var gh = parseGithubRaw(url);
+    if (!gh) return fetchJson(withCacheBust(url));
+
+    var api =
+      "https://api.github.com/repos/" +
+      gh.owner +
+      "/" +
+      gh.repo +
+      "/commits?path=" +
+      encodeURIComponent(gh.path) +
+      "&sha=" +
+      encodeURIComponent(gh.ref) +
+      "&per_page=1";
+
+    return fetch(api, {
+      credentials: "omit",
+      cache: "no-store",
+      headers: { Accept: "application/vnd.github+json" },
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error("GitHub API " + res.status);
+        return res.json();
+      })
+      .then(function (commits) {
+        var sha = commits && commits[0] && commits[0].sha;
+        if (!sha) throw new Error("No commit SHA");
+        return fetchJson(
+          "https://raw.githubusercontent.com/" +
+            gh.owner +
+            "/" +
+            gh.repo +
+            "/" +
+            sha +
+            "/" +
+            gh.path
+        );
+      })
+      .catch(function () {
+        return fetchJson(withCacheBust(url));
+      });
+  }
+
   function initMount(mount) {
     var kind = (mount.getAttribute("data-kind") || "research").toLowerCase();
-    if (kind !== "research" && kind !== "tool") {
-      console.error("[DesX Catalog] data-kind must be research or tool");
+    if (kind !== "research" && kind !== "tool" && kind !== "course") {
+      console.error("[DesX Catalog] data-kind must be research, tool, or course");
       return;
     }
 
@@ -836,20 +1300,14 @@
       layout: "detailed",
     };
 
-    var url = resolveCatalogUrl(mount);
-
-    fetch(url, { credentials: "omit", cache: "no-cache" })
-      .then(function (res) {
-        if (!res.ok) throw new Error("HTTP " + res.status + " for " + url);
-        return res.json();
-      })
-      .then(function (catalog) {
+    fetchCatalogJson(resolveCatalogUrl(mount)).then(function (catalog) {
         var items = validateItems(catalog.items || [], kind);
 
         function paint() {
           state.query = normalize(shell.input.value);
           state.badges = selectedBadges(shell.root);
           if (kind === "research") renderResearch(shell.results, catalog, items, state);
+          else if (kind === "course") renderCourses(shell.results, catalog, items, state.query);
           else renderTools(shell.results, catalog, items, state.query);
         }
 
