@@ -33,6 +33,20 @@
     },
     {
       "kind": "course",
+      "id": "product-design-course",
+      "title": "Product Design Course",
+      "blurb": "ME EN 576 Product Design — Build Advanced Design Capability.",
+      "url": "/product-design-course",
+      "type": "course",
+      "categories": [
+        "Courses"
+      ],
+      "format": "In-Person Course",
+      "duration": "Semester",
+      "hidden": false
+    },
+    {
+      "kind": "course",
       "id": "onshape-cad-course",
       "title": "Onshape CAD Course",
       "blurb": "Online ME EN 272 engineering graphics — learn cloud CAD with Onshape.",
