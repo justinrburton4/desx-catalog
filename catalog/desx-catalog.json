@@ -43,7 +43,8 @@
       ],
       "format": "In-Person Course",
       "duration": "Semester",
-      "hidden": false
+      "hidden": false,
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/99b3bdd0-f7b7-45a3-a730-f0a6573abbc5/576+banner.png?content-type=image%2Fpng"
     },
     {
       "kind": "course",
