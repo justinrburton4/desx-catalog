@@ -258,7 +258,9 @@ Talk to someone before adding a new tool category.
     "Tutorials"
   ],
   "format": "Self-paced",
-  "duration": "8 weeks"
+  "duration": "8 weeks",
+  "order": 2,
+  "hidden": false
 }
 ```
 
@@ -266,7 +268,9 @@ Talk to someone before adding a new tool category.
 
 `type` is one of `"course"`, `"workshop"`, `"guidebook"`, or `"tutorial"`. That drives the badge on the card.
 
-`blurb` is one sentence. `url` is the Learn landing page path. `format` and `duration` are optional chips on the card.
+`blurb` is one sentence. `url` is the Learn landing page path. `format` and `duration` are optional chips on the card. If you need more than two chips, use `"tags": ["…", "…"]` instead — when `tags` is present, it replaces format/duration chips.
+
+`order` is a number that controls Learn-grid position (lower first). Items without `order` sort after numbered ones.
 
 `hidden` is `false` for normal cards. Set `"hidden": true` to keep the item in the JSON but hide it on the site.
 

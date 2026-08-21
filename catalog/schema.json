@@ -226,6 +226,19 @@
           "minLength": 1,
           "description": "Optional duration label, e.g. 8 weeks"
         },
+        "tags": {
+          "type": "array",
+          "description": "Optional chip labels shown on the course card. When present, replaces format/duration chips.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Explicit Learn-grid sort order (lower first). Items without order sort after numbered ones."
+        },
         "hidden": {
           "type": "boolean",
           "description": "If true, the card is omitted from catalog pages."

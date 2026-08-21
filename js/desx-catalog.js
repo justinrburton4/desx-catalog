@@ -262,8 +262,12 @@
 
   function courseMetaHtml(item) {
     var bits = [];
-    if (item.format) bits.push(item.format);
-    if (item.duration) bits.push(item.duration);
+    if (Array.isArray(item.tags) && item.tags.length) {
+      bits = item.tags.slice();
+    } else {
+      if (item.format) bits.push(item.format);
+      if (item.duration) bits.push(item.duration);
+    }
     if (!bits.length) return "";
     return (
       '<ul class="course-card-meta">' +
@@ -458,10 +462,9 @@
 
   function sortCoursesForGrid(items) {
     return items.slice().sort(function (a, b) {
-      var typeA = normalize(courseTypeLabel(a));
-      var typeB = normalize(courseTypeLabel(b));
-      if (typeA < typeB) return -1;
-      if (typeA > typeB) return 1;
+      var orderA = typeof a.order === "number" ? a.order : 9999;
+      var orderB = typeof b.order === "number" ? b.order : 9999;
+      if (orderA !== orderB) return orderA - orderB;
       var titleA = normalize(a.title);
       var titleB = normalize(b.title);
       if (titleA < titleB) return -1;
@@ -611,27 +614,16 @@
       .then(function (commits) {
         var sha = commits && commits[0] && commits[0].sha;
         if (!sha) throw new Error("No commit SHA");
-        var jsdelivr =
-          "https://cdn.jsdelivr.net/gh/" +
-          gh.owner +
-          "/" +
-          gh.repo +
-          "@" +
-          sha +
-          "/" +
-          gh.path;
-        var rawSha =
+        return fetchJson(
           "https://raw.githubusercontent.com/" +
-          gh.owner +
-          "/" +
-          gh.repo +
-          "/" +
-          sha +
-          "/" +
-          gh.path;
-        return fetchJson(jsdelivr).catch(function () {
-          return fetchJson(rawSha);
-        });
+            gh.owner +
+            "/" +
+            gh.repo +
+            "/" +
+            sha +
+            "/" +
+            gh.path
+        );
       })
       .catch(function () {
         return fetchJson(withCacheBust(url));

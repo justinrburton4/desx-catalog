@@ -20,7 +20,7 @@
     {
       "kind": "course",
       "id": "product-design-guidebook",
-      "title": "Product Design Guidebook",
+      "title": "Product Development Book",
       "blurb": "Principles and tools for building a product development process that fits your team.",
       "url": "https://link.springer.com/book/10.1007/978-3-030-14899-7",
       "type": "guidebook",
@@ -29,13 +29,14 @@
       ],
       "format": "Book",
       "hidden": false,
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/95165918-6c08-44b4-903d-1a3536b915da/mattsonBookHigh-Res.webp?content-type=image%2Fwebp"
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/95165918-6c08-44b4-903d-1a3536b915da/mattsonBookHigh-Res.webp?content-type=image%2Fwebp",
+      "order": 6
     },
     {
       "kind": "course",
       "id": "product-design-course",
       "title": "Product Design Course",
-      "blurb": "ME EN 576 Product Design — Build Advanced Design Capability.",
+      "blurb": "Build advanced design capability.",
       "url": "/product-design-course",
       "type": "course",
       "categories": [
@@ -44,7 +45,14 @@
       "format": "In-Person Course",
       "duration": "Semester",
       "hidden": false,
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/99b3bdd0-f7b7-45a3-a730-f0a6573abbc5/576+banner.png?content-type=image%2Fpng"
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/99b3bdd0-f7b7-45a3-a730-f0a6573abbc5/576+banner.png?content-type=image%2Fpng",
+      "order": 1,
+      "tags": [
+        "In-Person Course",
+        "Semester",
+        "Self-Driven Course",
+        "14 weeks"
+      ]
     },
     {
       "kind": "course",
@@ -58,7 +66,8 @@
       ],
       "format": "Online course",
       "duration": "Semester",
-      "hidden": true
+      "hidden": true,
+      "order": 99
     },
     {
       "kind": "course",
@@ -73,7 +82,8 @@
       "format": "Self-paced",
       "duration": "8 weeks",
       "hidden": false,
-      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741035833082-HH9AFYTB6GCMBIFLCBH6/unsplash-image-8DTIQ_Klxho.jpg?format=1000w"
+      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741035833082-HH9AFYTB6GCMBIFLCBH6/unsplash-image-8DTIQ_Klxho.jpg?format=1000w",
+      "order": 2
     },
     {
       "kind": "course",
@@ -88,7 +98,8 @@
       "format": "Self-paced",
       "duration": "5 weeks",
       "hidden": false,
-      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741036239309-L2LDALAX9SG0TWYRDSEZ/unsplash-image-wusOJ-2uY6w.jpg?format=1000w"
+      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741036239309-L2LDALAX9SG0TWYRDSEZ/unsplash-image-wusOJ-2uY6w.jpg?format=1000w",
+      "order": 3
     },
     {
       "kind": "course",
@@ -102,7 +113,8 @@
       ],
       "format": "Self-guided",
       "hidden": false,
-      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741036685697-CTADZR6MZMZ0NQ3EK3LD/unsplash-image-ZPeXrWxOjRQ.jpg?format=1000w"
+      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741036685697-CTADZR6MZMZ0NQ3EK3LD/unsplash-image-ZPeXrWxOjRQ.jpg?format=1000w",
+      "order": 4
     },
     {
       "kind": "course",
@@ -117,7 +129,8 @@
       "format": "Workshop kit",
       "duration": "1 hour",
       "hidden": false,
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1690310338524-9X2Q8ZA8VBK8V44VON0H/CAM03511.jpg?content-type=image%2Fjpeg"
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1690310338524-9X2Q8ZA8VBK8V44VON0H/CAM03511.jpg?content-type=image%2Fjpeg",
+      "order": 5
     },
     {
       "kind": "course",
@@ -131,7 +144,8 @@
       ],
       "format": "By request",
       "hidden": false,
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596816508164-V6EK6IFLM13KLN4R374Y/image-asset.jpeg?content-type=image%2Fjpeg"
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/1596816508164-V6EK6IFLM13KLN4R374Y/image-asset.jpeg?content-type=image%2Fjpeg",
+      "order": 7
     },
     {
       "kind": "research",
