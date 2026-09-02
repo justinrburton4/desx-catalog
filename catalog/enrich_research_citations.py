@@ -85,7 +85,6 @@ def migrate_research_item(item: dict, pack: dict | None) -> dict[str, str | None
     publisher = str(item.get("publisherUrl") or "").strip() or None
     slug = normalize_slug(current_url) if is_slug(current_url) else None
 
-    pack_slug = normalize_slug(pack.get("slug") if pack else None)
     pack_publisher = publisher_url_from_pack(pack) if pack else None
 
     if not publisher:
@@ -94,9 +93,9 @@ def migrate_research_item(item: dict, pack: dict | None) -> dict[str, str | None
         elif pack_publisher:
             publisher = pack_publisher
 
-    if not slug and pack_slug:
-        slug = pack_slug
-
+    # Only keep on-site slugs that are already in the catalog (live landing pages).
+    # Do not auto-assign slugs from landing packs — cards should fall back to
+    # publisherUrl until a landing page is explicitly published.
     return {"url": slug, "publisherUrl": publisher}
 
 
