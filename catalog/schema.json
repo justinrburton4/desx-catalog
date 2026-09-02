@@ -48,9 +48,20 @@
         "id",
         "title",
         "abstract",
-        "url",
         "badge",
         "categories"
+      ],
+      "anyOf": [
+        {
+          "required": [
+            "url"
+          ]
+        },
+        {
+          "required": [
+            "publisherUrl"
+          ]
+        }
       ],
       "properties": {
         "kind": {
@@ -71,7 +82,14 @@
         },
         "url": {
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "pattern": "^/",
+          "description": "On-site Squarespace landing page slug, e.g. /paper-slug"
+        },
+        "publisherUrl": {
+          "type": "string",
+          "minLength": 1,
+          "description": "External publisher link, usually https://doi.org/..."
         },
         "image": {
           "type": "string",
@@ -104,6 +122,23 @@
             "type": "string",
             "minLength": 1
           }
+        },
+        "citationCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Derived citation count (written by enrich_research_citations.py)"
+        },
+        "citationSource": {
+          "type": "string",
+          "enum": [
+            "openalex"
+          ],
+          "description": "Source of citationCount"
+        },
+        "citationsUpdatedAt": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO date when citationCount was last refreshed"
         },
         "hidden": {
           "type": "boolean",

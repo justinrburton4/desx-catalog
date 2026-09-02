@@ -291,6 +291,112 @@
   font-size: 0.95rem;
 }
 
+/* —— Skeleton loaders —— */
+.desx-skeleton {
+  width: 100%;
+}
+
+.desx-skeleton-block {
+  background: linear-gradient(90deg, #e2e8f0 0%, #f1f5f9 50%, #e2e8f0 100%);
+  background-size: 200% 100%;
+  animation: desx-skeleton-shimmer 1.2s ease-in-out infinite;
+  border-radius: 6px;
+}
+
+@keyframes desx-skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.desx-skeleton-pub-row {
+  margin: 36px 0;
+}
+
+.desx-skeleton-pub-row .desx-skeleton-line--heading {
+  width: 220px;
+  height: 28px;
+  margin-bottom: 12px;
+}
+
+.desx-skeleton-pub-scroll {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  padding: 12px 5px 28px;
+}
+
+.desx-skeleton-pub-card {
+  flex: 0 0 280px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.desx-skeleton-pub-image {
+  height: 140px;
+  width: 100%;
+  border-radius: 0;
+}
+
+.desx-skeleton-pub-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.desx-skeleton-line {
+  height: 12px;
+  width: 100%;
+}
+
+.desx-skeleton-line--title {
+  height: 16px;
+  width: 85%;
+}
+
+.desx-skeleton-line--short {
+  width: 55%;
+}
+
+.desx-skeleton-course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 8px 0 24px;
+}
+
+.desx-skeleton-grid-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  padding-bottom: 16px;
+}
+
+.desx-skeleton-grid-media {
+  height: 160px;
+  width: 100%;
+  border-radius: 0;
+}
+
+.desx-skeleton-grid-card .desx-skeleton-line {
+  margin: 12px 16px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .desx-skeleton-block {
+    animation: none;
+    background: #e2e8f0;
+  }
+}
+
 /* —— Research rows —— */
 .pub-row-wrapper {
   margin: 36px 0;
@@ -309,6 +415,57 @@
   font-weight: 700;
   margin: 0;
   color: #111111;
+}
+
+.desx-view-all {
+  flex: 0 0 auto;
+  appearance: none;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #0f172a;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.1);
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.desx-view-all:hover {
+  border-color: #E26314;
+  color: #E26314;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.14);
+  transform: translateY(-1px);
+}
+
+.desx-view-all.is-hidden {
+  display: none;
+}
+
+.pub-row-wrapper.is-expanded .pub-scroll-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  overflow: visible;
+  scroll-snap-type: none;
+}
+
+.pub-row-wrapper.is-expanded .pub-scroll-container.is-compact {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.pub-row-wrapper.is-expanded .pub-card,
+.pub-row-wrapper.is-expanded .pub-card-compact {
+  flex: none;
+  width: 100%;
+  max-width: none;
+}
+
+.pub-row-wrapper.is-expanded .desx-arrow {
+  display: none !important;
 }
 
 .pub-scroll-shell {
@@ -406,7 +563,8 @@
 }
 
 .pub-card {
-  flex: 0 0 248px;
+  flex: 0 0 255px;
+  width: 255px;
   scroll-snap-align: start;
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -431,7 +589,7 @@
 }
 
 .pub-card-header {
-  height: 92px;
+  height: 78px;
   background: #f1f5f9;
   position: relative;
   border-bottom: 1px solid #f0f0f0;
@@ -478,7 +636,7 @@
 }
 
 .pub-card-body {
-  padding: 12px;
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -488,15 +646,15 @@
   font-size: 0.88rem;
   font-weight: 600;
   color: #0f172a;
-  margin: 0 0 9px 0;
+  margin: 0 0 6px 0;
   line-height: 1.3;
 }
 
 .pub-abstract {
   font-size: 0.75rem;
   color: #475569;
-  line-height: 1.4;
-  margin: 0 0 9px 0;
+  line-height: 1.35;
+  margin: 0 0 6px 0;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -506,7 +664,7 @@
 
 .pub-meta {
   margin-top: auto;
-  padding-top: 8px;
+  padding-top: 6px;
   border-top: 1px solid #e2e8f0;
   font-size: 0.7rem;
   color: #475569;
@@ -522,11 +680,26 @@
   font-style: italic;
 }
 
+.pub-meta-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.pub-citations {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #64748b;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 .pub-year {
   display: inline-block;
   font-weight: 700;
   color: #0f172a;
-  margin-bottom: 4px;
 }
 
 .pub-authors {
@@ -544,7 +717,8 @@
 
 /* Compact layout */
 .pub-card-compact {
-  flex: 0 0 176px;
+  flex: 0 0 180px;
+  width: 180px;
   min-height: 0;
 }
 
@@ -658,7 +832,7 @@
       item.id &&
       item.title &&
       item.abstract &&
-      item.url &&
+      researchCardHref(item) &&
       item.badge &&
       Array.isArray(item.categories) &&
       item.categories.length
@@ -907,15 +1081,39 @@
     return authors.join(", ");
   }
 
-  function metaHtml(item) {
+  function researchCardHref(item) {
+    var slug = item && item.url ? String(item.url).trim() : "";
+    if (slug && slug.charAt(0) === "/") return slug;
+    var publisher = item && item.publisherUrl ? String(item.publisherUrl).trim() : "";
+    if (publisher) return publisher;
+    return slug || "";
+  }
+
+  function formatCitationCount(count) {
+    var n = Number(count);
+    if (isNaN(n) || n < 0) return "";
+    return n === 1 ? "1 citation" : n + " citations";
+  }
+
+  function metaHtml(item, compact) {
     var authors = formatAuthors(item.authors);
     var year = item.year ? String(item.year) : "";
-    if (!authors && !year) {
+    var citations = !compact ? formatCitationCount(item.citationCount) : "";
+    if (!authors && !year && !citations) {
       return '<div class="pub-meta pub-meta-empty">Author / year TBD<\/div>';
     }
     var html = '<div class="pub-meta">';
-    if (year) {
-      html += '<div class="pub-year">' + escapeHtml(year) + "<\/div>";
+    if (year || citations) {
+      html += '<div class="pub-meta-top">';
+      if (year) {
+        html += '<span class="pub-year">' + escapeHtml(year) + "<\/span>";
+      } else {
+        html += "<span><\/span>";
+      }
+      if (citations) {
+        html += '<span class="pub-citations">' + escapeHtml(citations) + "<\/span>";
+      }
+      html += "<\/div>";
     }
     if (authors) {
       html += '<div class="pub-authors">' + escapeHtml(authors) + "<\/div>";
@@ -968,7 +1166,7 @@
 
     return (
       '<a href="' +
-      escapeHtml(item.url) +
+      escapeHtml(researchCardHref(item)) +
       '" class="' +
       classes +
       '" data-id="' +
@@ -981,7 +1179,7 @@
       escapeHtml(item.title) +
       "<\/h3>" +
       abstract +
-      metaHtml(item) +
+      metaHtml(item, compact) +
       "<\/div>" +
       "<\/a>"
     );
@@ -1011,16 +1209,39 @@
     );
   }
 
-  function bindRowArrows(rowEl) {
+  function bindRowArrows(rowEl, expandedMap) {
     var shell = qs(rowEl, ".pub-scroll-shell");
     var scroller = qs(rowEl, ".pub-scroll-container");
     var prev = qs(rowEl, ".desx-arrow-prev");
     var next = qs(rowEl, ".desx-arrow-next");
+    var viewAll = qs(rowEl, ".desx-view-all");
+    var category = rowEl.getAttribute("data-category") || "";
     if (!shell || !scroller || !prev || !next) return;
+
+    function isExpanded() {
+      return rowEl.classList.contains("is-expanded");
+    }
+
+    function setExpanded(on) {
+      rowEl.classList.toggle("is-expanded", on);
+      if (expandedMap) {
+        if (on) expandedMap[category] = true;
+        else delete expandedMap[category];
+      }
+      if (viewAll) {
+        viewAll.textContent = on ? "Show less" : "Show all";
+        viewAll.setAttribute("aria-expanded", on ? "true" : "false");
+        viewAll.classList.toggle("is-hidden", false);
+      }
+      if (!on) {
+        scroller.scrollLeft = 0;
+      }
+      update();
+    }
 
     function pageStep() {
       var card = qs(scroller, ".pub-card");
-      var cardW = card ? card.getBoundingClientRect().width : 248;
+      var cardW = card ? card.getBoundingClientRect().width : 255;
       var style = window.getComputedStyle(scroller);
       var gap = parseFloat(style.columnGap || style.gap) || 16;
       var visible = scroller.clientWidth;
@@ -1039,6 +1260,19 @@
     }
 
     function update() {
+      if (isExpanded()) {
+        prev.classList.add("is-hidden");
+        next.classList.add("is-hidden");
+        prev.disabled = true;
+        next.disabled = true;
+        if (viewAll) {
+          viewAll.classList.remove("is-hidden");
+          viewAll.textContent = "Show less";
+          viewAll.setAttribute("aria-expanded", "true");
+        }
+        return;
+      }
+
       var max = scroller.scrollWidth - scroller.clientWidth;
       var canScroll = max > 8;
       var atStart = scroller.scrollLeft <= 12;
@@ -1048,6 +1282,11 @@
       prev.disabled = !canScroll || atStart;
       next.classList.toggle("is-hidden", !canScroll || atEnd);
       next.disabled = !canScroll || atEnd;
+      if (viewAll) {
+        viewAll.classList.toggle("is-hidden", !canScroll);
+        viewAll.textContent = "Show all";
+        viewAll.setAttribute("aria-expanded", "false");
+      }
       positionArrows();
     }
 
@@ -1061,9 +1300,16 @@
       e.stopPropagation();
       scroller.scrollBy({ left: pageStep(), behavior: "smooth" });
     });
+    if (viewAll) {
+      viewAll.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        setExpanded(!isExpanded());
+      });
+    }
     scroller.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update);
-    scroller.scrollLeft = 0;
+    if (!isExpanded()) scroller.scrollLeft = 0;
     update();
   }
 
@@ -1086,20 +1332,31 @@
     }
 
     updateResultCount(mount, filtered.length);
+    if (!state.expandedRows) state.expandedRows = {};
     var html = cats
       .map(function (cat) {
         var cards = filtered.filter(function (item) {
           return (item.categories || []).indexOf(cat) !== -1;
         });
         if (!cards.length) return "";
+        var expanded = !!state.expandedRows[cat];
         return (
-          '<div class="pub-row-wrapper" data-category="' +
+          '<div class="pub-row-wrapper' +
+          (expanded ? " is-expanded" : "") +
+          '" data-category="' +
           escapeHtml(cat) +
           '">' +
           '<div class="pub-row-header">' +
           '<h2 class="pub-row-title">' +
           escapeHtml(cat) +
           "<\/h2>" +
+          '<button type="button" class="desx-view-all' +
+          (expanded ? "" : " is-hidden") +
+          '" aria-expanded="' +
+          (expanded ? "true" : "false") +
+          '">' +
+          (expanded ? "Show less" : "Show all") +
+          "<\/button>" +
           "<\/div>" +
           '<div class="pub-scroll-shell">' +
           '<div class="pub-scroll-container' +
@@ -1126,7 +1383,9 @@
     mount.className =
       "desx-catalog-results" + (compact ? " desx-layout-compact" : " desx-layout-detailed");
     mount.innerHTML = html || '<div class="desx-empty">No publications match your search.<\/div>';
-    qsa(mount, ".pub-row-wrapper").forEach(bindRowArrows);
+    qsa(mount, ".pub-row-wrapper").forEach(function (rowEl) {
+      bindRowArrows(rowEl, state.expandedRows);
+    });
   }
 
   function renderTools(mount, catalog, allItems, query) {
@@ -1195,9 +1454,9 @@
           '<div class="desx-control-group">' +
           '<div class="desx-control-label">Filter by paper type<\/div>' +
           '<div class="desx-filters" role="group" aria-label="Filter by paper type">' +
-          '<button type="button" class="desx-filter-badge is-active" data-badge="journal">Journal<\/button>' +
-          '<button type="button" class="desx-filter-badge is-active" data-badge="conference">Conference<\/button>' +
-          '<button type="button" class="desx-filter-badge is-active" data-badge="whitepaper">White paper<\/button>' +
+          '<button type="button" class="desx-filter-badge" data-badge="journal">Journal<\/button>' +
+          '<button type="button" class="desx-filter-badge" data-badge="conference">Conference<\/button>' +
+          '<button type="button" class="desx-filter-badge" data-badge="whitepaper">White paper<\/button>' +
           "<\/div>" +
           "<\/div>" +
           '<div class="desx-control-group">' +
@@ -1243,6 +1502,97 @@
     );
   }
 
+
+  var CATALOG_CACHE_STORAGE_VERSION = 1;
+
+  function catalogCacheKey(url) {
+    return "desx-catalog:" + CATALOG_CACHE_STORAGE_VERSION + ":" + url;
+  }
+
+  function readCatalogCache(url) {
+    try {
+      var raw = localStorage.getItem(catalogCacheKey(url));
+      if (!raw) return null;
+      var entry = JSON.parse(raw);
+      if (!entry || !entry.catalog || typeof entry.catalog !== "object") return null;
+      return entry;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeCatalogCache(url, catalog, version) {
+    try {
+      localStorage.setItem(
+        catalogCacheKey(url),
+        JSON.stringify({
+          catalog: catalog,
+          version: version || null,
+          savedAt: Date.now(),
+        })
+      );
+    } catch (e) {
+      /* quota exceeded or private browsing */
+    }
+  }
+
+  function catalogDataVersion(catalog) {
+    return String((catalog && catalog.items && catalog.items.length) || 0);
+  }
+
+  function skeletonResearchCards(count) {
+    var html = "";
+    var i;
+    for (i = 0; i < count; i++) {
+      html +=
+        '<div class="desx-skeleton-pub-card">' +
+        '<div class="desx-skeleton-block desx-skeleton-pub-image"><\/div>' +
+        '<div class="desx-skeleton-pub-body">' +
+        '<div class="desx-skeleton-block desx-skeleton-line desx-skeleton-line--title"><\/div>' +
+        '<div class="desx-skeleton-block desx-skeleton-line"><\/div>' +
+        '<div class="desx-skeleton-block desx-skeleton-line desx-skeleton-line--short"><\/div>' +
+        "<\/div>" +
+        "<\/div>";
+    }
+    return html;
+  }
+
+  function renderSkeletonHtml(kind) {
+    var wrapStart = '<div class="desx-skeleton" aria-hidden="true">';
+    var wrapEnd = "<\/div>";
+    var row;
+    if (kind === "course") {
+      var cards = "";
+      var i;
+      for (i = 0; i < 6; i++) {
+        cards +=
+          '<div class="desx-skeleton-grid-card">' +
+          '<div class="desx-skeleton-block desx-skeleton-grid-media"><\/div>' +
+          '<div class="desx-skeleton-block desx-skeleton-line desx-skeleton-line--title"><\/div>' +
+          '<div class="desx-skeleton-block desx-skeleton-line"><\/div>' +
+          "<\/div>";
+      }
+      return wrapStart + '<div class="desx-skeleton-course-grid">' + cards + "<\/div>" + wrapEnd;
+    }
+
+    row =
+      '<div class="desx-skeleton-pub-row">' +
+      '<div class="desx-skeleton-block desx-skeleton-line desx-skeleton-line--heading"><\/div>' +
+      '<div class="desx-skeleton-pub-scroll">' +
+      skeletonResearchCards(4) +
+      "<\/div><\/div>";
+    return wrapStart + row + row + wrapEnd;
+  }
+
+  function showSkeleton(el, kind) {
+    el.innerHTML = renderSkeletonHtml(kind);
+    el.setAttribute("aria-busy", "true");
+  }
+
+  function clearLoadingState(el) {
+    el.removeAttribute("aria-busy");
+  }
+
   function withCacheBust(url) {
     var sep = String(url).indexOf("?") >= 0 ? "&" : "?";
     return url + sep + "_=" + Date.now();
@@ -1267,7 +1617,11 @@
   // raw.githubusercontent.com cannot serve a stale cached copy of /main/.
   function fetchCatalogJson(url) {
     var gh = parseGithubRaw(url);
-    if (!gh) return fetchJson(withCacheBust(url));
+    if (!gh) {
+      return fetchJson(withCacheBust(url)).then(function (catalog) {
+        return { catalog: catalog, version: "direct-" + Date.now() };
+      });
+    }
 
     var api =
       "https://api.github.com/repos/" +
@@ -1292,30 +1646,23 @@
       .then(function (commits) {
         var sha = commits && commits[0] && commits[0].sha;
         if (!sha) throw new Error("No commit SHA");
-        var jsdelivr =
-          "https://cdn.jsdelivr.net/gh/" +
-          gh.owner +
-          "/" +
-          gh.repo +
-          "@" +
-          sha +
-          "/" +
-          gh.path;
-        var rawSha =
+        return fetchJson(
           "https://raw.githubusercontent.com/" +
-          gh.owner +
-          "/" +
-          gh.repo +
-          "/" +
-          sha +
-          "/" +
-          gh.path;
-        return fetchJson(jsdelivr).catch(function () {
-          return fetchJson(rawSha);
+            gh.owner +
+            "/" +
+            gh.repo +
+            "/" +
+            sha +
+            "/" +
+            gh.path
+        ).then(function (catalog) {
+          return { catalog: catalog, version: sha };
         });
       })
       .catch(function () {
-        return fetchJson(withCacheBust(url));
+        return fetchJson(withCacheBust(url)).then(function (catalog) {
+          return { catalog: catalog, version: "fallback-" + Date.now() };
+        });
       });
   }
 
@@ -1327,7 +1674,8 @@
     }
 
     var shell = buildShell(mount, kind);
-    shell.results.innerHTML = '<div class="desx-loading">Loading catalog…<\/div>';
+    var url = resolveCatalogUrl(mount);
+    var cached = readCatalogCache(url);
 
     var state = {
       query: "",
@@ -1337,58 +1685,98 @@
       layout: "detailed",
     };
 
-    fetchCatalogJson(resolveCatalogUrl(mount)).then(function (catalog) {
-        var items = validateItems(catalog.items || [], kind);
+    var catalog = null;
+    var items = [];
+    var wired = false;
 
-        function paint() {
-          state.query = normalize(shell.input.value);
-          state.badges = selectedBadges(shell.root);
-          if (kind === "research") {
-            var range = readYearRange(shell.root);
-            state.yearFrom = range.from;
-            state.yearTo = range.to;
-            renderResearch(shell.results, catalog, items, state);
-          } else {
-            renderTools(shell.results, catalog, items, state.query);
-          }
-        }
+    function applyCatalog(nextCatalog) {
+      catalog = nextCatalog;
+      items = validateItems(catalog.items || [], kind);
+    }
 
-        if (kind === "research") {
-          populateYearRange(shell.root, items);
-          bindYearDropdowns(shell.root, paint);
-          var initialRange = readYearRange(shell.root);
-          state.yearFrom = initialRange.from;
-          state.yearTo = initialRange.to;
-        }
+    function paint() {
+      state.query = normalize(shell.input.value);
+      state.badges = selectedBadges(shell.root);
+      if (kind === "research") {
+        var range = readYearRange(shell.root);
+        state.yearFrom = range.from;
+        state.yearTo = range.to;
+        renderResearch(shell.results, catalog, items, state);
+      } else {
+        renderTools(shell.results, catalog, items, state.query);
+      }
+    }
 
-        shell.input.addEventListener("input", paint);
+    function wireEvents() {
+      if (wired) return;
+      wired = true;
 
-        qsa(shell.root, ".desx-filter-badge").forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            btn.classList.toggle("is-active");
-            paint();
-          });
+      if (kind === "research") {
+        populateYearRange(shell.root, items);
+        bindYearDropdowns(shell.root, paint);
+        var initialRange = readYearRange(shell.root);
+        state.yearFrom = initialRange.from;
+        state.yearTo = initialRange.to;
+      }
+
+      shell.input.addEventListener("input", paint);
+
+      qsa(shell.root, ".desx-filter-badge").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          btn.classList.toggle("is-active");
+          paint();
         });
+      });
 
-        qsa(shell.root, ".desx-layout-btn").forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            var layout = btn.getAttribute("data-layout") || "detailed";
-            var toggle = qs(shell.root, ".desx-layout-toggle");
-            qsa(shell.root, ".desx-layout-btn").forEach(function (b) {
-              b.classList.toggle("is-active", b === btn);
-            });
-            if (toggle) toggle.setAttribute("data-layout", layout);
-            state.layout = layout;
-            paint();
+      qsa(shell.root, ".desx-layout-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var layout = btn.getAttribute("data-layout") || "detailed";
+          var toggle = qs(shell.root, ".desx-layout-toggle");
+          qsa(shell.root, ".desx-layout-btn").forEach(function (b) {
+            b.classList.toggle("is-active", b === btn);
           });
+          if (toggle) toggle.setAttribute("data-layout", layout);
+          state.layout = layout;
+          paint();
         });
+      });
+    }
 
-        paint();
+    function finishLoad(nextCatalog) {
+      applyCatalog(nextCatalog);
+      wireEvents();
+      paint();
+      clearLoadingState(shell.results);
+    }
+
+    if (cached && cached.catalog) {
+      finishLoad(cached.catalog);
+    } else {
+      showSkeleton(shell.results, kind);
+    }
+
+    fetchCatalogJson(url)
+      .then(function (result) {
+        writeCatalogCache(url, result.catalog, result.version);
+        var cachedVersion = cached && cached.version;
+        var cachedCatalog = cached && cached.catalog;
+        if (
+          !cachedCatalog ||
+          result.version !== cachedVersion ||
+          catalogDataVersion(result.catalog) !== catalogDataVersion(cachedCatalog)
+        ) {
+          finishLoad(result.catalog);
+        } else {
+          clearLoadingState(shell.results);
+        }
       })
       .catch(function (err) {
         console.error("[DesX Catalog]", err);
-        shell.results.innerHTML =
-          '<div class="desx-empty">Could not load catalog. Check the JSON URL and that the repo is public.<\/div>';
+        if (!catalog) {
+          shell.results.innerHTML =
+            '<div class="desx-empty">Could not load catalog. Check the JSON URL and that the repo is public.<\/div>';
+          clearLoadingState(shell.results);
+        }
       });
   }
 

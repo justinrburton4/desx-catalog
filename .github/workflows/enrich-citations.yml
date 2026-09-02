@@ -1,0 +1,65 @@
+name: Enrich research citations
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh OpenAlex citation counts
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python catalog/enrich_research_citations.py
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install ajv
+        run: npm install --no-save ajv@8 ajv-formats@3
+
+      - name: Validate desx-catalog.json
+        run: |
+          node <<'EOF'
+          const fs = require('fs');
+          const Ajv2020 = require('ajv/dist/2020');
+          const addFormats = require('ajv-formats');
+          const ajv = new Ajv2020({ allErrors: true, strict: false });
+          addFormats(ajv);
+          const schema = JSON.parse(fs.readFileSync('catalog/schema.json', 'utf8'));
+          const data = JSON.parse(fs.readFileSync('catalog/desx-catalog.json', 'utf8'));
+          const validate = ajv.compile(schema);
+          if (!validate(data)) {
+            console.error(validate.errors);
+            process.exit(1);
+          }
+          console.log('Catalog OK after citation enrich');
+          EOF
+
+      - name: Commit citation updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog/desx-catalog.json
+          if git diff --staged --quiet; then
+            echo "No citation changes to commit"
+            exit 0
+          fi
+          git commit -m "$(cat <<'EOF'
+Refresh research citation counts from OpenAlex.
+
+EOF
+)"
+          git push

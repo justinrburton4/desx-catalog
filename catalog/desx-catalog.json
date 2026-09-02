@@ -171,7 +171,8 @@
         "Busse, F. ",
         "Spring, T. "
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b"
     },
     {
       "kind": "research",
@@ -188,7 +189,8 @@
         "Detiege, I. ",
         "Mattson, C. A. "
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2"
     },
     {
       "kind": "research",
@@ -205,7 +207,8 @@
         "Hardy, J. P. ",
         "Mattson, C. A. "
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b"
     },
     {
       "kind": "research",
@@ -223,7 +226,8 @@
         "Zubeldia, S. T. ",
         "Mattson, C. A. "
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66"
     },
     {
       "kind": "tool",
@@ -274,7 +278,11 @@
         "Salmon, J. L.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4069685",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -314,7 +322,11 @@
         "Anderson, M. L.",
         "Carr, R. W."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2025-169042",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -354,7 +366,11 @@
         "Anderson, M. L."
       ],
       "year": 2025,
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1017/pds.2025.10147",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -372,7 +388,11 @@
         "Salmon, J. L.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2025-169752",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -389,7 +409,11 @@
         "McKinnon, S. A.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1017/pds.2025.10210",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -407,7 +431,11 @@
         "Mattson, C.",
         "Spring, T."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1109/ghtc66843.2025.11266770",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -451,7 +479,11 @@
         "Mattson, C. A.",
         "Neff, W. J."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1177/15485129231164416",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -470,7 +502,11 @@
         "Sorensen, C. D.",
         "Anderson, M. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1504/ijpd.2024.137784",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -489,7 +525,11 @@
         "Salmon, J. L.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4064041",
+      "citationCount": 3,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -551,7 +591,11 @@
         "Salmon, J. L.",
         "Hatch, N. W."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4064694",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -573,7 +617,11 @@
         "Sorensen, C. D.",
         "Anderson, M. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1017/dsj.2024.18",
+      "citationCount": 2,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -628,7 +676,11 @@
         "Mattson, C.",
         "Aranda, I."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.3390/su15107869",
+      "citationCount": 26,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -646,7 +698,11 @@
         "Salmon, J. L.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4063004",
+      "citationCount": 5,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -665,7 +721,11 @@
         "Mattson, C. A.",
         "Salmon, J. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1017/dsj.2023.13",
+      "citationCount": 4,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -684,7 +744,11 @@
         "Dahlin, E. C.",
         "Salmon, J. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00163-023-00424-4",
+      "citationCount": 3,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
@@ -704,14 +768,18 @@
         "Dahlin, E.",
         "Okware, I. I."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4062944",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "simulating-the-adoption-and-social-impact-of-improved-cookstoves-in-uganda-using",
       "title": "Simulating the Adoption and Social Impact of Improved Cookstoves in Uganda Using Agent-Based Modeling and Neural Networks",
       "abstract": "Simulates improved cookstove adoption and social impact in Uganda with agent-based models and neural networks.",
-      "url": "https://doi.org/10.1115/1.4063237",
+      "url": "/simulating-the-adoption-and-social-impact-of-improved-cookstoves-in-uganda-using",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -723,14 +791,18 @@
         "MacCarty, N.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4063237",
+      "citationCount": 2,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "trade-off-characterization-between-social-and-environmental-impacts-using-agent",
       "title": "Trade-Off Characterization Between Social and Environmental Impacts Using Agent-Based Product Adoption Models and Life Cycle Assessment",
       "abstract": "Meeting the United Nations (UN) sustainable development goals efficiently requires designers and engineers to solve multi-objective optimization problems.",
-      "url": "https://doi.org/10.1115/1.4056006",
+      "url": "/trade-off-characterization-between-social-and-environmental-impacts-using-agent",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -743,14 +815,18 @@
         "Salmon, J. L.",
         "Weaver, J. M."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4056006",
+      "citationCount": 8,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "assessing-global-needs-when-identifying-potential-engineering-for-global-develop",
       "title": "Assessing Global Needs When Identifying Potential Engineering for Global Development Projects",
       "abstract": "With limited time and resources available to carry out Engineering for Global Development (EGD) projects, it can be.",
-      "url": "https://doi.org/10.1115/1.4052223",
+      "url": "/assessing-global-needs-when-identifying-potential-engineering-for-global-develop",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -761,14 +837,18 @@
         "Mattson, C. A.",
         "Dahlin, E. C."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4052223",
+      "citationCount": 4,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "systematic-review-and-classification-of-the-engineering-for-global-development-l",
       "title": "Systematic Review and Classification of the Engineering for Global Development Literature Based on Design Tools and Methods for Social Impact Consideration",
       "abstract": "Classifies Engineering for Global Development literature by design tools and methods that incorporate social impact consideration.",
-      "url": "https://doi.org/10.1115/1.4055325",
+      "url": "/systematic-review-and-classification-of-the-engineering-for-global-development-l",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -782,14 +862,18 @@
         "Salmon, J. L."
       ],
       "year": 2022,
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4055325",
+      "citationCount": 9,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "use-of-simulation-and-wear-prediction-to-explore-design-improvements-to-the-cup",
       "title": "Use of simulation and wear prediction to explore design improvements to the cup seal in the India Mark II/III hand pump system",
       "abstract": "Uses simulation and wear prediction to improve cup seals in India Mark II/III hand pumps.",
-      "url": "https://doi.org/10.1016/j.deveng.2022.100092",
+      "url": "/use-of-simulation-and-wear-prediction-to-explore-design-improvements-to-the-cup",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -801,14 +885,18 @@
         "Johnson, O. K.",
         "Irot, I."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1016/j.deveng.2022.100092",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-framework-for-predicting-potential-product-impact-during-product-design",
       "title": "A FRAMEWORK FOR PREDICTING POTENTIAL PRODUCT IMPACT DURING PRODUCT DESIGN",
       "abstract": "Presents a framework for predicting potential product impacts during early product design.",
-      "url": "https://doi.org/10.1017/pds.2021.11",
+      "url": "/a-framework-for-predicting-potential-product-impact-during-product-design",
       "badge": "conference",
       "categories": [
         "Other"
@@ -821,14 +909,18 @@
         "Salmon, J. L.",
         "Hatch, N. W."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1017/pds.2021.11",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-computational-simulation-based-framework-for-estimating-potential-product-impa",
       "title": "A computational simulation-based framework for estimating potential product impact during product design",
       "abstract": "The impact of engineered products is a topic of concern in society.",
-      "url": "https://doi.org/10.1017/dsj.2021.16",
+      "url": "/a-computational-simulation-based-framework-for-estimating-potential-product-impa",
       "badge": "journal",
       "categories": [
         "Other"
@@ -842,14 +934,18 @@
         "Hatch, N. W.",
         "Dahlin, E. C."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1017/dsj.2021.16",
+      "citationCount": 12,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "fmea-inspired-analysis-for-social-impact-of-engineered-products",
       "title": "FMEA-Inspired Analysis for Social Impact of Engineered Products",
       "abstract": "Adapts FMEA-style analysis to systematically assess social impacts of engineered products.",
-      "url": "https://doi.org/10.1115/detc2021-70595",
+      "url": "/fmea-inspired-analysis-for-social-impact-of-engineered-products",
       "badge": "conference",
       "categories": [
         "Social impact modeling"
@@ -861,14 +957,18 @@
         "Salmon, J. L.",
         "Dahlin, E. C."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2021-70595",
+      "citationCount": 2,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "factors-leading-to-sustainable-social-impact-on-the-affected-communities-of-engi",
       "title": "Factors leading to sustainable social impact on the affected communities of engineering service learning projects",
       "abstract": "Identifies factors that lead to sustainable social impact from engineering service-learning projects.",
-      "url": "https://doi.org/10.1016/j.deveng.2021.100066",
+      "url": "/factors-leading-to-sustainable-social-impact-on-the-affected-communities-of-engi",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -879,14 +979,18 @@
         "Mattson, C. A.",
         "Lewis, R. S."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1016/j.deveng.2021.100066",
+      "citationCount": 22,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "integrating-social-impact-measures-into-the-airship-design-process",
       "title": "INTEGRATING SOCIAL IMPACT MEASURES INTO THE AIRSHIP DESIGN PROCESS",
       "abstract": "Integrates social impact measures into the airship design process for broader decision making.",
-      "url": "https://doi.org/10.1017/pds.2021.449",
+      "url": "/integrating-social-impact-measures-into-the-airship-design-process",
       "badge": "conference",
       "categories": [
         "Social impact modeling"
@@ -898,14 +1002,18 @@
         "Mattson, C. A.",
         "Salmon, J. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1017/pds.2021.449",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "identifying-high-potential-work-areas-in-engineering-for-global-development-link",
       "title": "Identifying High-Potential Work Areas in Engineering for Global Development: Linking Industry Sectors to the Human Development Index",
       "abstract": "Identifying High-Potential Work Areas in Engineering for Global Development: Linking Industry Sectors to the Human Development.",
-      "url": "https://doi.org/10.1115/1.0001909v",
+      "url": "/identifying-high-potential-work-areas-in-engineering-for-global-development-link",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -916,14 +1024,18 @@
         "Mattson, C.",
         "Dahlin, E."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.0001909v",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "nitrile-cup-seal-robustness-in-the-india-mark-ii-iii-hand-pump-system",
       "title": "Nitrile cup seal robustness in the India Mark II/III hand pump system",
       "abstract": "Assesses nitrile cup seal robustness in India Mark II/III hand pump systems under field conditions.",
-      "url": "https://doi.org/10.1016/j.deveng.2021.100060",
+      "url": "/nitrile-cup-seal-robustness-in-the-india-mark-ii-iii-hand-pump-system",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -935,14 +1047,18 @@
         "Johnson, O. K.",
         "Naylor, T. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1016/j.deveng.2021.100060",
+      "citationCount": 4,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "open-research-questions-for-incorporating-multi-stakeholder-interests-in-enginee",
       "title": "Open Research Questions for Incorporating Multi-Stakeholder Interests in Engineering for Global Development",
       "abstract": "Identifies open research questions for incorporating multi-stakeholder interests in Engineering for Global Development.",
-      "url": "https://doi.org/10.1115/detc2021-71835",
+      "url": "/open-research-questions-for-incorporating-multi-stakeholder-interests-in-enginee",
       "badge": "conference",
       "categories": [
         "Social impact modeling"
@@ -954,14 +1070,18 @@
         "Mattson, C. A.",
         "Salmon, J. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2021-71835",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "product-development-using-perceived-correlations-between-the-united-nations-sust",
       "title": "Product Development Using Perceived Correlations Between the United Nations Sustainable Development Goals and Social Impact Categories",
       "abstract": "Links perceived UN SDG correlations with social impact categories to guide product development choices.",
-      "url": "https://doi.org/10.1115/detc2021-72065",
+      "url": "/product-development-using-perceived-correlations-between-the-united-nations-sust",
       "badge": "conference",
       "categories": [
         "Social impact modeling"
@@ -973,14 +1093,18 @@
         "Salmon, J. L.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2021-72065",
+      "citationCount": 2,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "remote-data-collection-devices-for-social-impact-indicators-of-products-in-devel",
       "title": "Remote Data Collection Devices for Social Impact Indicators of Products in Developing Countries",
       "abstract": "Designs remote data collection devices for tracking social impact indicators of products in developing countries.",
-      "url": "https://doi.org/10.1115/1.0001910v",
+      "url": "/remote-data-collection-devices-for-social-impact-indicators-of-products-in-devel",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -990,14 +1114,18 @@
         "Stringham, B.",
         "Mattson, C."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.0001910v",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "analysis-of-perceived-social-impacts-of-existing-products-designed-for-the-devel",
       "title": "Analysis of Perceived Social Impacts of Existing Products Designed for the Developing World, With Implications for New Product Development",
       "abstract": "Engineered products often have more social impacts than are realized.",
-      "url": "https://doi.org/10.1115/1.4044323",
+      "url": "/analysis-of-perceived-social-impacts-of-existing-products-designed-for-the-devel",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -1008,14 +1136,18 @@
         "Mattson, C. A.",
         "Dahlin, E. C."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4044323",
+      "citationCount": 12,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "evaluation-of-user-preferences-for-3d-modeling-and-design-reviews-in-virtual-rea",
       "title": "Evaluation of User Preferences for 3D Modeling and Design Reviews in Virtual Reality",
       "abstract": "Evaluates user preferences for 3D modeling and design reviews performed in virtual reality environments.",
-      "url": "https://doi.org/10.14733/cadconfp.2020.308-312",
+      "url": "/evaluation-of-user-preferences-for-3d-modeling-and-design-reviews-in-virtual-rea",
       "badge": "conference",
       "categories": [
         "Other"
@@ -1025,14 +1157,18 @@
         "Nysetvold, J.",
         "Salmon, J."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.14733/cadconfp.2020.308-312",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "single-pursuer-and-two-cooperative-evaders-in-the-border-defense-differential-ga",
       "title": "Single Pursuer and Two Cooperative Evaders in the Border Defense Differential Game",
       "abstract": "Analyzes a border-defense differential game with one pursuer and two cooperating evaders.",
-      "url": "https://doi.org/10.2514/1.i010766",
+      "url": "/single-pursuer-and-two-cooperative-evaders-in-the-border-defense-differential-ga",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1045,14 +1181,18 @@
         "Garcia, E.",
         "Moll, A. V."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.2514/1.i010766",
+      "citationCount": 20,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "structural-design-space-exploration-using-principal-component-analysis",
       "title": "Structural Design Space Exploration Using Principal Component Analysis",
       "abstract": "Applies principal component analysis to explore and interpret structural design spaces more efficiently.",
-      "url": "https://doi.org/10.1115/1.4047428",
+      "url": "/structural-design-space-exploration-using-principal-component-analysis",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1065,14 +1205,18 @@
         "Thelin, C.",
         "Ruoti, C."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4047428",
+      "citationCount": 11,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "analysis-and-evaluation-of-partitioning-methods-for-multi-user-cad",
       "title": "Analysis and Evaluation of Partitioning Methods for Multi-User CAD",
       "abstract": "Evaluates partitioning methods that improve multi-user CAD collaboration and shared model workflows.",
-      "url": "https://doi.org/10.14733/cadconfp.2019.377-381",
+      "url": "/analysis-and-evaluation-of-partitioning-methods-for-multi-user-cad",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1083,14 +1227,18 @@
         "Richards, D.",
         "Salmon, J."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.14733/cadconfp.2019.377-381",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "deconfliction-in-high-density-unmanned-aerial-vehicle-systems",
       "title": "Deconfliction in High-Density Unmanned Aerial Vehicle Systems",
       "abstract": "Examines deconfliction strategies for safely coordinating high-density unmanned aerial vehicle operations.",
-      "url": "https://doi.org/10.2514/1.d0119",
+      "url": "/deconfliction-in-high-density-unmanned-aerial-vehicle-systems",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -1100,14 +1248,18 @@
         "Nysetvold, T. B.",
         "Salmon, J. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.2514/1.d0119",
+      "citationCount": 5,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "difference-modeling-for-design-space-exploration-and-comparison-of-three-dimensi",
       "title": "Difference modeling for design space exploration and comparison of three-dimensional structural simulation results",
       "abstract": "Uses difference modeling to compare structural designs and explore three-dimensional design spaces.",
-      "url": "https://doi.org/10.1177/1473871619862791",
+      "url": "/difference-modeling-for-design-space-exploration-and-comparison-of-three-dimensi",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1119,14 +1271,18 @@
         "Salmon, J.",
         "Gorrell, S."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1177/1473871619862791",
+      "citationCount": 6,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "establishing-baseline-performance-for-off-the-shelf-nitrile-seals-for-the-india",
       "title": "Establishing Baseline Performance for Off-the-Shelf Nitrile Seals for the India Mark II Hand Pump System",
       "abstract": "Establishes baseline performance of off-the-shelf nitrile seals for India Mark II hand pumps.",
-      "url": "https://doi.org/10.1115/detc2019-98439",
+      "url": "/establishing-baseline-performance-for-off-the-shelf-nitrile-seals-for-the-india",
       "badge": "conference",
       "categories": [
         "Engineering For Global Health"
@@ -1138,14 +1294,18 @@
         "Johnson, O. K.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2019-98439",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "quantifying-the-effects-of-various-factors-on-the-utility-of-design-ethnography",
       "title": "Quantifying the effects of various factors on the utility of design ethnography in the developing world",
       "abstract": "Quantifies how design ethnography utility changes across factors in developing-world product work.",
-      "url": "https://doi.org/10.1007/s00163-018-00304-2",
+      "url": "/quantifying-the-effects-of-various-factors-on-the-utility-of-design-ethnography",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -1155,14 +1315,18 @@
         "Wood, A. E.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00163-018-00304-2",
+      "citationCount": 26,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "the-technology-tactics-tec-tac-plot-explicit-representation-of-user-actions-in-t",
       "title": "The Technology/Tactics (TEC/TAC) Plot: Explicit Representation of User Actions in the Product Design Space",
       "abstract": "Introduces the TEC/TAC plot to explicitly represent user tactics alongside technology in the design space.",
-      "url": "https://doi.org/10.1115/detc2019-98400",
+      "url": "/the-technology-tactics-tec-tac-plot-explicit-representation-of-user-actions-in-t",
       "badge": "conference",
       "categories": [
         "Other"
@@ -1175,14 +1339,18 @@
         "Sorensen, C.",
         "Anderson, M."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2019-98400",
+      "citationCount": 2,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "using-a-product-s-sustainability-space-as-a-design-exploration-tool",
       "title": "Using a Productâ€™s Sustainability Space as a Design Exploration Tool",
       "abstract": "Uses a productâ€™s sustainability space as a practical design exploration and tradeoff tool.",
-      "url": "https://doi.org/10.1017/dsj.2018.6",
+      "url": "/using-a-product-s-sustainability-space-as-a-design-exploration-tool",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1194,14 +1362,18 @@
         "Lofthouse, V.",
         "Bhamra, T."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1017/dsj.2018.6",
+      "citationCount": 30,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-cad-assembly-simplification-approach-with-ray-casting",
       "title": "A CAD Assembly Simplification Approach with Ray Casting",
       "abstract": "Simplifies CAD assemblies using ray casting to support faster design review and analysis.",
-      "url": "https://doi.org/10.14733/cadconfp.2018.407-411",
+      "url": "/a-cad-assembly-simplification-approach-with-ray-casting",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1215,14 +1387,18 @@
         "Bowman, E.",
         "Salmon, J."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.14733/cadconfp.2018.407-411",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-neutral-xml-design-framework-for-generating-parametric-parts-in-multiple-cad-s",
       "title": "A Neutral XML Design Framework For Generating Parametric Parts In Multiple CAD Systems",
       "abstract": "Proposes a neutral XML framework for generating parametric parts across multiple CAD systems.",
-      "url": "https://doi.org/10.14733/cadconfp.2018.412-416",
+      "url": "/a-neutral-xml-design-framework-for-generating-parametric-parts-in-multiple-cad-s",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1235,14 +1411,18 @@
         "Tovar, J.",
         "Salmon, J."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.14733/cadconfp.2018.412-416",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-bi-directional-interface-for-improved-interaction-with-engineering-models-in-v",
       "title": "A bi-directional interface for improved interaction with engineering models in virtual reality design reviews",
       "abstract": "Introduces a bi-directional interface for interacting with engineering models during VR design reviews.",
-      "url": "https://doi.org/10.1007/s12008-017-0413-0",
+      "url": "/a-bi-directional-interface-for-improved-interaction-with-engineering-models-in-v",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1253,14 +1433,18 @@
         "Salmon, J.",
         "Coburn, J."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s12008-017-0413-0",
+      "citationCount": 32,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-comparative-analysis-of-computer-aided-design-team-performance-with-collaborat",
       "title": "A comparative analysis of computer-aided design team performance with collaboration software",
       "abstract": "Compares CAD team performance when using collaboration software versus traditional workflows.",
-      "url": "https://doi.org/10.1080/16864360.2017.1419649",
+      "url": "/a-comparative-analysis-of-computer-aided-design-team-performance-with-collaborat",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1272,14 +1456,18 @@
         "Olsen, J.",
         "Fagergren, F."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1080/16864360.2017.1419649",
+      "citationCount": 19,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "effectiveness-of-an-immersive-virtual-environment-for-collaboration-with-gesture",
       "title": "Effectiveness of an Immersive Virtual Environment for Collaboration With Gesture Support Using Low-Cost Hardware",
       "abstract": "Tests immersive VR collaboration with gesture support using low-cost hardware for design work.",
-      "url": "https://doi.org/10.1115/1.4039006",
+      "url": "/effectiveness-of-an-immersive-virtual-environment-for-collaboration-with-gesture",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1290,14 +1478,18 @@
         "Salmon, J. L.",
         "Freeman, I."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4039006",
+      "citationCount": 15,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "hybrid-state-transactional-database-for-product-lifecycle-management-features-in",
       "title": "Hybrid state transactional database for product lifecycle management features in a multi-engineer synchronous heterogeneous CAD environment",
       "abstract": "Presents a hybrid-state transactional database enabling PLM features in multi-engineer synchronous CAD.",
-      "url": "https://doi.org/10.1080/16864360.2017.1353736",
+      "url": "/hybrid-state-transactional-database-for-product-lifecycle-management-features-in",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1308,14 +1500,18 @@
         "Sadler, J.",
         "Salmon, J. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1080/16864360.2017.1353736",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "incorporating-global-and-local-customer-needs-into-early-stages-of-improved-cook",
       "title": "Incorporating global and local customer needs into early stages of improved cookstove design",
       "abstract": "Incorporates global and local customer needs into early stages of improved cookstove design.",
-      "url": "https://doi.org/10.1504/ijpd.2018.093428",
+      "url": "/incorporating-global-and-local-customer-needs-into-early-stages-of-improved-cook",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -1326,14 +1522,18 @@
         "Barger, K. M.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1504/ijpd.2018.093428",
+      "citationCount": 2,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "over-design-versus-redesign-as-a-response-to-future-requirements",
       "title": "Over-Design Versus Redesign As a Response to Future Requirements",
       "abstract": "Compares over-design versus redesign as strategies for responding to uncertain future requirements.",
-      "url": "https://doi.org/10.1115/detc2018-86156",
+      "url": "/over-design-versus-redesign-as-a-response-to-future-requirements",
       "badge": "conference",
       "categories": [
         "Other"
@@ -1345,14 +1545,18 @@
         "Mattson, C. A.",
         "Hatch, N. W."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2018-86156",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "the-social-impacts-of-products-a-review",
       "title": "The social impacts of products: a review",
       "abstract": "Reviews literature on how engineered products create social impacts across communities and stakeholders.",
-      "url": "https://doi.org/10.1080/14615517.2018.1445176",
+      "url": "/the-social-impacts-of-products-a-review",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -1365,14 +1569,18 @@
         "Dahlin, E. C.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1080/14615517.2018.1445176",
+      "citationCount": 39,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "toward-a-universal-social-impact-metric-for-engineered-products-that-alleviate-p",
       "title": "Toward a Universal Social Impact Metric for Engineered Products That Alleviate Poverty",
       "abstract": "Proposes progress toward a universal social impact metric for poverty-alleviating engineered products.",
-      "url": "https://doi.org/10.1115/1.4038925",
+      "url": "/toward-a-universal-social-impact-metric-for-engineered-products-that-alleviate-p",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -1384,14 +1592,18 @@
         "Bryden, K. M.",
         "MacCarty, N. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4038925",
+      "citationCount": 26,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-data-analytics-approach-to-evaluation-of-competition-in-the-2012-summer-olymp",
       "title": "A Data Analytics Approach to Evaluation of Competition in the 2012 Summer Olympics",
       "abstract": "Introduces a data metric that measures competitive gaps across selected 2012 Summer Olympic events.",
-      "url": "https://www.airitilibrary.com/Article/Detail/16838602-201707-201711160005-201711160005-373-390",
+      "url": "/a-data-analytics-approach-to-evaluation-of-competition-in-the-2012-summer-olymp",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1401,14 +1613,15 @@
         "Salmon, J. L.",
         "Harrison, W. K."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://www.airitilibrary.com/Article/Detail/16838602-201707-201711160005-201711160005-373-390"
     },
     {
       "kind": "research",
       "id": "a-multi-user-computer-aided-design-competition-experimental-findings-and-analysi",
       "title": "A Multi-User Computer-Aided Design Competition: Experimental Findings and Analysis of Team-Member Dynamics",
       "abstract": "A competition for teams of three students using a prototype multi-user computer-aided design (MUCAD) tool was held to investigate various.",
-      "url": "https://doi.org/10.1115/1.4035674",
+      "url": "/a-multi-user-computer-aided-design-competition-experimental-findings-and-analysi",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1424,14 +1637,18 @@
         "Gorrell, S.",
         "Richey, M. C."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4035674",
+      "citationCount": 14,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-review-of-the-capabilities-of-current-low-cost-virtual-reality-technology-and",
       "title": "A Review of the Capabilities of Current Low-Cost Virtual Reality Technology and Its Potential to Enhance the Design Process",
       "abstract": "In the past few years, there have been some significant advances in consumer virtual reality (VR) devices.",
-      "url": "https://doi.org/10.1115/1.4036921",
+      "url": "/a-review-of-the-capabilities-of-current-low-cost-virtual-reality-technology-and",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1442,14 +1659,18 @@
         "Freeman, I.",
         "Salmon, J. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4036921",
+      "citationCount": 177,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-simple-starting-point-for-designing-for-and-or-assessing-the-social-impact-of",
       "title": "A Simple Starting Point for Designing for and/or Assessing the Social Impact of Products",
       "abstract": "Offers a simple starting point for designing for and assessing product social impact.",
-      "url": "https://doi.org/10.1115/detc2017-67586",
+      "url": "/a-simple-starting-point-for-designing-for-and-or-assessing-the-social-impact-of",
       "badge": "conference",
       "categories": [
         "Social impact modeling"
@@ -1461,14 +1682,18 @@
         "Mattson, C. A.",
         "Dahlin, E."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2017-67586",
+      "citationCount": 3,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-systems-engineering-approach-to-harnessing-human-energy-in-public-places-a-fea",
       "title": "A Systems Engineering Approach to Harnessing Human Energy in Public Places: A Feasibility Study",
       "abstract": "This study analyzes the feasibility of placing modified exercise equipment in public places to enable human energy harnessing.",
-      "url": "https://doi.org/10.1115/1.4035904",
+      "url": "/a-systems-engineering-approach-to-harnessing-human-energy-in-public-places-a-fea",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -1478,14 +1703,18 @@
         "Jafek, A.",
         "Salmon, J. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4035904",
+      "citationCount": 3,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "analysis-of-integrating-a-production-design-generator-with-a-business-decision-s",
       "title": "Analysis of Integrating a Production Design Generator with a Business Decision Support System for System-Level Decision Making",
       "abstract": "Decision support systems (DSSs) are used to enhance decision making speed and effectiveness.",
-      "url": "https://doi.org/10.3390/systems5010014",
+      "url": "/analysis-of-integrating-a-production-design-generator-with-a-business-decision-s",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -1495,14 +1724,18 @@
         "Seletos, T.",
         "Salmon, J."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.3390/systems5010014",
+      "citationCount": 4,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "associative-cad-references-in-the-neutral-parametric-canonical-form",
       "title": "Associative CAD references in the neutral parametric canonical form",
       "abstract": "Maintains associative CAD references within a neutral parametric canonical form across systems.",
-      "url": "https://doi.org/10.1080/16864360.2016.1257184",
+      "url": "/associative-cad-references-in-the-neutral-parametric-canonical-form",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1513,14 +1746,18 @@
         "Salmon, J. L.",
         "Red, W. E."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1080/16864360.2016.1257184",
+      "citationCount": 5,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "balancing-technical-and-user-objectives-in-the-redesign-of-a-peruvian-cookstove",
       "title": "Balancing technical and user objectives in the redesign of a peruvian cookstove",
       "abstract": "Balances technical performance and user objectives in redesigning a Peruvian cookstove.",
-      "url": "https://doi.org/10.1016/j.deveng.2016.05.001",
+      "url": "/balancing-technical-and-user-objectives-in-the-redesign-of-a-peruvian-cookstove",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -1531,14 +1768,18 @@
         "Barger, K. M.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1016/j.deveng.2016.05.001",
+      "citationCount": 36,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "design-for-excess-capability-to-handle-uncertain-product-requirements-in-a-devel",
       "title": "Design for excess capability to handle uncertain product requirements in a developing world setting",
       "abstract": "Designs excess capability into products so uncertain requirements in developing-world settings can be absorbed.",
-      "url": "https://doi.org/10.1007/s00163-017-0253-8",
+      "url": "/design-for-excess-capability-to-handle-uncertain-product-requirements-in-a-devel",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -1550,14 +1791,18 @@
         "Thacker, K. S.",
         "Ferguson, S. M."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00163-017-0253-8",
+      "citationCount": 16,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "experimenting-with-concepts-from-modular-product-design-and-multi-objective-opti",
       "title": "Experimenting with concepts from modular product design and multi-objective optimization to benefit people living in poverty",
       "abstract": "Applies modular product design and multi-objective optimization to products for people living in poverty.",
-      "url": "https://doi.org/10.1016/j.deveng.2016.12.002",
+      "url": "/experimenting-with-concepts-from-modular-product-design-and-multi-objective-opti",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -1569,14 +1814,18 @@
         "Mattson, C. A.",
         "Ottosson, H. J."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1016/j.deveng.2016.12.002",
+      "citationCount": 12,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "exploration-and-evaluation-of-cad-modeling-in-virtual-reality",
       "title": "Exploration and Evaluation of CAD Modeling in Virtual Reality",
       "abstract": "Explores and evaluates CAD modeling workflows performed inside virtual reality environments.",
-      "url": "https://doi.org/10.14733/cadconfp.2017.357-361",
+      "url": "/exploration-and-evaluation-of-cad-modeling-in-virtual-reality",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1587,14 +1836,18 @@
         "Wright, L.",
         "Salmon, J."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.14733/cadconfp.2017.357-361",
+      "citationCount": 3,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "improving-virtual-design-team-performance-through-use-of-a-collaborative-sketchi",
       "title": "Improving Virtual Design Team Performance Through Use of a Collaborative Sketching Application",
       "abstract": "Shows collaborative sketching tools can improve virtual design team performance and communication.",
-      "url": "https://doi.org/10.4018/ijec.2017100101",
+      "url": "/improving-virtual-design-team-performance-through-use-of-a-collaborative-sketchi",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1607,14 +1860,18 @@
         "Gorrell, S.",
         "Richey, M."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.4018/ijec.2017100101",
+      "citationCount": 2,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "towards-a-universal-social-impact-metric-for-engineered-products-that-alleviate",
       "title": "Towards a Universal Social Impact Metric for Engineered Products That Alleviate Poverty",
       "abstract": "Proposes progress toward a universal social impact metric for poverty-alleviating engineered products.",
-      "url": "https://doi.org/10.1115/detc2017-67584",
+      "url": "/towards-a-universal-social-impact-metric-for-engineered-products-that-alleviate",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -1626,14 +1883,18 @@
         "Bryden, K. M.",
         "MacCarty, N. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/detc2017-67584",
+      "citationCount": 12,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "village-drill-a-case-study-in-engineering-for-global-development-with-five-years",
       "title": "Village Drill: A Case Study in Engineering for Global Development With Five Years of Data Post Market-Introduction",
       "abstract": "Case study of the Village Drill with five years of post-market data on performance and development impact.",
-      "url": "https://doi.org/10.1115/1.4036304",
+      "url": "/village-drill-a-case-study-in-engineering-for-global-development-with-five-years",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -1644,14 +1905,18 @@
         "Renouard, J."
       ],
       "year": 2017,
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4036304",
+      "citationCount": 14,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "design-for-the-developing-world-common-pitfalls-and-how-to-avoid-them",
       "title": "Design for the Developing World: Common Pitfalls and How to Avoid Them",
       "abstract": "Engineers face many challenges when designing for the developing world, which are not typically encountered in other design.",
-      "url": "https://doi.org/10.1115/1.4032195",
+      "url": "/design-for-the-developing-world-common-pitfalls-and-how-to-avoid-them",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -1661,14 +1926,18 @@
         "Wood, A. E.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4032195",
+      "citationCount": 69,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "evaluation-of-system-evolvability-based-on-usable-excess",
       "title": "Evaluation of System Evolvability Based on Usable Excess",
       "abstract": "Evaluates system evolvability by measuring usable excess capability available for future change.",
-      "url": "https://doi.org/10.1115/1.4033989",
+      "url": "/evaluation-of-system-evolvability-based-on-usable-excess",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -1679,14 +1948,18 @@
         "Mattson, C. A.",
         "Ferguson, S. M."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4033989",
+      "citationCount": 14,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "excess-identification-and-mapping-in-engineered-systems",
       "title": "Excess Identification and Mapping in Engineered Systems",
       "abstract": "Identifies and maps excess relationships in engineered systems to support evolvability and capability decisions.",
-      "url": "https://doi.org/10.1115/1.4033884",
+      "url": "/excess-identification-and-mapping-in-engineered-systems",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -1698,14 +1971,18 @@
         "Mattson, C. A."
       ],
       "year": 2016,
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4033884",
+      "citationCount": 18,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "methods-for-determining-the-optimal-number-of-simultaneous-contributors-for-mult",
       "title": "Methods for Determining the Optimal Number of Simultaneous Contributors for Multi-user CAD Parts",
       "abstract": "Determines the optimal number of simultaneous contributors for multi-user CAD parts.",
-      "url": "https://doi.org/10.14733/cadconfp.2016.189-193",
+      "url": "/methods-for-determining-the-optimal-number-of-simultaneous-contributors-for-mult",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1718,14 +1995,18 @@
         "Red, E.",
         "Killian, M."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.14733/cadconfp.2016.189-193",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "optimization-of-excess-system-capability-for-increased-evolvability",
       "title": "Optimization of excess system capability for increased evolvability",
       "abstract": "Optimizes excess system capability to increase evolvability under changing future requirements.",
-      "url": "https://doi.org/10.1007/s00158-015-1378-x",
+      "url": "/optimization-of-excess-system-capability-for-increased-evolvability",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -1737,14 +2018,18 @@
         "Mattson, C. A.",
         "Ferguson, S. M."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00158-015-1378-x",
+      "citationCount": 12,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "hybrid-bishop-hill-model-combined-finite-element-analysis-for-elastic-yield-limi",
       "title": "Hybrid Bishop-Hill model combined finite element analysis for elastic-yield limited design",
       "abstract": "Combines a Hybrid Bishop-Hill model with finite element analysis for elastic-yield limited design.",
-      "url": "https://doi.org/10.1108/ec-06-2014-0130",
+      "url": "/hybrid-bishop-hill-model-combined-finite-element-analysis-for-elastic-yield-limi",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1758,14 +2043,18 @@
         "Adams, B. L.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1108/ec-06-2014-0130",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "modular-product-optimisation-to-alleviate-poverty-an-irrigation-pump-case-study",
       "title": "Modular product optimisation to alleviate poverty: an irrigation pump case study",
       "abstract": "Optimizes a modular irrigation pump design to improve affordability and usefulness for poverty alleviation.",
-      "url": "https://doi.org/10.1504/ijpd.2015.067277",
+      "url": "/modular-product-optimisation-to-alleviate-poverty-an-irrigation-pump-case-study",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -1776,14 +2065,18 @@
         "Mattson, C. A.",
         "Wood, C. D."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1504/ijpd.2015.067277",
+      "citationCount": 2,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-model-for-quantifying-system-evolvability-based-on-excess-and-capacity",
       "title": "A Model for Quantifying System Evolvability Based on Excess and Capacity",
       "abstract": "An important factor in system longevity is service-phase evolvability, which is defined as the ability of a system.",
-      "url": "https://doi.org/10.1115/1.4026648",
+      "url": "/a-model-for-quantifying-system-evolvability-based-on-excess-and-capacity",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -1794,14 +2087,18 @@
         "Mattson, C. A.",
         "Ferguson, S. M."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4026648",
+      "citationCount": 44,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "considering-dynamic-pareto-frontiers-in-decision-making",
       "title": "Considering dynamic Pareto frontiers in decision making",
       "abstract": "Shows how dynamic Pareto frontiers can guide decisions when system preferences and concepts change over time.",
-      "url": "https://doi.org/10.1007/s11081-013-9238-2",
+      "url": "/considering-dynamic-pareto-frontiers-in-decision-making",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1812,14 +2109,18 @@
         "Tackett, M. W. P.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s11081-013-9238-2",
+      "citationCount": 9,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "l-dominance-an-approximate-domination-mechanism-for-adaptive-resolution-of-paret",
       "title": "L-Dominance: An Approximate-Domination Mechanism for Adaptive Resolution of Pareto Frontiers",
       "abstract": "Introduces L-dominance for adaptive resolution of Pareto frontiers in multiobjective design.",
-      "url": "https://doi.org/10.2514/6.2014-2179",
+      "url": "/l-dominance-an-approximate-domination-mechanism-for-adaptive-resolution-of-paret",
       "badge": "conference",
       "categories": [
         "Other"
@@ -1830,14 +2131,18 @@
         "Nysetvold, T.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.2514/6.2014-2179",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "nine-principles-for-design-for-the-developing-world-as-derived-from-the-engineer",
       "title": "Nine Principles for Design for the Developing World as Derived From the Engineering Literature",
       "abstract": "This paper reviews the findings of several engineering researchers and practitioners on the topic of design for the developing world.",
-      "url": "https://doi.org/10.1115/1.4027984",
+      "url": "/nine-principles-for-design-for-the-developing-world-as-derived-from-the-engineer",
       "badge": "journal",
       "categories": [
         "Engineering For Global Health"
@@ -1847,14 +2152,18 @@
         "Mattson, C. A.",
         "Wood, A. E."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4027984",
+      "citationCount": 98,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "using-topology-optimization-to-numerically-improve-barriers-to-reverse-engineeri",
       "title": "Using Topology Optimization to Numerically Improve Barriers to Reverse Engineering",
       "abstract": "Here explored is a method by which designers can use the tool of topology optimization to numerically improve.",
-      "url": "https://doi.org/10.1115/1.4025962",
+      "url": "/using-topology-optimization-to-numerically-improve-barriers-to-reverse-engineeri",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1864,14 +2173,18 @@
         "LeBaron, D. D.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4025962",
+      "citationCount": 0,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "an-optimization-based-method-for-designing-modular-systems-that-traverse-dynamic",
       "title": "An optimization-based method for designing modular systems that traverse dynamic s-Pareto frontiers",
       "abstract": "Designs modular systems that traverse dynamic s-Pareto frontiers using multiobjective optimization.",
-      "url": "https://doi.org/10.1007/s00158-013-0924-7",
+      "url": "/an-optimization-based-method-for-designing-modular-systems-that-traverse-dynamic",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -1881,14 +2194,18 @@
         "Lewis, P. K.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00158-013-0924-7",
+      "citationCount": 3,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "characterizing-the-effects-of-learning-when-reverse-engineering-multiple-samples",
       "title": "Characterizing the Effects of Learning When Reverse Engineering Multiple Samples of the Same Product",
       "abstract": "Characterizes learning effects when reverse engineering multiple samples of the same product.",
-      "url": "https://doi.org/10.1115/1.4007918",
+      "url": "/characterizing-the-effects-of-learning-when-reverse-engineering-multiple-samples",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1899,14 +2216,18 @@
         "Harston, S. P.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4007918",
+      "citationCount": 4,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "divergent-exploration-in-design-with-a-dynamic-multiobjective-optimization-formu",
       "title": "Divergent exploration in design with a dynamic multiobjective optimization formulation",
       "abstract": "Enables divergent design exploration using a dynamic multiobjective optimization formulation.",
-      "url": "https://doi.org/10.1007/s00158-012-0855-8",
+      "url": "/divergent-exploration-in-design-with-a-dynamic-multiobjective-optimization-formu",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1918,14 +2239,18 @@
         "Hancock, B. J.",
         "Lewis, P. K."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00158-012-0855-8",
+      "citationCount": 11,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "the-smart-normal-constraint-method-for-directly-generating-a-smart-pareto-set",
       "title": "The Smart Normal Constraint Method for Directly Generating a Smart Pareto Set",
       "abstract": "Presents the smart normal constraint method to directly generate compact smart Pareto sets.",
-      "url": "https://doi.org/10.2514/6.2013-1748",
+      "url": "/the-smart-normal-constraint-method-for-directly-generating-a-smart-pareto-set",
       "badge": "conference",
       "categories": [
         "Other"
@@ -1935,14 +2260,18 @@
         "Hancock, B. J.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.2514/6.2013-1748",
+      "citationCount": 1,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "usage-scenarios-for-design-space-exploration-with-a-dynamic-multiobjective-optim",
       "title": "Usage scenarios for design space exploration with a dynamic multiobjective optimization formulation",
       "abstract": "Defines usage scenarios for design space exploration with dynamic multiobjective optimization formulations.",
-      "url": "https://doi.org/10.1007/s00163-013-0158-0",
+      "url": "/usage-scenarios-for-design-space-exploration-with-a-dynamic-multiobjective-optim",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1953,14 +2282,18 @@
         "Hancock, B. J.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00163-013-0158-0",
+      "citationCount": 9,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-differentially-driven-flapping-wing-mechanism-for-force-analysis-and-trajector",
       "title": "A Differentially Driven Flapping Wing Mechanism for Force Analysis and Trajectory Optimization",
       "abstract": "Flapping flight has the potential to revolutionize micro air vehicles (MAVs) due to increased aerodynamic performance, improved maneuverability.",
-      "url": "https://doi.org/10.1260/1756-8293.4.1.31",
+      "url": "/a-differentially-driven-flapping-wing-mechanism-for-force-analysis-and-trajector",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1972,14 +2305,18 @@
         "Mattson, C. A.",
         "Thomson, S. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1260/1756-8293.4.1.31",
+      "citationCount": 28,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-method-for-developing-systems-that-traverse-the-pareto-frontiers-of-multiple-s",
       "title": "A method for developing systems that traverse the Pareto frontiers of multiple system concepts through modularity",
       "abstract": "Develops systems that traverse Pareto frontiers across multiple concepts as needs change over time.",
-      "url": "https://doi.org/10.1007/s00158-011-0735-7",
+      "url": "/a-method-for-developing-systems-that-traverse-the-pareto-frontiers-of-multiple-s",
       "badge": "journal",
       "categories": [
         "Other"
@@ -1989,14 +2326,18 @@
         "Mattson, C. A."
       ],
       "year": 2012,
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00158-011-0735-7",
+      "citationCount": 11,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "design-space-exploration-for-quantifying-a-system-model-s-feasible-domain",
       "title": "Design Space Exploration for Quantifying a System Modelâ€™s Feasible Domain",
       "abstract": "Quantifies a system model's feasible domain through design space exploration to improve modeling reliability.",
-      "url": "https://doi.org/10.1115/1.4005861",
+      "url": "/design-space-exploration-for-quantifying-a-system-model-s-feasible-domain",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2006,14 +2347,18 @@
         "Mattson, C. A."
       ],
       "year": 2012,
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4005861",
+      "citationCount": 17,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "efficient-propagation-of-error-through-system-models-for-functions-common-in-eng",
       "title": "Efficient Propagation of Error Through System Models for Functions Common in Engineering",
       "abstract": "Efficiently propagates error through system models for mathematical functions common in engineering.",
-      "url": "https://doi.org/10.1115/1.4005444",
+      "url": "/efficient-propagation-of-error-through-system-models-for-functions-common-in-eng",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2025,14 +2370,18 @@
         "Larson, B. J.",
         "Fullwood, D. T."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4005444",
+      "citationCount": 8,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "hybrid-bishop-hill-model-for-elastic-yield-limited-design-with-non-orthorhombic",
       "title": "Hybrid Bishop-Hill Model for Elastic-Yield Limited Design With Non-orthorhombic Polycrystalline Metals",
       "abstract": "Applies a Hybrid Bishop-Hill model to elastic-yield limited design of non-orthorhombic polycrystalline metals.",
-      "url": "https://doi.org/10.1115/1.4004829",
+      "url": "/hybrid-bishop-hill-model-for-elastic-yield-limited-design-with-non-orthorhombic",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2044,14 +2393,18 @@
         "Adams, B. L.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4004829",
+      "citationCount": 5,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "propagating-skewness-and-kurtosis-through-engineering-models-for-low-cost-meanin",
       "title": "Propagating Skewness and Kurtosis Through Engineering Models for Low-Cost, Meaningful, Nondeterministic Design",
       "abstract": "Propagates skewness and kurtosis through engineering models for low-cost nondeterministic design.",
-      "url": "https://doi.org/10.1115/1.4007389",
+      "url": "/propagating-skewness-and-kurtosis-through-engineering-models-for-low-cost-meanin",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2061,14 +2414,18 @@
         "Anderson, T. V.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4007389",
+      "citationCount": 38,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-design-optimization-strategy-for-creating-devices-that-traverse-the-pareto-fro",
       "title": "A design optimization strategy for creating devices that traverse the Pareto frontier over time",
       "abstract": "Creates devices that traverse the Pareto frontier over time as requirements and preferences evolve.",
-      "url": "https://doi.org/10.1007/s00158-010-0555-1",
+      "url": "/a-design-optimization-strategy-for-creating-devices-that-traverse-the-pareto-fro",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2079,14 +2436,18 @@
         "Murray, V. R.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00158-010-0555-1",
+      "citationCount": 21,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "the-fundamentals-of-barriers-to-reverse-engineering-and-their-implementation-int",
       "title": "The fundamentals of barriers to reverse engineering and their implementation into mechanical components",
       "abstract": "Defines fundamentals of reverse-engineering barriers and how to implement them in mechanical components.",
-      "url": "https://doi.org/10.1007/s00163-011-0109-6",
+      "url": "/the-fundamentals-of-barriers-to-reverse-engineering-and-their-implementation-int",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2097,14 +2458,18 @@
         "Harston, S. P.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00163-011-0109-6",
+      "citationCount": 38,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "a-computationally-assisted-methodology-for-preference-guided-conceptual-design",
       "title": "A Computationally-assisted Methodology for Preference-guided Conceptual Design",
       "abstract": "Assists designers in preference-guided conceptual design using computational exploration of concept spaces.",
-      "url": "https://doi.org/10.2514/6.2010-9175",
+      "url": "/a-computationally-assisted-methodology-for-preference-guided-conceptual-design",
       "badge": "conference",
       "categories": [
         "Other"
@@ -2114,14 +2479,18 @@
         "Barnum, G.",
         "Mattson, C."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.2514/6.2010-9175",
+      "citationCount": 2,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "capitalizing-on-heterogeneity-and-anisotropy-to-design-desirable-hardware-that-i",
       "title": "Capitalizing on Heterogeneity and Anisotropy to Design Desirable Hardware That is Difficult to Reverse Engineer",
       "abstract": "Uses material heterogeneity and anisotropy to design hardware that is difficult to reverse engineer.",
-      "url": "https://doi.org/10.1115/1.4001874",
+      "url": "/capitalizing-on-heterogeneity-and-anisotropy-to-design-desirable-hardware-that-i",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2132,14 +2501,18 @@
         "Mattson, C. A.",
         "Adams, B. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4001874",
+      "citationCount": 4,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "metrics-for-evaluating-the-barrier-and-time-to-reverse-engineer-a-product",
       "title": "Metrics for Evaluating the Barrier and Time to Reverse Engineer a Product",
       "abstract": "Defines metrics for evaluating both the barrier and time required to reverse engineer a product.",
-      "url": "https://doi.org/10.1115/1.4001347",
+      "url": "/metrics-for-evaluating-the-barrier-and-time-to-reverse-engineer-a-product",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2149,14 +2522,18 @@
         "Harston, S. P.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.4001347",
+      "citationCount": 17,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "optimization-of-near-constant-force-springs-subject-to-mating-uncertainty",
       "title": "Optimization of near-constant force springs subject to mating uncertainty",
       "abstract": "Optimizes near-constant-force springs while accounting for uncertainty in mating conditions.",
-      "url": "https://doi.org/10.1007/s00158-009-0410-4",
+      "url": "/optimization-of-near-constant-force-springs-subject-to-mating-uncertainty",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2166,14 +2543,18 @@
         "Meaders, J. C.",
         "Mattson, C. A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1007/s00158-009-0410-4",
+      "citationCount": 30,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "case-studies-in-concept-exploration-and-selection-with-s-pareto-frontiers",
       "title": "Case studies in concept exploration and selection with s-Pareto frontiers",
       "abstract": "Presents case studies using s-Pareto frontiers for concept exploration and selection.",
-      "url": "https://doi.org/10.1504/ijpd.2009.026173",
+      "url": "/case-studies-in-concept-exploration-and-selection-with-s-pareto-frontiers",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2184,14 +2565,18 @@
         "Mullur, A.",
         "Messac, A."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1504/ijpd.2009.026173",
+      "citationCount": 10,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
       "id": "configuration-selection-modeling-and-preliminary-testing-in-support-of-constant",
       "title": "Configuration Selection, Modeling, and Preliminary Testing in Support of Constant Force Electrical Connectors",
       "abstract": "Selects, models, and preliminarily tests configurations for constant-force electrical connectors.",
-      "url": "https://doi.org/10.1115/1.2721080",
+      "url": "/configuration-selection-modeling-and-preliminary-testing-in-support-of-constant",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2203,7 +2588,11 @@
         "Magleby, S. P.",
         "Howell, L. L."
       ],
-      "hidden": false
+      "hidden": false,
+      "publisherUrl": "https://doi.org/10.1115/1.2721080",
+      "citationCount": 45,
+      "citationSource": "openalex",
+      "citationsUpdatedAt": "2026-09-02"
     },
     {
       "kind": "research",
