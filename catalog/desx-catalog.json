@@ -152,7 +152,7 @@
       "id": "for-the-benefit-of-the-world-conference-desx-abstracts-2025",
       "title": "For the Benefit of the World Conference - DesX Abstracts (2025)",
       "abstract": "Collected DesX abstracts from the 2025 For the Benefit of the World Conference, sharing lab research summaries with the broader community.",
-      "url": "https://www.overleaf.com/read/bnfdkhyddttr#9c464b",
+      "url": "/for-the-benefit-of-the-world-conference-desx-abstracts-2025",
       "badge": "whitepaper",
       "categories": [
         "Other"
@@ -178,7 +178,7 @@
       "id": "definitions-of-fundamental-socio-technical-network-types",
       "title": "Definitions of Fundamental Socio-Technical Network Types",
       "abstract": "Defines fundamental socio-technical network types used in Engineering for Sustainable Development and social-impact modeling research.",
-      "url": "https://www.overleaf.com/read/sjfzzhckpbqw#f953c2",
+      "url": "/definitions-of-fundamental-socio-technical-network-types",
       "badge": "whitepaper",
       "categories": [
         "Social impact modeling"
@@ -195,7 +195,7 @@
       "id": "definition-of-engineering-for-global-health",
       "title": "Definition of Engineering for Global Health",
       "abstract": "Defines Engineering for Global Health as using engineering design methods to address complex global health challenges in inequality- and resource-constrained settings.",
-      "url": "https://www.overleaf.com/read/ngqqrrjxzzrz#af5e3b",
+      "url": "/definition-of-engineering-for-global-health",
       "badge": "whitepaper",
       "categories": [
         "Engineering For Global Health"
@@ -212,7 +212,7 @@
       "id": "global-health-glossary",
       "title": "Global Health Glossary",
       "abstract": "A glossary of global health terms used in Engineering for Global Health research and practice.",
-      "url": "https://www.overleaf.com/read/mgsyqnjkpshg#d76e66",
+      "url": "/global-health-glossary",
       "badge": "whitepaper",
       "categories": [
         "Engineering For Global Health"
@@ -263,7 +263,7 @@
       "id": "path-optimization-from-en-route-3d-printed-aircraft-using-physics-based-estimati",
       "title": "Path Optimization From En Route 3D-Printed Aircraft Using Physics-Based Estimation Methods and Surrogate Models",
       "abstract": "Optimizes flight paths for en-route 3D-printed aircraft using physics-based estimates and surrogate models.",
-      "url": "https://doi.org/10.1115/1.4069685",
+      "url": "/path-optimization-from-en-route-3d-printed-aircraft",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -301,7 +301,7 @@
       "id": "an-approach-for-developing-a-decision-support-tool-for-emerging-concepts-designi",
       "title": "An Approach for Developing a Decision Support Tool for Emerging Concepts: Designing Blended Wing Body Aircraft for Logistics Missions",
       "abstract": "Develops a decision-support approach for emerging concepts, demonstrated on blended-wing logistics aircraft.",
-      "url": "https://doi.org/10.1115/detc2025-169042",
+      "url": "/emerging-concepts-decision-support-tool",
       "badge": "conference",
       "categories": [
         "Systems & Product Architecture"
@@ -342,7 +342,7 @@
       "id": "designing-for-machine-longevity-a-literature-survey",
       "title": "Designing for Machine Longevity - A Literature Survey",
       "abstract": "Surveys design strategies that extend complex machine service life through maintainability, modularity, and longevity-focused architecture.",
-      "url": "https://doi.org/10.1017/pds.2025.10147",
+      "url": "/designing-for-machine-longevity-a-literature-survey",
       "badge": "conference",
       "categories": [
         "Systems & Product Architecture"
@@ -361,7 +361,7 @@
       "id": "extending-solid-principles-to-systems-engineering-leveraging-sysml-for-modular-d",
       "title": "Extending Solid Principles to Systems Engineering: Leveraging SysML for Modular Design and Complexity Analysis",
       "abstract": "Extends SOLID software principles to systems engineering using SysML for modularity and complexity analysis.",
-      "url": "https://doi.org/10.1115/detc2025-169752",
+      "url": "/extending-solid-principles-to-systems-engineering",
       "badge": "conference",
       "categories": [
         "Systems & Product Architecture"
@@ -379,7 +379,7 @@
       "id": "graph-based-social-impact-diffusion-optimization-across-a-theoretical-socio-tech",
       "title": "Graph-Based Social Impact Diffusion Optimization across a Theoretical Socio-Technical System",
       "abstract": "Optimizes graph-based social impact diffusion across a theoretical socio-technical system model.",
-      "url": "https://doi.org/10.1017/pds.2025.10210",
+      "url": "/graph-based-social-impact-diffusion-optimization",
       "badge": "conference",
       "categories": [
         "Social impact modeling"
@@ -396,7 +396,7 @@
       "id": "quantifiable-theory-of-change",
       "title": "Quantifiable Theory of Change",
       "abstract": "Presents a quantifiable Theory of Change approach for measuring and designing toward intended social outcomes.",
-      "url": "https://doi.org/10.1109/ghtc66843.2025.11266770",
+      "url": "/quantifiable-theory-of-change",
       "badge": "conference",
       "categories": [
         "Social impact modeling"
@@ -438,7 +438,7 @@
       "id": "a-decision-support-system-for-multi-stakeholder-exploration-of-the-airship-desig",
       "title": "A decision support system for multi-stakeholder exploration of the airship design space",
       "abstract": "Supports multi-stakeholder exploration of airship design trades with a decision support system.",
-      "url": "https://doi.org/10.1177/15485129231164416",
+      "url": "/a-decision-support-system-for-exploration-of-airship-design",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -458,7 +458,7 @@
       "id": "a-formal-consideration-of-user-tactics-during-product-evaluation-in-early-stage",
       "title": "A formal consideration of user tactics during product evaluation in early-stage product development",
       "abstract": "Formalizes user tactics during early product evaluation to better connect intended use with design decisions.",
-      "url": "https://doi.org/10.1504/ijpd.2024.137784",
+      "url": "/consideration-of-user-tactics-during-product-evaluation",
       "badge": "journal",
       "categories": [
         "Other"
@@ -477,7 +477,7 @@
       "id": "an-approach-for-predicting-social-environmental-and-economic-product-impacts-and",
       "title": "An Approach for Predicting Social, Environmental, and Economic Product Impacts and Characterizing the Associated Sustainability Tradespace in Engineering Design",
       "abstract": "Predicts social, environmental, and economic product impacts and maps the resulting sustainability tradespace.",
-      "url": "https://doi.org/10.1115/1.4064041",
+      "url": "/predicting-social-environmental-and-economic-product-impacts",
       "badge": "journal",
       "categories": [
         "Other"
@@ -539,7 +539,7 @@
       "id": "optimizing-engineered-products-for-their-social-impacts-on-multiple-stakeholders",
       "title": "Optimizing Engineered Products for Their Social Impacts on Multiple Stakeholders",
       "abstract": "Optimizes engineered products for social impacts across multiple stakeholders, not only traditional performance metrics.",
-      "url": "https://doi.org/10.1115/1.4064694",
+      "url": "/optimizing-engineered-products-for-their-social-impacts-on-multiple-stakeholders",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -558,7 +558,7 @@
       "id": "product-architecture-strategies-and-effects-matrices-for-early-evaluation-and-se",
       "title": "Product architecture strategies and effects matrices for early evaluation and selection of product architectures",
       "abstract": "Introduces Product Architecture Strategies and Effects matrices for early architecture evaluation and selection.",
-      "url": "https://doi.org/10.1017/dsj.2024.18",
+      "url": "/product-architecture-strategies-and-effects-matrices",
       "badge": "journal",
       "categories": [
         "Systems & Product Architecture"
@@ -602,7 +602,7 @@
       "id": "advancing-sustainable-development-emerging-factors-and-futures-for-the-engineeri",
       "title": "Advancing Sustainable Development: Emerging Factors and Futures for the Engineering Field",
       "abstract": "This study set out to identify emerging trends in advancing engineering for sustainable development, supporting the engineering workforce to address.",
-      "url": "https://doi.org/10.3390/su15107869",
+      "url": "/advancing-sustainable-development-emerging-factors",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -635,7 +635,7 @@
       "id": "agent-based-product-social-impact-modeling-a-systematic-literature-review-and-mo",
       "title": "Agent-Based Product-Social-Impact-Modeling: A Systematic Literature Review and Modeling Process",
       "abstract": "Reviews agent-based product social-impact modeling and outlines a process for building such models.",
-      "url": "https://doi.org/10.1115/1.4063004",
+      "url": "/agent-based-product-social-impact-modeling",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -653,7 +653,7 @@
       "id": "an-approach-for-including-social-impact-measures-in-systems-design-exploration",
       "title": "An approach for including social impact measures in systems design exploration",
       "abstract": "Engineered products have economic, environmental, and social impacts, which comprise the major dimensions of sustainability.",
-      "url": "https://doi.org/10.1017/dsj.2023.13",
+      "url": "/social-impact-measures-in-systems-design-exploration",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -672,7 +672,7 @@
       "id": "creating-predictive-social-impact-models-of-engineered-products-using-synthetic",
       "title": "Creating predictive social impact models of engineered products using synthetic populations",
       "abstract": "Creates predictive social impact models of engineered products using synthetic population data.",
-      "url": "https://doi.org/10.1007/s00163-023-00424-4",
+      "url": "/predictive-social-impact-models-using-synthetic-population",
       "badge": "journal",
       "categories": [
         "Social impact modeling"
@@ -691,7 +691,7 @@
       "id": "enabling-insights-by-long-term-evaluation-of-social-impact-indicators-of-enginee",
       "title": "Enabling Insights by Long-Term Evaluation of Social Impact Indicators of Engineered Products for Global Development Using In Situ Sensors and Deep Learning",
       "abstract": "Remotely measuring social impact indicators of products in developing countries can enable researchers and practitioners to make informed.",
-      "url": "https://doi.org/10.1115/1.4062944",
+      "url": "/long-term-evaluation-of-social-impact-indicators",
       "badge": "journal",
       "categories": [
         "Social impact modeling"

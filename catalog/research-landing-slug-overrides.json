@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "description": "Final Squarespace URL slugs for research landing pages. Keys are catalog ids from desx-catalog.json / research-landing-packs.json.",
+  "slugs": {
+    "for-the-benefit-of-the-world-conference-desx-abstracts-2025": "/for-the-benefit-of-the-world-conference-desx-abstracts-2025",
+    "definitions-of-fundamental-socio-technical-network-types": "/definitions-of-fundamental-socio-technical-network-types",
+    "definition-of-engineering-for-global-health": "/definition-of-engineering-for-global-health",
+    "global-health-glossary": "/global-health-glossary",
+    "path-optimization-from-en-route-3d-printed-aircraft-using-physics-based-estimati": "/path-optimization-from-en-route-3d-printed-aircraft",
+    "an-approach-for-developing-a-decision-support-tool-for-emerging-concepts-designi": "/emerging-concepts-decision-support-tool",
+    "designing-for-machine-longevity-a-literature-survey": "/designing-for-machine-longevity-a-literature-survey",
+    "extending-solid-principles-to-systems-engineering-leveraging-sysml-for-modular-d": "/extending-solid-principles-to-systems-engineering",
+    "graph-based-social-impact-diffusion-optimization-across-a-theoretical-socio-tech": "/graph-based-social-impact-diffusion-optimization",
+    "quantifiable-theory-of-change": "/quantifiable-theory-of-change",
+    "a-decision-support-system-for-multi-stakeholder-exploration-of-the-airship-desig": "/a-decision-support-system-for-exploration-of-airship-design",
+    "a-formal-consideration-of-user-tactics-during-product-evaluation-in-early-stage": "/consideration-of-user-tactics-during-product-evaluation",
+    "an-approach-for-predicting-social-environmental-and-economic-product-impacts-and": "/predicting-social-environmental-and-economic-product-impacts",
+    "optimizing-engineered-products-for-their-social-impacts-on-multiple-stakeholders": "/optimizing-engineered-products-for-their-social-impacts-on-multiple-stakeholders",
+    "product-architecture-strategies-and-effects-matrices-for-early-evaluation-and-se": "/product-architecture-strategies-and-effects-matrices",
+    "advancing-sustainable-development-emerging-factors-and-futures-for-the-engineeri": "/advancing-sustainable-development-emerging-factors",
+    "agent-based-product-social-impact-modeling-a-systematic-literature-review-and-mo": "/agent-based-product-social-impact-modeling",
+    "an-approach-for-including-social-impact-measures-in-systems-design-exploration": "/social-impact-measures-in-systems-design-exploration",
+    "creating-predictive-social-impact-models-of-engineered-products-using-synthetic": "/predictive-social-impact-models-using-synthetic-population",
+    "enabling-insights-by-long-term-evaluation-of-social-impact-indicators-of-enginee": "/long-term-evaluation-of-social-impact-indicators"
+  }
+}
