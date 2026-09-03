@@ -42,7 +42,7 @@
       "group": "directors",
       "status": "current",
       "order": 1,
-      "bio": "“Pure and simple, I love to create things.” Chris is a professor of mechanical engineering at Brigham Young University and performs research in engineering for global development. The research Chris performs has led to products like the Village Drill and World Cart. Chris has also been the recipient of the Presidential Early Career Award for Scientists and Engineers, as well as the National Science Foundation CAREER award."
+      "bio": "?Pure and simple, I love to create things.? Chris is a professor of mechanical engineering at Brigham Young University and performs research in engineering for global development. The research Chris performs has led to products like the Village Drill and World Cart. Chris has also been the recipient of the Presidential Early Career Award for Scientists and Engineers, as well as the National Science Foundation CAREER award."
     },
     {
       "id": "john-salmon",
@@ -51,7 +51,7 @@
       "group": "directors",
       "status": "current",
       "order": 2,
-      "bio": "Although not a student, John is a student of design — there is always more to learn and apply. John is an assistant professor of mechanical engineering at Brigham Young University. His research interests include systems engineering, design, and integration, multi-disciplinary optimization, operations research, visual and data analytics, modeling and simulation, multi-agent multi-objective decision making, sports analytics, virtual reality, and uncertainty analysis. He thinks innovation and creativity are the highest forms of intelligence and he believes design is at the core of making the world and oneself better."
+      "bio": "Although not a student, John is a student of design ? there is always more to learn and apply. John is an assistant professor of mechanical engineering at Brigham Young University. His research interests include systems engineering, design, and integration, multi-disciplinary optimization, operations research, visual and data analytics, modeling and simulation, multi-agent multi-objective decision making, sports analytics, virtual reality, and uncertainty analysis. He thinks innovation and creativity are the highest forms of intelligence and he believes design is at the core of making the world and oneself better."
     },
     {
       "id": "tevin-dickerson",
@@ -60,7 +60,7 @@
       "group": "phd",
       "status": "current",
       "order": 1,
-      "bio": "Tevin is a PhD candidate in mechanical engineering. He's from Cottonwood Heights, UT and is emphasizing in aerospace. On the team, he has worked on the airship project and traveling salesman. He likes to waterski and rock climb as well. His thoughts on engineering are, “to make the impossible, possible”."
+      "bio": "Tevin is a PhD candidate in mechanical engineering. He's from Cottonwood Heights, UT and is emphasizing in aerospace. On the team, he has worked on the airship project and traveling salesman. He likes to waterski and rock climb as well. His thoughts on engineering are, ?to make the impossible, possible?."
     },
     {
       "id": "samuel-mckinnon",
@@ -69,7 +69,7 @@
       "group": "phd",
       "status": "current",
       "order": 2,
-      "bio": "Samuel is a PhD candidate researching graph based social impact diffusion — a modeling method that can estimate the social impacts that engineered products or systems have on society. He is a past editor of the BYU Design Review and has worked on engineering projects in Peru, Ecuador, Bolivia, and Brazil. Upon completing his PhD, he hopes to be a mechanical engineering professor and continue researching engineering for sustainable development."
+      "bio": "Samuel is a PhD candidate researching graph based social impact diffusion ? a modeling method that can estimate the social impacts that engineered products or systems have on society. He is a past editor of the BYU Design Review and has worked on engineering projects in Peru, Ecuador, Bolivia, and Brazil. Upon completing his PhD, he hopes to be a mechanical engineering professor and continue researching engineering for sustainable development."
     },
     {
       "id": "scott-rice",
@@ -87,7 +87,7 @@
       "group": "masters",
       "status": "current",
       "order": 1,
-      "bio": "Jacob is passionate about solving human-centered problems with physical solutions. As a dual MBA and MS Mechanical Engineering student at BYU, he focuses on bridging gaps—between teams, disciplines, and the transition from research to real-world impact. With experience in consumer products and medical device manufacturing, he has seen the need for technically grounded leadership that aligns business, engineering, and customer needs. His interests include product development, negotiation, and interdisciplinary collaboration—helping people work together to create meaningful solutions. He believes the best innovations come from understanding both people and technology and using that knowledge to leave the world, and the people in it, better than he found it."
+      "bio": "Jacob is passionate about solving human-centered problems with physical solutions. As a dual MBA and MS Mechanical Engineering student at BYU, he focuses on bridging gaps?between teams, disciplines, and the transition from research to real-world impact. With experience in consumer products and medical device manufacturing, he has seen the need for technically grounded leadership that aligns business, engineering, and customer needs. His interests include product development, negotiation, and interdisciplinary collaboration?helping people work together to create meaningful solutions. He believes the best innovations come from understanding both people and technology and using that knowledge to leave the world, and the people in it, better than he found it."
     },
     {
       "id": "tyson-humphrey",
@@ -105,7 +105,7 @@
       "group": "undergraduate",
       "status": "current",
       "order": 1,
-      "bio": "Thomas is an undergraduate student in mechanical engineering. He loves learning, which has led to interests and hobbies including 3D printing, reading, and welding as he constantly tries learning new skills. He helped with the cassava peeler project and is excited to continue his work in the lab. He says, “I love how engineering design combines empathy and knowledge to help people around the world. One of my main goals in life is to use my skills to help others, and engineering helps me achieve this goal”."
+      "bio": "Thomas is an undergraduate student in mechanical engineering. He loves learning, which has led to interests and hobbies including 3D printing, reading, and welding as he constantly tries learning new skills. He helped with the cassava peeler project and is excited to continue his work in the lab. He says, ?I love how engineering design combines empathy and knowledge to help people around the world. One of my main goals in life is to use my skills to help others, and engineering helps me achieve this goal?."
     },
     {
       "id": "benjamin-sannar",
@@ -114,7 +114,7 @@
       "group": "undergraduate",
       "status": "current",
       "order": 2,
-      "bio": "Benjamin Sannar is a Mechanical Engineering student from Northern California. He grew up inspired by a heritage of ingenuity and surrounded by the processes that put fruit and vegetables onto tables around the world. “I love noticing the little things that would make life better and finding a way to set them in motion.” Outside of the lab and school, Ben is a commercial driver and enjoys home-improvement projects, the great outdoors and drawing."
+      "bio": "Benjamin Sannar is a Mechanical Engineering student from Northern California. He grew up inspired by a heritage of ingenuity and surrounded by the processes that put fruit and vegetables onto tables around the world. ?I love noticing the little things that would make life better and finding a way to set them in motion.? Outside of the lab and school, Ben is a commercial driver and enjoys home-improvement projects, the great outdoors and drawing."
     },
     {
       "id": "henry-wooley",
@@ -168,7 +168,7 @@
       "group": "undergraduate",
       "status": "current",
       "order": 8,
-      "bio": "Jordan sees every challenge as an adventure—whether in the lab or the great outdoors. As a mechanical engineering student researching social impact diffusion models, she explores how design can spark meaningful change in communities. Outside the lab, Jordan’s love for adventure leads her to rock climbing, hiking, and traveling, where new experiences inspire fresh perspectives and fuel her creativity. Through both her work and play, Jordan is driven to design solutions that make a positive, lasting impact."
+      "bio": "Jordan sees every challenge as an adventure?whether in the lab or the great outdoors. As a mechanical engineering student researching social impact diffusion models, she explores how design can spark meaningful change in communities. Outside the lab, Jordan?s love for adventure leads her to rock climbing, hiking, and traveling, where new experiences inspire fresh perspectives and fuel her creativity. Through both her work and play, Jordan is driven to design solutions that make a positive, lasting impact."
     },
     {
       "id": "hunter-scullin",
@@ -177,7 +177,7 @@
       "group": "undergraduate",
       "status": "current",
       "order": 9,
-      "bio": "Coming from a family of artists, Hunter loves design. Whether designing stories, comics, devices, or machines, he wants to be involved. He’s an undergraduate in Mechanical Engineering with interests in product design and development, consumer products, and electromechanical devices. When he isn’t in class he’s drawing, hiking, reading, and playing pickleball (poorly) with his fiancé."
+      "bio": "Coming from a family of artists, Hunter loves design. Whether designing stories, comics, devices, or machines, he wants to be involved. He?s an undergraduate in Mechanical Engineering with interests in product design and development, consumer products, and electromechanical devices. When he isn?t in class he?s drawing, hiking, reading, and playing pickleball (poorly) with his fianc?."
     },
     {
       "id": "jeff-allen",
@@ -520,6 +520,19 @@
       "status": "alumni",
       "order": 8,
       "bio": ""
+    },
+    {
+      "id": "test-2",
+      "name": "Test 2",
+      "title": "Ph.D. Student",
+      "group": "phd",
+      "status": "current",
+      "bio": "Did it work",
+      "links": {
+        "email": "Email@email.com"
+      },
+      "photo": "test-2.jpg",
+      "order": 4
     }
   ]
 }
