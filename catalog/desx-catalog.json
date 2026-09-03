@@ -840,7 +840,8 @@
       "publisherUrl": "https://doi.org/10.1115/1.4052223",
       "citationCount": 4,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/assessing-global-needs-for-global-development"
     },
     {
       "kind": "research",
@@ -936,7 +937,8 @@
       "publisherUrl": "https://doi.org/10.1017/dsj.2021.16",
       "citationCount": 12,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/a-computational-simulation-framework-for-estimating-potential-product-impact"
     },
     {
       "kind": "research",
@@ -979,7 +981,8 @@
       "publisherUrl": "https://doi.org/10.1016/j.deveng.2021.100066",
       "citationCount": 22,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/factors-leading-to-sustainable-social-impact-on-affected-communities"
     },
     {
       "kind": "research",
@@ -1155,7 +1158,8 @@
       "publisherUrl": "https://doi.org/10.14733/cadconfp.2020.308-312",
       "citationCount": 1,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/evaluation-of-user-preferences-for-3d-modeling-and-design-reviews-in-vr"
     },
     {
       "kind": "research",
