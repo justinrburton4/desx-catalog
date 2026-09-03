@@ -129,12 +129,35 @@ function processLatestFormResponse() {
 
 function onFormSubmit(e) {
   try {
-    handleFormSubmit_(e);
+    handleFormSubmit_(normalizeFormEvent_(e));
   } catch (err) {
     Logger.log("DESX PEOPLE FORM ERROR: " + err);
     Logger.log(err && err.stack ? err.stack : "");
     throw err;
   }
+}
+
+/**
+ * Form-bound triggers provide e.response (FormResponse), not e.namedValues
+ * (that field is for spreadsheet-linked form triggers).
+ */
+function normalizeFormEvent_(e) {
+  if (!e) throw new Error("No event object — use the form submit trigger, not Run from the editor.");
+
+  if (e.response) {
+    return {
+      namedValues: namedValuesFromResponse_(e.response),
+      response: e.response,
+    };
+  }
+
+  if (e.namedValues && Object.keys(e.namedValues).length) {
+    return e;
+  }
+
+  throw new Error(
+    "Form event has no response data. Re-run installFormTrigger from the form-bound Apps Script project."
+  );
 }
 
 function namedValuesFromResponse_(response) {
@@ -145,6 +168,11 @@ function namedValuesFromResponse_(response) {
     var value = items[i].getResponse();
     named[title] = value;
   }
+  // Collect email if the form setting is on.
+  try {
+    var respondent = response.getRespondentEmail();
+    if (respondent && !named["Email"]) named["Email"] = respondent;
+  } catch (ignore) {}
   return named;
 }
 
