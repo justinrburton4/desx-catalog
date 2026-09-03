@@ -18,7 +18,7 @@ Click a card to open a bio. Shareable link: `/people?p=tevin-dickerson`.
 
 ## Add someone by form (preferred)
 
-See [`people-form/SETUP.md`](people-form/SETUP.md). A Google Form submit opens a **GitHub pull request** with the JSON row and optional photo. Merge the PR to publish.
+See [`people-form/SETUP.md`](people-form/SETUP.md). A Google Form submit commits the JSON row and optional photo straight to `main`. No PR to merge.
 
 ## Add or edit someone by hand
 

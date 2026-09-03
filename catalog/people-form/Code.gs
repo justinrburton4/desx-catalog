@@ -1,5 +1,5 @@
 /**
- * DesX people form → GitHub pull request.
+ * DesX people form → commit directly to GitHub main.
  * Paste into a Google Apps Script project bound to the lab's Google Form.
  * See SETUP.md for form question titles and Script Properties.
  *
@@ -49,13 +49,12 @@ function onFormSubmit(e) {
 
   var owner = prop("GITHUB_OWNER");
   var repo = prop("GITHUB_REPO");
-  var base = prop("GITHUB_BASE_BRANCH") || "main";
+  var branch = prop("GITHUB_BASE_BRANCH") || "main";
   var token = prop("GITHUB_TOKEN");
 
-  var baseSha = gitGet(token, "/repos/" + owner + "/" + repo + "/git/ref/heads/" + base).object.sha;
   var jsonFile = gitGet(
     token,
-    "/repos/" + owner + "/" + repo + "/contents/" + JSON_PATH + "?ref=" + encodeURIComponent(base)
+    "/repos/" + owner + "/" + repo + "/contents/" + JSON_PATH + "?ref=" + encodeURIComponent(branch)
   );
   var catalog = JSON.parse(Utilities.newBlob(Utilities.base64Decode(jsonFile.content.replace(/\n/g, ""))).getDataAsString());
 
@@ -87,12 +86,6 @@ function onFormSubmit(e) {
 
   if (!isUpdate) catalog.people.push(person);
 
-  var branch = "people/" + (isUpdate ? "update" : "add") + "-" + personId + "-" + Date.now();
-  gitPost(token, "/repos/" + owner + "/" + repo + "/git/refs", {
-    ref: "refs/heads/" + branch,
-    sha: baseSha,
-  });
-
   if (photoMeta) {
     var photoPath = PHOTO_DIR + "/" + photoMeta.filename;
     var photoPut = {
@@ -100,38 +93,32 @@ function onFormSubmit(e) {
       content: photoMeta.base64,
       branch: branch,
     };
-    var existingPhoto = gitGetOptional(token, "/repos/" + owner + "/" + repo + "/contents/" + photoPath + "?ref=" + encodeURIComponent(branch));
+    var existingPhoto = gitGetOptional(
+      token,
+      "/repos/" + owner + "/" + repo + "/contents/" + photoPath + "?ref=" + encodeURIComponent(branch)
+    );
     if (existingPhoto && existingPhoto.sha) photoPut.sha = existingPhoto.sha;
     gitPut(token, "/repos/" + owner + "/" + repo + "/contents/" + photoPath, photoPut);
   }
 
   var jsonBody = JSON.stringify(catalog, null, 2) + "\n";
-  gitPut(token, "/repos/" + owner + "/" + repo + "/contents/" + JSON_PATH, {
+  var jsonCommit = gitPut(token, "/repos/" + owner + "/" + repo + "/contents/" + JSON_PATH, {
     message: (isUpdate ? "Update" : "Add") + " person: " + name,
     content: Utilities.base64Encode(jsonBody),
     branch: branch,
     sha: jsonFile.sha,
   });
 
-  var pr = gitPost(token, "/repos/" + owner + "/" + repo + "/pulls", {
-    title: (isUpdate ? "Update person: " : "Add person: ") + name,
-    head: branch,
-    base: base,
-    body: [
-      isUpdate ? "Updates an existing lab member from the people form." : "Adds a lab member from the people form.",
-      "",
-      "- **Name:** " + name,
-      "- **Id:** `" + personId + "`",
-      "- **Group:** " + group,
-      "- **Title:** " + title + " (auto from Role)",
-      "- **Status:** current (alumni are set in desx-people.json)",
-      photoMeta ? "- **Photo:** `people/photos/" + photoMeta.filename + "`" : "- **Photo:** placeholder (none uploaded)",
-      "",
-      "Merge to publish on /people.",
-    ].join("\n"),
-  });
-
-  Logger.log("Opened PR " + pr.html_url);
+  Logger.log(
+    (isUpdate ? "Updated" : "Added") +
+      " " +
+      name +
+      " on " +
+      branch +
+      " (" +
+      ((jsonCommit.commit && jsonCommit.commit.html_url) || "ok") +
+      ")"
+  );
 }
 
 function maybeUploadPhoto_(e, personId) {
