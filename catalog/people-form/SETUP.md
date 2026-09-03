@@ -49,18 +49,21 @@ In the form description, note that headshots will be stored in a **public** GitH
 4. Triggers (clock icon) → Add trigger:
    - Function: `onFormSubmit`
    - Event: From form → **On form submit**
-5. Submit a test response so Google prompts you to authorize `UrlFetchApp` and Drive.
+5. In the Apps Script editor, select function **`authorizeDesxPeople`** → **Run**. Approve UrlFetch + Drive when prompted. Check **Executions** / **Logs** for “Authorization complete”.
+6. Submit a test form response again.
 
 If BYU Workspace blocks Apps Script from calling `api.github.com`, run the form from a personal Google account that can reach GitHub, or ask IT to allow that destination.
 
-## 4. Test
+## 4. Test / debug
 
-1. Submit the form as a fake student, with and without a photo.
-2. Check the repo: a commit like `Add person: …` should appear on `main` within a few seconds.
-3. Confirm `catalog/desx-people.json` (and optional photo under `people/photos/`).
-4. Hard-refresh `/people` once the Squarespace Code Block is installed.
+1. Submit the form as a fake student.
+2. Apps Script → **Executions** (left sidebar):
+   - **No new row** → the trigger did not fire (wrong project, or trigger missing).
+   - **Failed** → open it and read the error (token, missing property, role title, etc.).
+   - **Completed** → a commit like `Add person: …` should appear on `main` within a few seconds.
+3. Hard-refresh `/people` once the Squarespace Code Block is installed.
 
-If nothing updates, open Apps Script → **Executions** for the error.
+Common first-run issue: permissions were never granted. Running **`authorizeDesxPeople`** once fixes that.
 
 ## 5. After headshots arrive
 

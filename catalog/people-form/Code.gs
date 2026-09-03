@@ -35,13 +35,59 @@ var OPTIONAL_LINK_TITLES = [
   "Website URL",
 ];
 
-function onFormSubmit(e) {
-  var named = (e && e.namedValues) || {};
-  var name = first(named["Full name"]);
-  if (!name) throw new Error("Full name is required");
+/**
+ * Run this ONCE from the Apps Script editor (Run ▶ authorizeDesxPeople).
+ * Approves UrlFetch + Drive, and verifies Script Properties + GitHub access.
+ */
+function authorizeDesxPeople() {
+  var owner = prop("GITHUB_OWNER");
+  var repo = prop("GITHUB_REPO");
+  var branch = prop("GITHUB_BASE_BRANCH") || "main";
+  var token = prop("GITHUB_TOKEN");
 
-  var group = GROUP_FROM_ROLE[first(named["Role"])];
-  if (!group) throw new Error("Unknown role: " + first(named["Role"]));
+  var me = gitGet(token, "/user");
+  Logger.log("GitHub user: " + (me.login || "(ok)"));
+
+  var jsonFile = gitGet(
+    token,
+    "/repos/" + owner + "/" + repo + "/contents/" + JSON_PATH + "?ref=" + encodeURIComponent(branch)
+  );
+  Logger.log("Loaded " + JSON_PATH + " (" + jsonFile.sha + ")");
+
+  // Touch Drive so photo uploads are authorized.
+  DriveApp.getRootFolder().getName();
+  Logger.log("Drive access OK. Authorization complete — submit the form again.");
+}
+
+function onFormSubmit(e) {
+  try {
+    handleFormSubmit_(e);
+  } catch (err) {
+    Logger.log("DESX PEOPLE FORM ERROR: " + err);
+    Logger.log(err && err.stack ? err.stack : "");
+    throw err;
+  }
+}
+
+function handleFormSubmit_(e) {
+  if (!e) throw new Error("No event object — use the form submit trigger, not Run from the editor.");
+
+  var named = (e.namedValues) || {};
+  logNamedKeys_(named);
+
+  var name = answer(named, ["Full name", "Name"]);
+  if (!name) throw new Error("Full name is required. Seen titles: " + Object.keys(named).join(" | "));
+
+  var roleRaw = answer(named, ["Role"]);
+  var group = resolveGroup_(roleRaw);
+  if (!group) {
+    throw new Error(
+      'Unknown role: "' +
+        roleRaw +
+        '". Expected one of: ' +
+        Object.keys(GROUP_FROM_ROLE).join(", ")
+    );
+  }
 
   var status = "current";
   var title = DEFAULT_TITLE[group];
@@ -56,29 +102,33 @@ function onFormSubmit(e) {
     token,
     "/repos/" + owner + "/" + repo + "/contents/" + JSON_PATH + "?ref=" + encodeURIComponent(branch)
   );
-  var catalog = JSON.parse(Utilities.newBlob(Utilities.base64Decode(jsonFile.content.replace(/\n/g, ""))).getDataAsString());
+  var catalog = JSON.parse(
+    Utilities.newBlob(Utilities.base64Decode(jsonFile.content.replace(/\n/g, ""))).getDataAsString()
+  );
 
   var existing = findPerson(catalog.people, personId);
-  if (!existing) {
-    existing = findPersonByName(catalog.people, name);
-  }
+  if (!existing) existing = findPersonByName(catalog.people, name);
   var isUpdate = !!existing;
-  if (isUpdate) {
-    personId = existing.id;
-  } else {
-    personId = uniqueId(catalog.people, personId);
+  if (isUpdate) personId = existing.id;
+  else personId = uniqueId(catalog.people, personId);
+
+  var photoMeta = null;
+  try {
+    photoMeta = maybeUploadPhoto_(e, personId);
+  } catch (photoErr) {
+    // Don't block publishing the profile if Drive/photo fails.
+    Logger.log("Photo skipped: " + photoErr);
   }
 
-  var photoMeta = maybeUploadPhoto_(e, personId);
   var person = existing || {};
   person.id = personId;
   person.name = name;
   person.title = title;
   person.group = group;
   person.status = status;
-  person.bio = first(named["Bio"]) || person.bio || "";
+  person.bio = answer(named, ["Bio"]) || person.bio || "";
   person.links = person.links || {};
-  var email = first(named["Email"]);
+  var email = answer(named, ["Email"]);
   if (email) person.links.email = email;
   applyOptionalLink_(person, namedValuesFirst(named, OPTIONAL_LINK_TITLES));
   if (photoMeta) person.photo = photoMeta.filename;
@@ -121,6 +171,17 @@ function onFormSubmit(e) {
   );
 }
 
+function resolveGroup_(roleRaw) {
+  var role = String(roleRaw || "").trim();
+  if (GROUP_FROM_ROLE[role]) return GROUP_FROM_ROLE[role];
+  var lower = role.toLowerCase().replace(/['’]/g, "'");
+  if (lower.indexOf("director") >= 0) return "directors";
+  if (lower.indexOf("ph.d") >= 0 || lower.indexOf("phd") >= 0 || lower.indexOf("ph d") >= 0) return "phd";
+  if (lower.indexOf("master") >= 0) return "masters";
+  if (lower.indexOf("undergrad") >= 0) return "undergraduate";
+  return null;
+}
+
 function maybeUploadPhoto_(e, personId) {
   var item = e && e.response && findFileItem(e.response);
   if (!item) return null;
@@ -142,7 +203,10 @@ function maybeUploadPhoto_(e, personId) {
 function findFileItem(response) {
   var items = response.getItemResponses();
   for (var i = 0; i < items.length; i++) {
-    if (items[i].getItem().getTitle() === "Photo") return items[i];
+    var title = String(items[i].getItem().getTitle() || "").toLowerCase();
+    if (title === "photo" || title.indexOf("photo") >= 0 || title.indexOf("headshot") >= 0) {
+      return items[i];
+    }
   }
   return null;
 }
@@ -205,12 +269,30 @@ function first(value) {
   return String(value || "").trim();
 }
 
+function answer(named, titles) {
+  for (var i = 0; i < titles.length; i++) {
+    var v = first(named[titles[i]]);
+    if (v) return v;
+  }
+  // Case-insensitive / trim fallback
+  var keys = Object.keys(named || {});
+  for (var t = 0; t < titles.length; t++) {
+    var want = String(titles[t]).toLowerCase().trim();
+    for (var k = 0; k < keys.length; k++) {
+      if (String(keys[k]).toLowerCase().trim() === want) {
+        var found = first(named[keys[k]]);
+        if (found) return found;
+      }
+    }
+  }
+  return "";
+}
+
 function namedValuesFirst(named, titles) {
   for (var i = 0; i < titles.length; i++) {
     var v = first(named[titles[i]]);
     if (v) return v;
   }
-  // Fallback: title may be a shorter label with the long text as description.
   var keys = Object.keys(named || {});
   for (var k = 0; k < keys.length; k++) {
     var key = keys[k];
@@ -226,6 +308,12 @@ function namedValuesFirst(named, titles) {
     }
   }
   return "";
+}
+
+function logNamedKeys_(named) {
+  try {
+    Logger.log("Form titles: " + Object.keys(named || {}).join(" | "));
+  } catch (ignore) {}
 }
 
 /** Store one optional URL as links.linkedin or links.website. */
