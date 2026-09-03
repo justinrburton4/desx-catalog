@@ -794,7 +794,8 @@
       "publisherUrl": "https://doi.org/10.1115/1.4063237",
       "citationCount": 2,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/simulating-the-adoption-and-social-impact-of-improved-cookstoves"
     },
     {
       "kind": "research",
@@ -817,7 +818,8 @@
       "publisherUrl": "https://doi.org/10.1115/1.4056006",
       "citationCount": 8,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/trade-off-characterization-between-social-and-environmental-impacts"
     },
     {
       "kind": "research",
@@ -862,7 +864,8 @@
       "publisherUrl": "https://doi.org/10.1115/1.4055325",
       "citationCount": 9,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/systematic-review-and-classification-of-the-engineering-for-global-development"
     },
     {
       "kind": "research",
@@ -884,7 +887,8 @@
       "publisherUrl": "https://doi.org/10.1016/j.deveng.2022.100092",
       "citationCount": 1,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/use-of-simulation-and-wear-prediction-to-explore-design-improvements"
     },
     {
       "kind": "research",
@@ -907,7 +911,8 @@
       "publisherUrl": "https://doi.org/10.1017/pds.2021.11",
       "citationCount": 0,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/a-framework-for-predicting-potential-product-impact-during-product-design"
     },
     {
       "kind": "research",
@@ -996,7 +1001,8 @@
       "publisherUrl": "https://doi.org/10.1017/pds.2021.449",
       "citationCount": 1,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/integrating-social-impact-measures-into-the-airship-design-process"
     },
     {
       "kind": "research",
@@ -1014,10 +1020,11 @@
         "Dahlin, E."
       ],
       "hidden": false,
-      "publisherUrl": "https://doi.org/10.1115/1.0001909v",
+      "publisherUrl": "https://doi.org/10.1115/1.4048746",
       "citationCount": 0,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/identifying-high-potential-work-areas-in-engineering-for-global-development-link"
     },
     {
       "kind": "research",
@@ -1039,7 +1046,8 @@
       "publisherUrl": "https://doi.org/10.1016/j.deveng.2021.100060",
       "citationCount": 4,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/nitrile-cup-seal-robustness-in-the-india-mark-ii-iii-hand-pump-system"
     },
     {
       "kind": "research",
@@ -1083,7 +1091,8 @@
       "publisherUrl": "https://doi.org/10.1115/detc2021-72065",
       "citationCount": 2,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/product-development-using-perceived-correlations"
     },
     {
       "kind": "research",
@@ -1103,7 +1112,8 @@
       "publisherUrl": "https://doi.org/10.1115/1.0001910v",
       "citationCount": 0,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/remote-data-collection-devices-for-social-impact-indicators"
     },
     {
       "kind": "research",
@@ -1124,7 +1134,8 @@
       "publisherUrl": "https://doi.org/10.1115/1.4044323",
       "citationCount": 12,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/analysis-of-perceived-social-impacts-of-existing-products"
     },
     {
       "kind": "research",
@@ -1167,7 +1178,8 @@
       "publisherUrl": "https://doi.org/10.2514/1.i010766",
       "citationCount": 20,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/single-pursuer-and-two-cooperative-evaders-in-the-border-defense"
     },
     {
       "kind": "research",
@@ -1190,7 +1202,8 @@
       "publisherUrl": "https://doi.org/10.1115/1.4047428",
       "citationCount": 11,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/structural-design-space-exploration-using-principal-component-analysis"
     },
     {
       "kind": "research",
@@ -1211,7 +1224,8 @@
       "publisherUrl": "https://doi.org/10.14733/cadconfp.2019.377-381",
       "citationCount": 0,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/analysis-and-evaluation-of-partitioning-methods-for-multi-user-cad"
     },
     {
       "kind": "research",
