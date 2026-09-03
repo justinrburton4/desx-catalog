@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "placeholder": "placeholder.png",
+  "groupOrder": [
+    "directors",
+    "phd",
+    "masters",
+    "undergraduate"
+  ],
+  "alumniGroupOrder": [
+    "phd",
+    "masters",
+    "undergraduate"
+  ],
+  "groups": {
+    "directors": {
+      "label": "Lab Directors",
+      "intro": "Faculty who lead Design Exploration research, teaching, and outreach.",
+      "alumniLabel": "Former Directors"
+    },
+    "phd": {
+      "label": "Ph.D. Students",
+      "intro": "Doctoral students leading core research projects.",
+      "alumniLabel": "Former Ph.D. Students"
+    },
+    "masters": {
+      "label": "Master's Students",
+      "intro": "Master's students working on thesis-driven design research.",
+      "alumniLabel": "Former Master's Students"
+    },
+    "undergraduate": {
+      "label": "Undergraduate Students",
+      "intro": "Undergraduates contributing to lab projects, tools, and research studies.",
+      "alumniLabel": "Former Undergraduate Students"
+    }
+  },
+  "people": [
+    {
+      "id": "chris-mattson",
+      "name": "Chris Mattson",
+      "title": "Lab Co-director",
+      "group": "directors",
+      "status": "current",
+      "order": 1,
+      "bio": "“Pure and simple, I love to create things.” Chris is a professor of mechanical engineering at Brigham Young University and performs research in engineering for global development. The research Chris performs has led to products like the Village Drill and World Cart. Chris has also been the recipient of the Presidential Early Career Award for Scientists and Engineers, as well as the National Science Foundation CAREER award."
+    },
+    {
+      "id": "john-salmon",
+      "name": "John Salmon",
+      "title": "Lab Co-director",
+      "group": "directors",
+      "status": "current",
+      "order": 2,
+      "bio": "Although not a student, John is a student of design — there is always more to learn and apply. John is an assistant professor of mechanical engineering at Brigham Young University. His research interests include systems engineering, design, and integration, multi-disciplinary optimization, operations research, visual and data analytics, modeling and simulation, multi-agent multi-objective decision making, sports analytics, virtual reality, and uncertainty analysis. He thinks innovation and creativity are the highest forms of intelligence and he believes design is at the core of making the world and oneself better."
+    },
+    {
+      "id": "tevin-dickerson",
+      "name": "Tevin Dickerson",
+      "title": "Ph.D. Candidate",
+      "group": "phd",
+      "status": "current",
+      "order": 1,
+      "bio": "Tevin is a PhD candidate in mechanical engineering. He's from Cottonwood Heights, UT and is emphasizing in aerospace. On the team, he has worked on the airship project and traveling salesman. He likes to waterski and rock climb as well. His thoughts on engineering are, “to make the impossible, possible”."
+    },
+    {
+      "id": "samuel-mckinnon",
+      "name": "Samuel McKinnon",
+      "title": "Ph.D. Candidate",
+      "group": "phd",
+      "status": "current",
+      "order": 2,
+      "bio": "Samuel is a PhD candidate researching graph based social impact diffusion — a modeling method that can estimate the social impacts that engineered products or systems have on society. He is a past editor of the BYU Design Review and has worked on engineering projects in Peru, Ecuador, Bolivia, and Brazil. Upon completing his PhD, he hopes to be a mechanical engineering professor and continue researching engineering for sustainable development."
+    },
+    {
+      "id": "scott-rice",
+      "name": "Scott Rice",
+      "title": "Ph.D. Student",
+      "group": "phd",
+      "status": "current",
+      "order": 3,
+      "bio": "Scott Rice is a PhD student in mechanical engineering and ten-year veteran of the U.S Army where he served as an Engineer Officer. He is currently researching methods to help people make the best decisions possible early in the design process. Scott believes strongly in helping others turn their new ideas into useful products that function well. \"Many people have great ideas, but few know how to make them work well in reality. I want to help them achieve that.\""
+    },
+    {
+      "id": "jacob-broadbent",
+      "name": "Jacob Broadbent",
+      "title": "Master's Student",
+      "group": "masters",
+      "status": "current",
+      "order": 1,
+      "bio": "Jacob is passionate about solving human-centered problems with physical solutions. As a dual MBA and MS Mechanical Engineering student at BYU, he focuses on bridging gaps—between teams, disciplines, and the transition from research to real-world impact. With experience in consumer products and medical device manufacturing, he has seen the need for technically grounded leadership that aligns business, engineering, and customer needs. His interests include product development, negotiation, and interdisciplinary collaboration—helping people work together to create meaningful solutions. He believes the best innovations come from understanding both people and technology and using that knowledge to leave the world, and the people in it, better than he found it."
+    },
+    {
+      "id": "tyson-humphrey",
+      "name": "Tyson Humphrey",
+      "title": "Master's Student",
+      "group": "masters",
+      "status": "current",
+      "order": 2,
+      "bio": "Tyson is currently pursuing a Master's degree in Mechanical Engineering, focusing primarily on studying product architecture methods. He completed his undergraduate studies in Mechanical Engineering at BYU. His career goal is to secure a product design/development position focused on creating direct-to-consumer products. Tyson finds solace in the support of his wife, who serves as his biggest advocate. In his free time, Tyson can be found exploring the great outdoors hiking, engaging in intramural football matches, or channeling his creativity through 3D-printing and painting costume pieces. With a diverse range of interests and a dedication to excellence, Tyson is poised to make a significant impact in the field of mechanical engineering."
+    },
+    {
+      "id": "thomas-geilman",
+      "name": "Thomas Geilman",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "order": 1,
+      "bio": "Thomas is an undergraduate student in mechanical engineering. He loves learning, which has led to interests and hobbies including 3D printing, reading, and welding as he constantly tries learning new skills. He helped with the cassava peeler project and is excited to continue his work in the lab. He says, “I love how engineering design combines empathy and knowledge to help people around the world. One of my main goals in life is to use my skills to help others, and engineering helps me achieve this goal”."
+    },
+    {
+      "id": "benjamin-sannar",
+      "name": "Benjamin Sannar",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "order": 2,
+      "bio": "Benjamin Sannar is a Mechanical Engineering student from Northern California. He grew up inspired by a heritage of ingenuity and surrounded by the processes that put fruit and vegetables onto tables around the world. “I love noticing the little things that would make life better and finding a way to set them in motion.” Outside of the lab and school, Ben is a commercial driver and enjoys home-improvement projects, the great outdoors and drawing."
+    },
+    {
+      "id": "henry-wooley",
+      "name": "Henry Wooley",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "order": 3,
+      "bio": "Born and raised in Central California, Henry has always loved bringing ideas to life. His passion began in elementary school, building a go-cart from bike tires and two-by-fours. Now, he applies that hands-on creativity to solving real-world problems. Henry is currently working as a student engineer where he enjoys creating new tools and processes to improve the manufacturing and quality of diamond bearings. As a student, he is interested in engineering design, interdisciplinary collaboration, aerospace, and fluid mechanics. Outside the classroom, he enjoys fly-fishing, hunting, skiing, and woodworking."
+    },
+    {
+      "id": "joshua-cook",
+      "name": "Joshua Cook",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "order": 4,
+      "bio": ""
+    },
+    {
+      "id": "isaac-detiege",
+      "name": "Isaac Detiege",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "order": 5,
+      "bio": ""
+    },
+    {
+      "id": "abigail-little",
+      "name": "Abigail Little",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "order": 6,
+      "bio": "Abigail is an undergraduate student pursuing a degree in mechanical engineering. She's from Alexandria, Virginia and in the Design Exploration Group she is currently working on developing social impact models to improve disaster relief distribution. Outside the lab, she loves hiking, trying cool new restaurants, playing volleyball, and making people laugh."
+    },
+    {
+      "id": "logan-merrill",
+      "name": "Logan Merrill",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "order": 7,
+      "bio": "Logan is a Mechanical Engineering student from southern California. His research is focused on developing a master design tool to help engineering students implement principles of good product design and development in their personal and academic projects. He has a passion for mechanical design and product development and hopes to pursue a career in those fields after graduating from BYU. Outside of school, Logan enjoys watching BYU sports, reading fantasy novels, playing basketball, and spending time with his wife."
+    },
+    {
+      "id": "jordan-patten",
+      "name": "Jordan Patten",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "order": 8,
+      "bio": "Jordan sees every challenge as an adventure—whether in the lab or the great outdoors. As a mechanical engineering student researching social impact diffusion models, she explores how design can spark meaningful change in communities. Outside the lab, Jordan’s love for adventure leads her to rock climbing, hiking, and traveling, where new experiences inspire fresh perspectives and fuel her creativity. Through both her work and play, Jordan is driven to design solutions that make a positive, lasting impact."
+    },
+    {
+      "id": "hunter-scullin",
+      "name": "Hunter Scullin",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "order": 9,
+      "bio": "Coming from a family of artists, Hunter loves design. Whether designing stories, comics, devices, or machines, he wants to be involved. He’s an undergraduate in Mechanical Engineering with interests in product design and development, consumer products, and electromechanical devices. When he isn’t in class he’s drawing, hiking, reading, and playing pickleball (poorly) with his fiancé."
+    },
+    {
+      "id": "jeff-allen",
+      "name": "Jeff Allen",
+      "title": "Former Ph.D. Student",
+      "group": "phd",
+      "status": "alumni",
+      "order": 1,
+      "bio": "Evolvability and Excess Capability as a Response to Uncertain and Future Requirements"
+    },
+    {
+      "id": "stephen-harston",
+      "name": "Stephen Harston",
+      "title": "Former Ph.D. Student",
+      "group": "phd",
+      "status": "alumni",
+      "order": 2,
+      "bio": "A Methodology for Strategically Designing Physical Products that are Naturally Resistant to Reverse Engineering"
+    },
+    {
+      "id": "brad-larson",
+      "name": "Brad Larson",
+      "title": "Former Ph.D. Student",
+      "group": "phd",
+      "status": "alumni",
+      "order": 3,
+      "bio": "Mathematical Framework for Early System Design Validation Using Multidisciplinary System Models"
+    },
+    {
+      "id": "patrick-lewis",
+      "name": "Patrick Lewis",
+      "title": "Former Ph.D. Student",
+      "group": "phd",
+      "status": "alumni",
+      "order": 4,
+      "bio": "An Optimization-Based Method of Traversing Dynamic s-Pareto Frontiers"
+    },
+    {
+      "id": "bryan-stringham",
+      "name": "Bryan Stringham",
+      "title": "Former Ph.D. Student",
+      "group": "phd",
+      "status": "alumni",
+      "order": 5,
+      "bio": "Inexpensively evaluate the social impacts of engineered products on people in developing countries"
+    },
+    {
+      "id": "amy-wood",
+      "name": "Amy Wood",
+      "title": "Former Ph.D. Student",
+      "group": "phd",
+      "status": "alumni",
+      "order": 6,
+      "bio": "Principles and Insights for Design for the Developing World"
+    },
+    {
+      "id": "phillip-stevenson",
+      "name": "Phillip Stevenson",
+      "title": "Former Ph.D. Student",
+      "group": "phd",
+      "status": "alumni",
+      "order": 7,
+      "bio": "Research focused on new methods to predict the social impacts"
+    },
+    {
+      "id": "hans-ottosson",
+      "name": "Hans Ottosson",
+      "title": "Former Ph.D. Student",
+      "group": "phd",
+      "status": "alumni",
+      "order": 8,
+      "bio": "Considering Social Impact when Engineering for Global Development"
+    },
+    {
+      "id": "chris-mabey",
+      "name": "Chris Mabey",
+      "title": "Former Ph.D. Student",
+      "group": "phd",
+      "status": "alumni",
+      "order": 9,
+      "bio": "Building Models for Maximizing Positive Social Impact in Engineering for Global Development"
+    },
+    {
+      "id": "nikki-anderson",
+      "name": "Nikki Anderson",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 1,
+      "bio": "Characterization of the Initial Flow Rate of Information During Reverse Engineering"
+    },
+    {
+      "id": "travis-anderson",
+      "name": "Travis Anderson",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 2,
+      "bio": "Efficient, Accurate, and Non-Gaussian Error Propagation Through Nonlinear, Closed-Form, Analytical System Models"
+    },
+    {
+      "id": "garrett-barnum",
+      "name": "Garrett Barnum",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 3,
+      "bio": "A Computationally-Assisted Methodology for Rapid Exploration of Design Possibilities in Conceptual Design"
+    },
+    {
+      "id": "eric-bowman",
+      "name": "Eric Bowman",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 4,
+      "bio": "Optimization Constrained CAD Framework with Iso-Performing Design Generator"
+    },
+    {
+      "id": "robert-campbell",
+      "name": "Robert Campbell",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 5,
+      "bio": "A Methodology for the Extraction of Design Principles for Unfamiliar Markets"
+    },
+    {
+      "id": "shane-curtis",
+      "name": "Shane Curtis",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 6,
+      "bio": "A Method for Exploring Optimization Formulation Space in Conceptual Design"
+    },
+    {
+      "id": "luke-duffield",
+      "name": "Luke Duffield",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 7,
+      "bio": "Variable Fidelity Optimization with Hardware-in-the-Loop for Flapping Flight"
+    },
+    {
+      "id": "neil-haddock",
+      "name": "Neil Haddock",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 8,
+      "bio": "Characterizing Material Property Tradeoffs of Polycrystalline Diamond for Design Evaluation and Selection"
+    },
+    {
+      "id": "darren-knight",
+      "name": "Darren Knight",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 9,
+      "bio": "Return on Investment Analysis for Implementing Barriers to Reverse Engineering and Imitation"
+    },
+    {
+      "id": "devin-lebaron",
+      "name": "Devin LeBaron",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 10,
+      "bio": "Using Topology Optimization to Numerically Improve Barriers to Reverse Engineering"
+    },
+    {
+      "id": "john-meaders",
+      "name": "John Meaders",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 11,
+      "bio": "An Optimization-Based Framework for Designing Robust CAM-Based Constant-Force Compliant Mechanism"
+    },
+    {
+      "id": "jacob-morrise",
+      "name": "Jacob Morrise",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 12,
+      "bio": "Collaborative Products: A Design Methodology with Application to Engineering-Based Poverty Alleviation"
+    },
+    {
+      "id": "andrew-pack",
+      "name": "Andrew Pack",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 13,
+      "bio": "A Discovery of Social Impact Categories for the Sustainable Design of Engineered Products and Their Consideration by Industry Professionals"
+    },
+    {
+      "id": "morgan-tackett",
+      "name": "Morgan Tackett",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 14,
+      "bio": "Mathematical Model for Quantifying System Evolvability Using Excess and Modularity"
+    },
+    {
+      "id": "kendall-thacker",
+      "name": "Kendall Thacker",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 15,
+      "bio": "Balancing Technical and User Objectives in the Design of Improved Biomass Cookstoves for Developing Regions of the World"
+    },
+    {
+      "id": "nicholas-wasley",
+      "name": "Nicholas Wasley",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 16,
+      "bio": "Multiobjective Optimization Method Used in Designing Collaborative Products with Application to Engineering-Based Poverty Alleviation"
+    },
+    {
+      "id": "jason-watson",
+      "name": "Jason Watson",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 17,
+      "bio": "A Multi-objective Optimization Method for Maximizing the Value of System Evolvability Under Uncertainty"
+    },
+    {
+      "id": "jonathon-yearsley",
+      "name": "Jonathon Yearsley",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 18,
+      "bio": "Product Family Design Using Smart Pareto Filters"
+    },
+    {
+      "id": "andy-armstrong",
+      "name": "Andy Armstrong",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 19,
+      "bio": ""
+    },
+    {
+      "id": "dan-richards",
+      "name": "Dan Richards",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 20,
+      "bio": ""
+    },
+    {
+      "id": "trent-owens",
+      "name": "Trent Owens",
+      "title": "Former Master's Student",
+      "group": "masters",
+      "status": "alumni",
+      "order": 21,
+      "bio": ""
+    },
+    {
+      "id": "brandon-bryson",
+      "name": "Brandon Bryson",
+      "title": "Former Undergraduate Student",
+      "group": "undergraduate",
+      "status": "alumni",
+      "order": 1,
+      "bio": ""
+    },
+    {
+      "id": "marin-fisher",
+      "name": "Marin Fisher",
+      "title": "Former Undergraduate Student",
+      "group": "undergraduate",
+      "status": "alumni",
+      "order": 2,
+      "bio": ""
+    },
+    {
+      "id": "gabrielle-johnson",
+      "name": "Gabrielle Johnson",
+      "title": "Former Undergraduate Student",
+      "group": "undergraduate",
+      "status": "alumni",
+      "order": 3,
+      "bio": ""
+    },
+    {
+      "id": "clare-shultz",
+      "name": "Clare Shultz",
+      "title": "Former Undergraduate Student",
+      "group": "undergraduate",
+      "status": "alumni",
+      "order": 4,
+      "bio": ""
+    },
+    {
+      "id": "emily-jolley",
+      "name": "Emily Jolley",
+      "title": "Former Undergraduate Student",
+      "group": "undergraduate",
+      "status": "alumni",
+      "order": 5,
+      "bio": ""
+    },
+    {
+      "id": "joseph-liechty",
+      "name": "Joseph Liechty",
+      "title": "Former Undergraduate Student",
+      "group": "undergraduate",
+      "status": "alumni",
+      "order": 6,
+      "bio": ""
+    },
+    {
+      "id": "estee-rivel",
+      "name": "Estee Rivel",
+      "title": "Former Undergraduate Student",
+      "group": "undergraduate",
+      "status": "alumni",
+      "order": 7,
+      "bio": ""
+    },
+    {
+      "id": "holland-tanner",
+      "name": "Holland Tanner",
+      "title": "Former Undergraduate Student",
+      "group": "undergraduate",
+      "status": "alumni",
+      "order": 8,
+      "bio": ""
+    }
+  ]
+}

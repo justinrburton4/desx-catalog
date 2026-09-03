@@ -1,0 +1,69 @@
+name: Validate DesX People
+
+on:
+  push:
+    paths:
+      - "catalog/desx-people.json"
+      - "catalog/schema-people.json"
+      - "people/photos/**"
+      - ".github/workflows/validate-people.yml"
+  pull_request:
+    paths:
+      - "catalog/desx-people.json"
+      - "catalog/schema-people.json"
+      - "people/photos/**"
+      - ".github/workflows/validate-people.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install ajv
+        run: npm install --no-save ajv@8 ajv-formats@3
+
+      - name: Validate desx-people.json
+        run: |
+          node <<'EOF'
+          const fs = require('fs');
+          const path = require('path');
+          const Ajv2020 = require('ajv/dist/2020');
+          const addFormats = require('ajv-formats');
+          const ajv = new Ajv2020({ allErrors: true, strict: false });
+          addFormats(ajv);
+          const schema = JSON.parse(fs.readFileSync('catalog/schema-people.json', 'utf8'));
+          const data = JSON.parse(fs.readFileSync('catalog/desx-people.json', 'utf8'));
+          const validate = ajv.compile(schema);
+          const ok = validate(data);
+          if (!ok) {
+            console.error(validate.errors);
+            process.exit(1);
+          }
+          const ids = new Set();
+          for (const person of data.people) {
+            if (ids.has(person.id)) {
+              console.error('Duplicate id:', person.id);
+              process.exit(1);
+            }
+            ids.add(person.id);
+            if (person.photo) {
+              const photoPath = path.join('people/photos', person.photo);
+              if (!fs.existsSync(photoPath)) {
+                console.error('Missing photo file:', photoPath);
+                process.exit(1);
+              }
+            }
+          }
+          const placeholder = data.placeholder || 'placeholder.png';
+          const placeholderPath = path.join('people/photos', placeholder);
+          if (!fs.existsSync(placeholderPath)) {
+            console.error('Missing placeholder:', placeholderPath);
+            process.exit(1);
+          }
+          console.log('People OK:', data.people.length, 'records');
+          EOF

@@ -1,0 +1,14 @@
+{
+  "id": "first-last",
+  "name": "First Last",
+  "title": "Undergraduate Student",
+  "group": "undergraduate",
+  "status": "current",
+  "bio": "One or two paragraphs about research and interests.",
+  "order": 10,
+  "links": {
+    "email": "",
+    "linkedin": "",
+    "website": ""
+  }
+}

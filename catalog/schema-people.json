@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.byu.edu/schemas/desx-people.json",
+  "title": "DesX People Directory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "groupOrder",
+    "alumniGroupOrder",
+    "groups",
+    "people"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "placeholder": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Filename under people/photos/ used when a person has no photo."
+    },
+    "groupOrder": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "alumniGroupOrder": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "groups": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/groupMeta"
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/person"
+      }
+    }
+  },
+  "$defs": {
+    "groupMeta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "intro": {
+          "type": "string"
+        },
+        "alumniLabel": {
+          "type": "string"
+        }
+      }
+    },
+    "person": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "title",
+        "group",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "group": {
+          "type": "string",
+          "enum": [
+            "directors",
+            "phd",
+            "masters",
+            "undergraduate"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "current",
+            "alumni"
+          ]
+        },
+        "bio": {
+          "type": "string"
+        },
+        "photo": {
+          "type": "string",
+          "description": "Filename in people/photos/. Omit to use the placeholder."
+        },
+        "order": {
+          "type": "integer"
+        },
+        "hidden": {
+          "type": "boolean"
+        },
+        "links": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "linkedin": {
+              "type": "string"
+            },
+            "website": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

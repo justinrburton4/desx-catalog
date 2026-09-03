@@ -76,3 +76,18 @@ Duplicate `/desx-pub-index` and `/desx-tools` (like `home-copy-for-test`), wire 
 1. Merge the commit to `main`.
 2. Hard-refresh the Squarespace page. Catalog JSON updates do not need a Code Block edit.
 3. jsDelivr may lag a minute; raw GitHub is usually immediate.
+
+---
+
+## 6. People page (`/people`)
+
+Same fetch pattern as Research/Tools. Data: `catalog/desx-people.json`. Photos: `people/photos/` (missing photos use `placeholder.png`).
+
+1. Keep any intro text you want in Squarespace above the Code Block.
+2. Remove the old hand-built member blocks.
+3. Add a **Code** block and paste [`people-code-block-full.html`](people-code-block-full.html).
+4. Optional: paste [`../css/desx-people.css`](../css/desx-people.css) into Custom CSS instead of relying on the inlined `<style>` if you prefer one site-wide sheet.
+
+Form onboarding (Google Form → GitHub PR): [`../catalog/people-form/SETUP.md`](../catalog/people-form/SETUP.md).
+
+Local preview: [`preview-people.html`](preview-people.html).

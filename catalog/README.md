@@ -1,6 +1,6 @@
 # DesX Shared Catalog
 
-One JSON database powers **Research** (`/desx-pub-index`) and **Tools** (`/desx-tools`) on [design.byu.edu](https://www.design.byu.edu/).
+JSON databases power **Research**, **Tools**, **Courses**, and **People** on [design.byu.edu](https://www.design.byu.edu/).
 
 To add a paper or tool, follow **[How to add a Research paper or Tool](HOW-TO-ADD.md)**.
 
@@ -9,8 +9,11 @@ To add a paper or tool, follow **[How to add a Research paper or Tool](HOW-TO-AD
 | File | Purpose |
 |------|---------|
 | [`HOW-TO-ADD.md`](HOW-TO-ADD.md) | How to create and add a research or tool block |
+| [`PEOPLE.md`](PEOPLE.md) | People directory (JSON, photos, Google Form → PR) |
 | [`desx-catalog.json`](desx-catalog.json) | Live catalog — paste new items at the **top** of `items` |
+| [`desx-people.json`](desx-people.json) | Lab members and alumni |
 | [`schema.json`](schema.json) | JSON Schema used by CI validation |
+| [`schema-people.json`](schema-people.json) | People directory schema |
 | [`templates/research.template.json`](templates/research.template.json) | Copy-paste template for a paper |
 | [`templates/tool.template.json`](templates/tool.template.json) | Copy-paste template for a tool |
 

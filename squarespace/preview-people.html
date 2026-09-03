@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DesX People Directory Preview</title>
+  <link rel="stylesheet" href="../css/desx-people.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 32px 4vw 64px;
+      background: #fff;
+      color: #111;
+    }
+    h1 { font-family: system-ui, sans-serif; margin: 0 0 8px; }
+    .hint { font-family: system-ui, sans-serif; color: #64748b; margin: 0 0 28px; max-width: 46rem; }
+  </style>
+</head>
+<body>
+  <h1>Lab Members</h1>
+  <p class="hint">Serve the repo root (e.g. <code>npx serve .</code>) so fetch can load the JSON and placeholder photo. Click a card for the full bio.</p>
+  <div
+    id="desx-people"
+    data-people-url="../catalog/desx-people.json"
+  ></div>
+  <script src="../js/desx-people.js" defer></script>
+</body>
+</html>
