@@ -59,6 +59,74 @@ function authorizeDesxPeople() {
   Logger.log("Drive access OK. Authorization complete — submit the form again.");
 }
 
+/**
+ * Run once from the editor after authorizeDesxPeople.
+ * Creates an installable On form submit trigger for THIS form-bound project.
+ */
+function installFormTrigger() {
+  var form = FormApp.getActiveForm();
+  if (!form) {
+    throw new Error(
+      "No active form. Open Apps Script from the Google Form (⋮ → Apps Script), not a standalone project."
+    );
+  }
+
+  var triggers = ScriptApp.getProjectTriggers();
+  for (var i = 0; i < triggers.length; i++) {
+    if (triggers[i].getHandlerFunction() === "onFormSubmit") {
+      ScriptApp.deleteTrigger(triggers[i]);
+    }
+  }
+
+  ScriptApp.newTrigger("onFormSubmit").forForm(form).onFormSubmit().create();
+  Logger.log("Installed onFormSubmit trigger for form: " + form.getTitle() + " (" + form.getId() + ")");
+  listTriggers();
+}
+
+/** Log every project trigger (run from editor to debug). */
+function listTriggers() {
+  var triggers = ScriptApp.getProjectTriggers();
+  if (!triggers.length) {
+    Logger.log("No triggers installed.");
+    return;
+  }
+  for (var i = 0; i < triggers.length; i++) {
+    var t = triggers[i];
+    Logger.log(
+      "Trigger #" +
+        (i + 1) +
+        ": function=" +
+        t.getHandlerFunction() +
+        " eventType=" +
+        t.getEventType() +
+        " source=" +
+        t.getTriggerSource()
+    );
+  }
+}
+
+/**
+ * Process the most recent form response without waiting for a trigger.
+ * Run from the editor after a test submit to verify GitHub publish works.
+ */
+function processLatestFormResponse() {
+  var form = FormApp.getActiveForm();
+  if (!form) {
+    throw new Error(
+      "No active form. Open Apps Script from the Google Form (⋮ → Apps Script), not a standalone project."
+    );
+  }
+  var responses = form.getResponses();
+  if (!responses.length) throw new Error("This form has no responses yet.");
+  var latest = responses[responses.length - 1];
+  var fakeEvent = {
+    namedValues: namedValuesFromResponse_(latest),
+    response: latest,
+  };
+  Logger.log("Processing latest response from " + latest.getTimestamp());
+  handleFormSubmit_(fakeEvent);
+}
+
 function onFormSubmit(e) {
   try {
     handleFormSubmit_(e);
@@ -67,6 +135,17 @@ function onFormSubmit(e) {
     Logger.log(err && err.stack ? err.stack : "");
     throw err;
   }
+}
+
+function namedValuesFromResponse_(response) {
+  var named = {};
+  var items = response.getItemResponses();
+  for (var i = 0; i < items.length; i++) {
+    var title = items[i].getItem().getTitle();
+    var value = items[i].getResponse();
+    named[title] = value;
+  }
+  return named;
 }
 
 function handleFormSubmit_(e) {

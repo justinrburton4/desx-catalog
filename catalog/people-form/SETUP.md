@@ -49,21 +49,22 @@ In the form description, note that headshots will be stored in a **public** GitH
 4. Triggers (clock icon) → Add trigger:
    - Function: `onFormSubmit`
    - Event: From form → **On form submit**
-5. In the Apps Script editor, select function **`authorizeDesxPeople`** → **Run**. Approve UrlFetch + Drive when prompted. Check **Executions** / **Logs** for “Authorization complete”.
-6. Submit a test form response again.
+5. In the Apps Script editor, select function **`authorizeDesxPeople`** → **Run**. Approve UrlFetch + Drive when prompted.
+6. Run **`installFormTrigger`** → **Run**. Approve if prompted. Logs should show `Installed onFormSubmit trigger…`
+7. Optional: run **`processLatestFormResponse`** to publish your latest test submit immediately (without waiting for a new form fill).
+8. Submit a new test response and confirm Apps Script → **Executions** shows `onFormSubmit` Completed.
 
 If BYU Workspace blocks Apps Script from calling `api.github.com`, run the form from a personal Google account that can reach GitHub, or ask IT to allow that destination.
 
+**Important:** The script must be opened from the form itself (**Form → ⋮ → Apps Script**). A standalone Apps Script project will authorize GitHub but will never receive form submits.
+
 ## 4. Test / debug
 
-1. Submit the form as a fake student.
-2. Apps Script → **Executions** (left sidebar):
-   - **No new row** → the trigger did not fire (wrong project, or trigger missing).
-   - **Failed** → open it and read the error (token, missing property, role title, etc.).
-   - **Completed** → a commit like `Add person: …` should appear on `main` within a few seconds.
-3. Hard-refresh `/people` once the Squarespace Code Block is installed.
-
-Common first-run issue: permissions were never granted. Running **`authorizeDesxPeople`** once fixes that.
+1. Apps Script → **Executions**:
+   - **No `onFormSubmit` row after submit** → run `installFormTrigger`, then `listTriggers`.
+   - **Failed** → open it and read the error.
+   - **Completed** → GitHub gets `Add person: …` on `main` within a few seconds.
+2. If the trigger still never fires, run **`processLatestFormResponse`** after each test submit as a temporary workaround, then re-check that the script is form-bound.
 
 ## 5. After headshots arrive
 
