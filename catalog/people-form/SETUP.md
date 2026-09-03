@@ -7,6 +7,8 @@ Students fill a Google Form. Apps Script opens a PR on `justinrburton4/desx-cata
 
 You merge the PR. `/people` updates on the next page load. Nobody pastes Squarespace image URLs.
 
+**Defaults (not on the form):** every submission is `status: "current"`. Title is set from Role (`Lab Directors` → `Lab Co-director`, `Ph.D. Students` → `Ph.D. Student`, etc.). Mark someone alumni by editing `desx-people.json` (change `status` to `"alumni"` and optionally the title).
+
 ## 1. Create the Google Form
 
 Create a form (lab Google account). Use **these exact question titles**:
@@ -15,14 +17,13 @@ Create a form (lab Google account). Use **these exact question titles**:
 |---|---|---|
 | Full name | Short answer | Yes |
 | Role | Multiple choice: `Lab Directors` / `Ph.D. Students` / `Master's Students` / `Undergraduate Students` | Yes |
-| Status | Multiple choice: `Current member` / `Alumni` | Yes |
-| Title | Short answer (e.g. Ph.D. Candidate). Leave blank to use a default. | No |
 | Bio | Paragraph | No |
 | Email | Short answer | No |
 | LinkedIn URL | Short answer | No |
 | Website URL | Short answer | No |
 | Photo | File upload (images only, 1 file, max 5 MB) | No |
-| Existing profile id | Short answer. Only for updates, e.g. `tevin-dickerson`. | No |
+
+If someone submits again with the same name, the script opens an **update** PR instead of a duplicate.
 
 Turn on **Collect email addresses** if you want a contact on the PR.
 
@@ -62,4 +63,8 @@ Until you merge, the live page is unchanged.
 
 ## 5. After headshots arrive
 
-Re-submit the form with **Existing profile id** filled in and attach the photo, **or** add `people/photos/{id}.jpg` in a PR and set `"photo": "{id}.jpg"` on that person.
+Re-submit the form with the **same Full name** and attach the photo, **or** add `people/photos/{id}.jpg` in a PR and set `"photo": "{id}.jpg"` on that person.
+
+## 6. Alumni
+
+Edit `catalog/desx-people.json`: set `"status": "alumni"` and usually `"title": "Former Ph.D. Student"` (or Master's / Undergraduate). Commit or open a PR.

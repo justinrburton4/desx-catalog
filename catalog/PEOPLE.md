@@ -34,7 +34,7 @@ Do not commit `placeholder.png` under a person's id. Omit `photo` until a real h
 
 ## Alumni
 
-Change `status` to `"alumni"` and update `title` (for example `Former Ph.D. Student`). They leave the current sections and appear under Alumni on the same page.
+The form always adds people as `current`. To move someone to alumni, edit `desx-people.json`: set `"status": "alumni"` and update `title` (for example `Former Ph.D. Student`). They leave the current sections and appear under Alumni on the same page.
 
 ## Local preview
 

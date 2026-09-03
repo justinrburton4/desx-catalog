@@ -2,6 +2,10 @@
  * DesX people form → GitHub pull request.
  * Paste into a Google Apps Script project bound to the lab's Google Form.
  * See SETUP.md for form question titles and Script Properties.
+ *
+ * Form submissions always create/update as status "current".
+ * Title is set from Role (Lab Directors → Lab Co-director, etc.).
+ * Alumni and custom titles are edited in catalog/desx-people.json.
  */
 
 var PHOTO_DIR = "people/photos";
@@ -22,13 +26,6 @@ var DEFAULT_TITLE = {
   undergraduate: "Undergraduate Student",
 };
 
-var ALUMNI_TITLE = {
-  directors: "Former Director",
-  phd: "Former Ph.D. Student",
-  masters: "Former Master's Student",
-  undergraduate: "Former Undergraduate Student",
-};
-
 function onFormSubmit(e) {
   var named = (e && e.namedValues) || {};
   var name = first(named["Full name"]);
@@ -37,10 +34,9 @@ function onFormSubmit(e) {
   var group = GROUP_FROM_ROLE[first(named["Role"])];
   if (!group) throw new Error("Unknown role: " + first(named["Role"]));
 
-  var statusRaw = first(named["Status"]) || "Current member";
-  var status = /alumni/i.test(statusRaw) ? "alumni" : "current";
-  var title = first(named["Title"]) || (status === "alumni" ? ALUMNI_TITLE[group] : DEFAULT_TITLE[group]);
-  var requestedId = slugify(first(named["Existing profile id"])) || slugify(name);
+  var status = "current";
+  var title = DEFAULT_TITLE[group];
+  var personId = slugify(name);
 
   var owner = prop("GITHUB_OWNER");
   var repo = prop("GITHUB_REPO");
@@ -54,11 +50,18 @@ function onFormSubmit(e) {
   );
   var catalog = JSON.parse(Utilities.newBlob(Utilities.base64Decode(jsonFile.content.replace(/\n/g, ""))).getDataAsString());
 
-  var personId = uniqueId(catalog.people, requestedId, first(named["Existing profile id"]));
   var existing = findPerson(catalog.people, personId);
+  if (!existing) {
+    existing = findPersonByName(catalog.people, name);
+  }
   var isUpdate = !!existing;
+  if (isUpdate) {
+    personId = existing.id;
+  } else {
+    personId = uniqueId(catalog.people, personId);
+  }
 
-  var photoMeta = maybeUploadPhoto_(e, token, owner, repo, baseSha, personId);
+  var photoMeta = maybeUploadPhoto_(e, personId);
   var person = existing || {};
   person.id = personId;
   person.name = name;
@@ -114,7 +117,8 @@ function onFormSubmit(e) {
       "- **Name:** " + name,
       "- **Id:** `" + personId + "`",
       "- **Group:** " + group,
-      "- **Status:** " + status,
+      "- **Title:** " + title + " (auto from Role)",
+      "- **Status:** current (alumni are set in desx-people.json)",
       photoMeta ? "- **Photo:** `people/photos/" + photoMeta.filename + "`" : "- **Photo:** placeholder (none uploaded)",
       "",
       "Merge to publish on /people.",
@@ -124,7 +128,7 @@ function onFormSubmit(e) {
   Logger.log("Opened PR " + pr.html_url);
 }
 
-function maybeUploadPhoto_(e, token, owner, repo, baseSha, personId) {
+function maybeUploadPhoto_(e, personId) {
   var item = e && e.response && findFileItem(e.response);
   if (!item) return null;
   var files = item.getResponse();
@@ -160,8 +164,7 @@ function extensionFor(contentType, name) {
   return ".jpg";
 }
 
-function uniqueId(people, requestedId, explicitId) {
-  if (explicitId) return slugify(explicitId);
+function uniqueId(people, requestedId) {
   var id = requestedId || "person";
   if (!findPerson(people, id)) return id;
   var n = 2;
@@ -172,6 +175,14 @@ function uniqueId(people, requestedId, explicitId) {
 function findPerson(people, id) {
   for (var i = 0; i < people.length; i++) {
     if (people[i].id === id) return people[i];
+  }
+  return null;
+}
+
+function findPersonByName(people, name) {
+  var target = String(name || "").trim().toLowerCase();
+  for (var i = 0; i < people.length; i++) {
+    if (String(people[i].name || "").trim().toLowerCase() === target) return people[i];
   }
   return null;
 }
