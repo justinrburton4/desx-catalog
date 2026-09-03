@@ -19,9 +19,10 @@ Create a form (lab Google account). Use **these exact question titles**:
 | Role | Multiple choice: `Lab Directors` / `Ph.D. Students` / `Master's Students` / `Undergraduate Students` | Yes |
 | Bio | Paragraph | No |
 | Email | Short answer | No |
-| LinkedIn URL | Short answer | No |
-| Website URL | Short answer | No |
+| Optional link to your LinkedIn or other personal portfolio. Add if you want that link on your profile card on the website. | Short answer | No |
 | Photo | File upload (images only, 1 file, max 5 MB) | No |
+
+The optional link question title must match the form **exactly** (including the period). LinkedIn URLs are stored as `links.linkedin`; any other URL as `links.website`.
 
 If someone submits again with the same name, the script opens an **update** PR instead of a duplicate.
 

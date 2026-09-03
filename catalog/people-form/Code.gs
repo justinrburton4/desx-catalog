@@ -26,6 +26,15 @@ var DEFAULT_TITLE = {
   undergraduate: "Undergraduate Student",
 };
 
+// Exact Google Form question titles (try each until one matches).
+var OPTIONAL_LINK_TITLES = [
+  "Optional link to your LinkedIn or other personal portfolio. Add if you want that link on your profile card on the website.",
+  "Optional link to your LinkedIn or other personal portfolio",
+  "LinkedIn or website",
+  "LinkedIn URL",
+  "Website URL",
+];
+
 function onFormSubmit(e) {
   var named = (e && e.namedValues) || {};
   var name = first(named["Full name"]);
@@ -71,11 +80,8 @@ function onFormSubmit(e) {
   person.bio = first(named["Bio"]) || person.bio || "";
   person.links = person.links || {};
   var email = first(named["Email"]);
-  var linkedin = first(named["LinkedIn URL"]);
-  var website = first(named["Website URL"]);
   if (email) person.links.email = email;
-  if (linkedin) person.links.linkedin = linkedin;
-  if (website) person.links.website = website;
+  applyOptionalLink_(person, namedValuesFirst(named, OPTIONAL_LINK_TITLES));
   if (photoMeta) person.photo = photoMeta.filename;
   if (!person.order && !isUpdate) person.order = nextOrder(catalog.people, group, status);
 
@@ -210,6 +216,50 @@ function first(value) {
   if (value == null) return "";
   if (Object.prototype.toString.call(value) === "[object Array]") value = value[0];
   return String(value || "").trim();
+}
+
+function namedValuesFirst(named, titles) {
+  for (var i = 0; i < titles.length; i++) {
+    var v = first(named[titles[i]]);
+    if (v) return v;
+  }
+  // Fallback: title may be a shorter label with the long text as description.
+  var keys = Object.keys(named || {});
+  for (var k = 0; k < keys.length; k++) {
+    var key = keys[k];
+    var lower = key.toLowerCase();
+    if (
+      lower.indexOf("linkedin") >= 0 ||
+      lower.indexOf("portfolio") >= 0 ||
+      lower.indexOf("website") >= 0 ||
+      lower.indexOf("optional link") >= 0
+    ) {
+      var found = first(named[key]);
+      if (found) return found;
+    }
+  }
+  return "";
+}
+
+/** Store one optional URL as links.linkedin or links.website. */
+function applyOptionalLink_(person, rawUrl) {
+  var url = normalizeUrl_(rawUrl);
+  if (!url) return;
+  person.links = person.links || {};
+  if (/linkedin\.com/i.test(url)) {
+    person.links.linkedin = url;
+    delete person.links.website;
+  } else {
+    person.links.website = url;
+    delete person.links.linkedin;
+  }
+}
+
+function normalizeUrl_(value) {
+  var url = String(value || "").trim();
+  if (!url) return "";
+  if (!/^https?:\/\//i.test(url)) url = "https://" + url;
+  return url;
 }
 
 function prop(key) {
