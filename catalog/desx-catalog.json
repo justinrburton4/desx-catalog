@@ -960,7 +960,8 @@
       "publisherUrl": "https://doi.org/10.1115/detc2021-70595",
       "citationCount": 2,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/fmea-inspired-analysis-for-social-impact-of-engineered-products"
     },
     {
       "kind": "research",
@@ -1072,7 +1073,8 @@
       "publisherUrl": "https://doi.org/10.1115/detc2021-71835",
       "citationCount": 1,
       "citationSource": "openalex",
-      "citationsUpdatedAt": "2026-09-02"
+      "citationsUpdatedAt": "2026-09-02",
+      "url": "/open-research-questions-for-incorporating-multi-stakeholder-interests"
     },
     {
       "kind": "research",
