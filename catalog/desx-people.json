@@ -520,19 +520,6 @@
       "status": "alumni",
       "order": 8,
       "bio": ""
-    },
-    {
-      "id": "test-2",
-      "name": "Test 2",
-      "title": "Ph.D. Student",
-      "group": "phd",
-      "status": "current",
-      "bio": "Did it work",
-      "links": {
-        "email": "Email@email.com"
-      },
-      "photo": "test-2.jpg",
-      "order": 4
     }
   ]
 }
