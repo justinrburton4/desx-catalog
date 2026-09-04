@@ -46,25 +46,28 @@ In the form description, note that headshots will be stored in a **public** GitH
    - `GITHUB_OWNER` = `justinrburton4`
    - `GITHUB_REPO` = `desx-catalog`
    - `GITHUB_BASE_BRANCH` = `main`
-4. Triggers (clock icon) → Add trigger:
-   - Function: `onFormSubmit`
-   - Event: From form → **On form submit**
-5. In the Apps Script editor, select function **`authorizeDesxPeople`** → **Run**. Approve UrlFetch + Drive when prompted.
-6. Run **`installFormTrigger`** → **Run**. Approve if prompted. Logs should show `Installed onFormSubmit trigger…`
-7. Optional: run **`processLatestFormResponse`** to publish your latest test submit immediately (without waiting for a new form fill).
-8. Submit a new test response and confirm Apps Script → **Executions** shows `onFormSubmit` Completed.
+4. Run **`authorizeDesxPeople`** → approve UrlFetch + Drive.
+5. Run **`installFormTrigger`** → approve if prompted.
+
+That installs an **installable** trigger on `publishPeopleFromFormSubmit`.
+
+**Do not** manually add a trigger for a function named `onFormSubmit`. That reserved name is a Forms *simple* trigger and **cannot** call GitHub (`UrlFetchApp`) or Drive — which is why editor runs worked but auto-submit did not.
+
+6. Optional: run **`processLatestFormResponse`** to publish the latest response immediately.
+7. Submit a new test response. Executions should show **`publishPeopleFromFormSubmit` → Completed** (Type: Trigger).
 
 If BYU Workspace blocks Apps Script from calling `api.github.com`, run the form from a personal Google account that can reach GitHub, or ask IT to allow that destination.
 
-**Important:** The script must be opened from the form itself (**Form → ⋮ → Apps Script**). A standalone Apps Script project will authorize GitHub but will never receive form submits.
+**Important:** Open Apps Script only from the form (**Form → ⋮ → Apps Script**), not a standalone project.
 
 ## 4. Test / debug
 
-1. Apps Script → **Executions**:
-   - **No `onFormSubmit` row after submit** → run `installFormTrigger`, then `listTriggers`.
-   - **Failed** → open it and read the error.
+1. Triggers (clock) should list: function `publishPeopleFromFormSubmit`, event **On form submit**.
+2. After a form submit, Executions:
+   - **No row** → re-run `installFormTrigger`; confirm the script is form-bound.
+   - **Failed** → open the log (often auth or a missing Script property).
    - **Completed** → GitHub gets `Add person: …` on `main` within a few seconds.
-2. If the trigger still never fires, run **`processLatestFormResponse`** after each test submit as a temporary workaround, then re-check that the script is form-bound.
+3. Temporary workaround: `processLatestFormResponse` after a submit.
 
 ## 5. After headshots arrive
 

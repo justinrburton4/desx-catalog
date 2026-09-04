@@ -61,7 +61,10 @@ function authorizeDesxPeople() {
 
 /**
  * Run once from the editor after authorizeDesxPeople.
- * Creates an installable On form submit trigger for THIS form-bound project.
+ * Installs an installable On form submit trigger.
+ *
+ * IMPORTANT: Do NOT name the handler onFormSubmit — that reserved name becomes a
+ * Forms *simple* trigger, which cannot call UrlFetchApp (GitHub) or DriveApp.
  */
 function installFormTrigger() {
   var form = FormApp.getActiveForm();
@@ -71,15 +74,28 @@ function installFormTrigger() {
     );
   }
 
+  var handler = "publishPeopleFromFormSubmit";
   var triggers = ScriptApp.getProjectTriggers();
   for (var i = 0; i < triggers.length; i++) {
-    if (triggers[i].getHandlerFunction() === "onFormSubmit") {
+    var name = triggers[i].getHandlerFunction();
+    if (name === handler || name === "onFormSubmit") {
       ScriptApp.deleteTrigger(triggers[i]);
     }
   }
 
-  ScriptApp.newTrigger("onFormSubmit").forForm(form).onFormSubmit().create();
-  Logger.log("Installed onFormSubmit trigger for form: " + form.getTitle() + " (" + form.getId() + ")");
+  ScriptApp.newTrigger(handler).forForm(form).onFormSubmit().create();
+  Logger.log(
+    "Installed installable trigger → " +
+      handler +
+      " for form: " +
+      form.getTitle() +
+      " (" +
+      form.getId() +
+      ")"
+  );
+  Logger.log(
+    "In Triggers UI you should see Event: On form submit, Function: " + handler + " (not onFormSubmit)."
+  );
   listTriggers();
 }
 
@@ -127,9 +143,15 @@ function processLatestFormResponse() {
   handleFormSubmit_(fakeEvent);
 }
 
-function onFormSubmit(e) {
+/**
+ * Installable form-submit handler (wired by installFormTrigger).
+ * Must not be named onFormSubmit — that name is a restricted simple trigger.
+ */
+function publishPeopleFromFormSubmit(e) {
   try {
+    Logger.log("publishPeopleFromFormSubmit starting…");
     handleFormSubmit_(normalizeFormEvent_(e));
+    Logger.log("publishPeopleFromFormSubmit finished OK");
   } catch (err) {
     Logger.log("DESX PEOPLE FORM ERROR: " + err);
     Logger.log(err && err.stack ? err.stack : "");
