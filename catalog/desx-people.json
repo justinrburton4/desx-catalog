@@ -107,8 +107,8 @@
     {
       "id": "thomas-geilman",
       "name": "Thomas Geilman",
-      "title": "Undergraduate Student",
-      "group": "undergraduate",
+      "title": "Master's Student",
+      "group": "masters",
       "status": "current",
       "order": 1,
       "bio": "Thomas is an undergraduate student in mechanical engineering. He loves learning, which has led to interests and hobbies including 3D printing, reading, and welding as he constantly tries learning new skills. He helped with the cassava peeler project and is excited to continue his work in the lab. He says, ?I love how engineering design combines empathy and knowledge to help people around the world. One of my main goals in life is to use my skills to help others, and engineering helps me achieve this goal?.",
@@ -117,8 +117,8 @@
     {
       "id": "benjamin-sannar",
       "name": "Benjamin Sannar",
-      "title": "Undergraduate Student",
-      "group": "undergraduate",
+      "title": "Master's Student",
+      "group": "masters",
       "status": "current",
       "order": 2,
       "bio": "Benjamin Sannar is a Mechanical Engineering student from Northern California. He grew up inspired by a heritage of ingenuity and surrounded by the processes that put fruit and vegetables onto tables around the world. ?I love noticing the little things that would make life better and finding a way to set them in motion.? Outside of the lab and school, Ben is a commercial driver and enjoys home-improvement projects, the great outdoors and drawing.",
@@ -129,15 +129,15 @@
       "name": "Henry Wooley",
       "title": "Undergraduate Student",
       "group": "undergraduate",
-      "status": "current",
+      "status": "alumni",
       "order": 3,
       "bio": "Born and raised in Central California, Henry has always loved bringing ideas to life. His passion began in elementary school, building a go-cart from bike tires and two-by-fours. Now, he applies that hands-on creativity to solving real-world problems. Henry is currently working as a student engineer where he enjoys creating new tools and processes to improve the manufacturing and quality of diamond bearings. As a student, he is interested in engineering design, interdisciplinary collaboration, aerospace, and fluid mechanics. Outside the classroom, he enjoys fly-fishing, hunting, skiing, and woodworking."
     },
     {
       "id": "joshua-cook",
       "name": "Joshua Cook",
-      "title": "Undergraduate Student",
-      "group": "undergraduate",
+      "title": "Master's Student",
+      "group": "masters",
       "status": "current",
       "order": 4,
       "bio": ""
@@ -145,8 +145,8 @@
     {
       "id": "isaac-detiege",
       "name": "Isaac Detiege",
-      "title": "Undergraduate Student",
-      "group": "undergraduate",
+      "title": "Master's Student",
+      "group": "masters",
       "status": "current",
       "order": 5,
       "bio": ""
@@ -156,7 +156,7 @@
       "name": "Abigail Little",
       "title": "Undergraduate Student",
       "group": "undergraduate",
-      "status": "current",
+      "status": "alumni",
       "order": 6,
       "bio": "Abigail is an undergraduate student pursuing a degree in mechanical engineering. She's from Alexandria, Virginia and in the Design Exploration Group she is currently working on developing social impact models to improve disaster relief distribution. Outside the lab, she loves hiking, trying cool new restaurants, playing volleyball, and making people laugh."
     },
@@ -165,7 +165,7 @@
       "name": "Logan Merrill",
       "title": "Undergraduate Student",
       "group": "undergraduate",
-      "status": "current",
+      "status": "alumni",
       "order": 7,
       "bio": "Logan is a Mechanical Engineering student from southern California. His research is focused on developing a master design tool to help engineering students implement principles of good product design and development in their personal and academic projects. He has a passion for mechanical design and product development and hopes to pursue a career in those fields after graduating from BYU. Outside of school, Logan enjoys watching BYU sports, reading fantasy novels, playing basketball, and spending time with his wife."
     },
@@ -176,14 +176,14 @@
       "group": "undergraduate",
       "status": "current",
       "order": 8,
-      "bio": "Jordan sees every challenge as an adventure?whether in the lab or the great outdoors. As a mechanical engineering student researching social impact diffusion models, she explores how design can spark meaningful change in communities. Outside the lab, Jordan?s love for adventure leads her to rock climbing, hiking, and traveling, where new experiences inspire fresh perspectives and fuel her creativity. Through both her work and play, Jordan is driven to design solutions that make a positive, lasting impact."
+      "bio": "Jordan sees every challenge as an adventure - whether in the lab or the great outdoors. As a mechanical engineering student researching social impact diffusion models, she explores how design can spark meaningful change in communities. Outside the lab, Jordan?s love for adventure leads her to rock climbing, hiking, and traveling, where new experiences inspire fresh perspectives and fuel her creativity. Through both her work and play, Jordan is driven to design solutions that make a positive, lasting impact."
     },
     {
       "id": "hunter-scullin",
       "name": "Hunter Scullin",
       "title": "Undergraduate Student",
       "group": "undergraduate",
-      "status": "current",
+      "status": "alumni",
       "order": 9,
       "bio": "Coming from a family of artists, Hunter loves design. Whether designing stories, comics, devices, or machines, he wants to be involved. He?s an undergraduate in Mechanical Engineering with interests in product design and development, consumer products, and electromechanical devices. When he isn?t in class he?s drawing, hiking, reading, and playing pickleball (poorly) with his fianc?."
     },
