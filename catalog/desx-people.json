@@ -78,7 +78,7 @@
     {
       "id": "scott-rice",
       "name": "Scott Rice",
-      "title": "Ph.D. Student",
+      "title": "Ph.D. Candidate",
       "group": "phd",
       "status": "current",
       "order": 3,
@@ -117,8 +117,8 @@
     {
       "id": "benjamin-sannar",
       "name": "Benjamin Sannar",
-      "title": "Master's Student",
-      "group": "masters",
+      "title": "Ph.D. Student",
+      "group": "phd",
       "status": "current",
       "order": 2,
       "bio": "Benjamin Sannar is a Mechanical Engineering student from Northern California. He grew up inspired by a heritage of ingenuity and surrounded by the processes that put fruit and vegetables onto tables around the world. ?I love noticing the little things that would make life better and finding a way to set them in motion.? Outside of the lab and school, Ben is a commercial driver and enjoys home-improvement projects, the great outdoors and drawing.",
