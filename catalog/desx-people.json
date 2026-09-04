@@ -194,7 +194,8 @@
       "group": "phd",
       "status": "alumni",
       "order": 1,
-      "bio": "Evolvability and Excess Capability as a Response to Uncertain and Future Requirements"
+      "bio": "Evolvability and Excess Capability as a Response to Uncertain and Future Requirements",
+      "photo": "jeff-allen.png"
     },
     {
       "id": "stephen-harston",
@@ -203,7 +204,8 @@
       "group": "phd",
       "status": "alumni",
       "order": 2,
-      "bio": "A Methodology for Strategically Designing Physical Products that are Naturally Resistant to Reverse Engineering"
+      "bio": "A Methodology for Strategically Designing Physical Products that are Naturally Resistant to Reverse Engineering",
+      "photo": "stephen-harston.jpg"
     },
     {
       "id": "brad-larson",
@@ -221,7 +223,8 @@
       "group": "phd",
       "status": "alumni",
       "order": 4,
-      "bio": "An Optimization-Based Method of Traversing Dynamic s-Pareto Frontiers"
+      "bio": "An Optimization-Based Method of Traversing Dynamic s-Pareto Frontiers",
+      "photo": "patrick-lewis.jpg"
     },
     {
       "id": "bryan-stringham",
@@ -230,7 +233,8 @@
       "group": "phd",
       "status": "alumni",
       "order": 5,
-      "bio": "Inexpensively evaluate the social impacts of engineered products on people in developing countries"
+      "bio": "Inexpensively evaluate the social impacts of engineered products on people in developing countries",
+      "photo": "bryan-stringham.png"
     },
     {
       "id": "amy-wood",
@@ -239,7 +243,8 @@
       "group": "phd",
       "status": "alumni",
       "order": 6,
-      "bio": "Principles and Insights for Design for the Developing World"
+      "bio": "Principles and Insights for Design for the Developing World",
+      "photo": "amy-wood.jpg"
     },
     {
       "id": "phillip-stevenson",
@@ -248,7 +253,8 @@
       "group": "phd",
       "status": "alumni",
       "order": 7,
-      "bio": "Research focused on new methods to predict the social impacts"
+      "bio": "Research focused on new methods to predict the social impacts",
+      "photo": "phillip-stevenson.png"
     },
     {
       "id": "hans-ottosson",
@@ -257,7 +263,8 @@
       "group": "phd",
       "status": "alumni",
       "order": 8,
-      "bio": "Considering Social Impact when Engineering for Global Development"
+      "bio": "Considering Social Impact when Engineering for Global Development",
+      "photo": "hans-ottosson.jpg"
     },
     {
       "id": "chris-mabey",
@@ -266,7 +273,8 @@
       "group": "phd",
       "status": "alumni",
       "order": 9,
-      "bio": "Building Models for Maximizing Positive Social Impact in Engineering for Global Development"
+      "bio": "Building Models for Maximizing Positive Social Impact in Engineering for Global Development",
+      "photo": "chris-mabey.png"
     },
     {
       "id": "nikki-anderson",
@@ -284,7 +292,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 2,
-      "bio": "Efficient, Accurate, and Non-Gaussian Error Propagation Through Nonlinear, Closed-Form, Analytical System Models"
+      "bio": "Efficient, Accurate, and Non-Gaussian Error Propagation Through Nonlinear, Closed-Form, Analytical System Models",
+      "photo": "travis-anderson.jpg"
     },
     {
       "id": "garrett-barnum",
@@ -293,7 +302,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 3,
-      "bio": "A Computationally-Assisted Methodology for Rapid Exploration of Design Possibilities in Conceptual Design"
+      "bio": "A Computationally-Assisted Methodology for Rapid Exploration of Design Possibilities in Conceptual Design",
+      "photo": "garrett-barnum.jpg"
     },
     {
       "id": "eric-bowman",
@@ -302,7 +312,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 4,
-      "bio": "Optimization Constrained CAD Framework with Iso-Performing Design Generator"
+      "bio": "Optimization Constrained CAD Framework with Iso-Performing Design Generator",
+      "photo": "eric-bowman.jpg"
     },
     {
       "id": "robert-campbell",
@@ -311,7 +322,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 5,
-      "bio": "A Methodology for the Extraction of Design Principles for Unfamiliar Markets"
+      "bio": "A Methodology for the Extraction of Design Principles for Unfamiliar Markets",
+      "photo": "robert-campbell.jpg"
     },
     {
       "id": "shane-curtis",
@@ -338,7 +350,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 8,
-      "bio": "Characterizing Material Property Tradeoffs of Polycrystalline Diamond for Design Evaluation and Selection"
+      "bio": "Characterizing Material Property Tradeoffs of Polycrystalline Diamond for Design Evaluation and Selection",
+      "photo": "neil-haddock.jpg"
     },
     {
       "id": "darren-knight",
@@ -347,7 +360,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 9,
-      "bio": "Return on Investment Analysis for Implementing Barriers to Reverse Engineering and Imitation"
+      "bio": "Return on Investment Analysis for Implementing Barriers to Reverse Engineering and Imitation",
+      "photo": "darren-knight.jpg"
     },
     {
       "id": "devin-lebaron",
@@ -374,7 +388,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 12,
-      "bio": "Collaborative Products: A Design Methodology with Application to Engineering-Based Poverty Alleviation"
+      "bio": "Collaborative Products: A Design Methodology with Application to Engineering-Based Poverty Alleviation",
+      "photo": "jacob-morrise.jpg"
     },
     {
       "id": "andrew-pack",
@@ -383,7 +398,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 13,
-      "bio": "A Discovery of Social Impact Categories for the Sustainable Design of Engineered Products and Their Consideration by Industry Professionals"
+      "bio": "A Discovery of Social Impact Categories for the Sustainable Design of Engineered Products and Their Consideration by Industry Professionals",
+      "photo": "andrew-pack.jpg"
     },
     {
       "id": "morgan-tackett",
@@ -392,7 +408,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 14,
-      "bio": "Mathematical Model for Quantifying System Evolvability Using Excess and Modularity"
+      "bio": "Mathematical Model for Quantifying System Evolvability Using Excess and Modularity",
+      "photo": "morgan-tackett.jpg"
     },
     {
       "id": "kendall-thacker",
@@ -401,7 +418,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 15,
-      "bio": "Balancing Technical and User Objectives in the Design of Improved Biomass Cookstoves for Developing Regions of the World"
+      "bio": "Balancing Technical and User Objectives in the Design of Improved Biomass Cookstoves for Developing Regions of the World",
+      "photo": "kendall-thacker.jpg"
     },
     {
       "id": "nicholas-wasley",
@@ -410,7 +428,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 16,
-      "bio": "Multiobjective Optimization Method Used in Designing Collaborative Products with Application to Engineering-Based Poverty Alleviation"
+      "bio": "Multiobjective Optimization Method Used in Designing Collaborative Products with Application to Engineering-Based Poverty Alleviation",
+      "photo": "nicholas-wasley.jpg"
     },
     {
       "id": "jason-watson",
@@ -419,7 +438,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 17,
-      "bio": "A Multi-objective Optimization Method for Maximizing the Value of System Evolvability Under Uncertainty"
+      "bio": "A Multi-objective Optimization Method for Maximizing the Value of System Evolvability Under Uncertainty",
+      "photo": "jason-watson.jpg"
     },
     {
       "id": "jonathon-yearsley",
@@ -428,7 +448,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 18,
-      "bio": "Product Family Design Using Smart Pareto Filters"
+      "bio": "Product Family Design Using Smart Pareto Filters",
+      "photo": "jonathon-yearsley.jpg"
     },
     {
       "id": "andy-armstrong",
@@ -437,7 +458,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 19,
-      "bio": ""
+      "bio": "",
+      "photo": "andy-armstrong.jpg"
     },
     {
       "id": "dan-richards",
@@ -446,7 +468,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 20,
-      "bio": ""
+      "bio": "",
+      "photo": "dan-richards.jpg"
     },
     {
       "id": "trent-owens",
@@ -455,7 +478,8 @@
       "group": "masters",
       "status": "alumni",
       "order": 21,
-      "bio": ""
+      "bio": "",
+      "photo": "trent-owens.jpg"
     },
     {
       "id": "brandon-bryson",
@@ -464,7 +488,8 @@
       "group": "undergraduate",
       "status": "alumni",
       "order": 1,
-      "bio": ""
+      "bio": "",
+      "photo": "brandon-bryson.jpg"
     },
     {
       "id": "marin-fisher",
@@ -473,7 +498,8 @@
       "group": "undergraduate",
       "status": "alumni",
       "order": 2,
-      "bio": ""
+      "bio": "",
+      "photo": "marin-fisher.jpg"
     },
     {
       "id": "gabrielle-johnson",
@@ -482,7 +508,8 @@
       "group": "undergraduate",
       "status": "alumni",
       "order": 3,
-      "bio": ""
+      "bio": "",
+      "photo": "gabrielle-johnson.jpg"
     },
     {
       "id": "clare-shultz",
@@ -491,7 +518,8 @@
       "group": "undergraduate",
       "status": "alumni",
       "order": 4,
-      "bio": ""
+      "bio": "",
+      "photo": "clare-shultz.jpg"
     },
     {
       "id": "emily-jolley",
@@ -500,7 +528,8 @@
       "group": "undergraduate",
       "status": "alumni",
       "order": 5,
-      "bio": ""
+      "bio": "",
+      "photo": "emily-jolley.jpg"
     },
     {
       "id": "joseph-liechty",
@@ -509,7 +538,8 @@
       "group": "undergraduate",
       "status": "alumni",
       "order": 6,
-      "bio": ""
+      "bio": "",
+      "photo": "joseph-liechty.jpg"
     },
     {
       "id": "estee-rivel",
@@ -518,7 +548,8 @@
       "group": "undergraduate",
       "status": "alumni",
       "order": 7,
-      "bio": ""
+      "bio": "",
+      "photo": "estee-rivel.jpg"
     },
     {
       "id": "holland-tanner",
@@ -527,7 +558,8 @@
       "group": "undergraduate",
       "status": "alumni",
       "order": 8,
-      "bio": ""
+      "bio": "",
+      "photo": "holland-tanner.jpg"
     },
     {
       "id": "justin-burton",
