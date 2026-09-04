@@ -71,8 +71,10 @@ If BYU Workspace blocks Apps Script from calling `api.github.com`, run the form 
 
 ## 5. After headshots arrive
 
-Re-submit the form with the **same Full name** and attach the photo, **or** add `people/photos/{id}.jpg` and set `"photo": "{id}.jpg"` on that person in `desx-people.json`.
+Re-submit the form with the **same Full name** and attach the photo, **or** drop `people/photos/{id}.jpg` or `{id}.png` into the repo (id is the slugified name, e.g. `justin-burton.jpg`). The live page tries `{id}.jpg` / `{id}.png` automatically — no JSON `photo` field required.
 
 ## 6. Alumni
 
 Edit `catalog/desx-people.json`: set `"status": "alumni"` and usually `"title": "Former Ph.D. Student"` (or Master's / Undergraduate). Commit directly or via the GitHub web editor.
+
+LinkedIn / website links on cards are labeled by URL: LinkedIn URLs show as **LinkedIn**, anything else as **Website**.

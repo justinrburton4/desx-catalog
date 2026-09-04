@@ -195,7 +195,10 @@
       "status": "alumni",
       "order": 1,
       "bio": "Evolvability and Excess Capability as a Response to Uncertain and Future Requirements",
-      "photo": "jeff-allen.png"
+      "photo": "jeff-allen.png",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jeffreydallen/"
+      }
     },
     {
       "id": "stephen-harston",
@@ -205,7 +208,10 @@
       "status": "alumni",
       "order": 2,
       "bio": "A Methodology for Strategically Designing Physical Products that are Naturally Resistant to Reverse Engineering",
-      "photo": "stephen-harston.jpg"
+      "photo": "stephen-harston.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sharston/"
+      }
     },
     {
       "id": "brad-larson",
@@ -214,7 +220,10 @@
       "group": "phd",
       "status": "alumni",
       "order": 3,
-      "bio": "Mathematical Framework for Early System Design Validation Using Multidisciplinary System Models"
+      "bio": "Mathematical Framework for Early System Design Validation Using Multidisciplinary System Models",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/brad-larson-5446b73/"
+      }
     },
     {
       "id": "patrick-lewis",
@@ -224,7 +233,10 @@
       "status": "alumni",
       "order": 4,
       "bio": "An Optimization-Based Method of Traversing Dynamic s-Pareto Frontiers",
-      "photo": "patrick-lewis.jpg"
+      "photo": "patrick-lewis.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/patrick-lewis-phd-a3172713/"
+      }
     },
     {
       "id": "bryan-stringham",
@@ -244,7 +256,10 @@
       "status": "alumni",
       "order": 6,
       "bio": "Principles and Insights for Design for the Developing World",
-      "photo": "amy-wood.jpg"
+      "photo": "amy-wood.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/amywood552/"
+      }
     },
     {
       "id": "phillip-stevenson",
@@ -263,7 +278,10 @@
       "group": "phd",
       "status": "alumni",
       "order": 8,
-      "bio": "Considering Social Impact when Engineering for Global Development"
+      "bio": "Considering Social Impact when Engineering for Global Development",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/hansottosson/"
+      }
     },
     {
       "id": "chris-mabey",
@@ -282,7 +300,10 @@
       "group": "masters",
       "status": "alumni",
       "order": 1,
-      "bio": "Characterization of the Initial Flow Rate of Information During Reverse Engineering"
+      "bio": "Characterization of the Initial Flow Rate of Information During Reverse Engineering",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/nicole-nikki-hill-9151ba8/"
+      }
     },
     {
       "id": "travis-anderson",
@@ -292,7 +313,10 @@
       "status": "alumni",
       "order": 2,
       "bio": "Efficient, Accurate, and Non-Gaussian Error Propagation Through Nonlinear, Closed-Form, Analytical System Models",
-      "photo": "travis-anderson.jpg"
+      "photo": "travis-anderson.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/travisvanderson/"
+      }
     },
     {
       "id": "garrett-barnum",
@@ -302,7 +326,10 @@
       "status": "alumni",
       "order": 3,
       "bio": "A Computationally-Assisted Methodology for Rapid Exploration of Design Possibilities in Conceptual Design",
-      "photo": "garrett-barnum.jpg"
+      "photo": "garrett-barnum.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/garrettbarnum/"
+      }
     },
     {
       "id": "eric-bowman",
@@ -312,7 +339,10 @@
       "status": "alumni",
       "order": 4,
       "bio": "Optimization Constrained CAD Framework with Iso-Performing Design Generator",
-      "photo": "eric-bowman.jpg"
+      "photo": "eric-bowman.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/k-eric-bowman/"
+      }
     },
     {
       "id": "robert-campbell",
@@ -322,7 +352,10 @@
       "status": "alumni",
       "order": 5,
       "bio": "A Methodology for the Extraction of Design Principles for Unfamiliar Markets",
-      "photo": "robert-campbell.jpg"
+      "photo": "robert-campbell.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/robert-campbell-b8004125/"
+      }
     },
     {
       "id": "shane-curtis",
@@ -331,7 +364,10 @@
       "group": "masters",
       "status": "alumni",
       "order": 6,
-      "bio": "A Method for Exploring Optimization Formulation Space in Conceptual Design"
+      "bio": "A Method for Exploring Optimization Formulation Space in Conceptual Design",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/shane-curtis-4164583b/"
+      }
     },
     {
       "id": "luke-duffield",
@@ -350,7 +386,10 @@
       "status": "alumni",
       "order": 8,
       "bio": "Characterizing Material Property Tradeoffs of Polycrystalline Diamond for Design Evaluation and Selection",
-      "photo": "neil-haddock.jpg"
+      "photo": "neil-haddock.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ndhaddock/"
+      }
     },
     {
       "id": "darren-knight",
@@ -360,7 +399,10 @@
       "status": "alumni",
       "order": 9,
       "bio": "Return on Investment Analysis for Implementing Barriers to Reverse Engineering and Imitation",
-      "photo": "darren-knight.jpg"
+      "photo": "darren-knight.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/darrenknight/"
+      }
     },
     {
       "id": "devin-lebaron",
@@ -369,7 +411,10 @@
       "group": "masters",
       "status": "alumni",
       "order": 10,
-      "bio": "Using Topology Optimization to Numerically Improve Barriers to Reverse Engineering"
+      "bio": "Using Topology Optimization to Numerically Improve Barriers to Reverse Engineering",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/devin-lebaron-68630a63/"
+      }
     },
     {
       "id": "john-meaders",
@@ -388,7 +433,10 @@
       "status": "alumni",
       "order": 12,
       "bio": "Collaborative Products: A Design Methodology with Application to Engineering-Based Poverty Alleviation",
-      "photo": "jacob-morrise.jpg"
+      "photo": "jacob-morrise.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jacobmorrise/"
+      }
     },
     {
       "id": "andrew-pack",
@@ -398,7 +446,10 @@
       "status": "alumni",
       "order": 13,
       "bio": "A Discovery of Social Impact Categories for the Sustainable Design of Engineered Products and Their Consideration by Industry Professionals",
-      "photo": "andrew-pack.jpg"
+      "photo": "andrew-pack.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/andrew-pack/"
+      }
     },
     {
       "id": "morgan-tackett",
@@ -408,7 +459,10 @@
       "status": "alumni",
       "order": 14,
       "bio": "Mathematical Model for Quantifying System Evolvability Using Excess and Modularity",
-      "photo": "morgan-tackett.jpg"
+      "photo": "morgan-tackett.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/tackettm/"
+      }
     },
     {
       "id": "kendall-thacker",
@@ -418,7 +472,10 @@
       "status": "alumni",
       "order": 15,
       "bio": "Balancing Technical and User Objectives in the Design of Improved Biomass Cookstoves for Developing Regions of the World",
-      "photo": "kendall-thacker.jpg"
+      "photo": "kendall-thacker.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/kendall-thacker/"
+      }
     },
     {
       "id": "nicholas-wasley",
@@ -428,7 +485,10 @@
       "status": "alumni",
       "order": 16,
       "bio": "Multiobjective Optimization Method Used in Designing Collaborative Products with Application to Engineering-Based Poverty Alleviation",
-      "photo": "nicholas-wasley.jpg"
+      "photo": "nicholas-wasley.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/nick-w-3a86a864/"
+      }
     },
     {
       "id": "jason-watson",
@@ -438,7 +498,10 @@
       "status": "alumni",
       "order": 17,
       "bio": "A Multi-objective Optimization Method for Maximizing the Value of System Evolvability Under Uncertainty",
-      "photo": "jason-watson.jpg"
+      "photo": "jason-watson.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jaswatson/"
+      }
     },
     {
       "id": "jonathon-yearsley",
@@ -448,7 +511,10 @@
       "status": "alumni",
       "order": 18,
       "bio": "Product Family Design Using Smart Pareto Filters",
-      "photo": "jonathon-yearsley.jpg"
+      "photo": "jonathon-yearsley.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jonathan-yearsley/"
+      }
     },
     {
       "id": "andy-armstrong",
@@ -458,7 +524,10 @@
       "status": "alumni",
       "order": 19,
       "bio": "",
-      "photo": "andy-armstrong.jpg"
+      "photo": "andy-armstrong.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/andrew-g-armstrong-9970aa153/"
+      }
     },
     {
       "id": "dan-richards",
@@ -468,7 +537,10 @@
       "status": "alumni",
       "order": 20,
       "bio": "",
-      "photo": "dan-richards.jpg"
+      "photo": "dan-richards.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/dcr-richards/"
+      }
     },
     {
       "id": "trent-owens",
@@ -478,7 +550,10 @@
       "status": "alumni",
       "order": 21,
       "bio": "",
-      "photo": "trent-owens.jpg"
+      "photo": "trent-owens.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/trent-owens/"
+      }
     },
     {
       "id": "brandon-bryson",
@@ -488,7 +563,10 @@
       "status": "alumni",
       "order": 1,
       "bio": "",
-      "photo": "brandon-bryson.jpg"
+      "photo": "brandon-bryson.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/brandonbryson52/"
+      }
     },
     {
       "id": "marin-fisher",
@@ -498,7 +576,10 @@
       "status": "alumni",
       "order": 2,
       "bio": "",
-      "photo": "marin-fisher.jpg"
+      "photo": "marin-fisher.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/marin-fisher/"
+      }
     },
     {
       "id": "gabrielle-johnson",
@@ -508,7 +589,10 @@
       "status": "alumni",
       "order": 3,
       "bio": "",
-      "photo": "gabrielle-johnson.jpg"
+      "photo": "gabrielle-johnson.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/gabrielle-johnson-future-engineer/"
+      }
     },
     {
       "id": "clare-shultz",
@@ -538,7 +622,10 @@
       "status": "alumni",
       "order": 6,
       "bio": "",
-      "photo": "joseph-liechty.jpg"
+      "photo": "joseph-liechty.jpg",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/joseph-liechty/"
+      }
     },
     {
       "id": "estee-rivel",

@@ -1,10 +1,22 @@
 /* DesX People directory — Squarespace-safe */
 
+#desx-people,
+[data-desx-people] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
 .desx-people-ui {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   color: #0f172a;
+  overflow-x: clip;
 }
 
 .desx-people-ui *,
@@ -13,9 +25,12 @@
   box-sizing: border-box;
 }
 
-.desx-people-search {
+#desx-people .desx-people-search,
+.desx-people-ui .desx-people-search {
+  display: block;
   width: 100%;
-  max-width: 420px;
+  max-width: min(420px, 100%);
+  min-width: 0;
   margin: 0 0 36px;
   padding: 12px 14px;
   border: 1px solid #cbd5e1;
@@ -24,12 +39,24 @@
   font-family: inherit;
   color: #0f172a;
   background: #fff;
+  /* Squarespace sets inputs to content-box; padding then overflows 100% width */
+  box-sizing: border-box !important;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.desx-people-search:focus {
+#desx-people .desx-people-search:focus,
+.desx-people-ui .desx-people-search:focus {
   outline: 2px solid rgba(226, 99, 20, 0.45);
   outline-offset: 1px;
   border-color: #e26314;
+}
+
+.desx-people-results,
+.desx-people-section {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .desx-people-section {
@@ -42,6 +69,7 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   color: #0f172a;
+  overflow-wrap: anywhere;
 }
 
 .desx-people-section-intro {
@@ -50,6 +78,7 @@
   font-size: 1.02rem;
   line-height: 1.55;
   color: #64748b;
+  overflow-wrap: break-word;
 }
 
 .desx-people-subsection-title {
@@ -61,8 +90,11 @@
 
 .desx-people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
   gap: 28px 22px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .desx-person-card {
@@ -78,6 +110,8 @@
   color: inherit;
   cursor: pointer;
   border-radius: 12px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .desx-person-card:focus-visible {
@@ -111,6 +145,7 @@
   font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.3;
+  overflow-wrap: break-word;
 }
 
 .desx-person-title {
@@ -118,6 +153,7 @@
   font-size: 0.92rem;
   color: #64748b;
   line-height: 1.35;
+  overflow-wrap: break-word;
 }
 
 .desx-person-links {
@@ -160,6 +196,9 @@
   align-items: center;
   justify-content: center;
   padding: 24px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .desx-people-modal-backdrop {
@@ -172,12 +211,14 @@
   position: relative;
   z-index: 1;
   width: min(720px, 100%);
+  max-width: 100%;
   max-height: min(88vh, 820px);
   overflow: auto;
   background: #fff;
   border-radius: 16px;
   padding: 28px 28px 32px;
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.28);
+  box-sizing: border-box;
 }
 
 .desx-people-modal-close {
@@ -201,9 +242,10 @@
 
 .desx-people-modal-layout {
   display: grid;
-  grid-template-columns: 168px 1fr;
+  grid-template-columns: 168px minmax(0, 1fr);
   gap: 22px;
   align-items: start;
+  min-width: 0;
 }
 
 .desx-people-modal-photo {
@@ -225,6 +267,7 @@
   margin: 0 0 4px;
   font-size: 1.45rem;
   font-weight: 750;
+  overflow-wrap: break-word;
 }
 
 .desx-people-modal-title {
@@ -238,12 +281,27 @@
   line-height: 1.65;
   color: #334155;
   white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 640px) {
+  #desx-people .desx-people-search,
+  .desx-people-ui .desx-people-search {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
   .desx-people-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px 14px;
+  }
+
+  .desx-people-modal {
+    padding: 12px;
+  }
+
+  .desx-people-modal-dialog {
+    padding: 22px 16px 24px;
   }
 
   .desx-people-modal-layout {

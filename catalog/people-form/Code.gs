@@ -259,9 +259,10 @@ function handleFormSubmit_(e) {
   person.links = person.links || {};
   var email = answer(named, ["Email"]);
   if (email) person.links.email = email;
-  applyOptionalLink_(person, namedValuesFirst(named, OPTIONAL_LINK_TITLES));
+  applyOptionalLink_(person, extractOptionalLink_(e, named));
   if (photoMeta) person.photo = photoMeta.filename;
-  if (!person.order && !isUpdate) person.order = nextOrder(catalog.people, group, status);
+  // Photos can also be uploaded later as people/photos/{id}.jpg|png without editing JSON.
+  if (!isUpdate) person.order = person.order || nextOrder(catalog.people, group, status);
 
   if (!isUpdate) catalog.people.push(person);
 
@@ -439,6 +440,69 @@ function namedValuesFirst(named, titles) {
   return "";
 }
 
+/**
+ * Pull optional LinkedIn/website from namedValues and/or itemResponses.
+ * Form titles drift; also accept any answer that looks like a URL.
+ */
+function extractOptionalLink_(e, named) {
+  var fromNamed = namedValuesFirst(named, OPTIONAL_LINK_TITLES);
+  if (fromNamed) return fromNamed;
+
+  var keys = Object.keys(named || {});
+  for (var k = 0; k < keys.length; k++) {
+    var value = first(named[keys[k]]);
+    if (looksLikeUrl_(value)) return value;
+  }
+
+  try {
+    var response = e && e.response;
+    if (response && response.getItemResponses) {
+      var items = response.getItemResponses();
+      for (var i = 0; i < items.length; i++) {
+        var title = String(items[i].getItem().getTitle() || "");
+        var lower = title.toLowerCase();
+        var answerText = first(items[i].getResponse());
+        if (!answerText) continue;
+        if (
+          lower.indexOf("linkedin") >= 0 ||
+          lower.indexOf("portfolio") >= 0 ||
+          lower.indexOf("website") >= 0 ||
+          lower.indexOf("optional link") >= 0 ||
+          looksLikeUrl_(answerText)
+        ) {
+          // Skip email / name / bio paragraphs unless they are clearly a URL.
+          if (lower === "email" || lower === "full name" || lower === "bio" || lower === "role") {
+            continue;
+          }
+          if (
+            lower.indexOf("linkedin") >= 0 ||
+            lower.indexOf("portfolio") >= 0 ||
+            lower.indexOf("website") >= 0 ||
+            lower.indexOf("optional link") >= 0 ||
+            looksLikeUrl_(answerText)
+          ) {
+            return answerText;
+          }
+        }
+      }
+    }
+  } catch (err) {
+    Logger.log("extractOptionalLink_ itemResponses: " + err);
+  }
+  return "";
+}
+
+function looksLikeUrl_(value) {
+  var v = String(value || "").trim();
+  if (!v || v.length > 300) return false;
+  // Whole-field URL only (avoid matching a bio that mentions a site).
+  if (/\s/.test(v)) return false;
+  if (/linkedin\.com/i.test(v)) return true;
+  if (/^https?:\/\//i.test(v)) return true;
+  if (/^www\./i.test(v)) return true;
+  return false;
+}
+
 function logNamedKeys_(named) {
   try {
     Logger.log("Form titles: " + Object.keys(named || {}).join(" | "));
@@ -450,12 +514,14 @@ function applyOptionalLink_(person, rawUrl) {
   var url = normalizeUrl_(rawUrl);
   if (!url) return;
   person.links = person.links || {};
+  Logger.log("Optional link captured: " + url);
   if (/linkedin\.com/i.test(url)) {
     person.links.linkedin = url;
-    delete person.links.website;
+    if (person.links.website && /linkedin\.com/i.test(person.links.website)) {
+      delete person.links.website;
+    }
   } else {
     person.links.website = url;
-    delete person.links.linkedin;
   }
 }
 

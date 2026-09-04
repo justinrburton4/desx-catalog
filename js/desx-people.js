@@ -122,18 +122,39 @@
     }
   }
 
-  function photoUrl(person, data, assetBase) {
-    var file = person && person.photo ? String(person.photo).replace(/^\/+/, "") : "";
-    var placeholder = (data && data.placeholder) || DEFAULT_PLACEHOLDER;
-    var name = file || placeholder;
-    var base = String(assetBase || "").replace(/\/$/, "");
-    return base + "/people/photos/" + name;
+  function photoBase(assetBase) {
+    return String(assetBase || "").replace(/\/$/, "") + "/people/photos/";
   }
 
   function placeholderUrl(data, assetBase) {
     var placeholder = (data && data.placeholder) || DEFAULT_PLACEHOLDER;
-    var base = String(assetBase || "").replace(/\/$/, "");
-    return base + "/people/photos/" + placeholder;
+    return photoBase(assetBase) + placeholder;
+  }
+
+  /** Prefer JSON photo, then {id}.jpg / {id}.png, then placeholder — no JSON edit needed for new files. */
+  function photoCandidates(person, data, assetBase) {
+    var base = photoBase(assetBase);
+    var placeholder = (data && data.placeholder) || DEFAULT_PLACEHOLDER;
+    var id = person && person.id ? String(person.id).replace(/^\/+/, "") : "";
+    var seen = {};
+    var out = [];
+    function push(name) {
+      var n = String(name || "").replace(/^\/+/, "");
+      if (!n || seen[n]) return;
+      seen[n] = true;
+      out.push(base + n);
+    }
+    if (person && person.photo) push(person.photo);
+    if (id) {
+      push(id + ".jpg");
+      push(id + ".png");
+    }
+    push(placeholder);
+    return out;
+  }
+
+  function photoUrl(person, data, assetBase) {
+    return photoCandidates(person, data, assetBase)[0];
   }
 
   function visiblePeople(data) {
@@ -159,6 +180,10 @@
     return hay.indexOf(q) !== -1;
   }
 
+  function isLinkedInUrl(url) {
+    return /linkedin\.com/i.test(String(url || ""));
+  }
+
   function linkList(person) {
     var links = (person && person.links) || {};
     var bits = [];
@@ -170,27 +195,32 @@
           "Email</a>"
       );
     }
-    if (links.linkedin) {
+    var urls = [];
+    var seen = {};
+    function addUrl(raw) {
+      var url = String(raw || "").trim();
+      if (!url || seen[url]) return;
+      seen[url] = true;
+      urls.push(url);
+    }
+    addUrl(links.linkedin);
+    addUrl(links.website);
+    urls.forEach(function (url) {
+      var label = isLinkedInUrl(url) ? "LinkedIn" : "Website";
       bits.push(
         '<a href="' +
-          escapeHtml(links.linkedin) +
-          '" target="_blank" rel="noopener" onclick="event.stopPropagation()">LinkedIn</a>'
+          escapeHtml(url) +
+          '" target="_blank" rel="noopener" onclick="event.stopPropagation()">' +
+          label +
+          "</a>"
       );
-    }
-    if (links.website) {
-      bits.push(
-        '<a href="' +
-          escapeHtml(links.website) +
-          '" target="_blank" rel="noopener" onclick="event.stopPropagation()">Website</a>'
-      );
-    }
+    });
     if (!bits.length) return "";
     return '<div class="desx-person-links">' + bits.join("") + "</div>";
   }
 
   function personCardHtml(person, data, assetBase) {
-    var src = photoUrl(person, data, assetBase);
-    var fallback = placeholderUrl(data, assetBase);
+    var candidates = photoCandidates(person, data, assetBase);
     return (
       '<button type="button" class="desx-person-card" data-person-id="' +
       escapeHtml(person.id) +
@@ -199,9 +229,9 @@
       '">' +
       '<div class="desx-person-photo">' +
       '<img src="' +
-      escapeHtml(src) +
-      '" alt="" loading="lazy" data-fallback="' +
-      escapeHtml(fallback) +
+      escapeHtml(candidates[0]) +
+      '" alt="" loading="lazy" data-photo-fallbacks="' +
+      escapeHtml(candidates.slice(1).join("|")) +
       '" />' +
       "</div>" +
       '<h3 class="desx-person-name">' +
@@ -304,11 +334,22 @@
   }
 
   function bindFallbacks(root) {
-    var imgs = root.querySelectorAll("img[data-fallback]");
+    var imgs = root.querySelectorAll("img[data-photo-fallbacks], img[data-fallback]");
     Array.prototype.forEach.call(imgs, function (img) {
+      if (img.getAttribute("data-photo-bound")) return;
+      img.setAttribute("data-photo-bound", "1");
       img.addEventListener("error", function () {
-        var fb = img.getAttribute("data-fallback");
-        if (fb && img.src !== fb) img.src = fb;
+        var chain = (img.getAttribute("data-photo-fallbacks") || "").split("|").filter(Boolean);
+        var legacy = img.getAttribute("data-fallback");
+        if (legacy) chain.push(legacy);
+        while (chain.length) {
+          var next = chain.shift();
+          img.setAttribute("data-photo-fallbacks", chain.join("|"));
+          if (next && img.src !== next) {
+            img.src = next;
+            return;
+          }
+        }
       });
     });
   }
@@ -320,8 +361,12 @@
     qs(modal, ".desx-people-modal-title").textContent = person.title;
     qs(modal, ".desx-people-modal-bio").textContent = person.bio || "";
     var img = qs(modal, ".desx-people-modal-photo img");
-    img.src = photoUrl(person, data, assetBase);
-    img.setAttribute("data-fallback", placeholderUrl(data, assetBase));
+    var candidates = photoCandidates(person, data, assetBase);
+    img.removeAttribute("data-photo-bound");
+    img.src = candidates[0];
+    img.setAttribute("data-photo-fallbacks", candidates.slice(1).join("|"));
+    img.removeAttribute("data-fallback");
+    bindFallbacks(modal);
     qs(modal, ".desx-people-modal-links").innerHTML = linkList(person);
     modal.hidden = false;
     document.body.style.overflow = "hidden";
