@@ -42,7 +42,8 @@
       "group": "directors",
       "status": "current",
       "order": 1,
-      "bio": "?Pure and simple, I love to create things.? Chris is a professor of mechanical engineering at Brigham Young University and performs research in engineering for global development. The research Chris performs has led to products like the Village Drill and World Cart. Chris has also been the recipient of the Presidential Early Career Award for Scientists and Engineers, as well as the National Science Foundation CAREER award."
+      "bio": "?Pure and simple, I love to create things.? Chris is a professor of mechanical engineering at Brigham Young University and performs research in engineering for global development. The research Chris performs has led to products like the Village Drill and World Cart. Chris has also been the recipient of the Presidential Early Career Award for Scientists and Engineers, as well as the National Science Foundation CAREER award.",
+      "photo": "chris-mattson.jpg"
     },
     {
       "id": "john-salmon",
@@ -51,7 +52,8 @@
       "group": "directors",
       "status": "current",
       "order": 2,
-      "bio": "Although not a student, John is a student of design ? there is always more to learn and apply. John is an assistant professor of mechanical engineering at Brigham Young University. His research interests include systems engineering, design, and integration, multi-disciplinary optimization, operations research, visual and data analytics, modeling and simulation, multi-agent multi-objective decision making, sports analytics, virtual reality, and uncertainty analysis. He thinks innovation and creativity are the highest forms of intelligence and he believes design is at the core of making the world and oneself better."
+      "bio": "Although not a student, John is a student of design ? there is always more to learn and apply. John is an assistant professor of mechanical engineering at Brigham Young University. His research interests include systems engineering, design, and integration, multi-disciplinary optimization, operations research, visual and data analytics, modeling and simulation, multi-agent multi-objective decision making, sports analytics, virtual reality, and uncertainty analysis. He thinks innovation and creativity are the highest forms of intelligence and he believes design is at the core of making the world and oneself better.",
+      "photo": "john-salmon.jpg"
     },
     {
       "id": "tevin-dickerson",
@@ -60,7 +62,8 @@
       "group": "phd",
       "status": "current",
       "order": 1,
-      "bio": "Tevin is a PhD candidate in mechanical engineering. He's from Cottonwood Heights, UT and is emphasizing in aerospace. On the team, he has worked on the airship project and traveling salesman. He likes to waterski and rock climb as well. His thoughts on engineering are, ?to make the impossible, possible?."
+      "bio": "Tevin is a PhD candidate in mechanical engineering. He's from Cottonwood Heights, UT and is emphasizing in aerospace. On the team, he has worked on the airship project and traveling salesman. He likes to waterski and rock climb as well. His thoughts on engineering are, ?to make the impossible, possible?.",
+      "photo": "tevin-dickerson.jpg"
     },
     {
       "id": "samuel-mckinnon",
@@ -69,7 +72,8 @@
       "group": "phd",
       "status": "current",
       "order": 2,
-      "bio": "Samuel is a PhD candidate researching graph based social impact diffusion ? a modeling method that can estimate the social impacts that engineered products or systems have on society. He is a past editor of the BYU Design Review and has worked on engineering projects in Peru, Ecuador, Bolivia, and Brazil. Upon completing his PhD, he hopes to be a mechanical engineering professor and continue researching engineering for sustainable development."
+      "bio": "Samuel is a PhD candidate researching graph based social impact diffusion ? a modeling method that can estimate the social impacts that engineered products or systems have on society. He is a past editor of the BYU Design Review and has worked on engineering projects in Peru, Ecuador, Bolivia, and Brazil. Upon completing his PhD, he hopes to be a mechanical engineering professor and continue researching engineering for sustainable development.",
+      "photo": "samuel-mckinnon.jpg"
     },
     {
       "id": "scott-rice",
@@ -78,7 +82,8 @@
       "group": "phd",
       "status": "current",
       "order": 3,
-      "bio": "Scott Rice is a PhD student in mechanical engineering and ten-year veteran of the U.S Army where he served as an Engineer Officer. He is currently researching methods to help people make the best decisions possible early in the design process. Scott believes strongly in helping others turn their new ideas into useful products that function well. \"Many people have great ideas, but few know how to make them work well in reality. I want to help them achieve that.\""
+      "bio": "Scott Rice is a PhD student in mechanical engineering and ten-year veteran of the U.S Army where he served as an Engineer Officer. He is currently researching methods to help people make the best decisions possible early in the design process. Scott believes strongly in helping others turn their new ideas into useful products that function well. \"Many people have great ideas, but few know how to make them work well in reality. I want to help them achieve that.\"",
+      "photo": "scott-rice.png"
     },
     {
       "id": "jacob-broadbent",
@@ -96,7 +101,8 @@
       "group": "masters",
       "status": "current",
       "order": 2,
-      "bio": "Tyson is currently pursuing a Master's degree in Mechanical Engineering, focusing primarily on studying product architecture methods. He completed his undergraduate studies in Mechanical Engineering at BYU. His career goal is to secure a product design/development position focused on creating direct-to-consumer products. Tyson finds solace in the support of his wife, who serves as his biggest advocate. In his free time, Tyson can be found exploring the great outdoors hiking, engaging in intramural football matches, or channeling his creativity through 3D-printing and painting costume pieces. With a diverse range of interests and a dedication to excellence, Tyson is poised to make a significant impact in the field of mechanical engineering."
+      "bio": "Tyson is currently pursuing a Master's degree in Mechanical Engineering, focusing primarily on studying product architecture methods. He completed his undergraduate studies in Mechanical Engineering at BYU. His career goal is to secure a product design/development position focused on creating direct-to-consumer products. Tyson finds solace in the support of his wife, who serves as his biggest advocate. In his free time, Tyson can be found exploring the great outdoors hiking, engaging in intramural football matches, or channeling his creativity through 3D-printing and painting costume pieces. With a diverse range of interests and a dedication to excellence, Tyson is poised to make a significant impact in the field of mechanical engineering.",
+      "photo": "tyson-humphrey.png"
     },
     {
       "id": "thomas-geilman",
@@ -105,7 +111,8 @@
       "group": "undergraduate",
       "status": "current",
       "order": 1,
-      "bio": "Thomas is an undergraduate student in mechanical engineering. He loves learning, which has led to interests and hobbies including 3D printing, reading, and welding as he constantly tries learning new skills. He helped with the cassava peeler project and is excited to continue his work in the lab. He says, ?I love how engineering design combines empathy and knowledge to help people around the world. One of my main goals in life is to use my skills to help others, and engineering helps me achieve this goal?."
+      "bio": "Thomas is an undergraduate student in mechanical engineering. He loves learning, which has led to interests and hobbies including 3D printing, reading, and welding as he constantly tries learning new skills. He helped with the cassava peeler project and is excited to continue his work in the lab. He says, ?I love how engineering design combines empathy and knowledge to help people around the world. One of my main goals in life is to use my skills to help others, and engineering helps me achieve this goal?.",
+      "photo": "thomas-geilman.jpg"
     },
     {
       "id": "benjamin-sannar",
@@ -114,7 +121,8 @@
       "group": "undergraduate",
       "status": "current",
       "order": 2,
-      "bio": "Benjamin Sannar is a Mechanical Engineering student from Northern California. He grew up inspired by a heritage of ingenuity and surrounded by the processes that put fruit and vegetables onto tables around the world. ?I love noticing the little things that would make life better and finding a way to set them in motion.? Outside of the lab and school, Ben is a commercial driver and enjoys home-improvement projects, the great outdoors and drawing."
+      "bio": "Benjamin Sannar is a Mechanical Engineering student from Northern California. He grew up inspired by a heritage of ingenuity and surrounded by the processes that put fruit and vegetables onto tables around the world. ?I love noticing the little things that would make life better and finding a way to set them in motion.? Outside of the lab and school, Ben is a commercial driver and enjoys home-improvement projects, the great outdoors and drawing.",
+      "photo": "benjamin-sannar.jpg"
     },
     {
       "id": "henry-wooley",
