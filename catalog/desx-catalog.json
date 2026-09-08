@@ -120,26 +120,6 @@
     },
     {
       "kind": "research",
-      "id": "product-development-principles-and-tools-for-creating-desirable-and-transferable-designs",
-      "title": "Product Development: Principles and Tools for Creating Desirable and Transferable Designs",
-      "abstract": "A textbook on product development principles and tools for creating desirable and transferable designs.",
-      "badge": "whitepaper",
-      "categories": [
-        "Other"
-      ],
-      "year": 2020,
-      "authors": [
-        "Mattson, C. A.",
-        "Sorensen, C. D."
-      ],
-      "hidden": false,
-      "citationCount": 107,
-      "citationSource": "google-scholar",
-      "citationsUpdatedAt": "2026-09-08",
-      "publisherUrl": "https://doi.org/10.1007/978-3-030-14899-7"
-    },
-    {
-      "kind": "research",
       "id": "development-of-commercially-viable-compliant-mechanisms-using-the-pseudo-rigid-body-model",
       "title": "Development of Commercially Viable Compliant Mechanisms Using the                Pseudo-Rigid-Body Model: Case Studies of Parallel Mechanisms",
       "abstract": "Analysis and synthesis of compliant mechanisms has recently been the subject of significant study in the research community. This focus has led to a number of design approaches for developing compliant mechanisms.",

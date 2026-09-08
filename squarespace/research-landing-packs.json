@@ -204,48 +204,6 @@
     "bibtex": "@article{mattson2003concept,\n  author    = {Mattson, Christopher A. and Messac, Achille},\n  title     = {Concept Selection Using s-Pareto Frontiers},\n  journal   = {AIAA Journal},\n  volume    = {41},\n  number    = {6},\n  pages     = {1190},\n  year      = {2003},\n  publisher = {American Institute of Aeronautics and Astronautics (AIAA)},\n  doi       = {10.2514/2.2063}\n}"
   },
   {
-    "id": "product-development-principles-and-tools-for-creating-desirable-and-transferable-designs",
-    "slug": "/product-development-principles-and-tools-for-creating-desirable-and-transferable-designs",
-    "title": "Product Development: Principles and Tools for Creating Desirable and Transferable Designs",
-    "catalog_title": "Product Development: Principles and Tools for Creating Desirable and Transferable Designs",
-    "abstract": "A textbook on product development principles and tools for creating desirable and transferable designs.",
-    "abstract_source": "catalog",
-    "publisher_url": "https://doi.org/10.1007/978-3-030-14899-7",
-    "badge": "whitepaper",
-    "categories": [
-      "Other"
-    ],
-    "hidden": false,
-    "scholar_citations": 107,
-    "resolved_title": "Product Development: Principles and Tools for Creating Desirable and Transferable Designs",
-    "journal": "",
-    "year": 2020,
-    "volume": "",
-    "issue": "",
-    "page": "",
-    "doi": "10.1007/978-3-030-14899-7",
-    "authors_resolved": [
-      {
-        "family": "Mattson",
-        "given": "Christopher A."
-      },
-      {
-        "family": "Sorensen",
-        "given": "Carl D."
-      }
-    ],
-    "notes": [
-      "Non-journal / incomplete venue metadata."
-    ],
-    "apa": "Mattson, C. A. & Sorensen, C. D. (2020). Product Development. https://doi.org/10.1007/978-3-030-14899-7",
-    "mla": "Mattson, Christopher A., and Carl D. Sorensen. \"Product Development.\" 2020. https://doi.org/10.1007/978-3-030-14899-7.",
-    "chicago_author_date": "Mattson, Christopher A. and Carl D. Sorensen. 2020. \"Product Development.\" https://doi.org/10.1007/978-3-030-14899-7.",
-    "chicago_bibliography": "Mattson, Christopher A. and Carl D. Sorensen. \"Product Development.\" https://doi.org/10.1007/978-3-030-14899-7.",
-    "chicago_footnote": "Christopher A. Mattson and Carl D. Sorensen, \"Product Development,\", https://doi.org/10.1007/978-3-030-14899-7.",
-    "ieee": "C. A. Mattson and C. D. Sorensen, \"Product Development,\" doi: 10.1007/978-3-030-14899-7.",
-    "bibtex": "@misc{mattson2020product,\n  author    = {Mattson, Christopher A. and Sorensen, Carl D.},\n  title     = {Product Development},\n  year      = {2020},\n  url       = {https://doi.org/10.1007/978-3-030-14899-7}\n}"
-  },
-  {
     "id": "development-of-commercially-viable-compliant-mechanisms-using-the-pseudo-rigid-body-model",
     "slug": "/development-of-commercially-viable-compliant-mechanisms-using-the-pseudo-rigid-body-model",
     "title": "Development of Commercially Viable Compliant Mechanisms Using the                Pseudo-Rigid-Body Model: Case Studies of Parallel Mechanisms",

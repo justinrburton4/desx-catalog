@@ -72,6 +72,14 @@ def guess_category(title: str, venue: str) -> str:
     return "Systems & Product Architecture"
 
 
+def is_book(title: str, venue: str, msg: dict | None) -> bool:
+    typ = ((msg or {}).get("type") or "").lower()
+    if "book" in typ or "monograph" in typ:
+        return True
+    hay = f"{title} {venue}".lower()
+    return "principles and tools for creating desirable" in hay
+
+
 def guess_badge(msg: dict | None, venue: str) -> str:
     typ = ((msg or {}).get("type") or "").lower()
     if "book" in typ or "monograph" in typ:
@@ -205,8 +213,14 @@ def main() -> None:
 
     for idx, p in enumerate(missing, 1):
         print(f"\n[{idx}/{len(missing)}] {p['title'][:80]}")
+        if is_book(p["title"], p.get("venue") or "", None):
+            print("  skip book")
+            continue
         msg = crossref_search_title(p["title"])
         time.sleep(0.35)
+        if is_book(p["title"], p.get("venue") or "", msg):
+            print("  skip book (Crossref type)")
+            continue
         doi = (msg or {}).get("DOI")
         if doi:
             # Prefer full work record

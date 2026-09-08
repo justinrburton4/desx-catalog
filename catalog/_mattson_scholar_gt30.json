@@ -1,34 +1,219 @@
 [
-  {"title": "The normalized normal constraint method for generating the Pareto frontier", "cited": 1072, "year": 2003, "authors": "A Messac, A Ismail-Yahaya, CA Mattson", "venue": "Structural and multidisciplinary optimization 25 (2), 86-98, 2003"},
-  {"title": "Normal constraint method with guarantee of even representation of complete Pareto frontier", "cited": 378, "year": 2004, "authors": "A Messac, CA Mattson", "venue": "AIAA journal 42 (10), 2101-2111, 2004"},
-  {"title": "Generating well-distributed sets of Pareto points for engineering design using physical programming", "cited": 323, "year": 2002, "authors": "A Messac, CA Mattson", "venue": "Optimization and Engineering 3 (4), 431-450, 2002"},
-  {"title": "Pareto frontier based concept selection under uncertainty, with visualization", "cited": 292, "year": 2005, "authors": "CA Mattson, A Messac", "venue": "Optimization and Engineering 6 (1), 85-115, 2005"},
-  {"title": "Smart Pareto filter: Obtaining a minimal representation of multiobjective design space", "cited": 219, "year": 2004, "authors": "CA Mattson, AA Mullur, A Messac", "venue": "Engineering Optimization 36 (6), 721-740, 2004"},
-  {"title": "Concept selection using s-Pareto frontiers", "cited": 181, "year": 2003, "authors": "CA Mattson, A Messac", "venue": "AIAA journal 41 (6), 1190-1198, 2003"},
-  {"title": "Nine principles for design for the developing world as derived from the engineering literature", "cited": 167, "year": 2014, "authors": "CA Mattson, AE Wood", "venue": "Journal of Mechanical Design 136 (12), 121403, 2014"},
-  {"title": "Design for the developing world: Common pitfalls and how to avoid them", "cited": 116, "year": 2016, "authors": "AE Wood, CA Mattson", "venue": "Journal of Mechanical Design 138 (3), 031101, 2016"},
-  {"title": "Product development: principles and tools for creating desirable and transferable designs", "cited": 107, "year": 2019, "authors": "CA Mattson, CD Sorensen", "venue": "Springer Nature, 2019"},
-  {"title": "The social impacts of products: a review", "cited": 84, "year": 2018, "authors": "M Rainock, D Everett, A Pack, EC Dahlin, CA Mattson", "venue": "Impact assessment and project appraIsal 36 (3), 230-241, 2018"},
-  {"title": "Development of commercially viable compliant mechanisms using the pseudo-rigid-body model: case studies of parallel mechanisms", "cited": 80, "year": 2004, "authors": "CA Mattson, LL Howell, SP Magleby", "venue": "Journal of intelligent material systems and structures 15 (3), 195-202, 2004"},
-  {"title": "A model for quantifying system evolvability based on excess and capacity", "cited": 65, "year": 2014, "authors": "MWP Tackett, CA Mattson, SM Ferguson", "venue": "Journal of Mechanical Design 136 (5), 051002, 2014"},
-  {"title": "Propagating skewness and kurtosis through engineering models for low-cost, meaningful, nondeterministic design", "cited": 62, "year": 2012, "authors": "TV Anderson, CA Mattson", "venue": ""},
-  {"title": "The fundamentals of barriers to reverse engineering and their implementation into mechanical components", "cited": 57, "year": 2011, "authors": "SK Curtis, SP Harston, CA Mattson", "venue": "Research in Engineering Design 22 (4), 245-261, 2011"},
-  {"title": "Configuration selection, modeling, and preliminary testing in support of constant force electrical connectors", "cited": 57, "year": 2007, "authors": "BL Weight, CA Mattson, SP Magleby, LL Howell", "venue": ""},
-  {"title": "The personification of big data", "cited": 53, "year": 2019, "authors": "PD Stevenson, CA Mattson", "venue": "Proceedings of the design society: international conference on engineering design, 2019"},
-  {"title": "Advancing sustainable development: emerging factors and futures for the engineering field", "cited": 51, "year": 2023, "authors": "G Burleson, J Lajoie, C Mabey, P Sours, J Ventrella, E Peiffer, E Stine, et al.", "venue": "Sustainability 15 (10), 7869, 2023"},
-  {"title": "Toward a universal social impact metric for engineered products that alleviate poverty", "cited": 51, "year": 2018, "authors": "PD Stevenson, CA Mattson, KM Bryden, NA MacCarty", "venue": "Journal of Mechanical Design 140 (4), 041404, 2018"},
-  {"title": "Balancing technical and user objectives in the redesign of a peruvian cookstove", "cited": 51, "year": 2017, "authors": "KS Thacker, KMC Barger, CA Mattson", "venue": "Development Engineering 2, 12-19, 2017"},
-  {"title": "The influence of product modularity during concept selection of consumer products", "cited": 51, "year": 2001, "authors": "CA Mattson, SP Magleby", "venue": "International Design Engineering Technical Conferences and Computers and Information in Engineering Conference, 2001"},
-  {"title": "Quantifying the effects of various factors on the utility of design ethnography in the developing world", "cited": 46, "year": 2019, "authors": "AE Wood, CA Mattson", "venue": "Research in Engineering Design 30 (3), 317-338, 2019"},
-  {"title": "A global review of end user needs: Establishing the need for adaptable cookstoves", "cited": 46, "year": 2014, "authors": "KS Thacker, MC Barger, CA Mattson", "venue": "IEEE Global Humanitarian Technology Conference (GHTC 2014), 649-658, 2014"},
-  {"title": "A differentially driven flapping wing mechanism for force analysis and trajectory optimization", "cited": 43, "year": 2012, "authors": "RB George, MB Colton, CA Mattson, SL Thomson", "venue": "International journal of micro air vehicles 4 (1), 31-49, 2012"},
-  {"title": "Social impact in product design, an exploration of current industry practices", "cited": 42, "year": 2020, "authors": "AT Pack, E Rose Phipps, CA Mattson, EC Dahlin", "venue": "Journal of Mechanical Design 142 (7), 071702, 2020"},
-  {"title": "Why the developing world needs mechanical design", "cited": 42, "year": 2016, "authors": "CA Mattson, AG Winter", "venue": "Journal of Mechanical Design 138 (7), 070301, 2016"},
-  {"title": "Linear physical programming for production planning optimization", "cited": 42, "year": 2003, "authors": "A Maria, C Mattson, A Ismail-Yahaya, A Messac", "venue": "Engineering Optimization 35 (1), 19-37, 2003"},
-  {"title": "New decision matrix based approach for concept selection using linear physical programming", "cited": 41, "year": 2003, "authors": "A Mullur, C Mattson, A Messac", "venue": "44th AIAA/ASME/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference, 2003"},
-  {"title": "Using a product’s sustainability space as a design exploration tool", "cited": 40, "year": 2019, "authors": "CA Mattson, AT Pack, V Lofthouse, T Bhamra", "venue": "Design Science 5, e1, 2019"},
-  {"title": "The smart normal constraint method for directly generating a smart Pareto set", "cited": 38, "year": 2013, "authors": "BJ Hancock, CA Mattson", "venue": "Structural and Multidisciplinary Optimization 48 (4), 763-775, 2013"},
-  {"title": "Optimization of near-constant force springs subject to mating uncertainty", "cited": 34, "year": 2010, "authors": "JC Meaders, CA Mattson", "venue": "Structural and multidisciplinary optimization 41 (1), 1-15, 2010"},
-  {"title": "Minimal representation of multiobjective design space using a smart Pareto filter", "cited": 33, "year": 2002, "authors": "C Mattson, A Mullur, A Messac", "venue": "9th AIAA/ISSMO Symposium on Multidisciplinary Analysis and Optimization, 5458, 2002"},
-  {"title": "Pitfalls of the typical construction of decision matrices for concept selection", "cited": 31, "year": 2003, "authors": "A Mullur, C Mattson, A Messac", "venue": "41st aerospace sciences meeting and exhibit, 466, 2003"}
+  {
+    "title": "The normalized normal constraint method for generating the Pareto frontier",
+    "cited": 1072,
+    "year": 2003,
+    "authors": "A Messac, A Ismail-Yahaya, CA Mattson",
+    "venue": "Structural and multidisciplinary optimization 25 (2), 86-98, 2003"
+  },
+  {
+    "title": "Normal constraint method with guarantee of even representation of complete Pareto frontier",
+    "cited": 378,
+    "year": 2004,
+    "authors": "A Messac, CA Mattson",
+    "venue": "AIAA journal 42 (10), 2101-2111, 2004"
+  },
+  {
+    "title": "Generating well-distributed sets of Pareto points for engineering design using physical programming",
+    "cited": 323,
+    "year": 2002,
+    "authors": "A Messac, CA Mattson",
+    "venue": "Optimization and Engineering 3 (4), 431-450, 2002"
+  },
+  {
+    "title": "Pareto frontier based concept selection under uncertainty, with visualization",
+    "cited": 292,
+    "year": 2005,
+    "authors": "CA Mattson, A Messac",
+    "venue": "Optimization and Engineering 6 (1), 85-115, 2005"
+  },
+  {
+    "title": "Smart Pareto filter: Obtaining a minimal representation of multiobjective design space",
+    "cited": 219,
+    "year": 2004,
+    "authors": "CA Mattson, AA Mullur, A Messac",
+    "venue": "Engineering Optimization 36 (6), 721-740, 2004"
+  },
+  {
+    "title": "Concept selection using s-Pareto frontiers",
+    "cited": 181,
+    "year": 2003,
+    "authors": "CA Mattson, A Messac",
+    "venue": "AIAA journal 41 (6), 1190-1198, 2003"
+  },
+  {
+    "title": "Nine principles for design for the developing world as derived from the engineering literature",
+    "cited": 167,
+    "year": 2014,
+    "authors": "CA Mattson, AE Wood",
+    "venue": "Journal of Mechanical Design 136 (12), 121403, 2014"
+  },
+  {
+    "title": "Design for the developing world: Common pitfalls and how to avoid them",
+    "cited": 116,
+    "year": 2016,
+    "authors": "AE Wood, CA Mattson",
+    "venue": "Journal of Mechanical Design 138 (3), 031101, 2016"
+  },
+  {
+    "title": "The social impacts of products: a review",
+    "cited": 84,
+    "year": 2018,
+    "authors": "M Rainock, D Everett, A Pack, EC Dahlin, CA Mattson",
+    "venue": "Impact assessment and project appraIsal 36 (3), 230-241, 2018"
+  },
+  {
+    "title": "Development of commercially viable compliant mechanisms using the pseudo-rigid-body model: case studies of parallel mechanisms",
+    "cited": 80,
+    "year": 2004,
+    "authors": "CA Mattson, LL Howell, SP Magleby",
+    "venue": "Journal of intelligent material systems and structures 15 (3), 195-202, 2004"
+  },
+  {
+    "title": "A model for quantifying system evolvability based on excess and capacity",
+    "cited": 65,
+    "year": 2014,
+    "authors": "MWP Tackett, CA Mattson, SM Ferguson",
+    "venue": "Journal of Mechanical Design 136 (5), 051002, 2014"
+  },
+  {
+    "title": "Propagating skewness and kurtosis through engineering models for low-cost, meaningful, nondeterministic design",
+    "cited": 62,
+    "year": 2012,
+    "authors": "TV Anderson, CA Mattson",
+    "venue": ""
+  },
+  {
+    "title": "The fundamentals of barriers to reverse engineering and their implementation into mechanical components",
+    "cited": 57,
+    "year": 2011,
+    "authors": "SK Curtis, SP Harston, CA Mattson",
+    "venue": "Research in Engineering Design 22 (4), 245-261, 2011"
+  },
+  {
+    "title": "Configuration selection, modeling, and preliminary testing in support of constant force electrical connectors",
+    "cited": 57,
+    "year": 2007,
+    "authors": "BL Weight, CA Mattson, SP Magleby, LL Howell",
+    "venue": ""
+  },
+  {
+    "title": "The personification of big data",
+    "cited": 53,
+    "year": 2019,
+    "authors": "PD Stevenson, CA Mattson",
+    "venue": "Proceedings of the design society: international conference on engineering design, 2019"
+  },
+  {
+    "title": "Advancing sustainable development: emerging factors and futures for the engineering field",
+    "cited": 51,
+    "year": 2023,
+    "authors": "G Burleson, J Lajoie, C Mabey, P Sours, J Ventrella, E Peiffer, E Stine, et al.",
+    "venue": "Sustainability 15 (10), 7869, 2023"
+  },
+  {
+    "title": "Toward a universal social impact metric for engineered products that alleviate poverty",
+    "cited": 51,
+    "year": 2018,
+    "authors": "PD Stevenson, CA Mattson, KM Bryden, NA MacCarty",
+    "venue": "Journal of Mechanical Design 140 (4), 041404, 2018"
+  },
+  {
+    "title": "Balancing technical and user objectives in the redesign of a peruvian cookstove",
+    "cited": 51,
+    "year": 2017,
+    "authors": "KS Thacker, KMC Barger, CA Mattson",
+    "venue": "Development Engineering 2, 12-19, 2017"
+  },
+  {
+    "title": "The influence of product modularity during concept selection of consumer products",
+    "cited": 51,
+    "year": 2001,
+    "authors": "CA Mattson, SP Magleby",
+    "venue": "International Design Engineering Technical Conferences and Computers and Information in Engineering Conference, 2001"
+  },
+  {
+    "title": "Quantifying the effects of various factors on the utility of design ethnography in the developing world",
+    "cited": 46,
+    "year": 2019,
+    "authors": "AE Wood, CA Mattson",
+    "venue": "Research in Engineering Design 30 (3), 317-338, 2019"
+  },
+  {
+    "title": "A global review of end user needs: Establishing the need for adaptable cookstoves",
+    "cited": 46,
+    "year": 2014,
+    "authors": "KS Thacker, MC Barger, CA Mattson",
+    "venue": "IEEE Global Humanitarian Technology Conference (GHTC 2014), 649-658, 2014"
+  },
+  {
+    "title": "A differentially driven flapping wing mechanism for force analysis and trajectory optimization",
+    "cited": 43,
+    "year": 2012,
+    "authors": "RB George, MB Colton, CA Mattson, SL Thomson",
+    "venue": "International journal of micro air vehicles 4 (1), 31-49, 2012"
+  },
+  {
+    "title": "Social impact in product design, an exploration of current industry practices",
+    "cited": 42,
+    "year": 2020,
+    "authors": "AT Pack, E Rose Phipps, CA Mattson, EC Dahlin",
+    "venue": "Journal of Mechanical Design 142 (7), 071702, 2020"
+  },
+  {
+    "title": "Why the developing world needs mechanical design",
+    "cited": 42,
+    "year": 2016,
+    "authors": "CA Mattson, AG Winter",
+    "venue": "Journal of Mechanical Design 138 (7), 070301, 2016"
+  },
+  {
+    "title": "Linear physical programming for production planning optimization",
+    "cited": 42,
+    "year": 2003,
+    "authors": "A Maria, C Mattson, A Ismail-Yahaya, A Messac",
+    "venue": "Engineering Optimization 35 (1), 19-37, 2003"
+  },
+  {
+    "title": "New decision matrix based approach for concept selection using linear physical programming",
+    "cited": 41,
+    "year": 2003,
+    "authors": "A Mullur, C Mattson, A Messac",
+    "venue": "44th AIAA/ASME/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference, 2003"
+  },
+  {
+    "title": "Using a product’s sustainability space as a design exploration tool",
+    "cited": 40,
+    "year": 2019,
+    "authors": "CA Mattson, AT Pack, V Lofthouse, T Bhamra",
+    "venue": "Design Science 5, e1, 2019"
+  },
+  {
+    "title": "The smart normal constraint method for directly generating a smart Pareto set",
+    "cited": 38,
+    "year": 2013,
+    "authors": "BJ Hancock, CA Mattson",
+    "venue": "Structural and Multidisciplinary Optimization 48 (4), 763-775, 2013"
+  },
+  {
+    "title": "Optimization of near-constant force springs subject to mating uncertainty",
+    "cited": 34,
+    "year": 2010,
+    "authors": "JC Meaders, CA Mattson",
+    "venue": "Structural and multidisciplinary optimization 41 (1), 1-15, 2010"
+  },
+  {
+    "title": "Minimal representation of multiobjective design space using a smart Pareto filter",
+    "cited": 33,
+    "year": 2002,
+    "authors": "C Mattson, A Mullur, A Messac",
+    "venue": "9th AIAA/ISSMO Symposium on Multidisciplinary Analysis and Optimization, 5458, 2002"
+  },
+  {
+    "title": "Pitfalls of the typical construction of decision matrices for concept selection",
+    "cited": 31,
+    "year": 2003,
+    "authors": "A Mullur, C Mattson, A Messac",
+    "venue": "41st aerospace sciences meeting and exhibit, 466, 2003"
+  }
 ]
