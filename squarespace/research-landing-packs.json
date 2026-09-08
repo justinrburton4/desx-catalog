@@ -1,5 +1,49 @@
 [
   {
+    "id": "the-normalized-normal-constraint-method-for-generating-the-pareto-frontier",
+    "slug": "/the-normalized-normal-constraint-method-for-generating-the-pareto-frontier",
+    "title": "The normalized normal constraint method for generating the Pareto frontier",
+    "catalog_title": "The normalized normal constraint method for generating the Pareto frontier",
+    "abstract": "Introduces the normalized normal constraint method for generating evenly distributed Pareto frontiers in multiobjective optimization.",
+    "abstract_source": "catalog",
+    "publisher_url": "https://doi.org/10.1007/s00158-002-0276-1",
+    "badge": "journal",
+    "categories": [
+      "Systems & Product Architecture"
+    ],
+    "hidden": false,
+    "scholar_citations": 1072,
+    "resolved_title": "The normalized normal constraint method for generating the Pareto frontier",
+    "journal": "Structural and Multidisciplinary Optimization",
+    "year": 2003,
+    "volume": "25",
+    "issue": "2",
+    "page": "86",
+    "doi": "10.1007/s00158-002-0276-1",
+    "authors_resolved": [
+      {
+        "family": "Messac",
+        "given": "A."
+      },
+      {
+        "family": "Ismail-Yahaya",
+        "given": "A."
+      },
+      {
+        "family": "Mattson",
+        "given": "C.A."
+      }
+    ],
+    "notes": [],
+    "apa": "Messac, A., Ismail-Yahaya, A., & Mattson, C. A. (2003). The normalized normal constraint method for generating the Pareto frontier. Structural and Multidisciplinary Optimization, 25(2), 86. https://doi.org/10.1007/s00158-002-0276-1",
+    "mla": "Messac, A., et al.. \"The normalized normal constraint method for generating the Pareto frontier.\" Structural and Multidisciplinary Optimization, vol. 25, no. 2, 2003, p. 86, https://doi.org/10.1007/s00158-002-0276-1.",
+    "chicago_author_date": "Messac, A., A. Ismail-Yahaya, and C.A. Mattson. 2003. \"The normalized normal constraint method for generating the Pareto frontier.\" Structural and Multidisciplinary Optimization 25 (2): 86. https://doi.org/10.1007/s00158-002-0276-1.",
+    "chicago_bibliography": "Messac, A., A. Ismail-Yahaya, and C.A. Mattson. \"The normalized normal constraint method for generating the Pareto frontier.\" Structural and Multidisciplinary Optimization 25, no. 2 (2003): 86. https://doi.org/10.1007/s00158-002-0276-1.",
+    "chicago_footnote": "A. Messac, A. Ismail-Yahaya, and C.A. Mattson, \"The normalized normal constraint method for generating the Pareto frontier,\" Structural and Multidisciplinary Optimization 25, no. 2 (2003): 86, https://doi.org/10.1007/s00158-002-0276-1.",
+    "ieee": "A. Messac, A. Ismail-Yahaya, and C. A. Mattson, \"The normalized normal constraint method for generating the Pareto frontier,\" Structural and Multidisciplinary Optimization, vol. 25, no. 2, pp. 86, Jul. 2003, doi: 10.1007/s00158-002-0276-1.",
+    "bibtex": "@article{messac2003normalized,\n  author    = {Messac, A. and Ismail-Yahaya, A. and Mattson, C.A.},\n  title     = {The normalized normal constraint method for generating the Pareto frontier},\n  journal   = {Structural and Multidisciplinary Optimization},\n  volume    = {25},\n  number    = {2},\n  pages     = {86},\n  year      = {2003},\n  publisher = {Springer Science and Business Media LLC},\n  doi       = {10.1007/s00158-002-0276-1}\n}"
+  },
+  {
     "id": "normal-constraint-method-with-guarantee-of-even-representation-of-complete-pareto-frontier",
     "slug": "/normal-constraint-method-with-guarantee-of-even-representation-of-complete-pareto-frontier",
     "title": "Normal Constraint Method with Guarantee of Even Representation of Complete Pareto Frontier",
