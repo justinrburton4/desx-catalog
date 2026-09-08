@@ -18,6 +18,336 @@
   ],
   "items": [
     {
+      "kind": "research",
+      "id": "normal-constraint-method-with-guarantee-of-even-representation-of-complete-pareto-frontier",
+      "title": "Normal Constraint Method with Guarantee of Even Representation of Complete Pareto Frontier",
+      "abstract": "Presents research on normal Constraint Method with Guarantee of Even Representation of Complete Pareto Frontier.",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2004,
+      "authors": [
+        "Messac, A.",
+        "Mattson, C. A."
+      ],
+      "hidden": false,
+      "citationCount": 378,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.2514/1.8977"
+    },
+    {
+      "kind": "research",
+      "id": "generating-well-distributed-sets-of-pareto-points-for-engineering-design-using-physical-pr",
+      "title": "Generating Well-Distributed Sets of Pareto Points for Engineering Design Using Physical Programming",
+      "abstract": "Presents research on generating Well-Distributed Sets of Pareto Points for Engineering Design Using Physical Programming.",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2002,
+      "authors": [
+        "Messac, A.",
+        "Mattson, C. A."
+      ],
+      "hidden": false,
+      "citationCount": 323,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1023/a:1021179727569"
+    },
+    {
+      "kind": "research",
+      "id": "pareto-frontier-based-concept-selection-under-uncertainty-with-visualization",
+      "title": "Pareto Frontier Based Concept Selection Under Uncertainty, with Visualization",
+      "abstract": "Presents research on pareto Frontier Based Concept Selection Under Uncertainty, with Visualization.",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2005,
+      "authors": [
+        "Mattson, C. A.",
+        "Messac, A."
+      ],
+      "hidden": false,
+      "citationCount": 292,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1023/b:opte.0000048538.35456.45"
+    },
+    {
+      "kind": "research",
+      "id": "smart-pareto-filter-obtaining-a-minimal-representation-of-multiobjective-design-space",
+      "title": "Smart Pareto filter: obtaining a minimal representation of multiobjective design space",
+      "abstract": "Presents research on smart Pareto filter: obtaining a minimal representation of multiobjective design space.",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2004,
+      "authors": [
+        "Mattson, C. A.",
+        "Mullur, A. A.",
+        "Messac, A."
+      ],
+      "hidden": false,
+      "citationCount": 219,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1080/0305215042000274942"
+    },
+    {
+      "kind": "research",
+      "id": "concept-selection-using-s-pareto-frontiers",
+      "title": "Concept Selection Using s-Pareto Frontiers",
+      "abstract": "Presents research on concept Selection Using s-Pareto Frontiers.",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2003,
+      "authors": [
+        "Mattson, C. A.",
+        "Messac, A."
+      ],
+      "hidden": false,
+      "citationCount": 181,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.2514/2.2063"
+    },
+    {
+      "kind": "research",
+      "id": "product-development-principles-and-tools-for-creating-desirable-and-transferable-designs",
+      "title": "Product Development: Principles and Tools for Creating Desirable and Transferable Designs",
+      "abstract": "A textbook on product development principles and tools for creating desirable and transferable designs.",
+      "badge": "whitepaper",
+      "categories": [
+        "Other"
+      ],
+      "year": 2020,
+      "authors": [
+        "Mattson, C. A.",
+        "Sorensen, C. D."
+      ],
+      "hidden": false,
+      "citationCount": 107,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1007/978-3-030-14899-7"
+    },
+    {
+      "kind": "research",
+      "id": "development-of-commercially-viable-compliant-mechanisms-using-the-pseudo-rigid-body-model",
+      "title": "Development of Commercially Viable Compliant Mechanisms Using the                Pseudo-Rigid-Body Model: Case Studies of Parallel Mechanisms",
+      "abstract": "Analysis and synthesis of compliant mechanisms has recently been the subject of significant study in the research community. This focus has led to a number of design approaches for developing compliant mechanisms.",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2004,
+      "authors": [
+        "Mattson, C. A.",
+        "Howell, L. L.",
+        "Magleby, S. P."
+      ],
+      "hidden": false,
+      "citationCount": 80,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1177/1045389x04033256"
+    },
+    {
+      "kind": "research",
+      "id": "the-personification-of-big-data",
+      "title": "The Personification of Big Data",
+      "abstract": "Abstract Organizations all over the world, both national and international, gather demographic data so that the progress of nations and peoples can be tracked. This data is often made available to the public in the form of aggregated national level data or individual responses (microdata).",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2019,
+      "authors": [
+        "Stevenson, P. D.",
+        "Mattson, C. A."
+      ],
+      "hidden": false,
+      "citationCount": 53,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1017/dsi.2019.409"
+    },
+    {
+      "kind": "research",
+      "id": "the-influence-of-product-modularity-during-concept-selection-of-consumer-products",
+      "title": "The Influence of Product Modularity During Concept Selection of Consumer Products",
+      "abstract": "Abstract The design of modular products, or modular-product design, is a powerful design strategy that can boost the competitive edge of a company that employs its benefits. We introduce in this paper an approach for managing the influence of product modularity during concept selection of consumer products.",
+      "badge": "conference",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2001,
+      "authors": [
+        "Mattson, C. A.",
+        "Magleby, S. P."
+      ],
+      "hidden": false,
+      "citationCount": 51,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1115/detc2001/dtm-21712"
+    },
+    {
+      "kind": "research",
+      "id": "a-global-review-of-end-user-needs-establishing-the-need-for-adaptable-cookstoves",
+      "title": "A global review of end user needs: Establishing the need for adaptable cookstoves",
+      "abstract": "Presents research on a global review of end user needs: Establishing the need for adaptable cookstoves.",
+      "badge": "conference",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2014,
+      "authors": [
+        "Thacker, K. S.",
+        "Barger, M.",
+        "Mattson, C. A."
+      ],
+      "hidden": false,
+      "citationCount": 46,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1109/ghtc.2014.6970352"
+    },
+    {
+      "kind": "research",
+      "id": "social-impact-in-product-design-an-exploration-of-current-industry-practices",
+      "title": "Social Impact in Product Design, An Exploration of Current Industry Practices",
+      "abstract": "Abstract Though academic research for identifying and considering the social impact of products is emerging, additional insights can be gained from engineers who design products every day. This paper explores current practices in industries used by design engineers to consider the social impact of products.",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2020,
+      "authors": [
+        "Pack, A. T.",
+        "Rose Phipps, E.",
+        "Mattson, C. A.",
+        "Dahlin, E. C."
+      ],
+      "hidden": false,
+      "citationCount": 42,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1115/1.4045448"
+    },
+    {
+      "kind": "research",
+      "id": "why-the-developing-world-needs-mechanical-design",
+      "title": "Why the Developing World Needs Mechanical Design",
+      "abstract": "Presents research on why the Developing World Needs Mechanical Design.",
+      "badge": "journal",
+      "categories": [
+        "Social impact modeling"
+      ],
+      "year": 2016,
+      "authors": [
+        "Mattson, C. A.",
+        "Winter, A. G."
+      ],
+      "hidden": false,
+      "citationCount": 42,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1115/1.4033549"
+    },
+    {
+      "kind": "research",
+      "id": "linear-physical-programming-for-production-planning-optimization",
+      "title": "Linear physical programming for production planning optimization",
+      "abstract": "Presents research on linear physical programming for production planning optimization.",
+      "badge": "journal",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2003,
+      "authors": [
+        "Maria, A.",
+        "Mattson, C.",
+        "Ismail-Yahaya, A.",
+        "Messac, A."
+      ],
+      "hidden": false,
+      "citationCount": 42,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.1080/0305215031000078401"
+    },
+    {
+      "kind": "research",
+      "id": "new-decision-matrix-based-approach-for-concept-selection-using-linear-physical-programming",
+      "title": "New Decision Matrix Based Approach for Concept Selection Using Linear Physical Programming",
+      "abstract": "Presents research on new Decision Matrix Based Approach for Concept Selection Using Linear Physical Programming.",
+      "badge": "conference",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2003,
+      "authors": [
+        "Mullur, A.",
+        "Mattson, C.",
+        "Messac, A."
+      ],
+      "hidden": false,
+      "citationCount": 41,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.2514/6.2003-1446"
+    },
+    {
+      "kind": "research",
+      "id": "minimal-representation-of-multiobjective-design-space-using-a-smart-pareto-filter",
+      "title": "Minimal Representation of Multiobjective Design Space Using a Smart Pareto Filter",
+      "abstract": "Presents research on minimal Representation of Multiobjective Design Space Using a Smart Pareto Filter.",
+      "badge": "conference",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2002,
+      "authors": [
+        "Mattson, C.",
+        "Mullur, A.",
+        "Messac, A."
+      ],
+      "hidden": false,
+      "citationCount": 33,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.2514/6.2002-5458"
+    },
+    {
+      "kind": "research",
+      "id": "pitfalls-of-the-typical-construction-of-decision-matrices-for-concept-selection",
+      "title": "Pitfalls of the Typical Construction of Decision Matrices for Concept Selection",
+      "abstract": "Presents research on pitfalls of the Typical Construction of Decision Matrices for Concept Selection.",
+      "badge": "conference",
+      "categories": [
+        "Systems & Product Architecture"
+      ],
+      "year": 2003,
+      "authors": [
+        "Mullur, A.",
+        "Mattson, C.",
+        "Messac, A."
+      ],
+      "hidden": false,
+      "citationCount": 31,
+      "citationSource": "google-scholar",
+      "citationsUpdatedAt": "2026-09-08",
+      "publisherUrl": "https://doi.org/10.2514/6.2003-466"
+    },
+    {
       "kind": "course",
       "id": "product-design-guidebook",
       "title": "Product Development Book",
