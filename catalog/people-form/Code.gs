@@ -3,9 +3,12 @@
  * Paste into a Google Apps Script project bound to the lab's Google Form.
  * See SETUP.md for form question titles and Script Properties.
  *
- * Form submissions always create/update as status "current".
- * Title is set from Role (Lab Directors → Lab Co-director, etc.).
- * Alumni and custom titles are edited in catalog/desx-people.json.
+ * Update rules:
+ * - Match existing people by name / id.
+ * - Filled fields overwrite; blank fields keep the existing profile values.
+ * - New profiles default to status "current".
+ * - Alumni transition auto-prefixes title with "Former " (unless a custom title is provided).
+ * - Ph.D. Candidate → group "phd", default title "Ph.D. Candidate".
  */
 
 var PHOTO_DIR = "people/photos";
@@ -15,8 +18,13 @@ var MAX_PHOTO_BYTES = 5 * 1024 * 1024;
 var GROUP_FROM_ROLE = {
   "Lab Directors": "directors",
   "Ph.D. Students": "phd",
+  "Ph.D. Student": "phd",
+  "Ph.D. Candidates": "phd",
+  "Ph.D. Candidate": "phd",
   "Master's Students": "masters",
+  "Master's Student": "masters",
   "Undergraduate Students": "undergraduate",
+  "Undergraduate Student": "undergraduate",
 };
 
 var DEFAULT_TITLE = {
@@ -33,6 +41,33 @@ var OPTIONAL_LINK_TITLES = [
   "LinkedIn or website",
   "LinkedIn URL",
   "Website URL",
+];
+
+var TITLE_FIELD_TITLES = [
+  "Title",
+  "Optional title",
+  "Display title",
+  "Custom title",
+  "Profile title",
+  "Title (optional)",
+  "Optional title (leave blank to keep the default)",
+];
+
+var STATUS_FIELD_TITLES = [
+  "Status",
+  "Profile status",
+  "Current or alumni",
+  "Member status",
+  "Alumni status",
+];
+
+var HIDE_FIELD_TITLES = [
+  "Hide profile",
+  "Hide this profile",
+  "Hidden",
+  "Hide from website",
+  "Visibility",
+  "Show on website",
 ];
 
 /**
@@ -201,26 +236,11 @@ function namedValuesFromResponse_(response) {
 function handleFormSubmit_(e) {
   if (!e) throw new Error("No event object — use the form submit trigger, not Run from the editor.");
 
-  var named = (e.namedValues) || {};
+  var named = e.namedValues || {};
   logNamedKeys_(named);
 
   var name = answer(named, ["Full name", "Name"]);
   if (!name) throw new Error("Full name is required. Seen titles: " + Object.keys(named).join(" | "));
-
-  var roleRaw = answer(named, ["Role"]);
-  var group = resolveGroup_(roleRaw);
-  if (!group) {
-    throw new Error(
-      'Unknown role: "' +
-        roleRaw +
-        '". Expected one of: ' +
-        Object.keys(GROUP_FROM_ROLE).join(", ")
-    );
-  }
-
-  var status = "current";
-  var title = DEFAULT_TITLE[group];
-  var personId = slugify(name);
 
   var owner = prop("GITHUB_OWNER");
   var repo = prop("GITHUB_REPO");
@@ -235,36 +255,102 @@ function handleFormSubmit_(e) {
     Utilities.newBlob(Utilities.base64Decode(jsonFile.content.replace(/\n/g, ""))).getDataAsString()
   );
 
+  var personId = slugify(name);
   var existing = findPerson(catalog.people, personId);
   if (!existing) existing = findPersonByName(catalog.people, name);
   var isUpdate = !!existing;
   if (isUpdate) personId = existing.id;
   else personId = uniqueId(catalog.people, personId);
 
+  var roleRaw = answer(named, ["Role"]);
+  var group = null;
+  if (roleRaw) {
+    group = resolveGroup_(roleRaw);
+    if (!group) {
+      throw new Error(
+        'Unknown role: "' +
+          roleRaw +
+          '". Expected one of: ' +
+          Object.keys(GROUP_FROM_ROLE).join(", ")
+      );
+    }
+  } else if (isUpdate) {
+    group = existing.group;
+  } else {
+    throw new Error("Role is required for new profiles.");
+  }
+
+  var statusRaw = answer(named, STATUS_FIELD_TITLES) || answerByKeyHint_(named, ["status", "alumni"]);
+  var status = resolveStatus_(statusRaw, isUpdate ? existing.status : "current");
+
+  var customTitle = answer(named, TITLE_FIELD_TITLES) || answerByKeyHint_(named, ["optional title", "display title", "custom title"]);
+  // Avoid matching the LinkedIn "title-like" question: only accept short title fields.
+  if (customTitle && customTitle.length > 80) customTitle = "";
+
   var photoMeta = null;
   try {
     photoMeta = maybeUploadPhoto_(e, personId);
   } catch (photoErr) {
-    // Don't block publishing the profile if Drive/photo fails.
     Logger.log("Photo skipped: " + photoErr);
   }
 
-  var person = existing || {};
+  var person = existing ? JSON.parse(JSON.stringify(existing)) : {};
+  var prevGroup = existing ? existing.group : null;
+  var prevStatus = existing ? existing.status : null;
+
   person.id = personId;
   person.name = name;
-  person.title = title;
   person.group = group;
   person.status = status;
-  person.bio = answer(named, ["Bio"]) || person.bio || "";
   person.links = person.links || {};
+
+  // Bio / email / link / photo: only overwrite when provided.
+  var bio = answer(named, ["Bio"]);
+  if (bio) person.bio = bio;
+  else if (!isUpdate) person.bio = person.bio || "";
+
   var email = answer(named, ["Email"]);
   if (email) person.links.email = email;
-  applyOptionalLink_(person, extractOptionalLink_(e, named));
+
+  var optionalLink = extractOptionalLink_(e, named);
+  if (optionalLink) applyOptionalLink_(person, optionalLink);
+
   if (photoMeta) person.photo = photoMeta.filename;
-  // Photos can also be uploaded later as people/photos/{id}.jpg|png without editing JSON.
-  if (!isUpdate) person.order = person.order || nextOrder(catalog.people, group, status);
+
+  var hideRaw = answer(named, HIDE_FIELD_TITLES) || answerByKeyHint_(named, ["hide", "hidden", "visibility"]);
+  var hideResolved = resolveHidden_(hideRaw, isUpdate ? existing.hidden : false);
+  if (hideResolved) person.hidden = true;
+  else if (hideRaw) person.hidden = false;
+  else if (!isUpdate) person.hidden = false;
+  // else leave existing.hidden as-is (may be undefined)
+
+  person.title = resolveTitle_({
+    customTitle: customTitle,
+    roleRaw: roleRaw,
+    group: group,
+    status: status,
+    isUpdate: isUpdate,
+    existingTitle: existing ? existing.title : "",
+    previousStatus: prevStatus,
+  });
+
+  var groupOrStatusChanged =
+    !isUpdate || person.group !== prevGroup || person.status !== prevStatus;
+  if (groupOrStatusChanged) {
+    person.order = nextOrder(catalog.people, person.group, person.status, personId);
+  } else if (!person.order) {
+    person.order = nextOrder(catalog.people, person.group, person.status, personId);
+  }
 
   if (!isUpdate) catalog.people.push(person);
+  else {
+    for (var i = 0; i < catalog.people.length; i++) {
+      if (catalog.people[i].id === personId) {
+        catalog.people[i] = person;
+        break;
+      }
+    }
+  }
 
   if (photoMeta) {
     var photoPath = PHOTO_DIR + "/" + photoMeta.filename;
@@ -293,10 +379,20 @@ function handleFormSubmit_(e) {
     (isUpdate ? "Updated" : "Added") +
       " " +
       name +
+      " [" +
+      person.group +
+      "/" +
+      person.status +
+      "] title=\"" +
+      person.title +
+      "\"" +
+      (person.hidden ? " (hidden)" : "") +
       " on " +
       branch +
       " (" +
-      ((jsonCommit.commit && jsonCommit.commit.html_url) || "ok") +
+      ((jsonCommit.commit && jsonCommit.html_url) ||
+        (jsonCommit.commit && jsonCommit.commit.html_url) ||
+        "ok") +
       ")"
   );
 }
@@ -306,10 +402,91 @@ function resolveGroup_(roleRaw) {
   if (GROUP_FROM_ROLE[role]) return GROUP_FROM_ROLE[role];
   var lower = role.toLowerCase().replace(/['’]/g, "'");
   if (lower.indexOf("director") >= 0) return "directors";
-  if (lower.indexOf("ph.d") >= 0 || lower.indexOf("phd") >= 0 || lower.indexOf("ph d") >= 0) return "phd";
+  if (lower.indexOf("ph.d") >= 0 || lower.indexOf("phd") >= 0 || lower.indexOf("ph d") >= 0) {
+    return "phd";
+  }
   if (lower.indexOf("master") >= 0) return "masters";
   if (lower.indexOf("undergrad") >= 0) return "undergraduate";
   return null;
+}
+
+function defaultTitleForRole_(roleRaw, group) {
+  var lower = String(roleRaw || "")
+    .toLowerCase()
+    .replace(/['’]/g, "'");
+  if (lower.indexOf("candidate") >= 0) return "Ph.D. Candidate";
+  if (lower.indexOf("director") >= 0) return "Lab Co-director";
+  return DEFAULT_TITLE[group] || "Lab Member";
+}
+
+function toAlumniTitle_(currentTitle, roleRaw, group) {
+  var base = String(currentTitle || "").trim();
+  if (!base) base = defaultTitleForRole_(roleRaw, group);
+  if (!base) base = DEFAULT_TITLE[group] || "Student";
+  base = base.replace(/^former\s+/i, "");
+  return "Former " + base;
+}
+
+/**
+ * Title resolution:
+ * 1) Custom title field filled → use it
+ * 2) Becoming alumni (new alumni or current→alumni) → Former {existing or role default}
+ * 3) New profile → role default
+ * 4) Update with blank title → keep existing
+ */
+function resolveTitle_(opts) {
+  if (opts.customTitle) return String(opts.customTitle).trim();
+
+  var becomingAlumni =
+    opts.status === "alumni" && (!opts.isUpdate || opts.previousStatus !== "alumni");
+
+  if (becomingAlumni) {
+    return toAlumniTitle_(opts.existingTitle, opts.roleRaw, opts.group);
+  }
+
+  if (!opts.isUpdate) {
+    return defaultTitleForRole_(opts.roleRaw, opts.group);
+  }
+
+  return opts.existingTitle || defaultTitleForRole_(opts.roleRaw, opts.group);
+}
+
+function resolveStatus_(raw, fallback) {
+  var v = String(raw || "").trim().toLowerCase();
+  if (!v) return fallback || "current";
+  if (v.indexOf("alumni") >= 0 || v.indexOf("former") >= 0 || v === "past") return "alumni";
+  if (v.indexOf("current") >= 0 || v.indexOf("active") >= 0 || v.indexOf("present") >= 0) {
+    return "current";
+  }
+  return fallback || "current";
+}
+
+function resolveHidden_(raw, fallback) {
+  var v = String(raw || "").trim().toLowerCase();
+  if (!v) return !!fallback;
+  if (
+    v === "yes" ||
+    v === "true" ||
+    v === "hide" ||
+    v.indexOf("hide") >= 0 ||
+    v.indexOf("hidden") >= 0 ||
+    v.indexOf("do not show") >= 0 ||
+    v.indexOf("don't show") >= 0 ||
+    v.indexOf("private") >= 0
+  ) {
+    return true;
+  }
+  if (
+    v === "no" ||
+    v === "false" ||
+    v.indexOf("show") >= 0 ||
+    v.indexOf("visible") >= 0 ||
+    v.indexOf("public") >= 0 ||
+    v.indexOf("display") >= 0
+  ) {
+    return false;
+  }
+  return !!fallback;
 }
 
 function maybeUploadPhoto_(e, personId) {
@@ -374,10 +551,11 @@ function findPersonByName(people, name) {
   return null;
 }
 
-function nextOrder(people, group, status) {
+function nextOrder(people, group, status, excludeId) {
   var max = 0;
   for (var i = 0; i < people.length; i++) {
     var p = people[i];
+    if (excludeId && p.id === excludeId) continue;
     if (p.group === group && p.status === status && typeof p.order === "number" && p.order > max) {
       max = p.order;
     }
@@ -395,7 +573,15 @@ function slugify(value) {
 
 function first(value) {
   if (value == null) return "";
-  if (Object.prototype.toString.call(value) === "[object Array]") value = value[0];
+  if (Object.prototype.toString.call(value) === "[object Array]") {
+    // Checkboxes can return multiple strings; join non-empty.
+    var parts = [];
+    for (var i = 0; i < value.length; i++) {
+      var bit = String(value[i] == null ? "" : value[i]).trim();
+      if (bit) parts.push(bit);
+    }
+    return parts.join(", ");
+  }
   return String(value || "").trim();
 }
 
@@ -410,6 +596,27 @@ function answer(named, titles) {
     var want = String(titles[t]).toLowerCase().trim();
     for (var k = 0; k < keys.length; k++) {
       if (String(keys[k]).toLowerCase().trim() === want) {
+        var found = first(named[keys[k]]);
+        if (found) return found;
+      }
+    }
+  }
+  return "";
+}
+
+/** Match a question whose title contains any of the hints (case-insensitive). */
+function answerByKeyHint_(named, hints) {
+  var keys = Object.keys(named || {});
+  for (var h = 0; h < hints.length; h++) {
+    var hint = String(hints[h]).toLowerCase();
+    for (var k = 0; k < keys.length; k++) {
+      var key = String(keys[k] || "");
+      var lower = key.toLowerCase();
+      if (lower.indexOf(hint) >= 0) {
+        // Don't steal the LinkedIn/portfolio question when hunting for "title".
+        if (hint.indexOf("title") >= 0 && (lower.indexOf("linkedin") >= 0 || lower.indexOf("portfolio") >= 0 || lower.indexOf("optional link") >= 0)) {
+          continue;
+        }
         var found = first(named[keys[k]]);
         if (found) return found;
       }
@@ -463,6 +670,9 @@ function extractOptionalLink_(e, named) {
         var lower = title.toLowerCase();
         var answerText = first(items[i].getResponse());
         if (!answerText) continue;
+        if (lower === "email" || lower === "full name" || lower === "bio" || lower === "role") {
+          continue;
+        }
         if (
           lower.indexOf("linkedin") >= 0 ||
           lower.indexOf("portfolio") >= 0 ||
@@ -470,19 +680,7 @@ function extractOptionalLink_(e, named) {
           lower.indexOf("optional link") >= 0 ||
           looksLikeUrl_(answerText)
         ) {
-          // Skip email / name / bio paragraphs unless they are clearly a URL.
-          if (lower === "email" || lower === "full name" || lower === "bio" || lower === "role") {
-            continue;
-          }
-          if (
-            lower.indexOf("linkedin") >= 0 ||
-            lower.indexOf("portfolio") >= 0 ||
-            lower.indexOf("website") >= 0 ||
-            lower.indexOf("optional link") >= 0 ||
-            looksLikeUrl_(answerText)
-          ) {
-            return answerText;
-          }
+          return answerText;
         }
       }
     }

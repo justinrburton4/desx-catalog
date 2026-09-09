@@ -32,9 +32,11 @@ See [`people-form/SETUP.md`](people-form/SETUP.md). A Google Form submit commits
 
 Do not commit `placeholder.png` under a person's id. Omit `photo` until a real headshot is ready.
 
-## Alumni
+## Alumni / hide / Ph.D. Candidate (via form)
 
-The form always adds people as `current`. To move someone to alumni, edit `desx-people.json`: set `"status": "alumni"` and update `title` (for example `Former Ph.D. Student`). They leave the current sections and appear under Alumni on the same page.
+The Google Form can set Status (`Current` / `Alumni`), optional Title, Hide profile, and Role including **Ph.D. Candidate** (still under the Ph.D. section). Blank fields on an update leave existing values alone. Moving someone to alumni with a blank Title auto-prefixes `Former ` onto their current title. See [`people-form/SETUP.md`](people-form/SETUP.md).
+
+You can still edit `desx-people.json` by hand: `"status": "alumni"`, `"hidden": true`, custom `"title"`, etc.
 
 ## Local preview
 

@@ -5,76 +5,86 @@ Students fill a Google Form. Apps Script commits straight to `main` on `justinrb
 - an updated `catalog/desx-people.json`
 - optional `people/photos/{id}.jpg` (or `.png` / `.webp`)
 
-No pull request. `/people` picks up the change on the next page load (may take a minute). Nobody pastes Squarespace image URLs.
+No pull request. `/people-in-the-lab` picks up the change on the next page load (may take a minute).
 
-**Defaults (not on the form):** every submission is `status: "current"`. Title is set from Role (`Lab Directors` → `Lab Co-director`, `Ph.D. Students` → `Ph.D. Student`, etc.). Mark someone alumni by editing `desx-people.json` (change `status` to `"alumni"` and optionally the title).
+## Update rules (important)
+
+Matching is by **Full name** (or existing slug id). Then:
+
+| Field | Blank on submit | Filled on submit |
+|---|---|---|
+| Bio, Email, Link, Photo, Title | Keep existing value | Overwrite |
+| Role | Keep existing group (updates only) | Set group from role |
+| Status | Keep existing (`current` for new people) | Set `current` or `alumni` |
+| Hide profile | Keep existing (`false` for new people) | Set `hidden` true/false |
+
+**Alumni exception:** when status becomes `alumni` (new alumni, or current → alumni) and Title is blank, the title auto-updates to `Former {previous title}` (e.g. `Ph.D. Candidate` → `Former Ph.D. Candidate`). If Title is filled, that custom text is used instead.
+
+**Ph.D. Candidate:** Role option maps to group `phd` (same Ph.D. section) with default title `Ph.D. Candidate`.
 
 ## 1. Create the Google Form
 
-Create a form (lab Google account). Use **these exact question titles**:
+Use these question titles (or close variants — the script also fuzzy-matches):
 
 | Question title | Type | Required |
 |---|---|---|
 | Full name | Short answer | Yes |
-| Role | Multiple choice: `Lab Directors` / `Ph.D. Students` / `Master's Students` / `Undergraduate Students` | Yes |
+| Role | Multiple choice: `Lab Directors` / `Ph.D. Students` / `Ph.D. Candidate` / `Master's Students` / `Undergraduate Students` | Yes for new profiles |
+| Title | Short answer (optional custom display title) | No |
+| Status | Multiple choice: `Current` / `Alumni` (optional; default Current) | No |
+| Hide profile | Multiple choice or checkbox (Yes/Hide vs No/Show) | No |
 | Bio | Paragraph | No |
 | Email | Short answer | No |
 | Optional link to your LinkedIn or other personal portfolio. Add if you want that link on your profile card on the website. | Short answer | No |
 | Photo | File upload (images only, 1 file, max 5 MB) | No |
 
-The optional link question title must match the form **exactly** (including the period). LinkedIn URLs are stored as `links.linkedin`; any other URL as `links.website`.
+LinkedIn URLs are stored as `links.linkedin`; any other URL as `links.website`.
 
-If someone submits again with the same name, the script **updates** that person instead of creating a duplicate.
+Same Full name → **update** that person (no duplicate).
 
-Turn on **Collect email addresses** if useful for contact.
+Turn on **Collect email addresses** if useful.
 
-In the form description, note that headshots will be stored in a **public** GitHub repo.
+Headshots are stored in a **public** GitHub repo.
 
 ## 2. GitHub token
 
 1. GitHub → Settings → Developer settings → Personal access tokens → Fine-grained token.
 2. Resource owner: your user. Repository access: **only** `desx-catalog`.
-3. Permissions: **Contents** Read and write, **Metadata** Read. (Pull requests not required.)
-4. Copy the token. You will store it in Apps Script, never in this repo.
+3. Permissions: **Contents** Read and write, **Metadata** Read.
+4. Copy the token into Apps Script properties (never commit it).
 
 ## 3. Bind Apps Script to the form
 
 1. Open the form → ⋮ → **Apps Script**.
 2. Paste [`Code.gs`](Code.gs) over the default file. Save.
-3. Project Settings → Script properties → add:
-   - `GITHUB_TOKEN` = the token from step 2
+3. Project Settings → Script properties:
+   - `GITHUB_TOKEN`
    - `GITHUB_OWNER` = `justinrburton4`
    - `GITHUB_REPO` = `desx-catalog`
    - `GITHUB_BASE_BRANCH` = `main`
 4. Run **`authorizeDesxPeople`** → approve UrlFetch + Drive.
-5. Run **`installFormTrigger`** → approve if prompted.
+5. Run **`installFormTrigger`**.
 
-That installs an **installable** trigger on `publishPeopleFromFormSubmit`.
+Handler must be **`publishPeopleFromFormSubmit`** (not `onFormSubmit`).
 
-**Do not** manually add a trigger for a function named `onFormSubmit`. That reserved name is a Forms *simple* trigger and **cannot** call GitHub (`UrlFetchApp`) or Drive — which is why editor runs worked but auto-submit did not.
+6. Optional: **`processLatestFormResponse`** to publish the latest response immediately.
 
-6. Optional: run **`processLatestFormResponse`** to publish the latest response immediately.
-7. Submit a new test response. Executions should show **`publishPeopleFromFormSubmit` → Completed** (Type: Trigger).
-
-If BYU Workspace blocks Apps Script from calling `api.github.com`, run the form from a personal Google account that can reach GitHub, or ask IT to allow that destination.
-
-**Important:** Open Apps Script only from the form (**Form → ⋮ → Apps Script**), not a standalone project.
+Open Apps Script only from the form (**Form → ⋮ → Apps Script**).
 
 ## 4. Test / debug
 
-1. Triggers (clock) should list: function `publishPeopleFromFormSubmit`, event **On form submit**.
-2. After a form submit, Executions:
-   - **No row** → re-run `installFormTrigger`; confirm the script is form-bound.
-   - **Failed** → open the log (often auth or a missing Script property).
-   - **Completed** → GitHub gets `Add person: …` on `main` within a few seconds.
-3. Temporary workaround: `processLatestFormResponse` after a submit.
+1. Triggers: function `publishPeopleFromFormSubmit`, event **On form submit**.
+2. After submit, Executions should show Completed.
+3. Example alumni move: Full name + Role + Status=`Alumni` → bio/photo/links kept; title becomes `Former …`.
 
-## 5. After headshots arrive
+## 5. Photos
 
-Re-submit the form with the **same Full name** and attach the photo, **or** drop `people/photos/{id}.jpg` or `{id}.png` into the repo (id is the slugified name, e.g. `justin-burton.jpg`). The live page tries `{id}.jpg` / `{id}.png` automatically — no JSON `photo` field required.
+Re-submit with the same name and a photo, **or** drop `people/photos/{id}.jpg` / `{id}.png` in the repo. The live page tries those filenames automatically.
 
-## 6. Alumni
+## 6. Hide / alumni on the website
 
-Edit `catalog/desx-people.json`: set `"status": "alumni"` and usually `"title": "Former Ph.D. Student"` (or Master's / Undergraduate). Commit directly or via the GitHub web editor.
+- `"hidden": true` → omitted from the people directory renderer.
+- `"status": "alumni"` → Alumni section (by group).
+- `"status": "current"` → Lab Directors / Ph.D. / Master's / Undergraduate sections.
 
-LinkedIn / website links on cards are labeled by URL: LinkedIn URLs show as **LinkedIn**, anything else as **Website**.
+LinkedIn / website links are labeled by URL (**LinkedIn** vs **Website**).
