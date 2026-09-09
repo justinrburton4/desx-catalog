@@ -22,14 +22,14 @@ Matching is by **Full Name** (or existing slug id). Then:
 
 **Alumni exception:** when status becomes `alumni` (new alumni, or current → alumni) and Title is blank, the title auto-updates to `Former {previous title}` (e.g. `Ph.D. Candidate` → `Former Ph.D. Candidate`). If Title is filled, that custom text is used instead.
 
-**Ph. D. Candidate:** maps to group `phd` (same Ph.D. section) with default title `Ph.D. Candidate`.
+**Ph.D. Candidate:** maps to group `phd` (same Ph.D. section) with default title `Ph.D. Candidate`.
 
 ## 1. Form questions (match the live form)
 
 | Question title | Type | Required |
 |---|---|---|
 | Full Name | Short answer | Yes |
-| Role | Multiple choice: `Ph. D. Candidate` / `Ph. D. Students` / `Master's Students` / `Undergraduate Students` | Yes for new profiles |
+| Role | Multiple choice: `Ph.D. Candidate` / `Ph.D. Students` / `Master's Students` / `Undergraduate Students` | Yes for new profiles |
 | Title | Short answer (optional; leave blank for role default) | No |
 | Photo | File upload (JPG/PNG, under 10 MB) | No |
 | Bio | Short answer / paragraph | No |

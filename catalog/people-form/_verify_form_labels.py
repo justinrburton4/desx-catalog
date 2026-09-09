@@ -3,10 +3,10 @@ import re
 
 GROUP_FROM_ROLE = {
     "Lab Directors": "directors",
-    "Ph. D. Students": "phd",
-    "Ph. D. Candidate": "phd",
     "Ph.D. Students": "phd",
     "Ph.D. Candidate": "phd",
+    "Ph. D. Students": "phd",
+    "Ph. D. Candidate": "phd",
     "Master's Students": "masters",
     "Undergraduate Students": "undergraduate",
 }
@@ -76,8 +76,9 @@ def alumni_title(existing: str, role: str, group: str) -> str:
 
 def main() -> None:
     roles = [
-        "Ph. D. Candidate",
-        "Ph. D. Students",
+        "Ph.D. Candidate",
+        "Ph.D. Students",
+        "Ph. D. Candidate",  # legacy spaced typo still accepted
         "Master's Students",
         "Undergraduate Students",
     ]
@@ -86,20 +87,20 @@ def main() -> None:
         print(r, "->", g, "|", default_title(r, g))
         assert g is not None
 
-    assert resolve_group("Ph. D. Candidate") == "phd"
-    assert default_title("Ph. D. Candidate", "phd") == "Ph.D. Candidate"
+    assert resolve_group("Ph.D. Candidate") == "phd"
+    assert default_title("Ph.D. Candidate", "phd") == "Ph.D. Candidate"
     assert resolve_status("Alumni") == "alumni"
     assert resolve_status("Current") == "current"
     assert resolve_status("") == "current"
     assert resolve_hidden("Yes") is True
     assert resolve_hidden("No") is False
     assert resolve_hidden("") is False
-    assert alumni_title("Ph.D. Candidate", "Ph. D. Candidate", "phd") == "Former Ph.D. Candidate"
+    assert alumni_title("Ph.D. Candidate", "Ph.D. Candidate", "phd") == "Former Ph.D. Candidate"
 
     # Form question titles we must recognize
     titles = {
         "Full Name": "Justin Burton",
-        "Role": "Ph. D. Candidate",
+        "Role": "Ph.D. Candidate",
         "Title": "",
         "Personal URL": "https://www.linkedin.com/in/justinrburton/",
         "Current lab member or Alumni": "Alumni",

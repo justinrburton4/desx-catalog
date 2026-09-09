@@ -17,15 +17,15 @@ var MAX_PHOTO_BYTES = 10 * 1024 * 1024;
 
 var GROUP_FROM_ROLE = {
   "Lab Directors": "directors",
-  // Form uses spaced "Ph. D." — keep both spellings.
-  "Ph. D. Students": "phd",
-  "Ph. D. Student": "phd",
-  "Ph. D. Candidates": "phd",
-  "Ph. D. Candidate": "phd",
+  // Live form uses "Ph.D." (no spaces). Keep spaced "Ph. D." as a fallback.
   "Ph.D. Students": "phd",
   "Ph.D. Student": "phd",
   "Ph.D. Candidates": "phd",
   "Ph.D. Candidate": "phd",
+  "Ph. D. Students": "phd",
+  "Ph. D. Student": "phd",
+  "Ph. D. Candidates": "phd",
+  "Ph. D. Candidate": "phd",
   "Master's Students": "masters",
   "Master's Student": "masters",
   "Undergraduate Students": "undergraduate",
