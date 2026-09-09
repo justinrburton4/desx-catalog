@@ -149,7 +149,10 @@
       "group": "masters",
       "status": "current",
       "order": 4,
-      "bio": ""
+      "bio": "Joshua is a master's student researching aggregation strategies within social impact transfer theory. His interest in nuclear engineering led him to serve as an NNSA Graduate Fellow at Lawrence Livermore National Laboratory, where he worked at the intersection of precision manufacturing, advanced 3D printing, and experimental validation. Joshua plans on returning to Lawrence Livermore National Laboratory as a mechanical design engineer after completing his master's research. Outside of engineering, Joshua enjoys writing poetry, mountain biking, and spending time with his wife and cat.",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/joshuacookwright/"
+      }
     },
     {
       "id": "isaac-detiege",
