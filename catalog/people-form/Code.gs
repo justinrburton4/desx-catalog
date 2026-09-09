@@ -13,10 +13,15 @@
 
 var PHOTO_DIR = "people/photos";
 var JSON_PATH = "catalog/desx-people.json";
-var MAX_PHOTO_BYTES = 5 * 1024 * 1024;
+var MAX_PHOTO_BYTES = 10 * 1024 * 1024;
 
 var GROUP_FROM_ROLE = {
   "Lab Directors": "directors",
+  // Form uses spaced "Ph. D." — keep both spellings.
+  "Ph. D. Students": "phd",
+  "Ph. D. Student": "phd",
+  "Ph. D. Candidates": "phd",
+  "Ph. D. Candidate": "phd",
   "Ph.D. Students": "phd",
   "Ph.D. Student": "phd",
   "Ph.D. Candidates": "phd",
@@ -35,7 +40,9 @@ var DEFAULT_TITLE = {
 };
 
 // Exact Google Form question titles (try each until one matches).
+// Current live form: https://forms.gle/EzdtN5JzjUkUUHBd8
 var OPTIONAL_LINK_TITLES = [
+  "Personal URL",
   "Optional link to your LinkedIn or other personal portfolio. Add if you want that link on your profile card on the website.",
   "Optional link to your LinkedIn or other personal portfolio",
   "LinkedIn or website",
@@ -54,6 +61,7 @@ var TITLE_FIELD_TITLES = [
 ];
 
 var STATUS_FIELD_TITLES = [
+  "Current lab member or Alumni",
   "Status",
   "Profile status",
   "Current or alumni",
@@ -62,8 +70,9 @@ var STATUS_FIELD_TITLES = [
 ];
 
 var HIDE_FIELD_TITLES = [
-  "Hide profile",
+  "Hide this profile?",
   "Hide this profile",
+  "Hide profile",
   "Hidden",
   "Hide from website",
   "Visibility",
@@ -239,8 +248,8 @@ function handleFormSubmit_(e) {
   var named = e.namedValues || {};
   logNamedKeys_(named);
 
-  var name = answer(named, ["Full name", "Name"]);
-  if (!name) throw new Error("Full name is required. Seen titles: " + Object.keys(named).join(" | "));
+  var name = answer(named, ["Full Name", "Full name", "Name"]);
+  if (!name) throw new Error("Full Name is required. Seen titles: " + Object.keys(named).join(" | "));
 
   var owner = prop("GITHUB_OWNER");
   var repo = prop("GITHUB_REPO");
@@ -397,23 +406,28 @@ function handleFormSubmit_(e) {
   );
 }
 
+function normalizeRoleKey_(roleRaw) {
+  return String(roleRaw || "")
+    .toLowerCase()
+    .replace(/['’]/g, "'")
+    .replace(/\./g, "") // "Ph. D." / "Ph.D." → "ph d" / "phd"
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function resolveGroup_(roleRaw) {
   var role = String(roleRaw || "").trim();
   if (GROUP_FROM_ROLE[role]) return GROUP_FROM_ROLE[role];
-  var lower = role.toLowerCase().replace(/['’]/g, "'");
+  var lower = normalizeRoleKey_(role);
   if (lower.indexOf("director") >= 0) return "directors";
-  if (lower.indexOf("ph.d") >= 0 || lower.indexOf("phd") >= 0 || lower.indexOf("ph d") >= 0) {
-    return "phd";
-  }
+  if (lower.indexOf("phd") >= 0 || lower.indexOf("ph d") >= 0) return "phd";
   if (lower.indexOf("master") >= 0) return "masters";
   if (lower.indexOf("undergrad") >= 0) return "undergraduate";
   return null;
 }
 
 function defaultTitleForRole_(roleRaw, group) {
-  var lower = String(roleRaw || "")
-    .toLowerCase()
-    .replace(/['’]/g, "'");
+  var lower = normalizeRoleKey_(roleRaw);
   if (lower.indexOf("candidate") >= 0) return "Ph.D. Candidate";
   if (lower.indexOf("director") >= 0) return "Lab Co-director";
   return DEFAULT_TITLE[group] || "Lab Member";
@@ -497,7 +511,7 @@ function maybeUploadPhoto_(e, personId) {
   var file = DriveApp.getFileById(files[0]);
   var blob = file.getBlob();
   if (blob.getBytes().length > MAX_PHOTO_BYTES) {
-    throw new Error("Photo is larger than 5 MB");
+    throw new Error("Photo is larger than 10 MB");
   }
   var ext = extensionFor(blob.getContentType(), file.getName());
   var filename = personId + ext;
@@ -635,6 +649,7 @@ function namedValuesFirst(named, titles) {
     var key = keys[k];
     var lower = key.toLowerCase();
     if (
+      lower.indexOf("personal url") >= 0 ||
       lower.indexOf("linkedin") >= 0 ||
       lower.indexOf("portfolio") >= 0 ||
       lower.indexOf("website") >= 0 ||
@@ -670,10 +685,17 @@ function extractOptionalLink_(e, named) {
         var lower = title.toLowerCase();
         var answerText = first(items[i].getResponse());
         if (!answerText) continue;
-        if (lower === "email" || lower === "full name" || lower === "bio" || lower === "role") {
+        if (
+          lower === "email" ||
+          lower === "full name" ||
+          lower === "bio" ||
+          lower === "role" ||
+          lower === "title"
+        ) {
           continue;
         }
         if (
+          lower.indexOf("personal url") >= 0 ||
           lower.indexOf("linkedin") >= 0 ||
           lower.indexOf("portfolio") >= 0 ||
           lower.indexOf("website") >= 0 ||

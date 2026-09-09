@@ -7,44 +7,40 @@ Students fill a Google Form. Apps Script commits straight to `main` on `justinrb
 
 No pull request. `/people-in-the-lab` picks up the change on the next page load (may take a minute).
 
+Live form: https://forms.gle/EzdtN5JzjUkUUHBd8
+
 ## Update rules (important)
 
-Matching is by **Full name** (or existing slug id). Then:
+Matching is by **Full Name** (or existing slug id). Then:
 
 | Field | Blank on submit | Filled on submit |
 |---|---|---|
-| Bio, Email, Link, Photo, Title | Keep existing value | Overwrite |
+| Bio, Email, Personal URL, Photo, Title | Keep existing value | Overwrite |
 | Role | Keep existing group (updates only) | Set group from role |
-| Status | Keep existing (`current` for new people) | Set `current` or `alumni` |
-| Hide profile | Keep existing (`false` for new people) | Set `hidden` true/false |
+| Current lab member or Alumni | Keep existing (`current` for new people) | Set `current` or `alumni` |
+| Hide this profile? | Keep existing (`false` for new people) | Yes → hidden, No → visible |
 
 **Alumni exception:** when status becomes `alumni` (new alumni, or current → alumni) and Title is blank, the title auto-updates to `Former {previous title}` (e.g. `Ph.D. Candidate` → `Former Ph.D. Candidate`). If Title is filled, that custom text is used instead.
 
-**Ph.D. Candidate:** Role option maps to group `phd` (same Ph.D. section) with default title `Ph.D. Candidate`.
+**Ph. D. Candidate:** maps to group `phd` (same Ph.D. section) with default title `Ph.D. Candidate`.
 
-## 1. Create the Google Form
-
-Use these question titles (or close variants — the script also fuzzy-matches):
+## 1. Form questions (match the live form)
 
 | Question title | Type | Required |
 |---|---|---|
-| Full name | Short answer | Yes |
-| Role | Multiple choice: `Lab Directors` / `Ph.D. Students` / `Ph.D. Candidate` / `Master's Students` / `Undergraduate Students` | Yes for new profiles |
-| Title | Short answer (optional custom display title) | No |
-| Status | Multiple choice: `Current` / `Alumni` (optional; default Current) | No |
-| Hide profile | Multiple choice or checkbox (Yes/Hide vs No/Show) | No |
-| Bio | Paragraph | No |
+| Full Name | Short answer | Yes |
+| Role | Multiple choice: `Ph. D. Candidate` / `Ph. D. Students` / `Master's Students` / `Undergraduate Students` | Yes for new profiles |
+| Title | Short answer (optional; leave blank for role default) | No |
+| Photo | File upload (JPG/PNG, under 10 MB) | No |
+| Bio | Short answer / paragraph | No |
 | Email | Short answer | No |
-| Optional link to your LinkedIn or other personal portfolio. Add if you want that link on your profile card on the website. | Short answer | No |
-| Photo | File upload (images only, 1 file, max 5 MB) | No |
+| Personal URL | Short answer (LinkedIn or portfolio) | No |
+| Current lab member or Alumni | Multiple choice: `Current` / `Alumni` | No (default Current) |
+| Hide this profile? | Multiple choice: `Yes` / `No` | No (default show) |
 
-LinkedIn URLs are stored as `links.linkedin`; any other URL as `links.website`.
+Personal URL values with `linkedin.com` → `links.linkedin`; anything else → `links.website`.
 
-Same Full name → **update** that person (no duplicate).
-
-Turn on **Collect email addresses** if useful.
-
-Headshots are stored in a **public** GitHub repo.
+Same Full Name → **update** that person (no duplicate).
 
 ## 2. GitHub token
 
@@ -69,13 +65,11 @@ Handler must be **`publishPeopleFromFormSubmit`** (not `onFormSubmit`).
 
 6. Optional: **`processLatestFormResponse`** to publish the latest response immediately.
 
-Open Apps Script only from the form (**Form → ⋮ → Apps Script**).
-
 ## 4. Test / debug
 
 1. Triggers: function `publishPeopleFromFormSubmit`, event **On form submit**.
-2. After submit, Executions should show Completed.
-3. Example alumni move: Full name + Role + Status=`Alumni` → bio/photo/links kept; title becomes `Former …`.
+2. Example alumni move: Full Name + Role + Alumni → bio/photo/links kept; title becomes `Former …`.
+3. Example hide: Full Name + Hide this profile? = Yes → `"hidden": true` (card omitted on the site).
 
 ## 5. Photos
 
