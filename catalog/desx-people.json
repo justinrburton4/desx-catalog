@@ -669,6 +669,19 @@
       },
       "photo": "justin-burton.jpg",
       "order": 10
+    },
+    {
+      "id": "caleb-jenkins",
+      "name": "Caleb Jenkins",
+      "title": "Undergraduate Student",
+      "group": "undergraduate",
+      "status": "current",
+      "bio": "Caleb Jenkins is a senior studying Mechanical Engineering, with minors in International Development and German. His research focuses on innovation in low-income countries and design in resource-constrained contexts.",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/calebcjenkins/"
+      },
+      "photo": "caleb-jenkins.jpg",
+      "order": 11
     }
   ]
 }
