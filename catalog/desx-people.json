@@ -685,6 +685,21 @@
       },
       "photo": "caleb-jenkins.jpg",
       "order": 11
+    },
+    {
+      "id": "jordan-hardy",
+      "name": "Jordan Hardy",
+      "group": "undergraduate",
+      "status": "current",
+      "links": {
+        "email": "jordanpattenhardy@gmail.com",
+        "website": "https://jordanpattenhardy.github.io"
+      },
+      "bio": "Jordan sees every challenge as an adventure - whether in the lab or the great outdoors. As a mechanical engineering student researching sustainable medical technologies and systems, she explores how design can spark meaningful change in communities. Outside the lab, Jordan's love for adventure leads her to rock climbing, hiking, and traveling, where new experiences inspire fresh perspectives and fuel her creativity. Through both work and play, Jordan is driven to design solutions that make a positive, lasting impact.",
+      "photo": "jordan-hardy.jpg",
+      "hidden": false,
+      "title": "Undergraduate Student",
+      "order": 13
     }
   ]
 }
