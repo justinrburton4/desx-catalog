@@ -58,12 +58,13 @@
     {
       "id": "tevin-dickerson",
       "name": "Tevin Dickerson",
-      "title": "Ph.D. Candidate",
+      "title": "Former Ph.D. Student",
       "group": "phd",
       "status": "alumni",
       "order": 1,
       "bio": "Tevin is a PhD candidate in mechanical engineering. He's from Cottonwood Heights, UT and is emphasizing in aerospace. On the team, he has worked on the airship project and traveling salesman. He likes to waterski and rock climb as well. His thoughts on engineering are, ?to make the impossible, possible?.",
-      "photo": "tevin-dickerson.jpg"
+      "photo": "tevin-dickerson.jpg",
+      "links": {}
     },
     {
       "id": "samuel-mckinnon",
