@@ -24,9 +24,10 @@
       "blurb": "Helps designers address challenges in sustainable health systems.",
       "url": "/sustainable-health-systems-design-framework",
       "categories": [
-        "Sustainable Products"
+        "Decision support"
       ],
-      "hidden": false
+      "hidden": false,
+      "image": "https://raw.githubusercontent.com/justinrburton4/desx-catalog/main/tools/images/sustainable-health-systems-design-framework.png"
     },
     {
       "kind": "research",
