@@ -18,6 +18,17 @@
   ],
   "items": [
     {
+      "kind": "tool",
+      "id": "sustainable-health-systems-design-framework",
+      "title": "Sustainable Health Systems Design Framework",
+      "blurb": "Helps designers address challenges in sustainable health systems.",
+      "url": "/sustainable-health-systems-design-framework",
+      "categories": [
+        "Sustainable Products"
+      ],
+      "hidden": false
+    },
+    {
       "kind": "research",
       "id": "the-normalized-normal-constraint-method-for-generating-the-pareto-frontier",
       "title": "The normalized normal constraint method for generating the Pareto frontier",
@@ -389,7 +400,7 @@
       "kind": "course",
       "id": "onshape-cad-course",
       "title": "Onshape CAD Course",
-      "blurb": "Online ME EN 272 engineering graphics — learn cloud CAD with Onshape.",
+      "blurb": "Online ME EN 272 engineering graphics ? learn cloud CAD with Onshape.",
       "url": "/onshape-cad-course",
       "type": "course",
       "categories": [
@@ -404,7 +415,7 @@
       "kind": "course",
       "id": "learn-to-sketch",
       "title": "Learn to Sketch",
-      "blurb": "Free self-guided short course — practice 10 minutes a day for 8 weeks.",
+      "blurb": "Free self-guided short course ? practice 10 minutes a day for 8 weeks.",
       "url": "https://www.designreview.byu.edu/sketching-short-course",
       "type": "tutorial",
       "categories": [
@@ -1674,8 +1685,8 @@
     {
       "kind": "research",
       "id": "using-a-product-s-sustainability-space-as-a-design-exploration-tool",
-      "title": "Using a Productâ€™s Sustainability Space as a Design Exploration Tool",
-      "abstract": "Uses a productâ€™s sustainability space as a practical design exploration and tradeoff tool.",
+      "title": "Using a Product???s Sustainability Space as a Design Exploration Tool",
+      "abstract": "Uses a product???s sustainability space as a practical design exploration and tradeoff tool.",
       "badge": "journal",
       "categories": [
         "Other"
@@ -2617,7 +2628,7 @@
     {
       "kind": "research",
       "id": "design-space-exploration-for-quantifying-a-system-model-s-feasible-domain",
-      "title": "Design Space Exploration for Quantifying a System Modelâ€™s Feasible Domain",
+      "title": "Design Space Exploration for Quantifying a System Model???s Feasible Domain",
       "abstract": "Quantifies a system model's feasible domain through design space exploration to improve modeling reliability.",
       "badge": "journal",
       "categories": [
