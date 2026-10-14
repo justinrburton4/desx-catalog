@@ -410,6 +410,7 @@
       "format": "Self-paced",
       "duration": "5 Hours",
       "hidden": false,
+      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/5582f369-f9d3-4e64-b6d3-0bf9640f6f20/CAD+Gasket.png?content-type=image%2Fpng",
       "order": 99
     },
     {
@@ -425,7 +426,7 @@
       "format": "Self-paced",
       "duration": "8 weeks",
       "hidden": false,
-      "image": "https://images.squarespace-cdn.com/content/5c7ee75b92441b465f176f7f/5582f369-f9d3-4e64-b6d3-0bf9640f6f20/CAD+Gasket.png?content-type=image%2Fpng",
+      "image": "https://images.squarespace-cdn.com/content/v1/5d6700e799e03b0001e82f2b/1741035833082-HH9AFYTB6GCMBIFLCBH6/unsplash-image-8DTIQ_Klxho.jpg?format=1000w",
       "order": 2
     },
     {
