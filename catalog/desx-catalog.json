@@ -401,7 +401,7 @@
       "kind": "course",
       "id": "onshape-cad-course",
       "title": "Onshape CAD Course",
-      "blurb": "Online ME EN 272 engineering graphics ? learn cloud CAD with Onshape.",
+      "blurb": "An Introductory Onshape CAD tutorial to help students learn 3D modeling fundamentals",
       "url": "/onshape-cad-course",
       "type": "course",
       "categories": [
@@ -409,7 +409,7 @@
       ],
       "format": "Online course",
       "duration": "Semester",
-      "hidden": true,
+      "hidden": false,
       "order": 99
     },
     {
