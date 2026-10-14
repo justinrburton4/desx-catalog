@@ -403,12 +403,12 @@
       "title": "Onshape CAD Course",
       "blurb": "An Introductory Onshape CAD tutorial to help students learn 3D modeling fundamentals",
       "url": "/onshape-cad-course",
-      "type": "course",
+      "type": "tutorial",
       "categories": [
-        "Courses"
+        "Tutorials"
       ],
-      "format": "Online course",
-      "duration": "Semester",
+      "format": "Self-paced",
+      "duration": "5 Hours",
       "hidden": false,
       "order": 99
     },
@@ -416,7 +416,7 @@
       "kind": "course",
       "id": "learn-to-sketch",
       "title": "Learn to Sketch",
-      "blurb": "Free self-guided short course ? practice 10 minutes a day for 8 weeks.",
+      "blurb": "Free self-guided short course practice 10 minutes a day for 8 weeks.",
       "url": "https://www.designreview.byu.edu/sketching-short-course",
       "type": "tutorial",
       "categories": [
