@@ -692,6 +692,20 @@
       "hidden": false,
       "title": "Undergraduate Student",
       "order": 13
+    },
+    {
+      "id": "ethan-honda",
+      "name": "Ethan Honda",
+      "group": "undergraduate",
+      "status": "current",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ethan-honda-05b6b132b"
+      },
+      "bio": "I am an undergraduate student studying Mechanical Engineering from Southern California. My research focuses on creating sustained prosperity in developing countries through innovation. I enjoy traveling, trying and cooking new foods, and learning from the design cultures of nations around the world.",
+      "photo": "ethan-honda.jpg",
+      "hidden": false,
+      "title": "Undergraduate Student",
+      "order": 14
     }
   ]
 }
