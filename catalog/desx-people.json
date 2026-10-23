@@ -38,12 +38,17 @@
     {
       "id": "chris-mattson",
       "name": "Chris Mattson",
-      "title": "Lab Co-director",
-      "group": "directors",
+      "title": "Director, Professor of Mechanical Engineering, Associate Dean of Engineering",
+      "group": "phd",
       "status": "current",
-      "order": 1,
-      "bio": "\"Pure and simple, I love to create things.\" Chris is a professor of mechanical engineering at Brigham Young University and performs research in engineering for global development. The research Chris performs has led to products like the Village Drill and World Cart. Chris has also been the recipient of the Presidential Early Career Award for Scientists and Engineers, as well as the National Science Foundation CAREER award.",
-      "photo": "chris-mattson.jpg"
+      "order": 4,
+      "bio": "Christopher A. Mattson is a professor of mechanical engineering and director of BYU's Design Exploration Research Group. He is a graduate of Rensselaer Polytechnic Institute (PhD 03), an NSF CAREER awardee, a Fulbright Scholar, and an ASME Fellow. He was given a Presidential Early Career Award for Scientists and Engineers (PECASE) by President Obama in 2011.",
+      "photo": "chris-mattson.jpg",
+      "links": {
+        "email": "mattson@byu.edu",
+        "website": "https://www.me.byu.edu/directory/chris-mattson"
+      },
+      "hidden": false
     },
     {
       "id": "john-salmon",
